@@ -22,8 +22,8 @@ Our stakeholders are our users, and also those of whom the data is about. We do 
 
 
 ## Introducing our Team
-Wenda - Scrum leader \n
-Jess - Responsible for database \n
-Stanni - Responsible for front end \n
-Emily - Responsible for quality assurance \n
-Hamza - Responsible for UI/UX \n
+#Wenda - Scrum leader
+#Jess - Responsible for database
+#Stanni - Responsible for front end
+#Emily - Responsible for quality assurance
+#Hamza - Responsible for UI/UX

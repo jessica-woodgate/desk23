@@ -1,27 +1,18 @@
-# TestSite
+# Literacy Rates Around the World (working title)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+Over the past 65 years, literacy rates have increased globally by 4% every five years. Today, only 14% of the global population remain illiterate. However, in many countries they remain unsettlingly low, with the poorest countries having large segments of their population illiterate. This exemplifies huge global inequalities that exist, notably between sub-Saharan Africa and the West.
+Despite many countries having high levels of basic literacy skills, there remain suprisingly high rates of very poor literacy skills. In England, for example, 1 in 6 adults have poor literacy skills. This means that they can understand short and straightforward texts on familiar subjects, but struggle with unfamiliar sources or topics. This is also known as being functionally illiterate, and excludes people from many areas of the job market thus further contributing to inequality.
 
-## Development server
+Our project aims to build awareness about this issue, in a fun and informative way to encourage learning and engagement.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Our idea
 
-## Code scaffolding
+We envision an interactive globe that users can nagivate and move around with ease. Upon entering the website, the user is greeted with a book with scrambled letters on that merge into a description of the site. Users can then click through to the globe. Countries are lit up in brightness that accords with their levels of literacy rates. By hovering their mouse over a country, users can view basic statistics about that country. By clicking on the country, we zoom into a more detailed map and list further, more detailed, information related to that country, for example links to charities and ways to help. There may possibly be a time dimension, where we can view how literacy rates have evolved over time.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Our Users
 
-## Build
+Our site is targeted at older children and teenagers, to encourage awareness about the issue. By including playful elements, we aim to get our users engaging with the issue. This will hopefully foster interest in literacy rates, and help our users understand why it is an important topic.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Stakeholders
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Our stakeholders are our users, and also those of whom the data is about. We do not have any access to personal details of our stakeholders but should consider what effects the website might have.

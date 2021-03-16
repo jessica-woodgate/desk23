@@ -1,3 +1,6 @@
+
+![image](https://user-images.githubusercontent.com/45073537/111315589-6f743f00-865a-11eb-86fa-42c03ca56bef.png)
+
 # Literacy Rates Around the World (working title)
 
 Over the past 65 years, literacy rates have increased globally by 4% every five years. Today, only 14% of the global population remain illiterate. However, in many countries they remain unsettlingly low, with the poorest countries having large segments of their population illiterate. This exemplifies huge global inequalities that exist, notably between sub-Saharan Africa and the West.

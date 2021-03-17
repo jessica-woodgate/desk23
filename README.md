@@ -18,7 +18,7 @@ Our site is targeted at older children and teenagers, to encourage awareness abo
 
 ## Stakeholders
 
-Our stakeholders are our users, and also those of whom the data is about. We do not have any access to personal details of our stakeholders but should consider what effects the website might have.
+Our most important primary stakeholders are our users, and also those of whom the data is about. We do not have any access to personal details of our stakeholders but should consider what effects the website might have. See "Stakeholder Anaylsis" document in DesignElements/Ideation for more information.
 
 
 ## Our Team

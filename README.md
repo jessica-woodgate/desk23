@@ -22,7 +22,7 @@ Our stakeholders are our users, and also those of whom the data is about. We do 
 
 
 ## Our Team
-#### Wenda - Scrum leader, responsible for back end
+#### Wenda - Responsible for back end
 #### Jess - Responsible for database
 #### Stanni - Responsible for front end
 #### Emily - Responsible for quality assurance

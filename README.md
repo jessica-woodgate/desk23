@@ -35,9 +35,16 @@ The ideation process took place collaboratively over several team meetings. The 
 
 In parallel, the team met to identify the stakeholders who would be involved in or otherwise impacted by the project. The stakeholder analysis was done in order to maximise the possible contribution of the project and anticipate the various interactions with other parties to be cognizant of the impacts, including ethical considerations. After initial brainstorming, mapping primary and secondary stakeholders and their possible interests and concerns, this chart was produced using Miro (see below) to demonstrate how stakeholders would be managed over the course of the project.
 
-![image](https://user-images.githubusercontent.com/74050529/114196813-9ff18500-9949-11eb-8784-e65ceb0c033b.png)
+![image](https://user-images.githubusercontent.com/74050529/114198783-9e28c100-994b-11eb-85ec-304c627c4c07.png)
 
 Stakeholders with high influence and high interest in the project include the target user (students/adolescents), the team itself (given a vested interest in the website’s success), and the University of Bristol as the locus of the project (including any potential reputational risks), and were deemed to require close engagement. In particular, given the educational nature of the website, the team agreed it would key to make sure that the website would be an inclusive and safe space for students of all abilities and backgrounds to navigate.
 
 Next, the team considered others in the immediate circle of the student, including family and friends, and, critically, teachers who would need to be kept informed – in particular given their responsibility to safeguard their students and their role in potentially directing students to the website as an educational tool. Research participants, including users interacting with the surveys and making up the focus group, were also considered to fall in this category. The team considered it would be critical to seek out a diverse group of participants to ensure balanced responses; to make sure the survey would be designed not to be overly invasive; and, fundamentally, to protect the data collected. 
+
+The awareness raising component of the website, from the general nature of the topic being treated, to any more specific links or resources provided on the page, could potentially implicate secondary stakeholders, including NGOs and charities. In directing traffic towards their causes, it would be important to scrutinise any organisations before listing them on the website to make sure users are directed to valid charities and to avoid inadvertently propagating scams. 
+
+Other secondary stakeholders could include policymakers and international development partners looking for effective communication tools about literacy rates. 
+
+It was noted that, though the website itself does not collect data from users, we would need to consider where we source our data from to ensure accuracy and consider attribution and any related licensing issues. In this respect, the data owners would need to be kept satisfied, and data properly referenced. Given that they could decide at any moment to restrict access to their data, the data owners were considered to have high power. 
+
 

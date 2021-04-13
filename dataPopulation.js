@@ -2,7 +2,7 @@
 
 var async = require('async')
 var LiteracyModel = require('./models/literacyRates')
-var csv = require('./node_modules/jquery-csv/src/jquery.csv.js');
+//var csv = require('./node_modules/jquery-csv/src/jquery.csv.js');
 //var jquery = require('./node_modules/jquery/src/jquery.js');
 var mongoose = require('mongoose');
 
@@ -50,14 +50,22 @@ function createLiteracyRates(cb){
       function(callback) {
          literacyCreate('Afghanistan', 'AFG', 1979, 18.15768, callback);
       },
+      function(callback){
+         literacyCreate('Albania', 'ALB', 2001, 98.71298, callback);
+      },
+      function(callback){
+         literacyCreate('Algeria', 'DZA', 1987, 49.63088, callback);
+      },
+      function(callback){
+         literacyCreate('American Samoa', 'ASM', 1980, 97.34416, callback);
+      },
    ],
    //optional callback
    cb);
 }
 
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 //extract data from csv file
-var dataFromFile = $.csv.toArrays(csv);
+//var dataFromFile = $.csv.toArrays(csv);
 
 async.series([
    createLiteracyRates
@@ -68,7 +76,7 @@ function(err, results) {
       console.log('FINAL ERR: '+err);
    }else{
       console.log('LiteracyRates: '+literacyData);
-      console.log('data from file: '+dataFromFile);
+      //console.log('data from file: '+dataFromFile);
    }
    // All done, disconnect from database
     mongoose.connection.close();

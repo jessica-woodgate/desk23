@@ -1,4 +1,4 @@
-[
+const crossCountryLiteracyRates = [
 {"Entity":"Afghanistan","Code":"AFG","Year":"1979","Data":"18.157681"},
 {"Entity":"Afghanistan","Code":"AFG","Year":"2011","Data":"31.741119"},
 {"Entity":"Afghanistan","Code":"AFG","Year":"2015","Data":"38.168041"},
@@ -1423,3 +1423,4 @@
 {"Entity":"Zimbabwe","Code":"ZWE","Year":"2011","Data":"83.58271"},
 {"Entity":"Zimbabwe","Code":"ZWE","Year":"2015","Data":"86.873482"}
 ]
+module.exports = crossCountryLiteracyRates

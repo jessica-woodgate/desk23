@@ -2,6 +2,7 @@ var async = require('async');
 var LiteracyModel = require('./models/literacyRates');
 //import mongoose module
 const mongoose = require('mongoose');
+const crossCountryLiteracyRates = require('./crossCountryLiteracyRates');
 
 const {
   MONGO_USERNAME,
@@ -50,7 +51,7 @@ function literacyCreate(country, code, year, literacyRates, cb) {
 //populating database with data
 function createLiteracyRates(cb){
    async.parallel([
-      function(callback) {
+      /*function(callback) {
          literacyCreate('Afghanistan', 'AFG', 1979, 18.15768, callback);
       },
       function(callback){
@@ -61,7 +62,10 @@ function createLiteracyRates(cb){
       },
       function(callback){
          literacyCreate('American Samoa', 'ASM', 1980, 97.34416, callback);
-      },
+      },*/
+      function(callback){
+         LiteracyModel.insertMany(crossCountryLiteracyRates);
+      }
    ],
    //optional callback
    cb);
@@ -69,6 +73,7 @@ function createLiteracyRates(cb){
 
 async.series([
    createLiteracyRates
+   //LiteracyModel.insertMany(crossCountryLiteracyRates)
 ],
 //optional callback
 function(err, results) {

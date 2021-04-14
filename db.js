@@ -49,23 +49,8 @@ function createLiteracyRates(cb){
    cb);
 }
 
-function findLiteracyRates(cb){
-   async.parallel([
-      function(callback){
-         LiteracyModel.find({'Entity':'World'}, 'Entity Code Data', function(err, results){
-            if(err) {
-               return handleError(err)
-            }else{
-               console.log(results);
-            }
-         })
-      }
-   ])
-}
-
 async.series([
    createLiteracyRates,
-   //findLiteracyRates
 ],
 //optional callback
 function(err, results) {

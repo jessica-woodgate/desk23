@@ -2,14 +2,15 @@
 const express = require('express');
 const path = require('path');
 const http = require('http');
+// Utility function used to parse json files
 const bodyParser = require('body-parser');
 
 // Setup database
 const db = require('./db')
 
-// Get our API routes
+// Get our API routes (this folder will store all our API handlers - response methods)
 const api = require('./server/routes/api');
-
+//initialise express
 const app = express();
 
 // Parsers for POST data
@@ -22,7 +23,8 @@ app.use(express.static(path.join(__dirname, 'dist/LiteracyRates')));
 // Set our api routes
 app.use('/api', api);
 
-// Catch all other routes and return the index file
+// Catch all other routes and return the index file (sits within distribution folder)
+// Index is our SPA - programatically serving the files
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });

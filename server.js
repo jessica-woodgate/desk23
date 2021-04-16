@@ -10,6 +10,8 @@ const db = require('./db')
 
 // Get our API routes (this folder will store all our API handlers - response methods)
 const api = require('./server/routes/api');
+//get radar charts routes
+//const radarChart = require('./server/routes/radarChart');
 //initialise express
 const app = express();
 
@@ -22,6 +24,8 @@ app.use(express.static(path.join(__dirname, 'dist/LiteracyRates')));
 
 // Set our api routes
 app.use('/api', api);
+//set our radarChar routes
+//app.use('/radarChart', radarChart);
 
 // Catch all other routes and return the index file (sits within distribution folder)
 // Index is our SPA - programatically serving the files

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const data = require('./data.json')
+const data = require('./data.json');
 
 /* GET api listing. */
 //someone makes a request for /api, and this is what controls what they get back

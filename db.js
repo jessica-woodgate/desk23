@@ -33,17 +33,17 @@ function createLiteracyRates(cb){
    async.parallel([
       function(callback){
          LiteracyModel.insertMany(crossCountryLiteracyRates);
-      }/*,*/
+      },
       //checking that the data has been uploaded (remove when testing unnecessary)
-      /*function(callback){
-         LiteracyModel.find({'Entity':'World'}, 'Entity Code Data', function(err, results){
+      function(callback){
+         LiteracyModel.find({}, function(err, results){
             if(err) {
                return handleError(err)
             }else{
                console.log(results);
             }
-         })*/
-      //}
+         })
+      }
    ],
    //optional callback
    cb);
@@ -71,5 +71,5 @@ function(err, results) {
       console.log('LiteracyRates: '+results);
    }
    // All done, disconnect from database
-    mongoose.connection.close();
+   //mongoose.connection.close();
 });

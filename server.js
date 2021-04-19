@@ -55,7 +55,7 @@ app.get("/dataPopulation", (request, response) => {
 });
 
 app.get("/Entity/:id", (request, response) => {
-    collection.findOne({ "_Entity": new ObjectId(request.params.id) }, (error, result) => {
+    collection.findOne({ "Entity": new ObjectId(request.params.id) }, (error, result) => {
         if (error) {
             return response.status(500).send(error);
         }
@@ -64,7 +64,7 @@ app.get("/Entity/:id", (request, response) => {
 });
 
 app.get("/LiteracyRates/:id", (request, response) => {
-    collection.findOne({ "_Literacy_rates": new ObjectId(request.params.id) }, (error, result) => {
+    collection.findOne({ "Literacy_rates": new ObjectId(request.params.id) }, (error, result) => {
         if (error) {
             return response.status(500).send(error);
         }

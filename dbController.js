@@ -1,5 +1,6 @@
 const path = require('path');
 const LiteracyModel = ('./models/literacyRates');
+const ModelLink = require('./db.js');
 const crossCountryLiteracyRates = ('crossCountryLiteracyRates');
 
 //export index
@@ -21,12 +22,10 @@ exports.create = function(req, res) {
 
 //list contents of database
 exports.list = function(req, res) {
-   LiteracyModel.find({}, function(err, literacyRates){
+   ModelLink.find({}, function(err, literacyRates){
       if(err){
          return res.send(500, err);
       }
-      res.render('getLiteracyRates', {
-         literacyRates: literacyRates
-      });
+      res.send(literacyRates);
    });
 };

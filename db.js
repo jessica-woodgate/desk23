@@ -49,17 +49,6 @@ function createLiteracyRates(cb){
    cb);
 }
 
-var query;
-
-function getLiteracyRates(cb){
-      async.parallel([
-         function(callback){
-            query = LiteracyModel.find({});
-         }
-      ],
-      cb);
-}
-
 async.series([
    createLiteracyRates,
 ],

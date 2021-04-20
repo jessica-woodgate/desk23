@@ -7,10 +7,12 @@ import {ChartsModule} from 'ng2-charts';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import { GlobeComponent } from './globe/globe.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GlobeComponent
   ],
   imports: [
     BrowserModule,

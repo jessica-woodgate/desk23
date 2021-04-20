@@ -1,0 +1,10 @@
+canvas {
+    display: block; /* N.B. important for canvas to fit host */
+    margin: auto;
+    width: 100%;
+    height: 100%; 
+    background: #22eb9e; /* color shows if no scene background or renderer "setClearColor" not set */
+  }
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

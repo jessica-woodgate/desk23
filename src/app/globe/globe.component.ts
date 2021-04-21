@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, ViewChild, Input, ElementRef, HostListener } from '@angular/core';
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+import * as data from '../../data/countries.json';
 
 @Component({
   selector: 'app-globe',
@@ -54,6 +55,9 @@ export class GlobeComponent implements AfterViewInit {
     this.windowHeight = window.innerHeight;
 
     this.lightGroup = new THREE.Group();
+
+    //this works
+    console.log(data[0].Country);
   }
 
   ngAfterViewInit() {
@@ -166,6 +170,44 @@ export class GlobeComponent implements AfterViewInit {
   render () {
     this.renderer.render(this.scene, this.camera);
   }
+
+  
+  //working on coordinates
+  addCoordinates (country:string, latitude: any, longitude: any) {
+    let poi = new THREE.SphereGeometry(0.1,32,32);
+    let lat = latitude * (Math.PI / 180);
+    let lon = -longitude * (Math.PI / 180);
+
+    const radius = 10;
+    const phi = (90-lat) * (Math.PI/180);
+    const theta = (lon + 180) * (Math.PI/180);
+
+    let material2 = new THREE.MeshBasicMaterial({color:0x00ff00});
+
+    let mesh2 = new THREE.Mesh(poi, material2);
+
+    mesh2.position.set(
+      Math.cos(lat) * Math.cos(lon) * radius,
+      Math.sin(lat) * radius,
+      Math.cos(lat) * Math.sin(lon) * radius
+    );
+
+    mesh2.rotation.set(0.0,-lon,lat-Math.PI*0.5);
+
+    //mesh2.userData.country = country;
+
+    this.mesh.add(mesh2);
+
+}
+
+changeCountry() {
+  for (let i = 0; i < 50; i++) {
+
+    let name :string = data[i].Country;
+    this.addCoordinates(name, data[i].latitude, data[i].longitude);
+  }
+}
+
 
 
   @HostListener('window:resize', ['$event'])

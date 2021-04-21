@@ -33,9 +33,9 @@ function createLiteracyRates(cb){
    async.parallel([
       function(callback){
          LiteracyModel.insertMany(crossCountryLiteracyRates);
-      },
+      }//,
       //checking that the data has been uploaded (remove when testing unnecessary)
-      function(callback){
+      /*function(callback){
          LiteracyModel.find({}, function(err, results){
             if(err) {
                return handleError(err)
@@ -43,7 +43,7 @@ function createLiteracyRates(cb){
                console.log(results);
             }
          })
-      }
+      }*/
    ],
    //optional callback
    cb);

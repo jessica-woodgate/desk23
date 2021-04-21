@@ -29,3 +29,23 @@ exports.list = function(req, res) {
       res.send(literacyRates);
    });
 };
+
+exports.findDocumentByEntity = function (cb, entity){
+   ModelLink.findOne({Entity: entity}, function(err, results){
+      if(err){
+         return handleError(err)
+      }else{
+         console.log(results)
+      }
+   });
+};
+
+exports.findDocumentByCode = function(cb, code){
+   ModelLink.findOne({Code: code}, function(err, results){
+      if(err){
+         return handleError(err)
+      }else{
+         console.log(results)
+      }
+   });
+};

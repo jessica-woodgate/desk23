@@ -6,8 +6,9 @@ const http = require('http');
 const bodyParser = require('body-parser');
 
 // Setup database
-const db = require('./db')
-
+const db = require('./db');
+//get access to dbController functions
+const dbController = require('./dbController');
 // Get our API routes (this folder will store all our API handlers - response methods)
 const api = require('./server/routes/api');
 //get database routes
@@ -29,6 +30,9 @@ app.use('/literacyRates', literacyRates);
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
+
+console.log('calling find by code');
+dbController.findDocumentByCode('AFG');
 
 /**
  * Get port from environment and store in Express.

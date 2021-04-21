@@ -61,6 +61,26 @@ exports.findByYear = function(year){
    });
 };
 
+exports.findByCodeYear = function(code, year){
+   ModelLink.find({Code: code, Year: year}, function(err, results){
+      if(err){
+         return handleError(err)
+      }else{
+         console.log(results)
+      }
+   });
+};
+
+exports.findByEntityYear = function(entity, year){
+   ModelLink.find({Entity: entity, Year: year}, function(err, results){
+      if(err){
+         return handleError(err)
+      }else{
+         console.log(results)
+      }
+   });
+};
+
 //removes whole collection
 exports.remove = function(cb){
    ModelLink.remove({}, function(err, result){

@@ -1,8 +1,10 @@
 var async = require('async');
 var LiteracyModel = require('./models/literacyRates');
+var CoordinatesModel = require('./models/coordinates');
 //import mongoose module
 const mongoose = require('mongoose');
 const crossCountryLiteracyRates = require('./crossCountryLiteracyRates');
+const coordinatesData = require('./coordinates');
 
 const {
   MONGO_USERNAME,
@@ -38,7 +40,7 @@ function createLiteracyRates(cb){
       function(callback){
          LiteracyModel.find({}, function(err, results){
             if(err) {
-               return handleError(err)
+               return console.log(err);
             }else{
                console.log(results);
             }
@@ -49,8 +51,25 @@ function createLiteracyRates(cb){
    cb);
 }
 
-async.series([
+function createCoordinates(cb){
+   async.parallel([
+      function(callback){
+         CoordinatesModel.insertMany(coordinatesData);
+      },
+      function(callback){
+         CoordinatesModel.find({}, function(err, results){
+            if(err) {
+               return console.log(err);
+            }else{
+               console.log(results);
+            }
+         })
+      }
+   ])
+}
 
+async.series([
+   //createCoordinates
 ],
 //optional callback
 function(err, results) {
@@ -63,4 +82,5 @@ function(err, results) {
    //mongoose.connection.close();
 });
 
-module.exports = LiteracyModel;
+module.exports.LiteracyModel = LiteracyModel;
+module.exports.CoordinatesModel = CoordinatesModel;

@@ -7,11 +7,11 @@ router.get('/', function(req, res){
 });
 
 router.post('/addLiteracyRates', function(req,res){
-   dbController.create(req,res);
+   dbController.createLiteracyRates(req,res);
 });
 
 router.get('/getLiteracyRates', function(req,res){
-   dbController.list(req,res);
+   dbController.listLiteracyRates(req,res);
 });
 
 module.exports = router;

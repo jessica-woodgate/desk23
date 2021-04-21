@@ -70,6 +70,7 @@ export class GlobeComponent implements AfterViewInit {
     this.createMesh();
 
     this.animate();
+    this.changeCountry();
   }
 
 
@@ -203,7 +204,9 @@ export class GlobeComponent implements AfterViewInit {
 changeCountry() {
   for (let i = 0; i < 50; i++) {
 
+    
     let name :string = data[i].Country;
+    console.log(name);
     this.addCoordinates(name, data[i].latitude, data[i].longitude);
   }
 }

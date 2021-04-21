@@ -147,7 +147,7 @@ export class GlobeComponent implements AfterViewInit {
   
   //working on coordinates
   //reference: https://stackoverflow.com/questions/1185408/converting-from-longitude-latitude-to-cartesian-coordinates
-  addCoordinatePoint (country:string, latitude: any, longitude: any) {
+  addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number) {
 
     //radius of the globe
     const radius = 10;
@@ -162,9 +162,16 @@ export class GlobeComponent implements AfterViewInit {
     let z = Math.sin(globeLatRads) * radius;
 
     //create spherical shape
-    let poi = new THREE.SphereGeometry(0.1,32,32);    
+    let size = countryArea / 9000000; //size will need to be dynamically set based on the area per sqmile
+
+    if (size < 0.2) {
+      size = 0.2;
+    }
+
+    let poi = new THREE.SphereGeometry(size,32,32);    
     let pointMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
-    let point = new THREE.Mesh(poi, pointMaterial);
+    let point = new THREE.Mesh(poi, pointMaterial); 
+
 
     //set the point on the globe
     point.position.set( x, z, y );
@@ -174,7 +181,7 @@ export class GlobeComponent implements AfterViewInit {
 
   setAllPoints() {
     for (let i = 0; i < this.listOfCountries.length; i++) {
-      this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude);
+      this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude, this.listOfCountries[i].Area_sq_mi);
     }
   }
 

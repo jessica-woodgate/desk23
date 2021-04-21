@@ -42,5 +42,21 @@ LiteracyRatesSchema
    return '/catalog/literacyRates'+this._id;
 })
 
+LiteracyRatesSchema.statics.findByEntity = function(entity){
+   //'i' to search case insensitive
+   var results = this.find({Entity: 'Afghanistan'}, function(err,results){
+      if(err){
+         return console.log(err)
+      }else{
+         console.log(results)
+      }
+   });
+   return results;
+};
+
+LiteracyRatesSchema.statics.findByCode = function(code){
+   return this.find({Entity: new RegExp(code)})
+};
+
 // Compile model from schema & export
 module.exports = mongoose.model('LiteracyModel', LiteracyRatesSchema);

@@ -49,18 +49,18 @@ function createLiteracyRates(cb){
    cb);
 }
 
-async.series([
+/*async.series([
    createLiteracyRates,
 ],
 //optional callback
 function(err, results) {
    if(err){
       console.log('FINAL ERR: '+err);
-   }else{
+   }*//*else{
       console.log('LiteracyRates: '+results);
-   }
+   }*/
    // All done, disconnect from database
    //mongoose.connection.close();
-});
+//});
 
 module.exports = LiteracyModel;

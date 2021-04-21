@@ -31,7 +31,7 @@ exports.list = function(req, res) {
 };
 
 exports.findDocumentByEntity = function (cb, entity){
-   ModelLink.findOne({Entity: entity}, function(err, results){
+   ModelLink.find({Entity: entity}, function(err, results){
       if(err){
          return handleError(err)
       }else{
@@ -41,7 +41,7 @@ exports.findDocumentByEntity = function (cb, entity){
 };
 
 exports.findDocumentByCode = function(cb, code){
-   ModelLink.findOne({Code: code}, function(err, results){
+   ModelLink.find({Code: code}, function(err, results){
       if(err){
          return handleError(err)
       }else{
@@ -49,3 +49,33 @@ exports.findDocumentByCode = function(cb, code){
       }
    });
 };
+
+exports.entity = function(cb, entity){
+   var results = ModelLink.findByEntity(entity);
+   //console.log(results);
+};
+
+exports.remove = function(cb){
+   ModelLink.remove();
+}
+/*
+exports.findDocumentByEntity = function (cb, entity){
+   var query = ModelLink.find({Entity: {$regex:`${entity}`}}, function(err, results){
+      if(err){
+         console.log(err)
+      }else{
+         console.log(results)
+      }
+   });
+};
+
+exports.findDocumentByCode = function(cb, code, year){
+   const query = {$and:[{Code: {$regex:code}}, {Year: {$eq:year}}]}
+   ModelLink.find(query, function(err, results){
+      if(err){
+         return handleError(err)
+      }else{
+         console.log(results)
+      }
+   });
+};*/

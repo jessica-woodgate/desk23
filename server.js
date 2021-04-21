@@ -31,9 +31,12 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
 
-console.log('calling find by code');
-dbController.findDocumentByCode('AFG');
-
+//console.log('calling find by entity');
+//dbController.findDocumentByEntity('Afghanistan');
+//console.log('calling find by code');
+//dbController.findDocumentByCode('AFG');
+console.log('calling entity');
+dbController.entity('Afghanistan');
 /**
  * Get port from environment and store in Express.
  */

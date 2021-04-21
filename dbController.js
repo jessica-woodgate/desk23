@@ -30,8 +30,9 @@ exports.list = function(req, res) {
    });
 };
 
-exports.findDocumentByEntity = function (cb, entity){
-   ModelLink.find({Entity: entity}, function(err, results){
+exports.findByEntity = function (entity){
+   console.log('entity: '+entity);
+   ModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
       if(err){
          return handleError(err)
       }else{
@@ -40,7 +41,7 @@ exports.findDocumentByEntity = function (cb, entity){
    });
 };
 
-exports.findDocumentByCode = function(cb, code){
+exports.findByCode = function(code){
    ModelLink.find({Code: code}, function(err, results){
       if(err){
          return handleError(err)
@@ -50,32 +51,23 @@ exports.findDocumentByCode = function(cb, code){
    });
 };
 
-exports.entity = function(cb, entity){
-   var results = ModelLink.findByEntity(entity);
-   //console.log(results);
-};
-
-exports.remove = function(cb){
-   ModelLink.remove();
-}
-/*
-exports.findDocumentByEntity = function (cb, entity){
-   var query = ModelLink.find({Entity: {$regex:`${entity}`}}, function(err, results){
-      if(err){
-         console.log(err)
-      }else{
-         console.log(results)
-      }
-   });
-};
-
-exports.findDocumentByCode = function(cb, code, year){
-   const query = {$and:[{Code: {$regex:code}}, {Year: {$eq:year}}]}
-   ModelLink.find(query, function(err, results){
+exports.findByYear = function(year){
+   ModelLink.find({Year: year}, function(err, results){
       if(err){
          return handleError(err)
       }else{
          console.log(results)
       }
    });
-};*/
+};
+
+//removes whole collection
+exports.remove = function(cb){
+   ModelLink.remove({}, function(err, result){
+      if(err){
+         console.log(err);
+      }else{
+         console.log(result);
+      }
+   });
+}

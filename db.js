@@ -28,14 +28,14 @@ var db = mongoose.connection;
 //bind connection to error event
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-//populating database with data
+//populating database with data - only need to call this once
 function createLiteracyRates(cb){
    async.parallel([
       function(callback){
          LiteracyModel.insertMany(crossCountryLiteracyRates);
-      }//,
+      },
       //checking that the data has been uploaded (remove when testing unnecessary)
-      /*function(callback){
+      function(callback){
          LiteracyModel.find({}, function(err, results){
             if(err) {
                return handleError(err)
@@ -43,24 +43,24 @@ function createLiteracyRates(cb){
                console.log(results);
             }
          })
-      }*/
+      }
    ],
    //optional callback
    cb);
 }
 
-/*async.series([
-   createLiteracyRates,
+async.series([
+
 ],
 //optional callback
 function(err, results) {
    if(err){
       console.log('FINAL ERR: '+err);
-   }*//*else{
+   }/*else{
       console.log('LiteracyRates: '+results);
    }*/
    // All done, disconnect from database
    //mongoose.connection.close();
-//});
+});
 
 module.exports = LiteracyModel;

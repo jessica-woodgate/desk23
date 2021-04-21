@@ -9,23 +9,18 @@ import * as data from '../../data/countries.json';
   styleUrls: ['./globe.component.css']
 })
 
-
 export class GlobeComponent implements AfterViewInit {
-
-  //receive an input from the parent class (i.e. AppComponent)
-  //@Input() name!: string;
-
   //'canvas' refers to the one established in the html file 
   //canvasRef is the variable we are using
   //ViewChild basically sets up where the canvas element is
-  @ViewChild('canvas') canvasRef!: ElementRef;
+  @ViewChild('canvas') cReferemce!: ElementRef;
 
   renderer = new THREE.WebGLRenderer;
   scene : THREE.Scene;
   camera : THREE.PerspectiveCamera;
   controls! : OrbitControls;
-  mesh! : THREE.Mesh;
-  light! : THREE.Light;
+  globe! : THREE.Mesh;
+  mainLight! : THREE.Light;
 
   windowWidth! : number;
   windowHeight! : number;
@@ -33,53 +28,43 @@ export class GlobeComponent implements AfterViewInit {
   lightGroup!: THREE.Group;
   listOfCountries:  any  = (data  as  any).default;
 
-  private calculateAspectRatio(): number {
-    /* const height = this.canvas.clientHeight;
-    if (height === 0) {
-      return 0;
-    }
-    return this.canvas.clientWidth / this.canvas.clientHeight; */
-
+  private get aspectRatio(): number {
     return this.windowWidth / this.windowHeight;
-    
   }
 
   private get canvas(): HTMLCanvasElement {
-    return this.canvasRef.nativeElement;
+    return this.cReferemce.nativeElement;
   }
 
   constructor() {
-    this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(35, 800/640, 0.1, 1000)
-
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
+
+    this.scene = new THREE.Scene();
+    this.camera = new THREE.PerspectiveCamera(50, this.windowWidth/this.windowHeight, 0.1, 1000)
 
     this.lightGroup = new THREE.Group();
   }
 
   ngAfterViewInit() {
-    this.configScene();
-    this.configCamera();
-    this.configRenderer();
-    this.configControls();
+    this.setScene();
+    this.setCamera();
+    this.setRenderer();
+    this.setControls();
 
-    this.createLight();
-    this.createMesh();
+    this.createLightGroup();
+    this.createGlobe();
 
     this.animate();
-
-    this.changeCountry();
-
-
+    this.setAllPoints();
   }
 
 
-  configScene() {
+  setScene() {
 
     const loader = new THREE.CubeTextureLoader();
 
-    const texture = loader.load([
+    const skyBox = loader.load([
       '../../assets/images/space_right.png',
       '../../assets/images/space_left.png',
       '../../assets/images/space_top.png',
@@ -89,17 +74,17 @@ export class GlobeComponent implements AfterViewInit {
     ])
 
     //this.scene.background = new THREE.Color( 0x000000 );
-    this.scene.background = texture;
+    this.scene.background = skyBox;
   }
 
-  configCamera() {
-    this.camera.aspect = this.calculateAspectRatio();
+  setCamera() {
+    this.camera.aspect = this.aspectRatio;
     this.camera.updateProjectionMatrix();
 	  this.camera.position.set( 40, 0, 0 );
 	  this.camera.lookAt( this.scene.position );
   }
 
-  configRenderer() {
+  setRenderer() {
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvas,
       antialias: true,
@@ -107,14 +92,10 @@ export class GlobeComponent implements AfterViewInit {
     });
 
     this.renderer.setPixelRatio(devicePixelRatio);
-    // setClearColor for transparent background
-    // i.e. scene or canvas background shows through
-    //this.renderer.setClearColor( 0x000000, 0 );
-
     this.renderer.setSize(this.windowWidth, this.windowHeight);
   }
 
-  configControls() {
+  setControls() {
     this.controls = new OrbitControls(this.camera, this.canvas);
     this.controls.autoRotate = false;
     this.controls.enableZoom = true;
@@ -124,21 +105,15 @@ export class GlobeComponent implements AfterViewInit {
     this.controls.update();
   }
 
-  createLight() {
-    this.light = new THREE.SpotLight( 0xffffff );
-	  this.light.position.set( 0, 0, 50 );
-	  //this.scene.add( this.light );
-    //this.camera.add(this.light);
-    this.lightGroup.add(this.light);
+  createLightGroup() {
+    this.mainLight = new THREE.SpotLight( 0xffffff );
+	  this.mainLight.position.set( 0, 0, 50 );
+    this.lightGroup.add(this.mainLight);
     this.scene.add(this.lightGroup);
   }
 
-  createMesh() {
-     /*const geometry = new THREE.BoxGeometry(5, 5, 5);
-    const material = new THREE.MeshLambertMaterial({ color: 0xff0000 });
-    this.mesh = new THREE.Mesh(geometry, material);
-    this.scene.add(this.mesh);  
-*/
+  createGlobe() {
+ 
     let Emap = new THREE.TextureLoader().load('../../assets/images/earthmap4k.jpg');
     let Ebump = new THREE.TextureLoader().load('../../assets/images/earthbump4k.jpg');
     let Espec = new THREE.TextureLoader().load('../../assets/images/earthspec4k.jpg');
@@ -152,10 +127,8 @@ export class GlobeComponent implements AfterViewInit {
         specular : new THREE.Color('grey')
       });
 
-    this.mesh = new THREE.Mesh(sphere, material);
-    this.scene.add(this.mesh);
-    
-    //this.mesh.position.z = -10;
+    this.globe = new THREE.Mesh(sphere, material);
+    this.scene.add(this.globe);
 
   }
 
@@ -164,7 +137,6 @@ export class GlobeComponent implements AfterViewInit {
     window.requestAnimationFrame(() => this.animate());
 
     this.lightGroup.quaternion.copy(this.camera.quaternion);
-   
     this.render();
     this.controls.update();
   }
@@ -172,39 +144,37 @@ export class GlobeComponent implements AfterViewInit {
   render () {
     this.renderer.render(this.scene, this.camera);
   }
-
   
   //working on coordinates
-  addCoordinates (country:string, latitude: any, longitude: any) {
-    let poi = new THREE.SphereGeometry(0.1,32,32);
-    let lat = latitude * (Math.PI / 180);
-    let lon = -longitude * (Math.PI / 180);
+  //reference: https://stackoverflow.com/questions/1185408/converting-from-longitude-latitude-to-cartesian-coordinates
+  addCoordinatePoint (country:string, latitude: any, longitude: any) {
 
+    //radius of the globe
     const radius = 10;
-    const phi = (90-lat) * (Math.PI/180);
-    const theta = (lon + 180) * (Math.PI/180);
 
-    let material2 = new THREE.MeshBasicMaterial({color:0x00ff00});
+    //convert degrees to radians 
+    let globeLatRads = latitude * (Math.PI / 180);
+    let globeLongRads = -longitude * (Math.PI / 180);
 
-    let mesh2 = new THREE.Mesh(poi, material2);
+    //get x, y and z coordinates
+    let x = Math.cos(globeLatRads) * Math.cos(globeLongRads) * radius;
+    let y = Math.cos(globeLatRads) * Math.sin(globeLongRads) * radius;
+    let z = Math.sin(globeLatRads) * radius;
 
-    mesh2.position.set(
-      Math.cos(lat) * Math.cos(lon) * radius,
-      Math.sin(lat) * radius,
-      Math.cos(lat) * Math.sin(lon) * radius
-    );
+    //create spherical shape
+    let poi = new THREE.SphereGeometry(0.1,32,32);    
+    let pointMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
+    let point = new THREE.Mesh(poi, pointMaterial);
 
-    mesh2.rotation.set(0.0,-lon,lat-Math.PI*0.5);
+    //set the point on the globe
+    point.position.set( x, z, y );
 
-    //mesh2.userData.country = country;
-
-    this.mesh.add(mesh2);
-
+    this.globe.add(point);
 }
 
-  changeCountry() {
+  setAllPoints() {
     for (let i = 0; i < this.listOfCountries.length; i++) {
-      this.addCoordinates(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude);
+      this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude);
     }
   }
 
@@ -213,9 +183,8 @@ export class GlobeComponent implements AfterViewInit {
   onWindowResize() {
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
-    this.camera.aspect = this.calculateAspectRatio();
+    this.camera.aspect = this.aspectRatio;
     this.camera.updateProjectionMatrix(); 
-
     this.renderer.setSize(this.windowWidth, this.windowHeight);
   }
 

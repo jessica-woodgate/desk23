@@ -48,7 +48,7 @@ exports.removeLiteracyModel = function(cb){
    });
 };
 
-exports.findByEntity = function (entity){
+exports.findLiteracyByEntity = function (entity){
    console.log('entity: '+entity);
    LiteracyModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
       if(err){
@@ -59,7 +59,7 @@ exports.findByEntity = function (entity){
    });
 };
 
-exports.findByCode = function(code){
+exports.findLiteracyByCode = function(code){
    LiteracyModelLink.find({Code: code}, function(err, results){
       if(err){
          return handleError(err)
@@ -69,7 +69,7 @@ exports.findByCode = function(code){
    });
 };
 
-exports.findByYear = function(year){
+exports.findLiteracyByYear = function(year){
    LiteracyModelLink.find({Year: year}, function(err, results){
       if(err){
          return handleError(err)
@@ -79,7 +79,7 @@ exports.findByYear = function(year){
    });
 };
 
-exports.findByCodeYear = function(code, year){
+exports.findLiteracyByCodeYear = function(code, year){
    LiteracyModelLink.find({Code: code, Year: year}, function(err, results){
       if(err){
          return handleError(err)
@@ -89,7 +89,7 @@ exports.findByCodeYear = function(code, year){
    });
 };
 
-exports.findByEntityYear = function(entity, year){
+exports.findLiteracyByEntityYear = function(entity, year){
    LiteracyModelLink.find({Entity: entity, Year: year}, function(err, results){
       if(err){
          return handleError(err)
@@ -104,7 +104,7 @@ exports.findByEntityYear = function(entity, year){
 ****/
 
 exports.listCoordinates = function(req, res) {
-   c.find({}, function(err, coordinates){
+   CoordinatesModelLink.find({}, function(err, coordinates){
       if(err){
          return res.send(500, err);
       }
@@ -120,4 +120,28 @@ exports.removeCoordinatesModel = function(cb){
          console.log(result);
       }
    });
+};
+
+exports.findCoordinateByEntity = function(entity){
+   CoordinatesModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
+      if(err){
+         console.log(err);
+      }else{
+         console.log(results);
+      }
+   })
+};
+
+/*****
+   controller functions for linking coordinates and literacy rates
+*****/
+
+exports.linkCoordinatesLiteracyRates = function(entity){
+   CoordinatesModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
+      if(err){
+         console.log(err);
+      }else{
+         console.log(results);
+      }
+   })
 };

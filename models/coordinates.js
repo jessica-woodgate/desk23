@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var CoordinatesSchema = new Schema({
-   Country: {type: String, required: true, maxlength: 100},
+   Entity: {type: String, required: true, maxlength: 100},
    Languages: {type: String, required: false, maxlength: 1000},
    latitude: {type: Number},
    longitude: {type: Number},

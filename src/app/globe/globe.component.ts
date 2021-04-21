@@ -73,7 +73,6 @@ export class GlobeComponent implements AfterViewInit {
       '../../assets/images/space_back.png',
     ])
 
-    //this.scene.background = new THREE.Color( 0x000000 );
     this.scene.background = skyBox;
   }
 
@@ -114,7 +113,8 @@ export class GlobeComponent implements AfterViewInit {
 
   createGlobe() {
  
-    let Emap = new THREE.TextureLoader().load('../../assets/images/earthmap4k.jpg');
+    //maps from: http://planetpixelemporium.com/earth.html && https://www.solarsystemscope.com/textures/
+    let Emap = new THREE.TextureLoader().load('../../assets/images/2k_earth_daymap.jpg');
     let Ebump = new THREE.TextureLoader().load('../../assets/images/earthbump4k.jpg');
     let Espec = new THREE.TextureLoader().load('../../assets/images/earthspec4k.jpg');
 

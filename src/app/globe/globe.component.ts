@@ -31,6 +31,7 @@ export class GlobeComponent implements AfterViewInit {
   windowHeight! : number;
 
   lightGroup!: THREE.Group;
+  listOfCountries:  any  = (data  as  any).default;
 
   private calculateAspectRatio(): number {
     /* const height = this.canvas.clientHeight;
@@ -55,9 +56,6 @@ export class GlobeComponent implements AfterViewInit {
     this.windowHeight = window.innerHeight;
 
     this.lightGroup = new THREE.Group();
-
-    //this works
-    console.log(data[0].Country);
   }
 
   ngAfterViewInit() {
@@ -70,7 +68,10 @@ export class GlobeComponent implements AfterViewInit {
     this.createMesh();
 
     this.animate();
+
     this.changeCountry();
+
+
   }
 
 
@@ -94,7 +95,7 @@ export class GlobeComponent implements AfterViewInit {
   configCamera() {
     this.camera.aspect = this.calculateAspectRatio();
     this.camera.updateProjectionMatrix();
-	  this.camera.position.set( 30, 0, 0 );
+	  this.camera.position.set( 40, 0, 0 );
 	  this.camera.lookAt( this.scene.position );
   }
 
@@ -142,7 +143,7 @@ export class GlobeComponent implements AfterViewInit {
     let Ebump = new THREE.TextureLoader().load('../../assets/images/earthbump4k.jpg');
     let Espec = new THREE.TextureLoader().load('../../assets/images/earthspec4k.jpg');
 
-    const sphere = new THREE.SphereGeometry(8,50,50);
+    const sphere = new THREE.SphereGeometry(10,50,50);
     const material = new THREE.MeshPhongMaterial({ 
         map : Emap,
         bumpMap : Ebump,
@@ -201,16 +202,11 @@ export class GlobeComponent implements AfterViewInit {
 
 }
 
-changeCountry() {
-  for (let i = 0; i < 50; i++) {
-
-    
-    let name :string = data[i].Country;
-    console.log(name);
-    this.addCoordinates(name, data[i].latitude, data[i].longitude);
+  changeCountry() {
+    for (let i = 0; i < this.listOfCountries.length; i++) {
+      this.addCoordinates(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude);
+    }
   }
-}
-
 
 
   @HostListener('window:resize', ['$event'])

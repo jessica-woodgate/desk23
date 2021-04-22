@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild, Input, ElementRef, HostListener } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import * as data from '../../data/countries.json';
@@ -28,6 +28,9 @@ export class GlobeComponent implements AfterViewInit {
   lightGroup!: THREE.Group;
   listOfCountries:  any  = (data  as  any).default;
 
+  raycaster!: THREE.Raycaster;
+  mouse! : THREE.Vector2;
+
   private get aspectRatio(): number {
     return this.windowWidth / this.windowHeight;
   }
@@ -44,6 +47,8 @@ export class GlobeComponent implements AfterViewInit {
     this.camera = new THREE.PerspectiveCamera(50, this.windowWidth/this.windowHeight, 0.1, 1000)
 
     this.lightGroup = new THREE.Group();
+    this.raycaster = new THREE.Raycaster();
+    this.mouse = new THREE.Vector2();
   }
 
   ngAfterViewInit() {
@@ -178,7 +183,7 @@ export class GlobeComponent implements AfterViewInit {
     let z = Math.sin(globeLatRads) * radius;
 
     //create spherical shape
-    let size = countryArea / 9000000; //size will need to be dynamically set based on the area per sqmile
+    let size = countryArea / 9000000; 
 
     if (size < 0.2) {
       size = 0.2;
@@ -191,8 +196,10 @@ export class GlobeComponent implements AfterViewInit {
 
     //set the point on the globe
     point.position.set( x, z, y );
+    point.userData.Country = country;
 
-    //this.globe.add(point);
+    //becomes a child of the globe 
+    this.globe.add(point);
 }
 
   setAllPoints() {
@@ -209,6 +216,50 @@ export class GlobeComponent implements AfterViewInit {
     this.camera.aspect = this.aspectRatio;
     this.camera.updateProjectionMatrix(); 
     this.renderer.setSize(this.windowWidth, this.windowHeight);
+  }
+
+  @HostListener('click',['$event']) 
+  onMouseClick(event : any) {
+    console.log("mouse clicked");
+    //event.preventDefault();
+
+    this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+    console.log("windowInnerWidth = " + window.innerWidth);
+    console.log("windowInnerHeight = " + window.innerHeight);/*
+    console.log("canvasWidth = " + this.canvas.clientWidth);
+    console.log("canvasHeight = " + this.canvas.clientHeight);
+    console.log("normalWidth = " + this.windowWidth);
+    console.log("normalHeight = " + this.windowHeight); */
+
+    //console.log(this.globe.children);
+
+    console.log("event x = " + event.clientX);
+    console.log("event y = " + event.clientY);
+
+
+    console.log("mouse x = " + this.mouse.x);
+    console.log("mouse y = " + this.mouse.y);
+
+
+    this.raycaster.setFromCamera(this.mouse, this.camera);
+
+    const intersects = this.raycaster.intersectObjects(this.globe.children);
+
+    if (intersects.length == 0) {
+      console.log("intersects is empty!");
+    }
+
+    for (let i = 0; i < intersects.length; i++) {
+      console.log("intersected");
+      console.log(intersects[0]);
+      //@ts-ignore
+      intersects[ i ].object.material.color.set( 0xff0000 );
+    }
+
+    //this.render();
+
   }
 
 }

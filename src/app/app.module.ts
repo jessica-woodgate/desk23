@@ -7,18 +7,12 @@ import {ChartsModule} from 'ng2-charts';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {BarChartComponent} from './bar-chart/bar-chart.component';
-import {DoughnutChartComponent} from './doughnut-chart/doughnut-chart.component';
-import {RadarChartComponent} from './radar-chart/radar-chart.component';
-import {PieChartComponent} from './pie-chart/pie-chart.component';
+import { D3GlobeComponent } from './d3-globe/d3-globe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BarChartComponent,
-    DoughnutChartComponent,
-    RadarChartComponent,
-    PieChartComponent
+    D3GlobeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,4 +24,5 @@ import {PieChartComponent} from './pie-chart/pie-chart.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
 }

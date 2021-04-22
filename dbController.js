@@ -141,18 +141,16 @@ exports.linkCoordinatesLiteracyRates = function(entity){
       if(err){
          console.log(err);
       }else{
-         console.log(results1);
-         console.log('results id: '+results1[0].toObject()._id);
-         console.log('results entity: '+results1[0].toObject().Entity);
-         console.log('results languages: '+results1[0].toObject().Languages);
-         /*LiteracyModelLink.find({Entity: new RegExp(results1.Entity, 'i')}, function(err, results2){
+         //get entity from coordinates query result and find literacy rates
+         var entityResult = results1[0].toObject().Entity;
+         LiteracyModelLink.find({Entity: new RegExp(entityResult.toString(), 'i')}, function(err, results2){
             if(err){
                console.log(err);
             }else{
                console.log(results1);
                console.log(results2);
             }
-         })*/
+         })
       }
    })
 };

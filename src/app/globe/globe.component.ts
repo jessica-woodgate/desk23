@@ -130,6 +130,22 @@ export class GlobeComponent implements AfterViewInit {
     this.globe = new THREE.Mesh(sphere, material);
     this.scene.add(this.globe);
 
+    this.createCountryNames();
+
+  }
+
+  createCountryNames() {
+    let Cmap = new THREE.TextureLoader().load('../../assets/images/WorldMap.png');
+    const sphere = new THREE.SphereGeometry(10.2,50,50);
+    const material = new THREE.MeshPhongMaterial({
+        map : Cmap,
+        transparent: true,
+        opacity : 1});
+
+    let countryNames = new THREE.Mesh(sphere, material);
+
+    this.scene.add(countryNames);
+    
   }
 
   animate() {
@@ -176,7 +192,7 @@ export class GlobeComponent implements AfterViewInit {
     //set the point on the globe
     point.position.set( x, z, y );
 
-    this.globe.add(point);
+    //this.globe.add(point);
 }
 
   setAllPoints() {

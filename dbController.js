@@ -137,11 +137,22 @@ exports.findCoordinateByEntity = function(entity){
 *****/
 
 exports.linkCoordinatesLiteracyRates = function(entity){
-   CoordinatesModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
+   CoordinatesModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results1){
       if(err){
          console.log(err);
       }else{
-         console.log(results);
+         console.log(results1);
+         console.log('results id: '+results1[0].toObject()._id);
+         console.log('results entity: '+results1[0].toObject().Entity);
+         console.log('results languages: '+results1[0].toObject().Languages);
+         /*LiteracyModelLink.find({Entity: new RegExp(results1.Entity, 'i')}, function(err, results2){
+            if(err){
+               console.log(err);
+            }else{
+               console.log(results1);
+               console.log(results2);
+            }
+         })*/
       }
    })
 };

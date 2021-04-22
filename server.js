@@ -33,7 +33,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
 
-dbController.linkCoordinatesLiteracyRates('Afghanistan');
+dbController.LiteracyRatesFromCoordinates('Afghanistan');
 
 /**
  * Get port from environment and store in Express.

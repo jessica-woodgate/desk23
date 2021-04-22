@@ -27,7 +27,7 @@ exports.createLiteracyRates = function(req, res) {
    })
 };
 
-//list contents of database
+//list contents of database, send to router
 exports.listLiteracyRates = function(req, res) {
    LiteracyModelLink.find({}, function(err, literacyRates){
       if(err){
@@ -43,6 +43,7 @@ exports.removeLiteracyModel = function(cb){
       if(err){
          console.log(err);
       }else{
+         //will show how many items were deleted
          console.log(result);
       }
    });
@@ -102,7 +103,7 @@ exports.findLiteracyByEntityYear = function(entity, year){
 /*****
    controller functions for coordinates collection
 ****/
-
+//lists contents of database and sends to router
 exports.listCoordinates = function(req, res) {
    CoordinatesModelLink.find({}, function(err, coordinates){
       if(err){
@@ -136,14 +137,18 @@ exports.findCoordinateByEntity = function(entity){
    controller functions for linking coordinates and literacy rates
 *****/
 
-exports.linkCoordinatesLiteracyRates = function(entity){
-   CoordinatesModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results1){
+exports.LiteracyRatesFromCoordinates = function(entity){
+   CoordinatesModelLink.find(
+      {Entity: new RegExp(entity, 'i')},
+      function(err, results1){
       if(err){
          console.log(err);
       }else{
          //get entity from coordinates query result and find literacy rates
          var entityResult = results1[0].toObject().Entity;
-         LiteracyModelLink.find({Entity: new RegExp(entityResult.toString(), 'i')}, function(err, results2){
+         LiteracyModelLink.find(
+            {Entity: new RegExp(entityResult.toString(), 'i')},
+            function(err, results2){
             if(err){
                console.log(err);
             }else{

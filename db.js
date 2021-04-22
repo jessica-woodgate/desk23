@@ -1,11 +1,13 @@
 var async = require('async');
+//import models
 var LiteracyModel = require('./models/literacyRates');
 var CoordinatesModel = require('./models/coordinates');
 //import mongoose module
 const mongoose = require('mongoose');
+//import data files
 const crossCountryLiteracyRates = require('./crossCountryLiteracyRates');
 const coordinatesData = require('./coordinates');
-
+//set variables
 const {
   MONGO_USERNAME,
   MONGO_PASSWORD,
@@ -13,7 +15,7 @@ const {
   MONGO_PORT,
   MONGO_DB
 } = process.env;
-
+//set options in case of failure to connect to db
 const options = {
   useNewUrlParser: true,
   reconnectTries: Number.MAX_VALUE,
@@ -31,45 +33,17 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 //populating database with data - only need to call this once
-function createLiteracyRates(cb){
+function createLiteracyRates(model, data, cb){
    async.parallel([
       function(callback){
-         LiteracyModel.insertMany(crossCountryLiteracyRates);
+         model.insertMany(data);
       },
-      //checking that the data has been uploaded (remove when testing unnecessary)
-      function(callback){
-         LiteracyModel.find({}, function(err, results){
-            if(err) {
-               return console.log(err);
-            }else{
-               console.log(results);
-            }
-         })
-      }
    ],
    //optional callback
    cb);
 }
 
-function createCoordinates(cb){
-   async.parallel([
-      function(callback){
-         CoordinatesModel.insertMany(coordinatesData);
-      },
-      function(callback){
-         CoordinatesModel.find({}, function(err, results){
-            if(err) {
-               return console.log(err);
-            }else{
-               console.log(results);
-            }
-         })
-      }
-   ])
-}
-
 async.series([
-   //createCoordinates
 ],
 //optional callback
 function(err, results) {
@@ -82,5 +56,6 @@ function(err, results) {
    //mongoose.connection.close();
 });
 
+//exporting and labelling models so we can use them in other files
 module.exports.LiteracyModel = LiteracyModel;
 module.exports.CoordinatesModel = CoordinatesModel;

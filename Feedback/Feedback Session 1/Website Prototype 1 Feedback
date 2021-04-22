@@ -1,0 +1,30 @@
+Prototype – See Draft 1 in Adobe XD
+Feedback on 23/02/2021
+
+How the session was conducted:
+The two users were thrown in the deep end. Provided with limited information of the project’s scope and outline. The users did not know what to expect or what the purpose of the website was. The users were guided through the first 3 canvases as they do not offer any animations / interactive abilities yet. After guiding them through the first 3 canvases, the were able to properly interact with the remaining slides (containing the globe and slider). Technical difficulties e.g. the globe accidentally zooming in at times were explained and were to be ignored (as this is merely a prototype and not a fully working system). 
+
+After using the system and playing around with various movements (for the interactive parts), the interviewer explained to them the project brief and outline I.e. Serious Play – developing a single-page web application for raising awareness around literacy rates. 
+
+Please note that the below feedback has been processed – as such, duplicated feedback has been removed. 
+
+User 1: 
+Interviewer’s Observations 	User’s Feedback
+User understood how to operate the globe.	Initial thought is that it is far too simple. 
+User understood the slider – did not understand what the slider was for.	Lacking vibrant colours, nothing stands out. 
+User did not understand the purpose of the book and the letters being rearranged.	Background is quite plain looking. 
+	What is the point of scrambling and unscrambling letters / words? 
+	What if I don’t know the name of a country – how might I find it? 
+
+User 2: 
+Interviewer’s Observations 	User’s Feedback
+User found the scrambled to unscrambled letters funny – did not deem it effective (but perhaps was playful?)	What kind of information am I looking for here? Unclear what the outcomes should be.
+Was clicking everywhere (a bit too much!). Perhaps it was not evident that the globe needs to be dragged around – directional arrows may be helpful.	Supposed to raise awareness – might do well with a comparison feature. 
+	Unclear where certain countries start / end – a more detailed map would be useful. 
+
+Potential Areas to improve:
+1.	Introduce arrows to guide the user e.g., rotation arrows showing that the globe can spin. 
+a.	Even a brief tutorial to how to use the website – would be effective if our target audience is children. 
+2.	Use gradients and more interesting background colours – need things to be vibrant and pop out. 
+a.	Black and gold / yellow seem to be common themes and strong contrasting colours. Black and red is another shout. 
+3.	Have more information at the start explaining the scrambled words e.g., a short intro sentence asking: “What if you were unable to read?”.

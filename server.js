@@ -6,12 +6,14 @@ const http = require('http');
 const bodyParser = require('body-parser');
 
 // Setup database
-const db = require('./db')
-
+const db = require('./db');
+//get access to dbController functions
+const dbController = require('./dbController');
 // Get our API routes (this folder will store all our API handlers - response methods)
 const api = require('./server/routes/api');
 //get database routes
-const literacyRates = require('./server/routes/literacyRates.js');
+const literacyRatesRoutes = require('./server/routes/literacyRates.js');
+const coordinatesRoutes = require('./server/routes/coordinates.js');
 //initialise express
 const app = express();
 app.use(...);
@@ -39,13 +41,16 @@ app.use(express.static(path.join(__dirname, 'dist/LiteracyRates')));
 // Set our api routes
 app.use('/api', api);
 //set our database routes
-app.use('/literacyRates', literacyRates);
+app.use('/literacyRates', literacyRatesRoutes);
+app.use('/coordinates', coordinatesRoutes);
 
 // Catch all other routes and return the index file (sits within distribution folder)
 // Index is our SPA - programatically serving the files
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
+
+dbController.LiteracyRatesFromCoordinates('Afghanistan');
 
 /**
  * Get port from environment and store in Express.

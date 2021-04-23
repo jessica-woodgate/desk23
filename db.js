@@ -1,9 +1,13 @@
 var async = require('async');
+//import models
 var LiteracyModel = require('./models/literacyRates');
+var CoordinatesModel = require('./models/coordinates');
 //import mongoose module
 const mongoose = require('mongoose');
+//import data files
 const crossCountryLiteracyRates = require('./crossCountryLiteracyRates');
-
+const coordinatesData = require('./coordinates');
+//set variables
 const {
   MONGO_USERNAME,
   MONGO_PASSWORD,
@@ -11,7 +15,7 @@ const {
   MONGO_PORT,
   MONGO_DB
 } = process.env;
-
+//set options in case of failure to connect to db
 const options = {
   useNewUrlParser: true,
   reconnectTries: Number.MAX_VALUE,
@@ -28,39 +32,30 @@ var db = mongoose.connection;
 //bind connection to error event
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-//populating database with data
-function createLiteracyRates(cb){
+//populating database with data - only need to call this once
+function createLiteracyRates(model, data, cb){
    async.parallel([
       function(callback){
-         LiteracyModel.insertMany(crossCountryLiteracyRates);
+         model.insertMany(data);
       },
-      //checking that the data has been uploaded (remove when testing unnecessary)
-      function(callback){
-         LiteracyModel.find({}, function(err, results){
-            if(err) {
-               return handleError(err)
-            }else{
-               console.log(results);
-            }
-         })
-      }
    ],
    //optional callback
    cb);
 }
 
 async.series([
-   createLiteracyRates,
 ],
 //optional callback
 function(err, results) {
    if(err){
       console.log('FINAL ERR: '+err);
-   }else{
+   }/*else{
       console.log('LiteracyRates: '+results);
-   }
+   }*/
    // All done, disconnect from database
    //mongoose.connection.close();
 });
 
-module.exports = LiteracyModel;
+//exporting and labelling models so we can use them in other files
+module.exports.LiteracyModel = LiteracyModel;
+module.exports.CoordinatesModel = CoordinatesModel;

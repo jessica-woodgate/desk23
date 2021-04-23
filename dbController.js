@@ -154,6 +154,9 @@ exports.LiteracyRatesFromCoordinates = function(entity){
             }else{
                console.log(results1);
                console.log(results2);
+               //returns literacy rates - to access each field do something like:
+               //results1[0].toObject().Entity
+               return results2;
             }
          })
       }

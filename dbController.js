@@ -34,6 +34,7 @@ exports.listLiteracyRates = function(req, res) {
          return res.send(500, err);
       }
       res.send(literacyRates);
+      console.log(literacyRates);
    });
 };
 

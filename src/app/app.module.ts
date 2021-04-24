@@ -7,12 +7,14 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import { GlobeComponent } from './globe/globe.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GlobeComponent,
-    TutorialComponent
+    TutorialComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

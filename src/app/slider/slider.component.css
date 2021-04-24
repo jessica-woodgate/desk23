@@ -1,0 +1,22 @@
+* {
+    color: white;
+}
+#slider {
+    justify-items: center;
+    align-content: center;
+    /*display: none; changed from flex*/
+    flex-direction: column;
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 5%;
+    border-color: 0x00ff00;
+    background-color: black;
+    opacity: 80%;
+    position: absolute;
+    right: 50vh;
+    bottom: 2vh; 
+    width: 50vw;
+    height: 5vh;
+    font-size: 9pt;
+    font-style: normal;
+}

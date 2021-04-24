@@ -3,8 +3,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 import {DataService} from './data.service';
 
-import {ChartsModule} from 'ng2-charts';
-
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import { GlobeComponent } from './globe/globe.component';
@@ -17,8 +15,7 @@ import { GlobeComponent } from './globe/globe.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
-    ChartsModule
+    AppRoutingModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

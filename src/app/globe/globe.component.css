@@ -1,3 +1,6 @@
+* {
+  color : white;
+}
 canvas {
     display: block; /* N.B. important for canvas to fit host */
     margin: auto;
@@ -7,4 +10,38 @@ canvas {
   }
   h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #displayLiteracyRates {
+    justify-items: center;
+    align-content: center;
+    /*display: none; changed from flex*/
+    flex-direction: column;
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 5%;
+    border-color: 0x00ff00;
+    background-color: black;
+    opacity: 80%;
+    position: absolute;
+    /* right: 5vh;
+    bottom: 45vh; */
+    width: 15vw;
+    height: 20vh;
+    font-size: 9pt;
+    font-style: normal;
+  }
+
+  #displayCountryName {
+    margin-top: 5%;
+    justify-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 75%;
+    height: 15;
+    border: inset;
+    border-color: burlywood;
+    border-radius: 5%;
+    margin-bottom: 1%;
   }

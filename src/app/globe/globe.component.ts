@@ -10,10 +10,16 @@ import * as data from '../../data/countries.json';
 })
 
 export class GlobeComponent implements AfterViewInit {
-  //'canvas' refers to the one established in the html file 
-  //canvasRef is the variable we are using
+  //'globeCanvas' refers to the one established in the html file 
+  //cReference is the variable we are using
   //ViewChild basically sets up where the canvas element is
-  @ViewChild('canvas') cReferemce!: ElementRef;
+  @ViewChild('globeCanvas') cReference!: ElementRef;
+
+  countryName! : string | null;
+  displayType! : string;
+
+  top! : string;
+  left! : string;
 
   renderer = new THREE.WebGLRenderer;
   scene : THREE.Scene;
@@ -36,7 +42,7 @@ export class GlobeComponent implements AfterViewInit {
   }
 
   private get canvas(): HTMLCanvasElement {
-    return this.cReferemce.nativeElement;
+    return this.cReference.nativeElement;
   }
 
   constructor() {
@@ -49,6 +55,12 @@ export class GlobeComponent implements AfterViewInit {
     this.lightGroup = new THREE.Group();
     this.raycaster = new THREE.Raycaster();
     this.mouse = new THREE.Vector2();
+
+    this.countryName = null;
+    this.displayType = "none";
+
+    this.top = "0px";
+    this.left = "0px";
   }
 
   ngAfterViewInit() {
@@ -78,7 +90,7 @@ export class GlobeComponent implements AfterViewInit {
       '../../assets/images/space_back.png',
     ])
 
-    this.scene.background = skyBox;
+    this.scene.background = skyBox; 
   }
 
   setCamera() {
@@ -221,27 +233,10 @@ export class GlobeComponent implements AfterViewInit {
   @HostListener('click',['$event']) 
   onMouseClick(event : any) {
     console.log("mouse clicked");
-    //event.preventDefault();
+    event.preventDefault();
 
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-    console.log("windowInnerWidth = " + window.innerWidth);
-    console.log("windowInnerHeight = " + window.innerHeight);/*
-    console.log("canvasWidth = " + this.canvas.clientWidth);
-    console.log("canvasHeight = " + this.canvas.clientHeight);
-    console.log("normalWidth = " + this.windowWidth);
-    console.log("normalHeight = " + this.windowHeight); */
-
-    //console.log(this.globe.children);
-
-    console.log("event x = " + event.clientX);
-    console.log("event y = " + event.clientY);
-
-
-    console.log("mouse x = " + this.mouse.x);
-    console.log("mouse y = " + this.mouse.y);
-
 
     this.raycaster.setFromCamera(this.mouse, this.camera);
 
@@ -249,13 +244,29 @@ export class GlobeComponent implements AfterViewInit {
 
     if (intersects.length == 0) {
       console.log("intersects is empty!");
+      this.displayType = "none";
+      this.countryName = null;
     }
 
     for (let i = 0; i < intersects.length; i++) {
       console.log("intersected");
       console.log(intersects[0]);
+
+      //show the textbox 
+      this.displayType = "flex";
+
+      //position the textbox 
+      this.top = (event.clientY - 100) + 'px';
+      
+      this.left = (event.clientX + 20) + 'px';
+      
+
+      console.log("top is " + this.top);
+      console.log("left is : " + this.left);
+
       //@ts-ignore
       intersects[ i ].object.material.color.set( 0xff0000 );
+      this.countryName = intersects[i].object.userData.Country;
     }
 
     //this.render();

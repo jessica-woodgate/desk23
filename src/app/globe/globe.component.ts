@@ -210,6 +210,8 @@ export class GlobeComponent implements AfterViewInit {
     point.position.set( x, z, y );
     point.userData.Country = country;
 
+    //point.visible = false;
+
     //becomes a child of the globe 
     this.globe.add(point);
 }
@@ -265,8 +267,8 @@ export class GlobeComponent implements AfterViewInit {
       console.log("left is : " + this.left);
 
       //@ts-ignore
-      intersects[ i ].object.material.color.set( 0xff0000 );
-      this.countryName = intersects[i].object.userData.Country;
+      intersects[ 0 ].object.material.color.set( 0xff0000 );
+      this.countryName = intersects[0].object.userData.Country;
     }
 
     //this.render();

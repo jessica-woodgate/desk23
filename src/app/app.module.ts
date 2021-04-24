@@ -6,11 +6,13 @@ import {DataService} from './data.service';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import { GlobeComponent } from './globe/globe.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GlobeComponent
+    GlobeComponent,
+    TutorialComponent
   ],
   imports: [
     BrowserModule,

@@ -96,7 +96,7 @@ export class GlobeComponent implements AfterViewInit {
   setCamera() {
     this.camera.aspect = this.aspectRatio;
     this.camera.updateProjectionMatrix();
-	  this.camera.position.set( 40, 0, 0 );
+	  this.camera.position.set( 30, 0, 0 ); //changed from 40 to 30
 	  this.camera.lookAt( this.scene.position );
   }
 

@@ -1,0 +1,18 @@
+
+<div id = "showTut">
+    <button (click)="showTutorial()">Show Tutorial</button>
+    <button (click)="hideTutorial()">Hide Tutorial</button>
+</div>
+
+<div id = "spinLeftOrRight" *ngIf = "tutorialShown">
+    Spin the globe in any direction by clicking and dragging!
+</div>
+
+<div id = "moveSlider" *ngIf = "tutorialShown" >
+    Drag the slider left or right to change which year we are currently in
+</div>
+
+
+<div id = "clickCountry" *ngIf = "tutorialShown">
+    Click on the name of a country to view its literacy rates
+</div>

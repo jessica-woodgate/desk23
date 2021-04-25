@@ -20,7 +20,8 @@ services:
 
     networks:
       - app-network
-    command: ./wait-for.sh db:27017 -- /home/node/app/node_modules/.bin/nodemon server.js
+    command: ls
+#    command: ./wait-for.sh db:27017 -- /home/node/app/node_modules/.bin/nodemon server.js
 
   db:
     image: mongo:4.1.8-xenial
@@ -42,3 +43,6 @@ networks:
 volumes:
   dbdata:
  
+
+
+

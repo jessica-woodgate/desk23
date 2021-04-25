@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-d3-globe',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./d3-globe.component.css']
 })
 export class D3GlobeComponent implements OnInit {
-  
+  @ViewChild('mapContainer') cReference!: ElementRef; 
   constructor() { }
 
   ngOnInit() {
+
+    let width = 960;
+    let height = 960; 
   }
 
 }

@@ -96,7 +96,7 @@ export class GlobeComponent implements AfterViewInit {
   setCamera() {
     this.camera.aspect = this.aspectRatio;
     this.camera.updateProjectionMatrix();
-	  this.camera.position.set( 30, 0, 0 ); //changed from 40 to 30
+	  this.camera.position.set( 35, 0, 0 ); //changed from 40 to 30
 	  this.camera.lookAt( this.scene.position );
   }
 
@@ -122,7 +122,8 @@ export class GlobeComponent implements AfterViewInit {
   }
 
   createLightGroup() {
-    this.mainLight = new THREE.SpotLight( 0xffffff );
+   // this.mainLight = new THREE.PointLight( 0xffffff, 2, 50 );
+    this.mainLight = new THREE.AmbientLight( 0xffffff);
 	  this.mainLight.position.set( 0, 0, 50 );
     this.lightGroup.add(this.mainLight);
     this.scene.add(this.lightGroup);
@@ -201,19 +202,27 @@ export class GlobeComponent implements AfterViewInit {
       size = 0.2;
     }
 
-    let poi = new THREE.SphereGeometry(size,32,32);    
+    //adding the spherical point
+   /*  let poi = new THREE.SphereGeometry(size,32,32);    
     let pointMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
     let point = new THREE.Mesh(poi, pointMaterial); 
-
-
     //set the point on the globe
     point.position.set( x, z, y );
     point.userData.Country = country;
-
     //point.visible = false;
-
     //becomes a child of the globe 
-    this.globe.add(point);
+    this.globe.add(point); */
+
+    //let's try the above but with cuboids set perpendicular to the globe's surface
+    //credit: https://stackoverflow.com/questions/51800598/threejs-make-meshes-perpendicular-to-the-sphere-face-its-sitting-on
+    let poi2 = new THREE.CylinderGeometry(0.1,0.1,5,64);
+    poi2.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI/2));
+    let poi2Material = new THREE.MeshBasicMaterial({color:0x00ff00});
+    let point2 = new THREE.Mesh(poi2, poi2Material);
+    point2.position.set( x, z, y);
+    point2.lookAt(0,0,0);
+    point2.userData.Country = country;
+    this.globe.add(point2);
 }
 
   setAllPoints() {

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
+  currentYear: number = 2015;
+
   constructor() { }
 
   ngOnInit(): void {

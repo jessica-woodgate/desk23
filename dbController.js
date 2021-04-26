@@ -30,7 +30,7 @@ exports.list = function(req, res) {
    });
 };
 
-// Retrieve all LiteracyRate data from the database by Entity.
+// Find all LiteracyRate data by Entity.
 exports.findAll = (req, res) => {
     const entity = req.query.entity;
     var condition = entity ? { entity: { $regex: new RegExp(entity), $options: "i" } } : {};

@@ -15,15 +15,25 @@ router.get('/', function (req, res) {
 */
 
 // Retrieve all Data
-router.get("/", dbController.findAll);
+router.get("/", function (req, res, next) {
+  dbController.findAll(req, res, next);
+});
 
-router.get("/", dbController.FindCode);
+router.get("/", function (req, res, next) {
+  dbController.FindCode(req, res, next);
+});
 
-router.get("/", dbController.FindYear);
+router.get("/", function (req, res, next) {
+  dbController.FindYear(req, res, next);
+});
 
-router.get("/", dbController.findOne);
+router.get("/", function (req, res, next) {
+  dbController.FindCodeYear(req, res, next);
+});
 
-router.get("/", dbController.FindCodeYear);
+router.get("/", function (req, res, next) {
+  dbController.FindEntityYear(req, res, next);
+});
 
-router.get("/", dbController.FindEntityYear);
+
 module.exports = router;

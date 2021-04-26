@@ -11,8 +11,10 @@ export class D3GlobeComponent implements OnInit {
   @ViewChild('mapContainer') cReference!: ElementRef; 
   constructor() { }
 
-  ngOnInit() {
-
+   ngOnInit() {
+      this.procMap();
+   } 
+   procMap(){
    let width = 960;
    let height = 960; 
    let sensitivity = 100;
@@ -23,7 +25,6 @@ export class D3GlobeComponent implements OnInit {
    .rotate([0,-30])
    .translate([width/2 , height/2]);
    const initialScale = projection.scale();
-   var path = d3.geoPath().projection(projection);
    
    let svg = d3.select("#mapContainer")
    .append("svg")
@@ -38,7 +39,7 @@ export class D3GlobeComponent implements OnInit {
     .attr("cx", width/2)
     .attr("cy", height/2)
     .attr("r", initialScale);
-  
+    var path = d3.geoPath().projection(projection);
     const graticule = d3.geoGraticule();
    
     svg.append("path")
@@ -48,17 +49,18 @@ export class D3GlobeComponent implements OnInit {
       .attr('fill', 'none')
       .attr('stroke', '#cccccc')
       .attr('stroke-width', '0.5px');
+      
 
       var map = svg.append("g");
-
-      d3.json(jsonTarget)
-      .then(data => {
-          const countries = topojson.feature(data, data.objects.countries);
+      d3.json("countries.json")
+      .then(function (data: any) {
+         console.log(data.feature);  
+         var countries = topojson.feature(data, data.objects.countries);
           map.append("g");
           map.selectAll('path').data(countries.features)
           .enter().append('path')
           .attr('class', 'country')
-          .attr('d', 'path')
+          .attr('d', path)
           .append('title')
           .text(data => data.properties.name); 
       });

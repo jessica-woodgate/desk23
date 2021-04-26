@@ -48,7 +48,8 @@ exports.findAll = (req, res) => {
 
 //Find Literacy by Code
 exports.FindCode = (req, res) => {
-  var condition = Code: code : {};
+  const code = req.query.code;
+  var condition = code ? { code: { $regex: new RegExp(code), $options: "i" } } : {};
   LiteracyModelLink.find(condition)
     .then(Data => {
       res.send(Data);
@@ -63,7 +64,8 @@ exports.FindCode = (req, res) => {
 
 //Find Literacy by year
 exports.FindYear = (req, res) => {
-  var condition = Year : year: {};
+  const year = req.query.year;
+  var condition = year ? { year: { $regex: new RegExp(year), $options: "i" } } : {};
   LiteracyModelLink.find(condition)
     .then(Data => {
       res.send(Data);
@@ -78,8 +80,8 @@ exports.FindYear = (req, res) => {
 
 // Find specific LiteracyRate Data with Entity
 exports.findOne = (req, res) => {
-  const id = req.params.entity;
-  LiteracyModelLink.findById(id)
+  const entity = req.params.entity;
+  LiteracyModelLink.find(entity)
     .then(Data => {
       if (!Data)
         res.status(404).send({ message: "Literacy Rates not found with Entity " + Entity });
@@ -95,7 +97,7 @@ exports.findOne = (req, res) => {
 
 //Find Literacy data with code & year
 exports.FindCodeYear = (req, res) => {
-  var condition = Code : code, Year: year : {};
+  var condition = {code : code, year: year};
   LiteracyModelLink.find(condition)
     .then(Data => {
       res.send(Data);
@@ -110,7 +112,7 @@ exports.FindCodeYear = (req, res) => {
 
 //Find By Entity & year
 exports.FindEntityYear = (req, res) => {
-  var condition = Entity: entity, Year: year : {};
+  var condition = { entity : entity, year: year };
   LiteracyModelLink.find(condition)
     .then(Data => {
       res.send(Data);

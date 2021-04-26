@@ -29,3 +29,96 @@ exports.list = function(req, res) {
       res.send(literacyRates);
    });
 };
+
+// Retrieve all LiteracyRate data from the database by Entity.
+exports.findAll = (req, res) => {
+    const entity = req.query.entity;
+    var condition = entity ? { entity: { $regex: new RegExp(entity), $options: "i" } } : {};
+  LiteracyModelLink.find(condition)
+        .then(data => {
+            res.send(Data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Unable to retrieving Entity."
+            });
+        });
+};
+
+//Find Literacy by Code
+exports.FindCode = (req, res) => {
+  var condition = Code: code : {};
+  LiteracyModelLink.find(condition)
+    .then(Data => {
+      res.send(Data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Unable to retrieving Entity by code."
+      });
+    });
+};
+
+//Find Literacy by year
+exports.FindYear = (req, res) => {
+  var condition = Year : year: {};
+  LiteracyModelLink.find(condition)
+    .then(Data => {
+      res.send(Data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Unable to retrieving Entity by year."
+      });
+    });
+};
+
+// Find specific LiteracyRate Data with Entity
+exports.findOne = (req, res) => {
+  const id = req.params.entity;
+  LiteracyModelLink.findById(id)
+    .then(Data => {
+      if (!Data)
+        res.status(404).send({ message: "Literacy Rates not found with Entity " + Entity });
+      else res.send(Data);
+    })
+    .catch(err => {
+      res
+        .status(500)
+        .send({ message: "Error retrieving Literacy Rates with Entity" + Entity });
+    });
+};
+
+
+//Find Literacy data with code & year
+exports.FindCodeYear = (req, res) => {
+  var condition = Code : code, Year: year : {};
+  LiteracyModelLink.find(condition)
+    .then(Data => {
+      res.send(Data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Unable to retrieving Entity by code and year."
+      });
+    });
+};
+
+//Find By Entity & year
+exports.FindEntityYear = (req, res) => {
+  var condition = Entity: entity, Year: year : {};
+  LiteracyModelLink.find(condition)
+    .then(Data => {
+      res.send(Data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Unable to retrieving Entity by Entity and Year."
+      });
+    });
+};

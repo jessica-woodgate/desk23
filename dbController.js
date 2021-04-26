@@ -90,9 +90,10 @@ exports.findLiteracyByEntity = function (entity){
    console.log('entity: '+entity);
    LiteracyModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
       if(err){
-         return handleError(err)
+         return handleError(err);
       }else{
-         console.log(results)
+         console.log(results);
+         return results;
       }
    });
 };
@@ -100,9 +101,10 @@ exports.findLiteracyByEntity = function (entity){
 exports.findLiteracyByCode = function(code){
    LiteracyModelLink.find({Code: code}, function(err, results){
       if(err){
-         return handleError(err)
+         return handleError(err);
       }else{
-         console.log(results)
+         console.log(results);
+         return results;
       }
    });
 };
@@ -110,9 +112,10 @@ exports.findLiteracyByCode = function(code){
 exports.findLiteracyByYear = function(year){
    LiteracyModelLink.find({Year: year}, function(err, results){
       if(err){
-         return handleError(err)
+         return handleError(err);
       }else{
-         console.log(results)
+         console.log(results);
+         return results;
       }
    });
 };
@@ -120,9 +123,10 @@ exports.findLiteracyByYear = function(year){
 exports.findLiteracyByCodeYear = function(code, year){
    LiteracyModelLink.find({Code: code, Year: year}, function(err, results){
       if(err){
-         return handleError(err)
+         console.log(err);
       }else{
-         console.log(results)
+         console.log(results);
+         return results;
       }
    });
 };
@@ -130,9 +134,10 @@ exports.findLiteracyByCodeYear = function(code, year){
 exports.findLiteracyByEntityYear = function(entity, year){
    LiteracyModelLink.find({Entity: entity, Year: year}, function(err, results){
       if(err){
-         return handleError(err)
+         console.log(err);
       }else{
-         console.log(results)
+         console.log(results);
+         return results;
       }
    });
 };
@@ -151,11 +156,12 @@ exports.listCoordinates = function(req, res) {
 };
 
 exports.removeCoordinatesModel = function(cb){
-   CoordinatesModelLink.remove({}, function(err, result){
+   CoordinatesModelLink.remove({}, function(err, results){
       if(err){
          console.log(err);
       }else{
-         console.log(result);
+         console.log(results);
+         return results;
       }
    });
 };
@@ -166,6 +172,7 @@ exports.findCoordinateByEntity = function(entity){
          console.log(err);
       }else{
          console.log(results);
+         return results;
       }
    })
 };

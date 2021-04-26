@@ -1,6 +1,7 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import * as d3 from "d3"; 
-import * as topojson from "topojson-client";
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import * as d3 from 'd3';
+import * as topojson from 'topojson-client';
+import * as countriesData from './countries';
 
 @Component({
   selector: 'app-d3-globe',
@@ -8,62 +9,63 @@ import * as topojson from "topojson-client";
   styleUrls: ['./d3-globe.component.css']
 })
 export class D3GlobeComponent implements OnInit {
-  @ViewChild('mapContainer') cReference!: ElementRef; 
-  constructor() { }
+  @ViewChild('mapContainer') cReference!: ElementRef;
 
-   ngOnInit() {
-      this.procMap();
-   } 
-   procMap(){
-   let width = 960;
-   let height = 960; 
-   let sensitivity = 100;
-   const jsonTarget = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+  constructor() {
+  }
 
-   var projection = d3.geoOrthographic()
-   .scale(300)
-   .rotate([0,-30])
-   .translate([width/2 , height/2]);
-   const initialScale = projection.scale();
-   
-   let svg = d3.select("#mapContainer")
-   .append("svg")
-   .attr("width", width)
-   .attr("height", height);
+  ngOnInit() {
+    this.procMap();
+  }
 
-  let globe = svg.append("circle")
-    .attr("id", "globe")  
-    .attr("fill", "")
-    .attr("stroke", "")
-    .attr("stroke-width", "")
-    .attr("cx", width/2)
-    .attr("cy", height/2)
-    .attr("r", initialScale);
+  procMap() {
+    let width = 960;
+    let height = 960;
+    let sensitivity = 100;
+    const jsonTarget = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
+
+    var projection = d3.geoOrthographic()
+      .scale(300)
+      .rotate([0, -30])
+      .translate([width / 2, height / 2]);
+    const initialScale = projection.scale();
+
+    let svg = d3.select('#mapContainer')
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height);
+
+    let globe = svg.append('circle')
+      .attr('id', 'globe')
+      .attr('fill', '')
+      .attr('stroke', '')
+      .attr('stroke-width', '')
+      .attr('cx', width / 2)
+      .attr('cy', height / 2)
+      .attr('r', initialScale);
     var path = d3.geoPath().projection(projection);
     const graticule = d3.geoGraticule();
-   
-    svg.append("path")
+
+    svg.append('path')
       .datum(graticule())
-      .attr("class", "graticule")
-      .attr("d", path)
+      .attr('class', 'graticule')
+      .attr('d', path)
       .attr('fill', 'none')
       .attr('stroke', '#cccccc')
       .attr('stroke-width', '0.5px');
-      
 
-      var map = svg.append("g");
-      d3.json("countries.json")
-      .then(function (data: any) {
-         console.log(data.feature);  
-         var countries = topojson.feature(data, data.objects.countries);
-          map.append("g");
-          map.selectAll('path').data(countries.features)
-          .enter().append('path')
-          .attr('class', 'country')
-          .attr('d', path)
-          .append('title')
-          .text(data => data.properties.name); 
-      });
+
+    var map = svg.append('g');
+    const countries: any = topojson.feature(countriesData, countriesData.objects.countries);
+    map.append('g');
+    // @ts-ignore
+    map.selectAll('path').data(countries.features)
+      .enter().append('path')
+      .attr('style', 'fill: #ffffff')
+      .attr('class', 'country')
+      .attr('d', path)
+      .append('title')
+      .text((d: any) => d.properties.name);
   }
 
 }

@@ -40,7 +40,7 @@ LiteracyRatesSchema
 .virtual('url')
 .get(function(){
    return '/catalog/literacyRates'+this._id;
-})
+});
 
 // Compile model from schema & export
 module.exports = mongoose.model('LiteracyModel', LiteracyRatesSchema);

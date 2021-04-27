@@ -35,8 +35,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
 
-
 //dbController.removeLiteracyModel();
+//dbController.findLiteracyByEntity("Afghanistan");
 
 /**
  * Get port from environment and store in Express.

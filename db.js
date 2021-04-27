@@ -2,6 +2,8 @@ var async = require('async');
 //import models
 var LiteracyModel = require('./models/literacyRates');
 var CoordinatesModel = require('./models/coordinates');
+//require all models - if require whole folder, will look for index file and import that
+var db = require("./models");
 //import mongoose module
 const mongoose = require('mongoose');
 //import data files
@@ -33,7 +35,7 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 //populating database with data - only need to call this once
-function createLiteracyRates(model, data, cb){
+function populate(model, data, cb){
    async.parallel([
       function(callback){
          model.insertMany(data);
@@ -44,6 +46,7 @@ function createLiteracyRates(model, data, cb){
 }
 
 async.series([
+   populate(LiteracyModel, crossCountryLiteracyRates)
 ],
 //optional callback
 function(err, results) {

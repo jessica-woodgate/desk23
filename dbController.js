@@ -183,6 +183,8 @@ exports.findCoordinateByEntity = function(entity){
 
 exports.LiteracyRatesFromCoordinates = function(entity){
    CoordinatesModelLink.find(
+      //find entity that matches the regex of the variable passed in
+      //i for ignoring case
       {Entity: new RegExp(entity, 'i')},
       function(err, results1){
       if(err){

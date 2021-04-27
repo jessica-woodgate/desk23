@@ -9,6 +9,7 @@ var LiteracyRatesSchema = new Schema({
   Code: {type: String, required: false, maxlength: 100},
   Year: {type: Number},
   Data: {type: Number},
+  Coordinates: {type: Schema.Types.ObjectId, ref: "CoordinatesModel"}
 });
 
 //virtual for country name (like a getter)

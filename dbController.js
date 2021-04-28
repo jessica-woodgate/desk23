@@ -75,8 +75,8 @@ exports.findOne = (req, res) => {
 */
 
 //removes whole collection
-exports.removeLiteracyModel = function(cb){
-   LiteracyModelLink.remove({}, function(err, result){
+exports.removeModel = function(model, cb){
+   model.remove({}, function(err, result){
       if(err){
          console.log(err);
       }else{
@@ -86,42 +86,8 @@ exports.removeLiteracyModel = function(cb){
    });
 };
 
-exports.findLiteracyByEntity = function (entity){
-   console.log('entity: '+entity);
-   LiteracyModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
-      if(err){
-         return handleError(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   });
-};
-
-exports.findLiteracyByCode = function(code){
-   LiteracyModelLink.find({Code: code}, function(err, results){
-      if(err){
-         return handleError(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   });
-};
-
-exports.findLiteracyByYear = function(year){
-   LiteracyModelLink.find({Year: year}, function(err, results){
-      if(err){
-         return handleError(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   });
-};
-
-exports.findLiteracyByCodeYear = function(code, year){
-   LiteracyModelLink.find({Code: code, Year: year}, function(err, results){
+exports.findByEntity = function(model, entity){
+   model.find({Entity: new RegExp(entity, 'i')}, function(err, results){
       if(err){
          console.log(err);
       }else{
@@ -131,8 +97,41 @@ exports.findLiteracyByCodeYear = function(code, year){
    });
 };
 
-exports.findLiteracyByEntityYear = function(entity, year){
-   LiteracyModelLink.find({Entity: entity, Year: year}, function(err, results){
+exports.findByCode = function(model, code){
+   model.find({Code: code}, function(err, results){
+      if(err){
+         return handleError(err);
+      }else{
+         console.log(results);
+         return results;
+      }
+   });
+};
+
+exports.findByYear = function(model, year){
+   model.find({Year: year}, function(err, results){
+      if(err){
+         return handleError(err);
+      }else{
+         console.log(results);
+         return results;
+      }
+   });
+};
+
+exports.findByCodeYear = function(model, code, year){
+   model.find({Code: code, Year: year}, function(err, results){
+      if(err){
+         console.log(err);
+      }else{
+         console.log(results);
+         return results;
+      }
+   });
+};
+
+exports.findByEntityYear = function(model, entity, year){
+   model.find({Entity: entity, Year: year}, function(err, results){
       if(err){
          console.log(err);
       }else{
@@ -153,28 +152,6 @@ exports.listCoordinates = function(req, res) {
       }
       res.send(coordinates);
    });
-};
-
-exports.removeCoordinatesModel = function(cb){
-   CoordinatesModelLink.remove({}, function(err, results){
-      if(err){
-         console.log(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   });
-};
-
-exports.findCoordinateByEntity = function(entity){
-   CoordinatesModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
-      if(err){
-         console.log(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   })
 };
 
 /*****

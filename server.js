@@ -35,8 +35,12 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
 
-//dbController.removeLiteracyModel();
-//dbController.findLiteracyByEntity("Afghanistan");
+const ModelLink = require('./db.js');
+const LiteracyModelLink = ModelLink.LiteracyModel;
+const CoordinatesModelLink = ModelLink.CoordinatesModel;
+const CountryModelLink = ModelLink.CountryModel;
+
+dbController.findByEntity(CoordinatesModelLink, 'Afghanistan');
 
 /**
  * Get port from environment and store in Express.

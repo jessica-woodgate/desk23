@@ -58,6 +58,17 @@ function createLiteracyRates(cb){
    cb);
 }
 
+//populating literacy database with data - only need to call this once
+function createCoordinates(cb){
+   async.parallel([
+      function(callback){
+         CoordinatesModel.insertMany(coordinatesData)
+      },
+   ],
+   //optional callback
+   cb);
+}
+
 function checkLiteracyRates(cb){
    //checking that the data has been uploaded (remove when testing unnecessary)
    async.parallel([
@@ -78,7 +89,7 @@ function checkLiteracyRates(cb){
 function createCountryData(cb){
    async.parallel([
       function(callback){
-         CountryData.insertMany(countryData)
+         CountryModel.insertMany(countryData)
       },
    ],
    //optional callback
@@ -89,7 +100,7 @@ function checkCountryData(cb){
    //checking that the data has been uploaded (remove when testing unnecessary)
    async.parallel([
       function(callback){
-         CountryData.find({'Entity':'Afghanistan'}, function(err, results){
+         CountryModel.find({'Entity':'Afghanistan'}, function(err, results){
             if(err) {
                return handleError(err)
             }else{
@@ -102,10 +113,11 @@ function checkCountryData(cb){
 }
 
 async.series([
-   createLiteracyRates,
-   checkLiteracyRates,
+   //createLiteracyRates,
+   //checkLiteracyRates,
    //createCountryData
-   checkCountryData
+   //checkCountryData
+   //createCoordinates
 ],
 //optional callback
 function(err, results) {
@@ -121,3 +133,4 @@ function(err, results) {
 //exporting and labelling models so we can use them in other files
 module.exports.LiteracyModel = LiteracyModel;
 module.exports.CoordinatesModel = CoordinatesModel;
+module.exports.CountryModel = CountryModel;

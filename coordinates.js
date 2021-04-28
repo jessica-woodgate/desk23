@@ -1,6 +1,6 @@
 const coordinates = [
     {
-        "Country":"Afghanistan",
+        "Entity":"Afghanistan",
         "Languages":"Pashto, Dari",
         "latitude":33.93911,
         "longitude":67.709953,
@@ -11,7 +11,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Albania",
+        "Entity":"Albania",
         "Languages":"Albanian",
         "latitude":41.153332,
         "longitude":20.168331,
@@ -22,7 +22,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Algeria",
+        "Entity":"Algeria",
         "Languages":"Arabic, Tamazight",
         "latitude":28.033886,
         "longitude":1.659626,
@@ -33,7 +33,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Andorra",
+        "Entity":"Andorra",
         "Languages":"Catalan",
         "latitude":42.546245,
         "longitude":1.601554,
@@ -44,7 +44,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Angola",
+        "Entity":"Angola",
         "Languages":"Portuguese",
         "latitude":-11.202692,
         "longitude":17.873887,
@@ -55,7 +55,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Antigua & Barbuda",
+        "Entity":"Antigua & Barbuda",
         "Languages":"English ",
         "latitude":17.060816,
         "longitude":-61.796428,
@@ -66,7 +66,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Argentina",
+        "Entity":"Argentina",
         "Languages":"Spanish ",
         "latitude":-38.416097,
         "longitude":-63.616672,
@@ -77,7 +77,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Armenia",
+        "Entity":"Armenia",
         "Languages":"Armenian",
         "latitude":40.069099,
         "longitude":45.038189,
@@ -88,7 +88,7 @@ const coordinates = [
         "Climate":"4"
     },
     {
-        "Country":"Australia",
+        "Entity":"Australia",
         "Languages":"English ",
         "latitude":-25.274398,
         "longitude":133.775136,
@@ -99,7 +99,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Austria",
+        "Entity":"Austria",
         "Languages":"German",
         "latitude":47.516231,
         "longitude":14.550072,
@@ -110,7 +110,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Azerbaijan",
+        "Entity":"Azerbaijan",
         "Languages":"Azerbaijani",
         "latitude":40.143105,
         "longitude":47.576927,
@@ -121,7 +121,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Bahrain",
+        "Entity":"Bahrain",
         "Languages":"Arabic",
         "latitude":25.930414,
         "longitude":50.637772,
@@ -132,7 +132,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Bangladesh",
+        "Entity":"Bangladesh",
         "Languages":"Bengali",
         "latitude":23.684994,
         "longitude":90.356331,
@@ -143,7 +143,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Barbados",
+        "Entity":"Barbados",
         "Languages":"English",
         "latitude":13.193887,
         "longitude":-59.543198,
@@ -154,7 +154,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Belarus",
+        "Entity":"Belarus",
         "Languages":"Belarusian, Russian",
         "latitude":53.709807,
         "longitude":27.953389,
@@ -165,7 +165,7 @@ const coordinates = [
         "Climate":"4"
     },
     {
-        "Country":"Belgium",
+        "Entity":"Belgium",
         "Languages":"Dutch, French, German",
         "latitude":50.503887,
         "longitude":4.469936,
@@ -176,7 +176,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Belize",
+        "Entity":"Belize",
         "Languages":"English",
         "latitude":17.189877,
         "longitude":-88.49765,
@@ -187,7 +187,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Benin",
+        "Entity":"Benin",
         "Languages":"French",
         "latitude":9.30769,
         "longitude":2.315834,
@@ -198,7 +198,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Bhutan",
+        "Entity":"Bhutan",
         "Languages":"Dzongkha",
         "latitude":27.514162,
         "longitude":90.433601,
@@ -209,7 +209,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Bolivia",
+        "Entity":"Bolivia",
         "Languages":"Castilian, ",
         "latitude":-16.290154,
         "longitude":-63.588653,
@@ -220,7 +220,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Bosnia & Herzegovina",
+        "Entity":"Bosnia & Herzegovina",
         "Languages":"Bosnian ",
         "latitude":43.915886,
         "longitude":17.679076,
@@ -231,7 +231,7 @@ const coordinates = [
         "Climate":"4"
     },
     {
-        "Country":"Botswana",
+        "Entity":"Botswana",
         "Languages":"English, Tswana",
         "latitude":-22.328474,
         "longitude":24.684866,
@@ -242,7 +242,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Brazil",
+        "Entity":"Brazil",
         "Languages":"Portuguese",
         "latitude":-14.235004,
         "longitude":-51.92528,
@@ -253,7 +253,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Brunei",
+        "Entity":"Brunei",
         "Languages":"Malay, English",
         "latitude":4.535277,
         "longitude":114.727669,
@@ -264,7 +264,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Bulgaria",
+        "Entity":"Bulgaria",
         "Languages":"Bulgarian",
         "latitude":42.733883,
         "longitude":25.48583,
@@ -275,7 +275,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Burkina Faso",
+        "Entity":"Burkina Faso",
         "Languages":"French",
         "latitude":12.238333,
         "longitude":-1.561593,
@@ -286,7 +286,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Burundi",
+        "Entity":"Burundi",
         "Languages":"French, Kirundi, English",
         "latitude":-3.373056,
         "longitude":29.918886,
@@ -297,7 +297,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Cambodia",
+        "Entity":"Cambodia",
         "Languages":"Khmer",
         "latitude":12.565679,
         "longitude":104.990963,
@@ -308,7 +308,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Cameroon",
+        "Entity":"Cameroon",
         "Languages":"English, French",
         "latitude":7.369722,
         "longitude":12.354722,
@@ -319,7 +319,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Canada",
+        "Entity":"Canada",
         "Languages":"English ",
         "latitude":56.130366,
         "longitude":-106.346771,
@@ -330,7 +330,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Cape Verde",
+        "Entity":"Cape Verde",
         "Languages":"Portuguese",
         "latitude":16.002082,
         "longitude":-24.013197,
@@ -341,7 +341,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Chad",
+        "Entity":"Chad",
         "Languages":"Arabic, French",
         "latitude":15.454166,
         "longitude":18.732207,
@@ -352,7 +352,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Chile",
+        "Entity":"Chile",
         "Languages":"Spanish ",
         "latitude":-35.675147,
         "longitude":-71.542969,
@@ -363,7 +363,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"China",
+        "Entity":"China",
         "Languages":"Mandarin",
         "latitude":35.86166,
         "longitude":104.195397,
@@ -374,7 +374,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Colombia",
+        "Entity":"Colombia",
         "Languages":"Spanish",
         "latitude":4.570868,
         "longitude":-74.297333,
@@ -385,7 +385,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Comoros",
+        "Entity":"Comoros",
         "Languages":"Arabic, Comorian, French",
         "latitude":-11.875001,
         "longitude":43.872219,
@@ -396,7 +396,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Costa Rica",
+        "Entity":"Costa Rica",
         "Languages":"Spanish",
         "latitude":9.748917,
         "longitude":-83.753428,
@@ -407,7 +407,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Croatia",
+        "Entity":"Croatia",
         "Languages":"Croatian",
         "latitude":45.1,
         "longitude":15.2,
@@ -418,7 +418,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Cuba",
+        "Entity":"Cuba",
         "Languages":"Spanish",
         "latitude":21.521757,
         "longitude":-77.781167,
@@ -429,7 +429,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Cyprus",
+        "Entity":"Cyprus",
         "Languages":"Greek, Turkish",
         "latitude":35.126413,
         "longitude":33.429859,
@@ -440,7 +440,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Czech Republic",
+        "Entity":"Czech Republic",
         "Languages":"Czech, Slovak",
         "latitude":49.817492,
         "longitude":15.472962,
@@ -451,7 +451,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Denmark",
+        "Entity":"Denmark",
         "Languages":"Danish",
         "latitude":56.26392,
         "longitude":9.501785,
@@ -462,7 +462,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Djibouti",
+        "Entity":"Djibouti",
         "Languages":"Arabic, French",
         "latitude":11.825138,
         "longitude":42.590275,
@@ -473,7 +473,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Dominica",
+        "Entity":"Dominica",
         "Languages":"English",
         "latitude":15.414999,
         "longitude":-61.370976,
@@ -484,7 +484,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Dominican Republic",
+        "Entity":"Dominican Republic",
         "Languages":"Spanish",
         "latitude":18.735693,
         "longitude":-70.162651,
@@ -495,7 +495,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Ecuador",
+        "Entity":"Ecuador",
         "Languages":"Spanish, Quechua ",
         "latitude":-1.831239,
         "longitude":-78.183406,
@@ -506,7 +506,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Egypt",
+        "Entity":"Egypt",
         "Languages":"Arabic",
         "latitude":26.820553,
         "longitude":30.802498,
@@ -517,7 +517,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"El Salvador",
+        "Entity":"El Salvador",
         "Languages":"Spanish",
         "latitude":13.794185,
         "longitude":-88.89653,
@@ -528,7 +528,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Equatorial Guinea",
+        "Entity":"Equatorial Guinea",
         "Languages":"French, Portuguese, Spanish",
         "latitude":1.650801,
         "longitude":10.267895,
@@ -539,7 +539,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Eritrea",
+        "Entity":"Eritrea",
         "Languages":"Tigrinya",
         "latitude":15.179384,
         "longitude":39.782334,
@@ -550,7 +550,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Estonia",
+        "Entity":"Estonia",
         "Languages":"Estonian",
         "latitude":58.595272,
         "longitude":25.013607,
@@ -561,7 +561,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Ethiopia",
+        "Entity":"Ethiopia",
         "Languages":"Amharic",
         "latitude":9.145,
         "longitude":40.489673,
@@ -572,7 +572,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Fiji",
+        "Entity":"Fiji",
         "Languages":"English, Fijian, Fiji Hindi",
         "latitude":-16.578193,
         "longitude":179.414413,
@@ -583,7 +583,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Finland",
+        "Entity":"Finland",
         "Languages":"Finnish, Swedish",
         "latitude":61.92411,
         "longitude":25.748151,
@@ -594,7 +594,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"France",
+        "Entity":"France",
         "Languages":"French",
         "latitude":46.227638,
         "longitude":2.213749,
@@ -605,7 +605,7 @@ const coordinates = [
         "Climate":"4"
     },
     {
-        "Country":"Gabon",
+        "Entity":"Gabon",
         "Languages":"French",
         "latitude":-0.803689,
         "longitude":11.609444,
@@ -616,7 +616,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Gambia, The",
+        "Entity":"Gambia, The",
         "Languages":"English",
         "latitude":13.443182,
         "longitude":-15.310139,
@@ -627,7 +627,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Georgia",
+        "Entity":"Georgia",
         "Languages":"Georgian",
         "latitude":42.315407,
         "longitude":43.356892,
@@ -638,7 +638,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Germany",
+        "Entity":"Germany",
         "Languages":"German",
         "latitude":51.165691,
         "longitude":10.451526,
@@ -649,7 +649,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Ghana",
+        "Entity":"Ghana",
         "Languages":"English",
         "latitude":7.946527,
         "longitude":-1.023194,
@@ -660,7 +660,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Greece",
+        "Entity":"Greece",
         "Languages":"Greek",
         "latitude":39.074208,
         "longitude":21.824312,
@@ -671,7 +671,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Grenada",
+        "Entity":"Grenada",
         "Languages":"English",
         "latitude":12.262776,
         "longitude":-61.604171,
@@ -682,7 +682,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Guatemala",
+        "Entity":"Guatemala",
         "Languages":"Spanish",
         "latitude":15.783471,
         "longitude":-90.230759,
@@ -693,7 +693,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Guinea",
+        "Entity":"Guinea",
         "Languages":"French",
         "latitude":9.945587,
         "longitude":-9.696645,
@@ -704,7 +704,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Guinea-Bissau",
+        "Entity":"Guinea-Bissau",
         "Languages":"Portuguese",
         "latitude":11.803749,
         "longitude":-15.180413,
@@ -715,7 +715,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Guyana",
+        "Entity":"Guyana",
         "Languages":"English",
         "latitude":4.860416,
         "longitude":-58.93018,
@@ -726,7 +726,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Haiti",
+        "Entity":"Haiti",
         "Languages":"French, Haitian Creole",
         "latitude":18.971187,
         "longitude":-72.285215,
@@ -737,7 +737,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Honduras",
+        "Entity":"Honduras",
         "Languages":"Spanish",
         "latitude":15.199999,
         "longitude":-86.241905,
@@ -748,7 +748,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Hong Kong",
+        "Entity":"Hong Kong",
         "Languages":"Cantonese , English",
         "latitude":22.396428,
         "longitude":114.109497,
@@ -759,7 +759,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Hungary",
+        "Entity":"Hungary",
         "Languages":"Hungarian",
         "latitude":47.162494,
         "longitude":19.503304,
@@ -770,7 +770,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Iceland",
+        "Entity":"Iceland",
         "Languages":"Icelandic, Icelandic Sign Language",
         "latitude":64.963051,
         "longitude":-19.020835,
@@ -781,7 +781,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"India",
+        "Entity":"India",
         "Languages":"Hindi, English",
         "latitude":20.593684,
         "longitude":78.96288,
@@ -792,7 +792,7 @@ const coordinates = [
         "Climate":"2,5"
     },
     {
-        "Country":"Indonesia",
+        "Entity":"Indonesia",
         "Languages":"Indonesian",
         "latitude":-0.789275,
         "longitude":113.921327,
@@ -803,7 +803,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Iran",
+        "Entity":"Iran",
         "Languages":"Persian",
         "latitude":32.427908,
         "longitude":53.688046,
@@ -814,7 +814,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Iraq",
+        "Entity":"Iraq",
         "Languages":"Arabic",
         "latitude":33.223191,
         "longitude":43.679291,
@@ -825,7 +825,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Ireland",
+        "Entity":"Ireland",
         "Languages":"English, Irish",
         "latitude":53.41291,
         "longitude":-8.24389,
@@ -836,7 +836,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Israel",
+        "Entity":"Israel",
         "Languages":"Hebrew",
         "latitude":31.046051,
         "longitude":34.851612,
@@ -847,7 +847,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Italy",
+        "Entity":"Italy",
         "Languages":"Italian",
         "latitude":41.87194,
         "longitude":12.56738,
@@ -858,7 +858,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Jamaica",
+        "Entity":"Jamaica",
         "Languages":"English",
         "latitude":18.109581,
         "longitude":-77.297508,
@@ -869,7 +869,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Japan",
+        "Entity":"Japan",
         "Languages":"Japanese",
         "latitude":36.204824,
         "longitude":138.252924,
@@ -880,7 +880,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Jordan",
+        "Entity":"Jordan",
         "Languages":"Arabic",
         "latitude":30.585164,
         "longitude":36.238414,
@@ -891,7 +891,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Kazakhstan",
+        "Entity":"Kazakhstan",
         "Languages":"Kazakh, Russian",
         "latitude":48.019573,
         "longitude":66.923684,
@@ -902,7 +902,7 @@ const coordinates = [
         "Climate":"4"
     },
     {
-        "Country":"Kenya",
+        "Entity":"Kenya",
         "Languages":"English",
         "latitude":-0.023559,
         "longitude":37.906193,
@@ -913,7 +913,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Kiribati",
+        "Entity":"Kiribati",
         "Languages":"English",
         "latitude":-3.370417,
         "longitude":-168.734039,
@@ -924,7 +924,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Kuwait",
+        "Entity":"Kuwait",
         "Languages":"Standard Arabic",
         "latitude":29.31166,
         "longitude":47.481766,
@@ -935,7 +935,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Kyrgyzstan",
+        "Entity":"Kyrgyzstan",
         "Languages":"Kyrgyz, Russian",
         "latitude":41.20438,
         "longitude":74.766098,
@@ -946,7 +946,7 @@ const coordinates = [
         "Climate":"2,5"
     },
     {
-        "Country":"Laos",
+        "Entity":"Laos",
         "Languages":"Lao",
         "latitude":19.85627,
         "longitude":102.495496,
@@ -957,7 +957,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Latvia",
+        "Entity":"Latvia",
         "Languages":"Latvian",
         "latitude":56.879635,
         "longitude":24.603189,
@@ -968,7 +968,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Lebanon",
+        "Entity":"Lebanon",
         "Languages":"Arabic",
         "latitude":33.854721,
         "longitude":35.862285,
@@ -979,7 +979,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Lesotho",
+        "Entity":"Lesotho",
         "Languages":"Sotho, English",
         "latitude":-29.609988,
         "longitude":28.233608,
@@ -990,7 +990,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Liberia",
+        "Entity":"Liberia",
         "Languages":"English",
         "latitude":6.428055,
         "longitude":-9.429499,
@@ -1001,7 +1001,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Libya",
+        "Entity":"Libya",
         "Languages":"Arabic",
         "latitude":26.3351,
         "longitude":17.228331,
@@ -1012,7 +1012,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Liechtenstein",
+        "Entity":"Liechtenstein",
         "Languages":"German",
         "latitude":47.166,
         "longitude":9.555373,
@@ -1023,7 +1023,7 @@ const coordinates = [
         "Climate":"4"
     },
     {
-        "Country":"Lithuania",
+        "Entity":"Lithuania",
         "Languages":"Lithuanian",
         "latitude":55.169438,
         "longitude":23.881275,
@@ -1034,7 +1034,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Luxembourg",
+        "Entity":"Luxembourg",
         "Languages":"French, German, Luxembourgish",
         "latitude":49.815273,
         "longitude":6.129583,
@@ -1045,7 +1045,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Macau",
+        "Entity":"Macau",
         "Languages":"Cantonese , Portuguese",
         "latitude":22.198745,
         "longitude":113.543873,
@@ -1056,7 +1056,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Madagascar",
+        "Entity":"Madagascar",
         "Languages":"French, Malagasy",
         "latitude":-18.766947,
         "longitude":46.869107,
@@ -1067,7 +1067,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Malawi",
+        "Entity":"Malawi",
         "Languages":"English, Chichewa",
         "latitude":-13.254308,
         "longitude":34.301525,
@@ -1078,7 +1078,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Malaysia",
+        "Entity":"Malaysia",
         "Languages":"Malay",
         "latitude":4.210484,
         "longitude":101.975766,
@@ -1089,7 +1089,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Maldives",
+        "Entity":"Maldives",
         "Languages":"Dhivehi",
         "latitude":3.202778,
         "longitude":73.22068,
@@ -1100,7 +1100,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Mali",
+        "Entity":"Mali",
         "Languages":"French",
         "latitude":17.570692,
         "longitude":-3.996166,
@@ -1111,7 +1111,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Malta",
+        "Entity":"Malta",
         "Languages":"English, Maltese",
         "latitude":35.937496,
         "longitude":14.375416,
@@ -1122,7 +1122,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Marshall Islands",
+        "Entity":"Marshall Islands",
         "Languages":"English",
         "latitude":7.131474,
         "longitude":171.184478,
@@ -1133,7 +1133,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Mauritania",
+        "Entity":"Mauritania",
         "Languages":"Arabic",
         "latitude":21.00789,
         "longitude":-10.940835,
@@ -1144,7 +1144,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Mauritius",
+        "Entity":"Mauritius",
         "Languages":"English",
         "latitude":-20.348404,
         "longitude":57.552152,
@@ -1155,7 +1155,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Mexico",
+        "Entity":"Mexico",
         "Languages":"Spanish ",
         "latitude":23.634501,
         "longitude":-102.552784,
@@ -1166,7 +1166,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Moldova",
+        "Entity":"Moldova",
         "Languages":"Romanian",
         "latitude":47.411631,
         "longitude":28.369885,
@@ -1177,7 +1177,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Monaco",
+        "Entity":"Monaco",
         "Languages":"French",
         "latitude":43.750298,
         "longitude":7.412841,
@@ -1188,7 +1188,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Mongolia",
+        "Entity":"Mongolia",
         "Languages":"Mongolian",
         "latitude":46.862496,
         "longitude":103.846656,
@@ -1199,7 +1199,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Morocco",
+        "Entity":"Morocco",
         "Languages":"Arabic, Tamazight",
         "latitude":31.791702,
         "longitude":-7.09262,
@@ -1210,7 +1210,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Mozambique",
+        "Entity":"Mozambique",
         "Languages":"Portuguese",
         "latitude":-18.665695,
         "longitude":35.529562,
@@ -1221,7 +1221,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Namibia",
+        "Entity":"Namibia",
         "Languages":"English",
         "latitude":-22.95764,
         "longitude":18.49041,
@@ -1232,7 +1232,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Nauru",
+        "Entity":"Nauru",
         "Languages":"English, Nauruan",
         "latitude":-0.522778,
         "longitude":166.931503,
@@ -1243,7 +1243,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Nepal",
+        "Entity":"Nepal",
         "Languages":"Nepali",
         "latitude":28.394857,
         "longitude":84.124008,
@@ -1254,7 +1254,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Netherlands",
+        "Entity":"Netherlands",
         "Languages":"Dutch ",
         "latitude":52.132633,
         "longitude":5.291266,
@@ -1265,7 +1265,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"New Zealand",
+        "Entity":"New Zealand",
         "Languages":"English , Maori, New Zealand Sign Language",
         "latitude":-40.900557,
         "longitude":174.885971,
@@ -1276,7 +1276,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Nicaragua",
+        "Entity":"Nicaragua",
         "Languages":"Spanish",
         "latitude":12.865416,
         "longitude":-85.207229,
@@ -1287,7 +1287,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Niger",
+        "Entity":"Niger",
         "Languages":"French",
         "latitude":17.607789,
         "longitude":8.081666,
@@ -1298,7 +1298,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Nigeria",
+        "Entity":"Nigeria",
         "Languages":"English",
         "latitude":9.081999,
         "longitude":8.675277,
@@ -1309,7 +1309,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Norway",
+        "Entity":"Norway",
         "Languages":"Norwegian, Sami",
         "latitude":60.472024,
         "longitude":8.468946,
@@ -1320,7 +1320,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Oman",
+        "Entity":"Oman",
         "Languages":"Arabic",
         "latitude":21.512583,
         "longitude":55.923255,
@@ -1331,7 +1331,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Pakistan",
+        "Entity":"Pakistan",
         "Languages":"English, Urdu",
         "latitude":30.375321,
         "longitude":69.345116,
@@ -1342,7 +1342,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Palau",
+        "Entity":"Palau",
         "Languages":"English, Palauan",
         "latitude":7.51498,
         "longitude":134.58252,
@@ -1353,7 +1353,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Panama",
+        "Entity":"Panama",
         "Languages":"Spanish",
         "latitude":8.537981,
         "longitude":-80.782127,
@@ -1364,7 +1364,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Papua New Guinea",
+        "Entity":"Papua New Guinea",
         "Languages":"English, Hiri Motu, PNG Sign Language, Tok Pisin",
         "latitude":-6.314993,
         "longitude":143.95555,
@@ -1375,7 +1375,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Paraguay",
+        "Entity":"Paraguay",
         "Languages":"Spanish, Guaran\u00ed",
         "latitude":-23.442503,
         "longitude":-58.443832,
@@ -1386,7 +1386,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Peru",
+        "Entity":"Peru",
         "Languages":"Spanish, Aymara, Quechua",
         "latitude":-9.189967,
         "longitude":-75.015152,
@@ -1397,7 +1397,7 @@ const coordinates = [
         "Climate":"1,5"
     },
     {
-        "Country":"Philippines",
+        "Entity":"Philippines",
         "Languages":"English, Filipino, Filipino Sign Language",
         "latitude":12.879721,
         "longitude":121.774017,
@@ -1408,7 +1408,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Poland",
+        "Entity":"Poland",
         "Languages":"Polish",
         "latitude":51.919438,
         "longitude":19.145136,
@@ -1419,7 +1419,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Portugal",
+        "Entity":"Portugal",
         "Languages":"Portuguese",
         "latitude":39.399872,
         "longitude":-8.224454,
@@ -1430,7 +1430,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Qatar",
+        "Entity":"Qatar",
         "Languages":"Arabic",
         "latitude":25.354826,
         "longitude":51.183884,
@@ -1441,7 +1441,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Romania",
+        "Entity":"Romania",
         "Languages":"Romanian",
         "latitude":45.943161,
         "longitude":24.96676,
@@ -1452,7 +1452,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Russia",
+        "Entity":"Russia",
         "Languages":"Russian",
         "latitude":61.52401,
         "longitude":105.318756,
@@ -1463,7 +1463,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Rwanda",
+        "Entity":"Rwanda",
         "Languages":"English, French, Kinyarwanda, Swahili",
         "latitude":-1.940278,
         "longitude":29.873888,
@@ -1474,7 +1474,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Saint Kitts & Nevis",
+        "Entity":"Saint Kitts & Nevis",
         "Languages":"English",
         "latitude":17.357822,
         "longitude":-62.782998,
@@ -1485,7 +1485,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Saint Lucia",
+        "Entity":"Saint Lucia",
         "Languages":"English",
         "latitude":13.909444,
         "longitude":-60.978893,
@@ -1496,7 +1496,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Samoa",
+        "Entity":"Samoa",
         "Languages":"English",
         "latitude":-13.759029,
         "longitude":-172.104629,
@@ -1507,7 +1507,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"San Marino",
+        "Entity":"San Marino",
         "Languages":"Italian",
         "latitude":43.94236,
         "longitude":12.457777,
@@ -1518,7 +1518,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Saudi Arabia",
+        "Entity":"Saudi Arabia",
         "Languages":"Arabic",
         "latitude":23.885942,
         "longitude":45.079162,
@@ -1529,7 +1529,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Senegal",
+        "Entity":"Senegal",
         "Languages":"French",
         "latitude":14.497401,
         "longitude":-14.452362,
@@ -1540,7 +1540,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Serbia",
+        "Entity":"Serbia",
         "Languages":"Serbian",
         "latitude":44.016521,
         "longitude":21.005859,
@@ -1551,7 +1551,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Seychelles",
+        "Entity":"Seychelles",
         "Languages":"English, French, Seychellois Creole",
         "latitude":-4.679574,
         "longitude":55.491977,
@@ -1562,7 +1562,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Sierra Leone",
+        "Entity":"Sierra Leone",
         "Languages":"English",
         "latitude":8.460555,
         "longitude":-11.779889,
@@ -1573,7 +1573,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Singapore",
+        "Entity":"Singapore",
         "Languages":"English, Malay, Mandarin, Tamil",
         "latitude":1.352083,
         "longitude":103.819836,
@@ -1584,7 +1584,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Slovakia",
+        "Entity":"Slovakia",
         "Languages":"Slovak",
         "latitude":48.669026,
         "longitude":19.699024,
@@ -1595,7 +1595,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Slovenia",
+        "Entity":"Slovenia",
         "Languages":"Slovene",
         "latitude":46.151241,
         "longitude":14.995463,
@@ -1606,7 +1606,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Solomon Islands",
+        "Entity":"Solomon Islands",
         "Languages":"English",
         "latitude":-9.64571,
         "longitude":160.156194,
@@ -1617,7 +1617,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Somalia",
+        "Entity":"Somalia",
         "Languages":"Arabic",
         "latitude":5.152149,
         "longitude":46.199616,
@@ -1628,7 +1628,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"South Africa",
+        "Entity":"South Africa",
         "Languages":"Afrikaans, English, Southern Ndebele, Sotho, Northern Sotho, Swazi, Tsonga, Tswana, Venda, Xhosa, Zulu",
         "latitude":-30.559482,
         "longitude":22.937506,
@@ -1639,7 +1639,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Spain",
+        "Entity":"Spain",
         "Languages":"Spanish",
         "latitude":40.463667,
         "longitude":-3.74922,
@@ -1650,7 +1650,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Sri Lanka",
+        "Entity":"Sri Lanka",
         "Languages":"Sinhala, Tamil",
         "latitude":7.873054,
         "longitude":80.771797,
@@ -1661,7 +1661,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Sudan",
+        "Entity":"Sudan",
         "Languages":"Arabic, English",
         "latitude":12.862807,
         "longitude":30.217636,
@@ -1672,7 +1672,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Suriname",
+        "Entity":"Suriname",
         "Languages":"Dutch",
         "latitude":3.919305,
         "longitude":-56.027783,
@@ -1683,7 +1683,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Sweden",
+        "Entity":"Sweden",
         "Languages":"Swedish",
         "latitude":60.128161,
         "longitude":18.643501,
@@ -1694,7 +1694,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Switzerland",
+        "Entity":"Switzerland",
         "Languages":"French ",
         "latitude":46.818188,
         "longitude":8.227512,
@@ -1705,7 +1705,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Syria",
+        "Entity":"Syria",
         "Languages":"Arabic",
         "latitude":34.802075,
         "longitude":38.996815,
@@ -1716,7 +1716,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Taiwan",
+        "Entity":"Taiwan",
         "Languages":"Mandarin ",
         "latitude":23.69781,
         "longitude":120.960515,
@@ -1727,7 +1727,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Tajikistan",
+        "Entity":"Tajikistan",
         "Languages":"Tajik",
         "latitude":38.861034,
         "longitude":71.276093,
@@ -1738,7 +1738,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Tanzania",
+        "Entity":"Tanzania",
         "Languages":"English",
         "latitude":-6.369028,
         "longitude":34.888822,
@@ -1749,7 +1749,7 @@ const coordinates = [
         "Climate":""
     },
     {
-        "Country":"Thailand",
+        "Entity":"Thailand",
         "Languages":"Thai",
         "latitude":15.870032,
         "longitude":100.992541,
@@ -1760,7 +1760,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Togo",
+        "Entity":"Togo",
         "Languages":"French",
         "latitude":8.619543,
         "longitude":0.824782,
@@ -1771,7 +1771,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Tonga",
+        "Entity":"Tonga",
         "Languages":"English",
         "latitude":-21.178986,
         "longitude":-175.198242,
@@ -1782,7 +1782,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Trinidad & Tobago",
+        "Entity":"Trinidad & Tobago",
         "Languages":"English",
         "latitude":10.691803,
         "longitude":-61.222503,
@@ -1793,7 +1793,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Tunisia",
+        "Entity":"Tunisia",
         "Languages":"Arabic",
         "latitude":33.886917,
         "longitude":9.537499,
@@ -1804,7 +1804,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Turkey",
+        "Entity":"Turkey",
         "Languages":"Turkish",
         "latitude":38.963745,
         "longitude":35.243322,
@@ -1815,7 +1815,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Turkmenistan",
+        "Entity":"Turkmenistan",
         "Languages":"Turkmen",
         "latitude":38.969719,
         "longitude":59.556278,
@@ -1826,7 +1826,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Tuvalu",
+        "Entity":"Tuvalu",
         "Languages":"English ",
         "latitude":-7.109535,
         "longitude":177.64933,
@@ -1837,7 +1837,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Uganda",
+        "Entity":"Uganda",
         "Languages":"English, Swahili",
         "latitude":1.373333,
         "longitude":32.290275,
@@ -1848,7 +1848,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Ukraine",
+        "Entity":"Ukraine",
         "Languages":"Ukrainian",
         "latitude":48.379433,
         "longitude":31.16558,
@@ -1859,7 +1859,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"United Arab Emirates",
+        "Entity":"United Arab Emirates",
         "Languages":"Arabic",
         "latitude":23.424076,
         "longitude":53.847818,
@@ -1870,7 +1870,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"United Kingdom",
+        "Entity":"United Kingdom",
         "Languages":"English ",
         "latitude":55.378051,
         "longitude":-3.435973,
@@ -1881,7 +1881,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"United States",
+        "Entity":"United States",
         "Languages":"English ",
         "latitude":37.09024,
         "longitude":-95.712891,
@@ -1892,7 +1892,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Uruguay",
+        "Entity":"Uruguay",
         "Languages":"Spanish ",
         "latitude":-32.522779,
         "longitude":-55.765835,
@@ -1903,7 +1903,7 @@ const coordinates = [
         "Climate":"3"
     },
     {
-        "Country":"Uzbekistan",
+        "Entity":"Uzbekistan",
         "Languages":"Uzbek",
         "latitude":41.377491,
         "longitude":64.585262,
@@ -1914,7 +1914,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Vanuatu",
+        "Entity":"Vanuatu",
         "Languages":"English, French",
         "latitude":-15.376706,
         "longitude":166.959158,
@@ -1925,7 +1925,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Venezuela",
+        "Entity":"Venezuela",
         "Languages":"Spanish, Venezuelan Sign Language",
         "latitude":6.42375,
         "longitude":-66.58973,
@@ -1936,7 +1936,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Vietnam",
+        "Entity":"Vietnam",
         "Languages":null,
         "latitude":14.058324,
         "longitude":108.277199,
@@ -1947,7 +1947,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Yemen",
+        "Entity":"Yemen",
         "Languages":"Arabic",
         "latitude":15.552727,
         "longitude":48.516388,
@@ -1958,7 +1958,7 @@ const coordinates = [
         "Climate":"1"
     },
     {
-        "Country":"Zambia",
+        "Entity":"Zambia",
         "Languages":"English",
         "latitude":-13.133897,
         "longitude":27.849332,
@@ -1969,7 +1969,7 @@ const coordinates = [
         "Climate":"2"
     },
     {
-        "Country":"Zimbabwe",
+        "Entity":"Zimbabwe",
         "Languages":"Chewa, Chibarwe, English, Kalanga, Khoisan, Nambya, Ndau, Ndebele, Shangani, Shona, Sign language, Sotho, Tonga, Tswana, Venda, Xhosa",
         "latitude":-19.015438,
         "longitude":29.154857,

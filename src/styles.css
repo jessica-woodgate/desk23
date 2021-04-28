@@ -43,5 +43,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
     background-color: white;
   }  */
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

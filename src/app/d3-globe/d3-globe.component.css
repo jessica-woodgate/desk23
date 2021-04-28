@@ -1,0 +1,25 @@
+#mapContainer {
+   display: block;
+   margin-left: auto;
+   width: 40%;
+   margin-right: auto;
+}
+
+#globe{
+   stroke: black;
+   stroke-width: 5;
+   fill: #006699;
+}
+
+.country {
+   fill: green;
+   stroke: black
+}
+
+.country:hover {
+    fill: rgb(135, 197, 151);
+}
+
+path {
+   fill:rgb(135, 197, 151);
+}

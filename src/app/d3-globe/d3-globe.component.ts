@@ -9,7 +9,7 @@ import * as countriesData from './countries';
   styleUrls: ['./d3-globe.component.css']
 })
 export class D3GlobeComponent implements OnInit {
-  @ViewChild('mapContainer') cReference!: ElementRef;
+// @ViewChild('mapContainer') cReference!: ElementRef;
 
   constructor() {
   }
@@ -43,7 +43,8 @@ export class D3GlobeComponent implements OnInit {
       .attr('cx', width / 2)
       .attr('cy', height / 2)
       .attr('r', initialScale);
-    var path = d3.geoPath().projection(projection);
+    
+      var path = d3.geoPath().projection(projection);
     const graticule = d3.geoGraticule();
 
     svg.append('path')
@@ -54,6 +55,18 @@ export class D3GlobeComponent implements OnInit {
       .attr('stroke', '#cccccc')
       .attr('stroke-width', '0.5px');
 
+      svg.call(d3.drag().on('drag', () => {
+         const rotate = projection.rotate()
+         const k = sensitivity / projection.scale()
+         projection.rotate([
+           rotate[0] + d3.event.dx * k,
+           rotate[1] - d3.event.dy * k
+         ])
+         path = d3.geoPath().projection(projection)
+         svg.selectAll("path").attr("d", path)
+       }));
+
+
 
     var map = svg.append('g');
     const countries: any = topojson.feature(countriesData, countriesData.objects.countries);
@@ -62,6 +75,7 @@ export class D3GlobeComponent implements OnInit {
     map.selectAll('path').data(countries.features)
       .enter().append('path')
       .attr('style', 'fill: #ffffff')
+      .attr('style', 'stroke: red')
       .attr('class', 'country')
       .attr('d', path)
       .append('title')

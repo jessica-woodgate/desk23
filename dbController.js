@@ -15,19 +15,7 @@ exports.index = function(req, res) {
    controller functions for literacy rates collection
 ****/
 
-exports.createLiteracyRates = function(req, res) {
-   var newData = new LiteracyModel(req.body);
-   console.log(req.body);
-   newData.save(function(err){
-      if(err){
-         res.status(400).send('Unable to save literacy rates to database');
-      }else{
-         res.redirect('/literacyRates/getLiteracyRates');
-      }
-   })
-};
-
-//list contents of database, send to router
+//list contents of database, send to router ----> do we need this?
 exports.listLiteracyRates = function(req, res) {
    LiteracyModelLink.find({}, function(err, literacyRates){
       if(err){
@@ -37,6 +25,18 @@ exports.listLiteracyRates = function(req, res) {
    });
 };
 
+/*****
+   controller functions for coordinates collection ----> do we need this?
+****/
+//lists contents of database and sends to router
+exports.listCoordinates = function(req, res) {
+   CoordinatesModelLink.find({}, function(err, coordinates){
+      if(err){
+         return res.send(500, err);
+      }
+      res.send(coordinates);
+   });
+};
 
 /*
 // Retrieve all LiteracyRate data from the database by Entity.
@@ -74,9 +74,13 @@ exports.findOne = (req, res) => {
 };
 */
 
+/*****
+   controller functions for all models
+****/
+
 //removes whole collection
-exports.removeLiteracyModel = function(cb){
-   LiteracyModelLink.remove({}, function(err, result){
+exports.removeModel = function(model, cb){
+   model.remove({}, function(err, result){
       if(err){
          console.log(err);
       }else{
@@ -86,9 +90,19 @@ exports.removeLiteracyModel = function(cb){
    });
 };
 
-exports.findLiteracyByEntity = function (entity){
-   console.log('entity: '+entity);
-   LiteracyModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
+exports.findByEntity = function(model, entity){
+   model.find({Entity: new RegExp(entity, 'i')}, function(err, results){
+      if(err){
+         console.log(err);
+      }else{
+         console.log(results);
+         return results;
+      }
+   });
+};
+
+exports.findByCode = function(model, code){
+   model.find({Code: code}, function(err, results){
       if(err){
          return handleError(err);
       }else{
@@ -98,8 +112,8 @@ exports.findLiteracyByEntity = function (entity){
    });
 };
 
-exports.findLiteracyByCode = function(code){
-   LiteracyModelLink.find({Code: code}, function(err, results){
+exports.findByYear = function(model, year){
+   model.find({Year: year}, function(err, results){
       if(err){
          return handleError(err);
       }else{
@@ -109,19 +123,8 @@ exports.findLiteracyByCode = function(code){
    });
 };
 
-exports.findLiteracyByYear = function(year){
-   LiteracyModelLink.find({Year: year}, function(err, results){
-      if(err){
-         return handleError(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   });
-};
-
-exports.findLiteracyByCodeYear = function(code, year){
-   LiteracyModelLink.find({Code: code, Year: year}, function(err, results){
+exports.findByCodeYear = function(model, code, year){
+   model.find({Code: code, Year: year}, function(err, results){
       if(err){
          console.log(err);
       }else{
@@ -131,8 +134,8 @@ exports.findLiteracyByCodeYear = function(code, year){
    });
 };
 
-exports.findLiteracyByEntityYear = function(entity, year){
-   LiteracyModelLink.find({Entity: entity, Year: year}, function(err, results){
+exports.findByEntityYear = function(model, entity, year){
+   model.find({Entity: entity, Year: year}, function(err, results){
       if(err){
          console.log(err);
       }else{
@@ -140,41 +143,6 @@ exports.findLiteracyByEntityYear = function(entity, year){
          return results;
       }
    });
-};
-
-/*****
-   controller functions for coordinates collection
-****/
-//lists contents of database and sends to router
-exports.listCoordinates = function(req, res) {
-   CoordinatesModelLink.find({}, function(err, coordinates){
-      if(err){
-         return res.send(500, err);
-      }
-      res.send(coordinates);
-   });
-};
-
-exports.removeCoordinatesModel = function(cb){
-   CoordinatesModelLink.remove({}, function(err, results){
-      if(err){
-         console.log(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   });
-};
-
-exports.findCoordinateByEntity = function(entity){
-   CoordinatesModelLink.find({Entity: new RegExp(entity, 'i')}, function(err, results){
-      if(err){
-         console.log(err);
-      }else{
-         console.log(results);
-         return results;
-      }
-   })
 };
 
 /*****
@@ -183,6 +151,8 @@ exports.findCoordinateByEntity = function(entity){
 
 exports.LiteracyRatesFromCoordinates = function(entity){
    CoordinatesModelLink.find(
+      //find entity that matches the regex of the variable passed in
+      //i for ignoring case
       {Entity: new RegExp(entity, 'i')},
       function(err, results1){
       if(err){

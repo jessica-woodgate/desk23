@@ -15,19 +15,7 @@ exports.index = function(req, res) {
    controller functions for literacy rates collection
 ****/
 
-exports.createLiteracyRates = function(req, res) {
-   var newData = new LiteracyModel(req.body);
-   console.log(req.body);
-   newData.save(function(err){
-      if(err){
-         res.status(400).send('Unable to save literacy rates to database');
-      }else{
-         res.redirect('/literacyRates/getLiteracyRates');
-      }
-   })
-};
-
-//list contents of database, send to router
+//list contents of database, send to router ----> do we need this?
 exports.listLiteracyRates = function(req, res) {
    LiteracyModelLink.find({}, function(err, literacyRates){
       if(err){
@@ -37,6 +25,18 @@ exports.listLiteracyRates = function(req, res) {
    });
 };
 
+/*****
+   controller functions for coordinates collection ----> do we need this?
+****/
+//lists contents of database and sends to router
+exports.listCoordinates = function(req, res) {
+   CoordinatesModelLink.find({}, function(err, coordinates){
+      if(err){
+         return res.send(500, err);
+      }
+      res.send(coordinates);
+   });
+};
 
 /*
 // Retrieve all LiteracyRate data from the database by Entity.
@@ -73,6 +73,10 @@ exports.findOne = (req, res) => {
         });
 };
 */
+
+/*****
+   controller functions for all models
+****/
 
 //removes whole collection
 exports.removeModel = function(model, cb){
@@ -138,19 +142,6 @@ exports.findByEntityYear = function(model, entity, year){
          console.log(results);
          return results;
       }
-   });
-};
-
-/*****
-   controller functions for coordinates collection
-****/
-//lists contents of database and sends to router
-exports.listCoordinates = function(req, res) {
-   CoordinatesModelLink.find({}, function(err, coordinates){
-      if(err){
-         return res.send(500, err);
-      }
-      res.send(coordinates);
    });
 };
 

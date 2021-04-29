@@ -40,6 +40,9 @@ console.log('server works')
 const LiteracyModelLink = db.LiteracyModel;
 const CoordinatesModelLink = db.CoordinatesModel;
 const CountryModelLink = db.CountryModel;
+//dbController.removeModel(CoordinatesModelLink);
+//dbController.removeModel(LiteracyModelLink);
+//dbController.removeModel(CountryModelLink);
 dbController.findByEntity(CoordinatesModelLink, 'Afghanistan');
 dbController.findByEntity(LiteracyModelLink, 'Afghanistan');
 dbController.findByEntity(CountryModelLink, 'Afghanistan');

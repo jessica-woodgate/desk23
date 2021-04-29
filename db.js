@@ -52,6 +52,7 @@ function createLiteracyRates(cb){
    async.parallel([
       function(callback){
          LiteracyModel.insertMany(crossCountryLiteracyRates)
+         console.log('inserted literacy')
       },
    ],
    //optional callback
@@ -63,6 +64,7 @@ function createCoordinates(cb){
    async.parallel([
       function(callback){
          CoordinatesModel.insertMany(coordinatesData)
+         console.log('inserted coordinates')
       },
    ],
    //optional callback
@@ -90,6 +92,7 @@ function createCountryData(cb){
    async.parallel([
       function(callback){
          CountryModel.insertMany(countryData)
+         console.log('inserted countries')
       },
    ],
    //optional callback
@@ -113,11 +116,11 @@ function checkCountryData(cb){
 }
 
 async.series([
-   createLiteracyRates,
-   //checkLiteracyRates,
-   createCountryData,
-   //checkCountryData
-   createCoordinates
+   //createLiteracyRates,
+   checkLiteracyRates,
+   //createCountryData,
+   checkCountryData
+   //createCoordinates
 ],
 //optional callback
 function(err, results) {

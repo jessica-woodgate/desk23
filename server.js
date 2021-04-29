@@ -36,11 +36,11 @@ app.get('*', (req, res) => {
 });
 
 //checking dbController functions
-/*const ModelLink = require('./db.js');
-const LiteracyModelLink = ModelLink.LiteracyModel;
-const CoordinatesModelLink = ModelLink.CoordinatesModel;
-const CountryModelLink = ModelLink.CountryModel;
-dbController.findByEntity(CoordinatesModelLink, 'Afghanistan');*/
+console.log('server works')
+const LiteracyModelLink = db.LiteracyModel;
+const CoordinatesModelLink = db.CoordinatesModel;
+const CountryModelLink = db.CountryModel;
+dbController.findByEntity(CoordinatesModelLink, 'Afghanistan');
 
 /**
  * Get port from environment and store in Express.

@@ -1,6 +1,6 @@
 ## Website Prototype 1 - Feedback
 
-### Feedback on 23/02/2021
+### Feedback on 23/03/2021
 
 ### How the session was conducted:
 
@@ -97,7 +97,7 @@ After using the system and playing around with various movements (for the intera
 
 4. Expected the globe to be a 3D sphere as opposed to a 2D surface that you click and drag
 
-5. Was intrigued by the scrambled words and felt it made her want to know more
+5. Was intrigued by the scrambled words and felt it made the user want to know more
 
 ### Potential Areas to Improve:
 1.	Introduce arrows to guide the user e.g. rotation arrows showing that the globe can spin. 

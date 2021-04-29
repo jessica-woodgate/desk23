@@ -70,3 +70,14 @@ The feedback session took place remotely using Zoom.
 <ol><li>Could control the globe intuitively without guidance</li>
   <li>Seemed to enjoy clicking on the globe and kept manipulating it throughout the interview</li>
   </ol>
+
+<h3>Areas for Improvement: </h3>
+
+<ol><li>Revisit the colour/texture of the ocean areas of the globe </li>
+  <li>Consider balance in attention to globe vs background - want the data to stand out </li>
+  <li>Consider how to make the Earth feel more familiar, less alien - texture change to the ocean may already help with this for example </li>
+   <li>Address bug with click release causing country to be selected, potential lag/choppiness </li>
+  <li>Introduce unified colour scheme based on colour palettes in paper prototyping phase</li>
+  <li>Introduce arrows and improve placement of tutorial elements</li>
+  <li>Experiment with alternative ways to represent the data (alternatives to green orbs)</li>
+  </ol>

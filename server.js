@@ -41,7 +41,8 @@ const LiteracyModelLink = db.LiteracyModel;
 const CoordinatesModelLink = db.CoordinatesModel;
 const CountryModelLink = db.CountryModel;
 dbController.findByEntity(CoordinatesModelLink, 'Afghanistan');
-
+dbController.findByEntity(LiteracyModelLink, 'Afghanistan');
+dbController.findByEntity(CountryModelLink, 'Afghanistan');
 /**
  * Get port from environment and store in Express.
  */

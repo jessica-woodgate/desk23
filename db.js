@@ -113,11 +113,11 @@ function checkCountryData(cb){
 }
 
 async.series([
-   //createLiteracyRates,
+   createLiteracyRates,
    //checkLiteracyRates,
-   //createCountryData
+   createCountryData,
    //checkCountryData
-   //createCoordinates
+   createCoordinates
 ],
 //optional callback
 function(err, results) {

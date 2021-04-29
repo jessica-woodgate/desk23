@@ -1,4 +1,4 @@
-<h1> First Prototype of Website (non paper prototype)</h1>
+<h1> First Prototype of Website (non paper prototype) - Globe 1 produced using three.js</h1>
 
 <h2> Feedback Gathered on: 28/04/2021</h2>
 

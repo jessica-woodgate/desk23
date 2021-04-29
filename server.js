@@ -14,6 +14,7 @@ const api = require('./server/routes/api');
 //get database routes
 const literacyRatesRoutes = require('./server/routes/literacyRates.js');
 const coordinatesRoutes = require('./server/routes/coordinates.js');
+const countriesRoutes = require('./server/routes/countries.js');
 //initialise express
 const app = express();
 //app.use(...);
@@ -28,6 +29,7 @@ app.use('/api', api);
 //set our database routes
 app.use('/literacyRates', literacyRatesRoutes);
 app.use('/coordinates', coordinatesRoutes);
+app.use('/countries', countriesRoutes);
 
 // Catch all other routes and return the index file (sits within distribution folder)
 // Index is our SPA - programatically serving the files
@@ -35,17 +37,12 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
 
-//checking dbController functions
-console.log('server works')
-const LiteracyModelLink = db.LiteracyModel;
-const CoordinatesModelLink = db.CoordinatesModel;
-const CountryModelLink = db.CountryModel;
-//dbController.removeModel(CoordinatesModelLink);
-//dbController.removeModel(LiteracyModelLink);
-//dbController.removeModel(CountryModelLink);
-dbController.findByEntity(CoordinatesModelLink, 'Afghanistan');
-dbController.findByEntity(LiteracyModelLink, 'Afghanistan');
-dbController.findByEntity(CountryModelLink, 'Afghanistan');
+var LiteracyModel = require('./models/literacyRates');
+var CoordinatesModel = require('./models/coordinates');
+var CountryModel = require('./models/countryData');
+dbController.findByEntity(CoordinatesModel, 'Afghanistan');
+dbController.findByEntity(LiteracyModel, 'Afghanistan');
+dbController.findByEntity(CountryModel, 'Afghanistan');
 /**
  * Get port from environment and store in Express.
  */

@@ -6,8 +6,8 @@ router.get('/', function(req, res){
    dbController.index(req,res);
 });
 
-router.get('/getLiteracyRates', function(req,res){
-   dbController.listLiteracyRates(req,res);
+router.get('/getCountries', function(req,res){
+   dbController.listCountries(req,res);
 });
 
 module.exports = router;

@@ -1,10 +1,8 @@
 const path = require('path');
-const LiteracyModel = ('./models/literacyRates');
-const ModelLink = require('./db.js');
-const crossCountryLiteracyRates = ('crossCountryLiteracyRates');
 
-const LiteracyModelLink = ModelLink.LiteracyModel;
-const CoordinatesModelLink = ModelLink.CoordinatesModel;
+var LiteracyModelLink = require('./models/literacyRates');
+var CoordinatesModelLink = require('./models/coordinates');
+var CountryModelLink = require('./models/countryData');
 
 //export index
 exports.index = function(req, res) {
@@ -31,6 +29,15 @@ exports.listLiteracyRates = function(req, res) {
 //lists contents of database and sends to router
 exports.listCoordinates = function(req, res) {
    CoordinatesModelLink.find({}, function(err, coordinates){
+      if(err){
+         return res.send(500, err);
+      }
+      res.send(coordinates);
+   });
+};
+
+exports.listCountries = function(req, res) {
+   CountryModelLink.find({}, function(err, coordinates){
       if(err){
          return res.send(500, err);
       }

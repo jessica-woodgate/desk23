@@ -1,7 +1,7 @@
 
 ![image](https://user-images.githubusercontent.com/45073537/111315589-6f743f00-865a-11eb-86fa-42c03ca56bef.png)
 
-# Literacy Rates Around the World (working title)
+# Left Unread (working title)
 
 Over the past 65 years, literacy rates have increased globally by 4% every five years. Today, only 14% of the global population remain illiterate. However, in many countries they remain unsettlingly low, with the poorest countries having large segments of their population illiterate. This exemplifies huge global inequalities that exist, notably between sub-Saharan Africa and the West.
 Despite many countries having high levels of basic literacy skills, there remain suprisingly high rates of very poor literacy skills. In England, for example, 1 in 6 adults have poor literacy skills. This means that they can understand short and straightforward texts on familiar subjects, but struggle with unfamiliar sources or topics. This is also known as being functionally illiterate, and excludes people from many areas of the job market thus further contributing to inequality.

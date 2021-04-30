@@ -1,7 +1,10 @@
-import { Component, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Country } from '../models/country';
+import { DataService } from '../data.service';
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import * as data from '../../data/countries.json';
+import { Data } from '@angular/router';
 
 @Component({
   selector: 'app-globe',
@@ -16,6 +19,7 @@ export class GlobeComponent implements AfterViewInit {
   @ViewChild('globeCanvas') cReference!: ElementRef;
 
   countryName! : string | null;
+  literacyRate! : string | null;
   displayType! : string;
 
   top! : string;
@@ -32,7 +36,10 @@ export class GlobeComponent implements AfterViewInit {
   windowHeight! : number;
 
   lightGroup!: THREE.Group;
-  listOfCountries:  any  = (data  as  any).default;
+  //listOfCountries:  any  = (data  as  any).default;
+
+  //creating an array of Country objects
+  listOfCountries!: Country[];
 
   raycaster!: THREE.Raycaster;
   mouse! : THREE.Vector2;
@@ -45,7 +52,7 @@ export class GlobeComponent implements AfterViewInit {
     return this.cReference.nativeElement;
   }
 
-  constructor() {
+  constructor(private countryService : DataService) {
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
 
@@ -61,6 +68,17 @@ export class GlobeComponent implements AfterViewInit {
 
     this.top = "0px";
     this.left = "0px";
+  }
+
+  ngOnInit() {
+    //this.listOfCountries = this.countryService.getAll();
+    this.countryService.getCountryData().subscribe((countries) => {
+      this.listOfCountries = countries;
+    }); 
+
+    this.listOfCountries  = (this.listOfCountries  as  any).default;
+
+    //console.log("Country printed in ngOnInit : " + this.listOfCountries[0].Entity);
   }
 
   ngAfterViewInit() {
@@ -163,7 +181,6 @@ export class GlobeComponent implements AfterViewInit {
     let countryNames = new THREE.Mesh(sphere, material);
 
     this.scene.add(countryNames);
-    
   }
 
   animate() {
@@ -181,7 +198,10 @@ export class GlobeComponent implements AfterViewInit {
   
   //working on coordinates
   //reference: https://stackoverflow.com/questions/1185408/converting-from-longitude-latitude-to-cartesian-coordinates
-  addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number) {
+  addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number, litData: number) {
+
+    //clear all previous children if any? 
+    
 
     //radius of the globe
     const radius = 10;
@@ -222,14 +242,26 @@ export class GlobeComponent implements AfterViewInit {
     point2.position.set( x, z, y);
     point2.lookAt(0,0,0);
     point2.userData.Country = country;
+    point2.userData.LiteracyRate = litData;
     
     this.globe.add(point2); 
 }
 
   setAllPoints() {
-    for (let i = 0; i < this.listOfCountries.length; i++) {
-      this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude, this.listOfCountries[i].Area_sq_mi);
-    }
+    console.log("Length of list of countries is : "+this.listOfCountries.length);
+
+    
+      for (let i = 0; i < this.listOfCountries.length; i++) {
+        //this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude, this.listOfCountries[i].Area_sq_mi);
+        //console.log(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude);
+
+        if (this.listOfCountries[i].Year == 2015) {
+          this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);
+        }
+      }
+    
+
+    
   }
 
 
@@ -279,6 +311,7 @@ export class GlobeComponent implements AfterViewInit {
       //@ts-ignore
       intersects[ 0 ].object.material.color.set( 0xff0000 );
       this.countryName = intersects[0].object.userData.Country;
+      this.literacyRate = intersects[0].object.userData.LiteracyRate;
     }
 
     //this.render();

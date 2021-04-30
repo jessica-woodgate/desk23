@@ -1,16 +1,19 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
-/* 
 *{
     overflow: hidden;
-}  
- */
+}   
+ 
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-slider {
-    bottom:40%;
-    width: 740px;
+    bottom:1.5vh;
+    /* width: 740px; */
+    width: 104vh;
+    position: absolute;
+    justify-items: center;
+    align-content: center;
 } 
 
 /* 

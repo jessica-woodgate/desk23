@@ -11,13 +11,15 @@ import { GlobeComponent } from './globe/globe.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { SliderComponent } from './slider/slider.component';
 import { FormsModule } from '@angular/forms';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GlobeComponent,
     TutorialComponent,
-    SliderComponent
+    SliderComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

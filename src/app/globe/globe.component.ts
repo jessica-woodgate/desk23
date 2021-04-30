@@ -203,7 +203,7 @@ export class GlobeComponent implements AfterViewInit {
     }
 
     //adding the spherical point
-    let poi = new THREE.SphereGeometry(size,32,32);    
+    /* let poi = new THREE.SphereGeometry(size,32,32);    
     let pointMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
     let point = new THREE.Mesh(poi, pointMaterial); 
     //set the point on the globe
@@ -211,11 +211,11 @@ export class GlobeComponent implements AfterViewInit {
     point.userData.Country = country;
     point.visible = true;
     //becomes a child of the globe 
-    this.globe.add(point); 
+    this.globe.add(point);  */
 
     //let's try the above but with cuboids set perpendicular to the globe's surface
     //credit: https://stackoverflow.com/questions/51800598/threejs-make-meshes-perpendicular-to-the-sphere-face-its-sitting-on
-    /* let poi2 = new THREE.CylinderGeometry(0.1,0.1,5,64);
+    let poi2 = new THREE.CylinderGeometry(0.1,0.1,5,64);
     poi2.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI/2));
     let poi2Material = new THREE.MeshBasicMaterial({color:0x00ff00});
     let point2 = new THREE.Mesh(poi2, poi2Material);
@@ -223,7 +223,7 @@ export class GlobeComponent implements AfterViewInit {
     point2.lookAt(0,0,0);
     point2.userData.Country = country;
     
-    this.globe.add(point2); */
+    this.globe.add(point2); 
 }
 
   setAllPoints() {

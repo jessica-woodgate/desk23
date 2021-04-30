@@ -24,12 +24,12 @@ We then each selected five ideas that we liked the most, and from these found th
 ![image](https://user-images.githubusercontent.com/45073537/116720980-b46aef80-a9d4-11eb-8aa2-bc74afdd5635.png)
 
 From this, we looked at the matching four ideas and did some initial research into similar current work:
-Game of Life (tracking) - https://annanogar.com/vanishing-digital-immersive-data-visualization
-                        - https://playgameoflife.com/
-Fostering a Pet Online  - sims pets
-                        - https://en.wikipedia.org/wiki/List_of_artificial_pet_games
-                        - https://chrome.google.com/webstore/detail/virtual-pets-for-google-c/ifpbdeecnndfdiblggcdccjeddnocmfd?hl=en
-                        - https://4experience.co/portfolio-item/ar-pet/
-Crypto Board Game       - https://news.bitcoin.com/cryptocoinopoly-game-lets-play-cryptocurrency-markets-friends/
-                        - Multiple styles of game.
-Literacy Rates          - https://ourworldindata.org/literacy
+* Game of Life (tracking) ** https://annanogar.com/vanishing-digital-immersive-data-visualization
+                          ** https://playgameoflife.com/
+* Fostering a Pet Online  ** sims pets
+                          ** https://en.wikipedia.org/wiki/List_of_artificial_pet_games
+                          ** https://chrome.google.com/webstore/detail/virtual-pets-for-google-c/ifpbdeecnndfdiblggcdccjeddnocmfd?hl=en
+                          ** https://4experience.co/portfolio-item/ar-pet/
+* Crypto Board Game       ** https://news.bitcoin.com/cryptocoinopoly-game-lets-play-cryptocurrency-markets-friends/
+                          ** Multiple styles of game.
+* Literacy Rates          ** https://ourworldindata.org/literacy

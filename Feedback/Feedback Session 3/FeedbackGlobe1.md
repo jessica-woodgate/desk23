@@ -71,6 +71,40 @@ The feedback session took place remotely using Zoom.
   <li>Seemed to enjoy clicking on the globe and kept manipulating it throughout the interview</li>
   </ol>
 
+  <h2> Feedback Gathered on: 2/05/2021</h2>
+
+Focus Group: 1 Candidate
+ 
+The feedback session took place in-person as a one-to-one interview.
+
+<h3>User feedback:</h3>
+
+<ol>
+
+<li>The user found the globe and background cool, noted that the colour of the sea is not as nice as the rest. </li>
+
+<li>Slight website lag detected. </li>
+
+<li>Half the globe is empty - Pacific missing any country names/data points, might make globe less interesting to interact with on the whole. </li>
+
+<li>Borders between countries would be nice - it would be easier to select based on the shape. </li>
+
+<li>Could make the cursor change to a hand to make it clear to the user when things are clickable. </li>
+
+<li> Zoom issues noticed - pixelated when zooming in (would make it very difficult to engage with smaller countries), scrolling is at the same speed when zoomed in leading to big and very fast jumps between countries.</li>
+
+<li>Slider can be more prominent and dates clarified - start/end date, where you are at any given time could be indicated with an arrow</li>
+</ol>
+
+
+<h3>Interviewer’s Observations: </h3>
+
+<ol><li>Could control the globe intuitively without guidance</li>
+  <li>Took some time to discover that it was possible to zoom in on the globe.</li>
+  <li>Clicked on "Show Tutorial" even when already showing - hadn't noticed the instruction boxes yet.</li>
+  <li>Noticed the slider last. Tried clicking on the box showing the date to interact with the slider, tried to enter the year into the box with keyboard (not supported). </li>
+  </ol>
+
 <h3>Areas for Improvement: </h3>
 
 <ol><li>Revisit the colour/texture of the ocean areas of the globe </li>
@@ -78,6 +112,8 @@ The feedback session took place remotely using Zoom.
   <li>Consider how to make the Earth feel more familiar, less alien - texture change to the ocean may already help with this for example </li>
    <li>Address bug with click release causing country to be selected, potential lag/choppiness </li>
   <li>Introduce unified colour scheme based on colour palettes in paper prototyping phase</li>
-  <li>Introduce arrows and improve placement of tutorial elements</li>
+  <li>Introduce arrows and improve placement and formatting of tutorial elements to make them more visible - draw attention to zoom functionality </li>
   <li>Experiment with alternative ways to represent the data (alternatives to green orbs)</li>
+   <li>Improve quality of image for zoom functionality</li>
+  <li>Show the range of data (start and end dates) in the slider</li>
   </ol>

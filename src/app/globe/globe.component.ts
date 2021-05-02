@@ -1,10 +1,10 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener, Host } from '@angular/core';
 import { Country } from '../models/country';
-import { DataService } from '../data.service';
+import { DataService } from '../services/data.service';
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
-import * as data from '../../data/countries.json';
-import { Data } from '@angular/router';
+//import * as data from '../../data/countries.json';
+//import { Data } from '@angular/router';
 
 @Component({
   selector: 'app-globe',
@@ -20,6 +20,7 @@ export class GlobeComponent implements AfterViewInit {
 
   countryName! : string | null;
   literacyRate! : string | null;
+  currentYear : number = 2015;
   displayType! : string;
 
   top! : string;
@@ -91,7 +92,7 @@ export class GlobeComponent implements AfterViewInit {
     this.createGlobe();
 
     this.animate();
-    this.setAllPoints();
+    this.setAllPoints(this.currentYear);
   }
 
 
@@ -201,7 +202,7 @@ export class GlobeComponent implements AfterViewInit {
   addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number, litData: number) {
 
     //clear all previous children if any? 
-    
+    //then set up the new points based of the year value 
 
     //radius of the globe
     const radius = 10;
@@ -216,12 +217,10 @@ export class GlobeComponent implements AfterViewInit {
     let z = Math.sin(globeLatRads) * radius;
 
     //create spherical shape
-    let size = countryArea / 9000000; 
-
-    if (size < 0.2) {
+    //let size = countryArea / 9000000; 
+    /* if (size < 0.2) {
       size = 0.2;
-    }
-
+    } */
     //adding the spherical point
     /* let poi = new THREE.SphereGeometry(size,32,32);    
     let pointMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
@@ -233,9 +232,11 @@ export class GlobeComponent implements AfterViewInit {
     //becomes a child of the globe 
     this.globe.add(point);  */
 
+
     //let's try the above but with cuboids set perpendicular to the globe's surface
     //credit: https://stackoverflow.com/questions/51800598/threejs-make-meshes-perpendicular-to-the-sphere-face-its-sitting-on
-    let poi2 = new THREE.CylinderGeometry(0.1,0.1,5,64);
+    let height = litData / 18;
+    let poi2 = new THREE.CylinderGeometry(0.1,0.1,height,64);
     poi2.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI/2));
     let poi2Material = new THREE.MeshBasicMaterial({color:0x00ff00});
     let point2 = new THREE.Mesh(poi2, poi2Material);
@@ -247,15 +248,20 @@ export class GlobeComponent implements AfterViewInit {
     this.globe.add(point2); 
 }
 
-  setAllPoints() {
-    console.log("Length of list of countries is : "+this.listOfCountries.length);
+  setAllPoints(userSetYear: number) {
 
+    //remove all children if any and add new ones
+    while(this.globe.children.length) {
+      this.globe.remove(this.globe.children[0]);
+    }
+
+    console.log("Length of list of countries is : "+this.listOfCountries.length);
     
       for (let i = 0; i < this.listOfCountries.length; i++) {
         //this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude, this.listOfCountries[i].Area_sq_mi);
         //console.log(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude);
 
-        if (this.listOfCountries[i].Year == 2015) {
+        if (this.listOfCountries[i].Year == userSetYear) { 
           this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);
         }
       }
@@ -315,7 +321,10 @@ export class GlobeComponent implements AfterViewInit {
     }
 
     //this.render();
+  }
 
+  onSlide() {
+    this.setAllPoints(this.currentYear);
   }
 
 }

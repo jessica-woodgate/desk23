@@ -10,4 +10,17 @@
 </div>
 
 <app-tutorial></app-tutorial>
-<app-slider></app-slider>
+
+
+<!-- <app-slider></app-slider>
+ -->
+
+ 
+<div id = "sliderBox">
+    <mat-slider [(ngModel)] = "currentYear" min="1475" max = "2015"  (slideend)="onSlide()" (pointerup)="onSlide()"></mat-slider>
+</div> 
+
+<div id = "currentYearBox">
+    {{currentYear}} 
+</div>
+ 

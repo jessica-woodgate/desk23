@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import {AppComponent} from './app.component';
 import { GlobeComponent } from './globe/globe.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
-import { SliderComponent } from './slider/slider.component';
+//import { SliderComponent } from './slider/slider.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
@@ -18,7 +18,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AppComponent,
     GlobeComponent,
     TutorialComponent,
-    SliderComponent,
+  //  SliderComponent,
     WelcomeComponent
   ],
   imports: [

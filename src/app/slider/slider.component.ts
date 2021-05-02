@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+/* import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -15,3 +15,5 @@ export class SliderComponent implements OnInit {
   }
 
 }
+
+ */

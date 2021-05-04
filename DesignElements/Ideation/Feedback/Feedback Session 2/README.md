@@ -3,7 +3,7 @@
 
 Gathering feedback on second website paper prototype shown below: 
 
-![Image of Prototype](https://github.com/jess-mw/desk23/blob/main/Feedback/Feedback%20Session%202/WebsitePrototype2.PNG)
+![image](https://user-images.githubusercontent.com/45073537/117002266-41ff5580-acdb-11eb-8712-c4fa4caf8188.png)
 
 For the second round of feedback sessions, we have taken a similar approach to throwing the users in the deep end once again. However, due to the limitations Adobe XD poses, at times we had to intervene and advise them on what button(s) to click to achieve the response they are seeking for. 
 

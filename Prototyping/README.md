@@ -15,5 +15,7 @@ https://github.com/jess-mw/desk23/blob/86690788056df959048c4b9bdde6c3ed52bb2c9f/
 https://github.com/jess-mw/desk23/blob/ee5342d68d9896c7481ea9d92f2b2d7960b5eeef/DesignElements/Ideation/Website%20Prototype%203.pdf
 
 In addition, we created two colour palettes from which we gained feedback from our focus group:
+
 https://github.com/jess-mw/desk23/blob/f8bca57eb3a559975b3148fe0314860fc09b3c86/Prototyping/Website%20Palette%201.pdf
+
 https://github.com/jess-mw/desk23/blob/f8bca57eb3a559975b3148fe0314860fc09b3c86/Prototyping/Website%20Palette%202.pdf

@@ -1,1 +1,1 @@
-How are feedback sessions have been conducted: 
+How the feedback sessions have been conducted: 

@@ -4,7 +4,7 @@
 ### Feedback on 23/03/2021
 
 Gathering feedback on the following prototype: 
-![Image of prototype](https://github.com/jess-mw/desk23/blob/main/Feedback/Feedback%20Session%201/WebsitePrototype3.PNG)
+![image](https://user-images.githubusercontent.com/45073537/116997035-2ba1cb80-acd4-11eb-809c-cfc14c8e5fe8.png)
 
 ### How the session was conducted:
 

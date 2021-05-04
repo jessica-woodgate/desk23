@@ -1,6 +1,13 @@
 var async = require('async');
 //import mongoose module
 const mongoose = require('mongoose');
+//get models
+var LiteracyModel = require('./models/literacyRates');
+var CoordinatesModel = require('./models/coordinates');
+var CountryModel = require('./models/countryData');
+const literacyData = require('./crossCountryLiteracyRates');
+const coordinatesData = require('./coordinates');
+const countryData = require('./countryData');
 
 //set variables
 const {
@@ -38,3 +45,7 @@ function populate(model, data, cb){
    //optional callback
    cb);
 };
+
+populate(LiteracyModel, literacyData);
+populate(CoordinatesModel, coordinatesData);
+populate(CountryModel, countryData);

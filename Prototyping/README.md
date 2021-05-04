@@ -8,10 +8,6 @@ The first two iterations of our prototype came in two flavours: one that used a 
 * 2D map: 
 
 https://github.com/jess-mw/desk23/blob/86690788056df959048c4b9bdde6c3ed52bb2c9f/DesignElements/Ideation/Website%20Prototype%204.pdf
-![image](https://user-images.githubusercontent.com/45073537/116991233-29d40a00-accc-11eb-83d5-001429296727.png)
-![image](https://user-images.githubusercontent.com/45073537/116991307-42442480-accc-11eb-941d-3a5190828981.png)
-![image](https://user-images.githubusercontent.com/45073537/116991333-4c662300-accc-11eb-93fc-e62addef6fc8.png)
-
 
 * 3D globe: 
 

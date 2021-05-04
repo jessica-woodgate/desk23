@@ -1,6 +1,3 @@
+# Project Management
 
-# Team Roles
-
-This section describes and evaluates the team roles.
-
-![image](https://user-images.githubusercontent.com/45073537/117015330-85f95700-ace9-11eb-9db8-eb215b6d19af.png)
+This file includes documentation about team roles, meeting minutes, workflow plan and more.

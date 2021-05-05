@@ -10,7 +10,7 @@
 *Wenda*
 
 ## Front End - Angular. Details of implementation.
-*Stanni*
+*Hamza*
 
 ## Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!
 *Stanni*

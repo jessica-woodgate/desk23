@@ -1,1 +1,0 @@
-This folder stores the files that document our design process, including our ideation process and the frameworks we used to inform our design such as our ethical framework, stakeholder analysis, scoping, and user stories.

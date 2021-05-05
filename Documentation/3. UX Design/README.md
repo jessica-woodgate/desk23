@@ -1,11 +1,11 @@
 # UX Design [15 marks]
 
-## Design Process and Early prototyping and ideation (including mood boards and paper prototyping)
+## a. Design Process and Early prototyping and ideation (including mood boards and paper prototyping)
 *Hamza*
 
 The ideation process took place collaboratively over several team meetings. The first session involved brainstorming and divergent thinking, aided by the mapping technique of putting serious topics and playful implementations next to each other to let ideas come out in unexpected ways (see Ideation > ideaMatrix document). The team then narrowed down ideas from this list, through allocating points to preferred topics. Once four core ideas had been identified, they were assessed for their strengths/limitations and feasibility. This was achieved through group writing on a shared document, which proved very effective in allowing team members to build on each other’s ideas and let creativity flow. At the conclusion of this process, the team had a clearer idea of the concept and was able to agree to move ahead with an interactive representation of global literacy rates. To elaborate on the idea, from this starting point, the team members went away individually to create paper (or digital) prototypes. We then convened to present these to each other and highlight the features that we imagined as part of the project. The design was then consolidated based on common elements, aided by additional group writing, into a singular paper prototype using Canva. We further were able to pull out interesting elements from each team member’s design through a "mash up" session dedicated to inventing unique combinations of ideas.
 
-## Identification of interacting users and broader stakeholders.
+## b. Identification of interacting users and broader stakeholders.
 *Jess*
 
 **Stakeholder Analysis**
@@ -25,10 +25,10 @@ Other secondary stakeholders could include policymakers and international develo
 It was noted that, though the website itself does not collect data from users, we would need to consider where we source our data from to ensure accuracy and consider attribution and any related licensing issues. In this respect, the data owners would need to be kept satisfied, and data properly referenced. Given that they could decide at any moment to restrict access to their data, the data owners were considered to have high power. 
 
 
-## UX approach – design heuristics/approach, design methods (design fiction / heuristics)
+## c. UX approach – design heuristics/approach, design methods (design fiction / heuristics)
 *Hamza*
 
-## Understanding of user group (questionnaires / user stories / interviews)
+## d. Understanding of user group (questionnaires / user stories / interviews)
 *Jess*
 
 ### Survey Findings
@@ -49,5 +49,5 @@ Focus group members interacted with the lit up globe option in a second round of
 
 The team discussed the feedback and potential areas for improvement in a 12 April stand-up. Key areas of feedback were that the book on the landing page may seem a bit out of place floating in space, so the team brainstormed options to better link up the landing page features with the globe in space that follows and considered whether the landing page couldn’t feature a different object other than a book, such as a monitor. Users also pointed out the importance of keeping track of the year as the slider is in use, rather than only showing the start and end dates of the dataset. The addition of the brief tutorial/instructions demo for interacting with the page was generally well received by users, and the suggestion came up to allow the user to test an action after each hint is offered, for example, after “Click the arrows to explore”, the user should be able to click either of the arrows and the globe should spin. Focus group members also sought more clarity on how countries would be identified, and how they could be quickly found, for example if the location of the country on the globe is unknown.
 
-## Wireframes and interaction flow diagrams for final key subsystems.
+## e. Wireframes and interaction flow diagrams for final key subsystems.
 *Hamza*

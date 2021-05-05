@@ -40,6 +40,9 @@ app.get('*', (req, res) => {
 var LiteracyModel = require('./models/literacyRates');
 var CoordinatesModel = require('./models/coordinates');
 var CountryModel = require('./models/countryData');
+//dbController.removeModel(LiteracyModel);
+//dbController.removeModel(CoordinatesModel);
+//dbController.removeModel(CountryModel);
 dbController.findByEntity(CoordinatesModel, 'Afghanistan');
 dbController.findByEntity(LiteracyModel, 'Afghanistan');
 dbController.findByEntity(CountryModel, 'Afghanistan');

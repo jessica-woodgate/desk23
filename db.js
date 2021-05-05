@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 var LiteracyModel = require('./models/literacyRates');
 var CoordinatesModel = require('./models/coordinates');
 var CountryModel = require('./models/countryData');
+var dbController = require('./dbController');
 const literacyData = require('./crossCountryLiteracyRates');
 const coordinatesData = require('./coordinates');
 const countryData = require('./countryData');
@@ -46,6 +47,20 @@ function populate(model, data, cb){
    cb);
 };
 
-populate(LiteracyModel, literacyData);
-populate(CoordinatesModel, coordinatesData);
-populate(CountryModel, countryData);
+var results1 = dbController.findByEntity(LiteracyModel, 'Afghanistan');
+if(results1){
+}else{
+   populate(LiteracyModel, literacyData);
+}
+
+var results2 = dbController.findByEntity(CoordinatesModel, 'Afghanistan');
+if(results2){
+}else{
+   populate(CoordinatesModel, coordinatesData);
+}
+
+var results3 = dbController.findByEntity(CountryModel, 'Afghanistan');
+if(results3){
+}else{
+   populate(CountryModel, countryData);
+}

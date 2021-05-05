@@ -40,7 +40,7 @@ Our most important primary stakeholders are our users, and also those of whom th
 *Hamza* 
 
 ## Documentation
-### 1. [Background and Motivation] (https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/1.%20Background%20and%20Motivation/README.md)
+### 1. [Background and Motivation](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/1.%20Background%20and%20Motivation/README.md)
 ### 2. System Implementation
 https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/2.%20System%20Implementation/README.md
 ### 3. UX Design

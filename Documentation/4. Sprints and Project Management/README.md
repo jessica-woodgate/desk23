@@ -24,5 +24,7 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 
 The development of the project was split into six main sprints, each one lasting a week. We had shorter meeetings throughout the week to discuss general issues that had come up, and anything that needed team input. At the end of each sprint we conducted a longer meeting to reflect upon the previous weeks targets, how progress on them had gone, and to set the next sprint's targets. Targets were set by looking at the backlog of our [Trello board](https://trello.com/desk231/home) and discussing with the team which tasks should be completed in the current sprint. Tasks were added to the Trello board in team meetings, mainly in the evaluative meeting at the end of each sprint, but also during the week when new tasks came up. These were also recorded in the minutes from our meetings.
 
+We were careful to avoid mixing up Kanban and Scrum Agile methods. To avoid this, we divided the Trello board into several different sprints.
+
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 *Jess*

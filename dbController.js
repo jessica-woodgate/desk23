@@ -124,3 +124,80 @@ exports.FindEntityYear = (req, res) => {
       });
     });
 };
+
+//Creat New Literacy Rates data
+exports.create = (req, res) => {
+    // Validate request
+    if (!req.body.title) {
+        res.status(400).send({ message: "Content can not be empty!" });
+        return;
+    }
+
+    // Create a data
+    const LiteracyRates = new LiteracyModel({
+        title: req.body.title,
+        description: req.body.description,
+        published: req.body.published ? req.body.published : false
+    });
+
+    // Save literacy data in the database
+    LiteracyRates
+        .save(LiteracyRates)
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Error occurred when creating new literacyrates data."
+            });
+        });
+};
+
+//Update literacyrates data as Object by COUNTRY
+exports.update = (req, res) => {
+    if (!req.body) {
+        return res.status(400).send({
+            message: "Data to update can not be empty!"
+        });
+    }
+
+    const entity = req.params.entity;
+
+    LiteracyModel.UpdatebyCountry(entity, req.body, { useFindAndModify: false })
+        .then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `Cannot update literacy data for country=${entity}`
+                });
+            } else res.send({ message: "success" });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Error occurred when update data"
+            });
+        });
+};
+
+//Delete single literacy data for a country
+exports.delete = (req, res) => {
+    const entity = req.params.entity;
+
+    LiteracyModel.delete(entity)
+        .then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `data not found, delete failed`
+                });
+            } else {
+                res.send({
+                    message: "delete succeeded"
+                });
+            }
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Could not delete data, server no response"
+            });
+        });
+};

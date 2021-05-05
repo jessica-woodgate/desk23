@@ -35,5 +35,12 @@ router.get("/", function (req, res, next) {
   dbController.FindEntityYear(req, res, next);
 });
 
+router.post("/", function (req, res, next) {
+    dbController.create);
+});
+
+router.delete("/", function (req, res, next) {
+    dbController.delete);
+});
 
 module.exports = router;

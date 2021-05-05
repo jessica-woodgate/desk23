@@ -58,7 +58,7 @@ There were many other codes we briefly looked at, including ACS code of ethics, 
 9. Use open standards/sources/innovation 
 10. Design for scale 
 
-*Using the framework* 
+## Using the framework 
 
 When working through the design process and sprints, we followed the DIODE procedure for ethical analysis (see https://www.zyen.com/media/documents/ethical-assessment.pdf for a detailed explanation). In brief, this procedure works by: 
 

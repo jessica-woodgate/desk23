@@ -18,5 +18,7 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 ## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
 *Jess*
 
+[Details of sprint targets week by week](https://github.com/jess-mw/desk23/blob/79b37df560aa49fce65073d4a61749047cae1505/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md)
+
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 *Jess*

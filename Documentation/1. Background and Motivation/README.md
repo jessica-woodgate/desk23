@@ -1,6 +1,9 @@
 # Background and Motivation [10 marks]
 
-## Background literature. Academic research review.
+## Contents
+- [a. Background literature. Academic research review.](#a-Background-literature-Academic-research- review)
+
+## a. Background literature. Academic research review.
 *Emily*
 
 ## State of the art survey. Current industry review.

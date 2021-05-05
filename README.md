@@ -28,6 +28,17 @@ Our most important primary stakeholders are our users, and also those of whom th
 #### Emily - Responsible for quality assurance
 #### Hamza - Responsible for UI/UX
 
+## Introduction [10 marks] 
+
+### Abstract. Motivation for the project, framing of the problem and a high-level overview of the system. 
+*Stanni* 
+
+### Project Objectives. The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
+*Emily* 
+
+### Video. Short (1-2min) demo video to explain your system (think Kickstarter) 
+*Hamza* 
+
 ## UX Design
 The ideation process took place collaboratively over several team meetings. The first session involved brainstorming and divergent thinking, aided by the mapping technique of putting serious topics and playful implementations next to each other to let ideas come out in unexpected ways (see Ideation > ideaMatrix document). The team then narrowed down ideas from this list, through allocating points to preferred topics. Once four core ideas had been identified, they were assessed for their strengths/limitations and feasibility. This was achieved through group writing on a shared document, which proved very effective in allowing team members to build on each other’s ideas and let creativity flow. At the conclusion of this process, the team had a clearer idea of the concept and was able to agree to move ahead with an interactive representation of global literacy rates. To elaborate on the idea, from this starting point, the team members went away individually to create paper (or digital) prototypes. We then convened to present these to each other and highlight the features that we imagined as part of the project. The design was then consolidated based on common elements, aided by additional group writing, into a singular paper prototype using Canva. We further were able to pull out interesting elements from each team member’s design through a "mash up" session dedicated to inventing unique combinations of ideas. 
 

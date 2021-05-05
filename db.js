@@ -47,20 +47,18 @@ function populate(model, data, cb){
    cb);
 };
 
+
 var results1 = dbController.findByEntity(LiteracyModel, 'Afghanistan');
-if(results1){
-}else{
+if(results1==null){
    populate(LiteracyModel, literacyData);
 }
 
 var results2 = dbController.findByEntity(CoordinatesModel, 'Afghanistan');
-if(results2){
-}else{
+if(results2==null){
    populate(CoordinatesModel, coordinatesData);
 }
 
 var results3 = dbController.findByEntity(CountryModel, 'Afghanistan');
-if(results3){
-}else{
+if(results3==null){
    populate(CountryModel, countryData);
 }

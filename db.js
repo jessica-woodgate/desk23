@@ -46,6 +46,6 @@ function populate(model, data, cb){
    cb);
 };
 
-populate(LiteracyModel, literacyData);
-populate(CoordinatesModel, coordinatesData);
-populate(CountryModel, countryData);
+//populate(LiteracyModel, literacyData);
+//populate(CoordinatesModel, coordinatesData);
+//populate(CountryModel, countryData);

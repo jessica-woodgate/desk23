@@ -13,7 +13,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 })
 
 export class GlobeComponent implements AfterViewInit {
-  //'globeCanvas' refers to the one established in the html file 
+  //'globeCanvas' refers to the one established in the html file
   //cReference is the variable we are using
   //ViewChild basically sets up where the canvas element is
   @ViewChild('globeCanvas') cReference!: ElementRef;
@@ -75,7 +75,7 @@ export class GlobeComponent implements AfterViewInit {
     //this.listOfCountries = this.countryService.getAll();
     this.countryService.getCountryData().subscribe((countries) => {
       this.listOfCountries = countries;
-    }); 
+    });
 
     this.listOfCountries  = (this.listOfCountries  as  any).default;
 
@@ -109,7 +109,7 @@ export class GlobeComponent implements AfterViewInit {
       '../../assets/images/space_back.png',
     ])
 
-    this.scene.background = skyBox; 
+    this.scene.background = skyBox;
   }
 
   setCamera() {
@@ -149,14 +149,14 @@ export class GlobeComponent implements AfterViewInit {
   }
 
   createGlobe() {
- 
+
     //maps from: http://planetpixelemporium.com/earth.html && https://www.solarsystemscope.com/textures/
     let Emap = new THREE.TextureLoader().load('../../assets/images/2k_earth_daymap.jpg');
     let Ebump = new THREE.TextureLoader().load('../../assets/images/earthbump4k.jpg');
     let Espec = new THREE.TextureLoader().load('../../assets/images/earthspec4k.jpg');
 
     const sphere = new THREE.SphereGeometry(10,50,50);
-    const material = new THREE.MeshPhongMaterial({ 
+    const material = new THREE.MeshPhongMaterial({
         map : Emap,
         bumpMap : Ebump,
         bumpScale : 0.10,
@@ -196,18 +196,18 @@ export class GlobeComponent implements AfterViewInit {
   render () {
     this.renderer.render(this.scene, this.camera);
   }
-  
+
   //working on coordinates
   //reference: https://stackoverflow.com/questions/1185408/converting-from-longitude-latitude-to-cartesian-coordinates
   addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number, litData: number) {
 
-    //clear all previous children if any? 
-    //then set up the new points based of the year value 
+    //clear all previous children if any?
+    //then set up the new points based of the year value
 
     //radius of the globe
     const radius = 10;
 
-    //convert degrees to radians 
+    //convert degrees to radians
     let globeLatRads = latitude * (Math.PI / 180);
     let globeLongRads = -longitude * (Math.PI / 180);
 
@@ -217,19 +217,19 @@ export class GlobeComponent implements AfterViewInit {
     let z = Math.sin(globeLatRads) * radius;
 
     //create spherical shape
-    //let size = countryArea / 9000000; 
+    //let size = countryArea / 9000000;
     /* if (size < 0.2) {
       size = 0.2;
     } */
     //adding the spherical point
-    /* let poi = new THREE.SphereGeometry(size,32,32);    
+    /* let poi = new THREE.SphereGeometry(size,32,32);
     let pointMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
-    let point = new THREE.Mesh(poi, pointMaterial); 
+    let point = new THREE.Mesh(poi, pointMaterial);
     //set the point on the globe
     point.position.set( x, z, y );
     point.userData.Country = country;
     point.visible = true;
-    //becomes a child of the globe 
+    //becomes a child of the globe
     this.globe.add(point);  */
 
 
@@ -244,9 +244,12 @@ export class GlobeComponent implements AfterViewInit {
     point2.lookAt(0,0,0);
     point2.userData.Country = country;
     point2.userData.LiteracyRate = litData;
-    
-    this.globe.add(point2); 
+
+    this.globe.add(point2);
 }
+
+const dbController = require('./dbController');
+var CountryModel = require('./models/countryData');
 
   setAllPoints(userSetYear: number) {
 
@@ -254,20 +257,25 @@ export class GlobeComponent implements AfterViewInit {
     while(this.globe.children.length) {
       this.globe.remove(this.globe.children[0]);
     }
-
+    // try this instead
+    var results = dbController.findByYear(CountryModel, userSetYear);
+    for(let i = 0; i < results.length; i++){
+      this.addCoordinatePoint(results[i].toObject().Year);
+   }
+/*
     console.log("Length of list of countries is : "+this.listOfCountries.length);
-    
+
       for (let i = 0; i < this.listOfCountries.length; i++) {
         //this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude, this.listOfCountries[i].Area_sq_mi);
         //console.log(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude);
 
-        if (this.listOfCountries[i].Year == userSetYear) { 
+        if (this.listOfCountries[i].Year == userSetYear) {
           this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);
         }
       }
-    
 
-    
+*/
+
   }
 
 
@@ -276,11 +284,11 @@ export class GlobeComponent implements AfterViewInit {
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
     this.camera.aspect = this.aspectRatio;
-    this.camera.updateProjectionMatrix(); 
+    this.camera.updateProjectionMatrix();
     this.renderer.setSize(this.windowWidth, this.windowHeight);
   }
 
-  @HostListener('click',['$event']) 
+  @HostListener('click',['$event'])
   onMouseClick(event : any) {
     console.log("mouse clicked");
     event.preventDefault();
@@ -302,14 +310,14 @@ export class GlobeComponent implements AfterViewInit {
       console.log("intersected");
       console.log(intersects[0]);
 
-      //show the textbox 
+      //show the textbox
       this.displayType = "flex";
 
-      //position the textbox 
+      //position the textbox
       this.top = (event.clientY - 100) + 'px';
-      
+
       this.left = (event.clientX + 20) + 'px';
-      
+
 
       console.log("top is " + this.top);
       console.log("left is : " + this.left);

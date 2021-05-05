@@ -17,7 +17,7 @@ In addition, we have a series of query helper functions that get relevant/requir
 
 * Getting the data from the CSV file into the database proved to be challenging and took much longer than expected, due to limitations in conceptual understanding 
 * Unsure whether need to run create model every time we run the code or only once - found out it was uploading every time so deleted database collections and restarted to get rid of duplicates 
-* However, sometimes we found that when loaded the database was empty and we weren't sure why - want to avoid populating the database every time and having an empty database
+* Finding a good way to seed the database
 * Finding a good way to link tables, especially considering they were from datasets that we did not create 
 * Removing noise from the datasets, as we did not create them ourselves
 * Synchronising the different datasets that were pulled from the internet

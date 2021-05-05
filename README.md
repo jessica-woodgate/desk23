@@ -39,6 +39,21 @@ Our most important primary stakeholders are our users, and also those of whom th
 ### Video. Short (1-2min) demo video to explain your system (think Kickstarter) 
 *Hamza* 
 
+## Documentation
+### 1. Background and Motivation
+https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/1.%20Background%20and%20Motivation/README.md
+### 2. System Implementation
+https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/2.%20System%20Implementation/README.md
+### 3. UX Design
+https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/3.%20UX%20Design/README.md
+### 4. Sprints and Project Management
+https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/4.%20Sprints%20and%20Project%20Management/README.md
+### 5. Evaluation
+https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/5.%20Evaluation/README.md
+### 6. Conclusion
+https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/6.%20Conclusion/README.md
+
+
 ## UX Design
 The ideation process took place collaboratively over several team meetings. The first session involved brainstorming and divergent thinking, aided by the mapping technique of putting serious topics and playful implementations next to each other to let ideas come out in unexpected ways (see Ideation > ideaMatrix document). The team then narrowed down ideas from this list, through allocating points to preferred topics. Once four core ideas had been identified, they were assessed for their strengths/limitations and feasibility. This was achieved through group writing on a shared document, which proved very effective in allowing team members to build on each other’s ideas and let creativity flow. At the conclusion of this process, the team had a clearer idea of the concept and was able to agree to move ahead with an interactive representation of global literacy rates. To elaborate on the idea, from this starting point, the team members went away individually to create paper (or digital) prototypes. We then convened to present these to each other and highlight the features that we imagined as part of the project. The design was then consolidated based on common elements, aided by additional group writing, into a singular paper prototype using Canva. We further were able to pull out interesting elements from each team member’s design through a "mash up" session dedicated to inventing unique combinations of ideas. 
 

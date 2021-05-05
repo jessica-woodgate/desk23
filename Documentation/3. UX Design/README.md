@@ -1,7 +1,7 @@
 # UX Design [15 marks]
 
 ## Design Process and Early prototyping and ideation (including mood boards and paper prototyping)
-*Jess*
+*Hamza*
 
 ## Identification of interacting users and broader stakeholders.
 *Jess*

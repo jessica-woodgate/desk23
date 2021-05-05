@@ -41,16 +41,11 @@ Our most important primary stakeholders are our users, and also those of whom th
 
 ## Documentation
 ### 1. [Background and Motivation](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/1.%20Background%20and%20Motivation/README.md)
-### 2. System Implementation
-https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/2.%20System%20Implementation/README.md
-### 3. UX Design
-https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/3.%20UX%20Design/README.md
-### 4. Sprints and Project Management
-https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/4.%20Sprints%20and%20Project%20Management/README.md
-### 5. Evaluation
-https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/5.%20Evaluation/README.md
-### 6. Conclusion
-https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/6.%20Conclusion/README.md
+### 2. [System Implementation](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/2.%20System%20Implementation/README.md)
+### 3. [UX Design](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/3.%20UX%20Design/README.md)
+### 4. [Sprints and Project Management](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/4.%20Sprints%20and%20Project%20Management/README.md)
+### 5. [Evaluation](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/5.%20Evaluation/README.md)
+### 6. [Conclusion](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/6.%20Conclusion/README.md)
  
 
 

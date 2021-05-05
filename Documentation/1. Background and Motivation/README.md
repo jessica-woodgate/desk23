@@ -1,7 +1,7 @@
 # Background and Motivation [10 marks]
 
 ## Contents
-- [a. Background literature. Academic research review.](#a-Background-literature-Academic-research- review)
+* [a. Background literature. Academic research review.](#a-Background-literature-Academic-research- review)
 
 ## a. Background literature. Academic research review.
 *Emily*

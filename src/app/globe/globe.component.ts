@@ -107,10 +107,22 @@ export class GlobeComponent implements AfterViewInit {
       '../../assets/images/space_bot.png',
       '../../assets/images/space_front.png',
       '../../assets/images/space_back.png',
-    ])
+    ]);
+ 
 
-    this.scene.background = skyBox; 
-  }
+    /* Images appear to be too small in comparison to the ones previously used - let's try zooming in -yep it works */
+    /* Keep testing - one or more space images is messing everything up */
+    const skyBox2 = loader.load([
+      '../../assets/images/temp/space_right3.png',
+      '../../assets/images/temp/space_left3.png',
+      '../../assets/images/temp/space_up3.png',
+      '../../assets/images/temp/bottom2.png', /* seems to be causing the problem? */
+      '../../assets/images/temp/space_front2.png',
+      '../../assets/images/temp/space_back3.png'
+    ]);
+
+/*     this.scene.background = skyBox; 
+ */  }
 
   setCamera() {
     this.camera.aspect = this.aspectRatio;
@@ -238,7 +250,7 @@ export class GlobeComponent implements AfterViewInit {
     let height = litData / 18;
     let poi2 = new THREE.CylinderGeometry(0.1,0.1,height,64);
     poi2.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI/2));
-    let poi2Material = new THREE.MeshBasicMaterial({color:0x00ff00});
+    let poi2Material = new THREE.MeshBasicMaterial({color:0xcc3367});
     let point2 = new THREE.Mesh(poi2, poi2Material);
     point2.position.set( x, z, y);
     point2.lookAt(0,0,0);
@@ -265,9 +277,6 @@ export class GlobeComponent implements AfterViewInit {
           this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);
         }
       }
-    
-
-    
   }
 
 
@@ -309,7 +318,6 @@ export class GlobeComponent implements AfterViewInit {
       this.top = (event.clientY - 100) + 'px';
       
       this.left = (event.clientX + 20) + 'px';
-      
 
       console.log("top is " + this.top);
       console.log("left is : " + this.left);

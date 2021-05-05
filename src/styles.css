@@ -1,20 +1,30 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
-/* *{
-    overflow: hidden;
-}   
-  */
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-slider {
     bottom:1.5vh;
-    /* width: 740px; */
     width: 104vh;
     position: absolute;
     justify-items: center;
     align-content: center;
 } 
+
+/* https://stackoverflow.com/questions/58057900/how-can-i-display-thumb-label-all-the-time-for-material-slider */
+.mat-slider-thumb-label {
+  transform: rotate(45deg) !important;
+  border-radius: 50% 50% 0 !important;
+}
+
+.mat-slider-thumb {
+  transform: scale(0) !important;
+}
+
+.mat-slider-thumb-label-text {
+  opacity: 1 !important;
+}
 
 /* 
 .mat-slider-horizontal {
@@ -46,9 +56,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
     background-color: white;
   }  */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

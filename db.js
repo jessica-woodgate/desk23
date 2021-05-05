@@ -46,6 +46,9 @@ function populate(model, data, cb){
    cb);
 };
 
-populate(LiteracyModel, literacyData);
+
+//to be commented out
+/* populate(LiteracyModel, literacyData);
 populate(CoordinatesModel, coordinatesData);
 populate(CountryModel, countryData);
+ */

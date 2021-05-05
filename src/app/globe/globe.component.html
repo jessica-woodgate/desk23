@@ -1,5 +1,5 @@
-<canvas #globeCanvas ></canvas>
-<!--(window:resize)="onWindowResize()"-->
+<canvas #globeCanvas (window:resize)="onWindowResize()"></canvas>
+<!-- (window:resize)="onWindowResize()"-->
 
 <div id = "displayLiteracyRates" [style.display]= "displayType" [style.top] = "top"  [style.left] = "left">
     Literacy Rates
@@ -9,20 +9,21 @@
     </div>
 </div>
 
-<app-tutorial></app-tutorial>
 
+<app-tutorial></app-tutorial>
+ 
 
 <!-- <app-slider></app-slider>
  -->
 
- 
 <div id = "sliderBox">
     <mat-slider thumbLabel  [(ngModel)] = "currentYear" min="1475" max = "2015"  (ngModelChange)="onSlide()"></mat-slider>
 </div> 
 
+<!-- don't need this anymore!
 <div id = "currentYearBox">
     {{currentYear}} 
-</div>
- 
+</div>  -->
+
 <!-- (slideend)="onSlide()" (pointerup)="onSlide()" -->
 

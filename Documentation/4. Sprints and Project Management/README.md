@@ -20,5 +20,9 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 
 [Details of sprint targets week by week](https://github.com/jess-mw/desk23/blob/79b37df560aa49fce65073d4a61749047cae1505/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md)
 
+[Details of meeting notes](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes)
+
+The development of the project was split into six main sprints, each one lasting a week. We had shorter meeetings throughout the week to discuss general issues that had come up, and anything that needed team input. At the end of each sprint we conducted a longer meeting to reflect upon the previous weeks targets, how progress on them had gone, and to set the next sprint's targets. Targets were set by looking at the backlog of our [Trello board](https://trello.com/desk231/home) and discussing with the team which tasks should be completed in the current sprint. Tasks were added to the Trello board in team meetings, mainly in the evaluative meeting at the end of each sprint, but also during the week when new tasks came up. These were also recorded in the minutes from our meetings.
+
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 *Jess*

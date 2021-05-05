@@ -18,6 +18,11 @@ export class DataService {
       
   }
 
+  
+  //sendData(someData) : Observable<Country[]>{​​​​​​​   return this.httpClient.post<Country[]>(this.REST_API_SERVER, someData);  }​​​​​​​
+
+
+
   public getAll(){
     //return this.httpClient.get(this.REST_API_SERVER);
 

@@ -15,9 +15,9 @@
 
 <!-- <app-slider></app-slider>
  -->
-
+<!-- min = 1475 -->
 <div id = "sliderBox">
-    <mat-slider thumbLabel  [(ngModel)] = "currentYear" min="1475" max = "2015"  (ngModelChange)="onSlide()"></mat-slider>
+    <mat-slider thumbLabel tickInterval="1" [(ngModel)] = "currentYear" min="1900" max = "2015"  (ngModelChange)="onSlide()"></mat-slider>
 </div> 
 
 <!-- don't need this anymore!

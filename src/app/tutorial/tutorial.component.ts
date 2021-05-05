@@ -22,7 +22,4 @@ export class TutorialComponent implements OnInit {
   hideTutorial() {
     this.tutorialShown = false;
   }
-
-
-
 }

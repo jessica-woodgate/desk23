@@ -1,9 +1,10 @@
 # Background and Motivation [10 marks]
 
 ## Contents
-* [a. Background literature. Academic research review.](https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md#a-background-literature-academic-research-review)
+1. [Background literature. Academic research review.](https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md#a-background-literature-academic-research-review)
+2. [State of the art survey. Academic research review.]
 
-## a. Background literature. Academic research review.
+## 1. Background literature. Academic research review.
 *Emily*
 
 ## State of the art survey. Current industry review.

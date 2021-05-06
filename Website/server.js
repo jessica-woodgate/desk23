@@ -4,9 +4,6 @@ const path = require('path');
 const http = require('http');
 // Utility function used to parse json files
 const bodyParser = require('body-parser');
-
-
-
 // Setup database
 const db = require('./db');
 //get access to dbController functions
@@ -40,12 +37,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/LiteracyRates/index.html'));
 });
 
-var LiteracyModel = require('./models/literacyRates');
-var CoordinatesModel = require('./models/coordinates');
-var CountryModel = require('./models/countryData');
-dbController.findByEntity(CoordinatesModel, 'Afghanistan');
-dbController.findByEntity(LiteracyModel, 'Afghanistan');
-dbController.findByEntity(CountryModel, 'Afghanistan');
 /**
  * Get port from environment and store in Express.
  */

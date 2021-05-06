@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 var LiteracyModel = require('./models/literacyRates');
 var CoordinatesModel = require('./models/coordinates');
 var CountryModel = require('./models/countryData');
+var dbController = require('./dbController');
 const literacyData = require('./crossCountryLiteracyRates');
 const coordinatesData = require('./coordinates');
 const countryData = require('./countryData');
@@ -51,4 +52,3 @@ function populate(model, data, cb){
 /* populate(LiteracyModel, literacyData);
 populate(CoordinatesModel, coordinatesData);
 populate(CountryModel, countryData);  */
-

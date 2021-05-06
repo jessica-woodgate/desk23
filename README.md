@@ -39,10 +39,12 @@ To achieve this, we have created a Single Page Application (SPA) designed to sho
 *Emily* 
 
 **Project Goals:**
+
 *Create an interactive data visualisation to:*
 -	Communicate clearly about global literacy rates
 -	Make evident key trends and patterns in literacy rates, including changes over time
 -	Make dense information accessible and even enjoyable to interact with
+
 **Contribution to solving the problem:**
 -	Highlight disparities in literacy rates around the world
 -	Raise awareness of the global issue of illiteracy

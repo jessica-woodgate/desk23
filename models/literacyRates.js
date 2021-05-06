@@ -11,36 +11,5 @@ var LiteracyRatesSchema = new Schema({
   Data: {type: Number},
 });
 
-//virtual for country name (like a getter)
-LiteracyRatesSchema
-.virtual('country_name')
-.get(function(){
-   return this.Entity;
-});
-//virtual for code
-LiteracyRatesSchema
-.virtual('country_code')
-.get(function(){
-   return this.Code;
-});
-//virtual for year
-LiteracyRatesSchema
-.virtual('year_recorded')
-.get(function(){
-   return this.Year;
-});
-//virtual for literacy rates
-LiteracyRatesSchema
-.virtual('data_recorded')
-.get(function(){
-   return this.Data;
-});
-//virtual for country URL - useful to get particular instance of a model
-LiteracyRatesSchema
-.virtual('url')
-.get(function(){
-   return '/catalog/literacyRates'+this._id;
-})
-
 // Compile model from schema & export
 module.exports = mongoose.model('LiteracyModel', LiteracyRatesSchema);

@@ -1,0 +1,34 @@
+
+<div id = "showTut">
+    <button (click)="showTutorial()">Show Tutorial</button>
+    <button (click)="hideTutorial()">Hide Tutorial</button>
+</div>
+
+<div id = "spinLeftOrRight" *ngIf = "tutorialShown">
+    <h3> Spin the globe in any direction by clicking and dragging </h3>
+</div>
+
+<div id = "moveSlider" *ngIf = "tutorialShown" >
+    <h3>Drag the slider left or right to change which year we are currently in</h3>
+</div>
+
+
+<div id = "clickCountry" *ngIf = "tutorialShown">
+    <h3>Click on a bar-chart of a country to view its literacy rates and other data</h3>
+</div>
+
+<div id = "zoomGlobe" *ngIf = "tutorialShown">
+    <h3>Use two fingers to zoom in or out</h3>
+</div>
+
+<img id = "upSpin" *ngIf = "tutorialShown" src="../../assets/images/tutorial/SpinUp.png">
+
+<img id = "leftSpin" *ngIf = "tutorialShown" src="../../assets/images/tutorial/SpinLR.png">
+
+<img id = "slide" *ngIf = "tutorialShown" src="../../assets/images/tutorial/Slide.png">
+
+<img id = "zoom" *ngIf = "tutorialShown" src="../../assets/images/tutorial/Zoom.png">
+
+<img id = "click" *ngIf = "tutorialShown" src="../../assets/images/tutorial/click.png">
+
+

@@ -1,9 +1,15 @@
 var async = require('async');
-var LiteracyModel = require('./models/literacyRates');
 //import mongoose module
 const mongoose = require('mongoose');
-const crossCountryLiteracyRates = require('./crossCountryLiteracyRates');
+//get models
+var LiteracyModel = require('./models/literacyRates');
+var CoordinatesModel = require('./models/coordinates');
+var CountryModel = require('./models/countryData');
+const literacyData = require('./crossCountryLiteracyRates');
+const coordinatesData = require('./coordinates');
+const countryData = require('./countryData');
 
+//set variables
 const {
   MONGO_USERNAME,
   MONGO_PASSWORD,
@@ -11,7 +17,7 @@ const {
   MONGO_PORT,
   MONGO_DB
 } = process.env;
-
+//set options in case of failure to connect to db
 const options = {
   useNewUrlParser: true,
   reconnectTries: Number.MAX_VALUE,
@@ -28,37 +34,21 @@ var db = mongoose.connection;
 //bind connection to error event
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-//populating database with data
-function createLiteracyRates(cb){
+//populating database with data - only need to call this once
+function populate(model, data, cb){
    async.parallel([
       function(callback){
-         LiteracyModel.insertMany(crossCountryLiteracyRates);
-      },
-      //checking that the data has been uploaded (remove when testing unnecessary)
-      function(callback){
-         LiteracyModel.find({'Entity':'World'}, 'Entity Code Data', function(err, results){
-            if(err) {
-               return handleError(err)
-            }else{
-               console.log(results);
-            }
-         })
+         model.insertMany(data);
+         console.log('populated')
       }
    ],
    //optional callback
    cb);
-}
+};
 
-async.series([
-   createLiteracyRates,
-],
-//optional callback
-function(err, results) {
-   if(err){
-      console.log('FINAL ERR: '+err);
-   }else{
-      console.log('LiteracyRates: '+results);
-   }
-   // All done, disconnect from database
-    mongoose.connection.close();
-});
+
+//to be commented out
+/* populate(LiteracyModel, literacyData);
+populate(CoordinatesModel, coordinatesData);
+populate(CountryModel, countryData);  */
+

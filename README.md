@@ -26,13 +26,6 @@ Our site is targeted at older children and teenagers, to encourage awareness abo
 
 ### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/807edeb0dc5f90f33ec7091e3f966d5df0c4be27/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
 
-## Our Team
-#### Wenda - Responsible for back end
-#### Jess - Responsible for database
-#### Stanni - Responsible for front end
-#### Emily - Responsible for quality assurance
-#### Hamza - Responsible for UI/UX
-
 ## Introduction [10 marks] 
 
 ### Abstract. Motivation for the project, framing of the problem and a high-level overview of the system. 
@@ -47,6 +40,13 @@ To achieve this, we have created a Single Page Application (SPA) designed to sho
 
 ### Video. Short (1-2min) demo video to explain your system (think Kickstarter) 
 *Hamza* 
+
+## Our Team
+#### Wenda - Responsible for back end
+#### Jess - Responsible for database
+#### Stanni - Responsible for front end
+#### Emily - Responsible for quality assurance
+#### Hamza - Responsible for UI/UX
 
 ## Documentation
 ### 1. [Background and Motivation](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/1.%20Background%20and%20Motivation/README.md)

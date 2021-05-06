@@ -8,7 +8,15 @@ Despite many countries having high levels of basic literacy skills, there remain
 
 Our project aims to build awareness about this issue, in a fun and informative way to encourage learning and engagement.
 
-## Our idea
+## Contents
+[Our Team](https://github.com/jess-mw/desk23#our-team)
+[Introduction](https://github.com/jess-mw/desk23#introduction-10-marks)
+    [Abstract](https://github.com/jess-mw/desk23#abstract-motivation-for-the-project-framing-of-the-problem-and-a-high-level-overview-of-the-system)
+    [Project Objectives](https://github.com/jess-mw/desk23#project-objectives-the-high-level-goals-of-the-project-and-the-contribution-towards-solving-the-problem-a-checklist-against-which-the-team-can-evaluate-their-success)
+    [Video](https://github.com/jess-mw/desk23#video-short-1-2min-demo-video-to-explain-your-system-think-kickstarter)
+[Documentation](https://github.com/jess-mw/desk23#documentation)
+
+## Our Idea
 
 We envision an interactive globe that users can nagivate and move around with ease. Upon entering the website, the user is greeted with a book with scrambled letters on that merge into a description of the site. Users can then click through to the globe. Countries are lit up in brightness that accords with their levels of literacy rates. By hovering their mouse over a country, users can view basic statistics about that country. By clicking on the country, we zoom into a more detailed map and list further, more detailed, information related to that country, for example links to charities and ways to help. There may possibly be a time dimension, where we can view how literacy rates have evolved over time.
 

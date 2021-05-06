@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener, Host } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener, Host } from '@angular/core';
 import { Country } from '../models/country';
 import { DataService } from '../services/data.service';
 import * as THREE from 'three';
@@ -12,7 +12,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
   styleUrls: ['./globe.component.css']
 })
 
-export class GlobeComponent implements AfterViewInit {
+export class GlobeComponent implements OnInit {
   //'globeCanvas' refers to the one established in the html file
   //cReference is the variable we are using
   //ViewChild basically sets up where the canvas element is
@@ -40,7 +40,7 @@ export class GlobeComponent implements AfterViewInit {
   //listOfCountries:  any  = (data  as  any).default;
 
   //creating an array of Country objects
-  listOfCountries!: Country[];
+  listOfCountries: Country[] = [];
 
   raycaster!: THREE.Raycaster;
   mouse! : THREE.Vector2;
@@ -54,6 +54,7 @@ export class GlobeComponent implements AfterViewInit {
   }
 
   constructor(private countryService : DataService) {
+
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
 
@@ -71,18 +72,32 @@ export class GlobeComponent implements AfterViewInit {
     this.left = "0px";
   }
 
-  ngOnInit() {
-    //this.listOfCountries = this.countryService.getAll();
+ ngOnInit() {
+   
     this.countryService.getCountryData().subscribe((countries) => {
       this.listOfCountries = countries;
+      this.initDependencies();
     });
-
-    this.listOfCountries  = (this.listOfCountries  as  any).default;
-
+    
+    //this.listOfCountries  = (this.listOfCountries  as  any).default;
     //console.log("Country printed in ngOnInit : " + this.listOfCountries[0].Entity);
-  }
+  } 
 
-  ngAfterViewInit() {
+  /* ngAfterViewInit() {
+
+    this.setScene();
+    this.setCamera();
+    this.setRenderer();
+    this.setControls();
+
+    this.createLightGroup();
+    this.createGlobe();
+
+    this.animate();
+    this.setAllPoints(this.currentYear);
+  } */
+
+  initDependencies() {
     this.setScene();
     this.setCamera();
     this.setRenderer();

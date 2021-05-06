@@ -38,6 +38,16 @@ To achieve this, we have created a Single Page Application (SPA) designed to sho
 ### Project Objectives. The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
 *Emily* 
 
+**Project Goals:**
+*Create an interactive data visualisation to:*
+-	Communicate clearly about global literacy rates
+-	Make evident key trends and patterns in literacy rates, including changes over time
+-	Make dense information accessible and even enjoyable to interact with
+**Contribution to solving the problem:**
+-	Highlight disparities in literacy rates around the world
+-	Raise awareness of the global issue of illiteracy
+-	Encourage reflection on the importance and value of literacy from an early age and potentially spark an interest
+
 ### Video. Short (1-2min) demo video to explain your system (think Kickstarter) 
 *Hamza* 
 

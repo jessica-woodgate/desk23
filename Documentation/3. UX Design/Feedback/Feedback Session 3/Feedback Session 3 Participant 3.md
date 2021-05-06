@@ -1,0 +1,61 @@
+# Feedback Round 3 – Participant 3
+
+*This is a transcript of a feedback interview with a user who is looking at prototype 3 (pictured below). Bits in italic are information added in the write up to help explain any non-verbal communication that is difficult to pick up on in the transcript otherwise. Before the recording began, the user was asked to place themselves in their younger shoes, to try and simulate the experience of our target users (who we could not use due to them being a vulnerable group). They were also briefed on ethics (see the feedback methodology document for more information). After the meeting, they were debriefed to ensure they were happy with how it went and knew who to contact if they had any more questions or issues.*
+
+Interviewer (I) – so if you could please look at the website and ask questions as they come up. It’s a prototype so it doesn’t have full functionality currently – it’s just to give you an idea of what the website will look like. I’m just going to look at what you’re doing with the website – how you interact with it. The website is pretty much going to be an infographic, so you hover over a country and it shows you data about the country (about literacy rates) and then you click on it and it shows you more information. So it’s going to look like this – it’s going to be a globe that you can move around and click on and do stuff.
+
+Participant (P) – When you’re trying to move the globe, when you let go of the mouse it takes you back to the start
+
+I – yeah, it won’t do that on the actual website, it’s just because it’s a prototype
+
+P – also, it’s like moving like a flat screen, would be good if it was a rolling, moveable kind of thing. If you can move it with your mouse there’s probably not much point in the arrows. Also, what’s this bit at the bottom supposed to be? Like the change in the literacy rates or..?
+
+I – over time, yeah
+
+P – yeah, obviously I’m guessing there’s not supposed to be a change at the moment because you haven’t put anything in
+
+I – we haven’t put the data in yet, yeah
+
+P – ermm, and also you can’t see the bottom of South America and stuff
+
+*Pause*
+
+I – so one of the ideas is that countries with higher literacy rates will be lit up brighter, or they’ll be different colours
+
+P – like with a key?
+
+I – that’s a good idea
+
+P – I guess like the lights being brighter will be easier to understand, but if you’re using different colours you’ll have to put some sort of indication of what they are. Umm… also, this is like design, but the background is probably a bit much as it kind of blends in with the globe. Umm… also, if you were moving this (talking about the timeline) it would probably be good if it told you what year, and also if you could leave it at that year it would be good, because when I let go it goes straight to the present day. And this is just me, but that gap kind of annoys me (she points to gaps at each end of the timeline) just kind of an aesthetic thing.
+
+*Pause*
+
+I – so it’s going to be for, like, our target audience is basically secondary school/6th form kids so if you have any feedback about that it would be good 
+
+P – I’d say it would probably be quite good for years 7-9, how it is now is probably a bit basic for the older years. You’d probably look at it for a couple of minutes and get bored – it would probably be more interesting for the younger years. And also like, you’d have to make it easy to read when you add the literacy rates stuff because otherwise young kids won’t be able to read it.
+
+I – what do you mean by easy to read?
+
+P – I don’t know, just like not too much information – are you just putting data on there pretty much?
+
+I – not sure yet, haven’t got that far
+
+P – I mean like, yeah, kind of like comparing it might be easier
+
+I – comparing what?
+
+P – just like putting in a scale, I don’t know a good way of doing it, but if you’re just putting numbers down, and they don’t really make connections between the differences between countries… have to find a way to show that there are big differences. Make them easy to compare, sort of thing. Do you know how many bits you’re putting, like how many countries you’re getting data for?
+
+I – so we’ve got a data sheet we pulled off the internet that has a lot of countries on already – a lot of the data is open source, so you can just download it. So most of them? I think, have data on them now. But they don’t all have data on from 1970…. Or something. So there will be more of them that you get data for.
+
+P – yeah, I’m just thinking don’t do just like not very many of them that you get data for, because if you… I find it quite annoying when we get given these sorts of things and they tell you about the UK and America and then that’s pretty much it.
+
+I – any concluding remarks?
+
+P – I think it will be good when you’ve done it! Not that it’s not! Also if you are going to leave the arrows you should change them because they’re a bit… I don’t know… well maybe they’re ok for younger… maybe they’re a bit much.
+
+I – what about the moon, do you like the moon?
+
+P – I think it’s a nice touch! But needs to be more of a contrast with like the background, because it blends in quite a lot. Especially because you have the bright bits – the bright lights on earth.
+
+I – great! Thank you!

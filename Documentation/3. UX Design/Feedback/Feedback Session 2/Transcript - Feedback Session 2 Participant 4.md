@@ -1,4 +1,4 @@
-# Feedback Round 2 – Participant 3
+# Feedback Round 2 – Participant 4
 
 *This is a transcript of a feedback interview with a user who is looking at prototype 2 (pictured below). Bits in italic are information added in the write up to help explain any non-verbal communication that is difficult to pick up on in the transcript otherwise. Before the recording began, the user was asked to place themselves in their younger shoes, to try and simulate the experience of our target users (who we could not use due to them being a vulnerable group). They were also briefed on ethics (see the feedback methodology document for more information). After the meeting, they were debriefed to ensure they were happy with how it went and knew who to contact if they had any more questions or issues.*
 

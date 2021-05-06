@@ -31,7 +31,11 @@ Our most important primary stakeholders are our users, and also those of whom th
 ## Introduction [10 marks] 
 
 ### Abstract. Motivation for the project, framing of the problem and a high-level overview of the system. 
-*Stanni* 
+
+Literacy’s importance cannot be understated. From an individual perspective, low literacy rates can be correlated with worsened job outcomes and lower-earning potentials, and from a national outlook, lower levels of literacy can mar a nation’s economic competitiveness, as well as being linked to drastically lower economic performance metrics such as Gross National Product and Human Development Index. 
+The motivation for this project is the goal of being able to directly convey to our target user group the state of global literacy rates as well as trace its ensuing rise over time through the medium of the web in a way that is more engaging than the typical tabulated data presented by some websites.
+To achieve this, we have created a Single Page Application (SPA) designed to show the contrasting literacy levels across the world with the important distinction of being “playful” in its implementation. This gamified approach served as a requirement of the brief and in accordance with this objective, the project’s defining feature is a 3D Globe built using the MEAN stack: MongoDB is used to store literacy rates data whilst Express is utilized to serve that data through an API by listening to requests from the NodeJS runtime. The front-end is implemented using Angular.
+
 
 ### Project Objectives. The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
 *Emily* 

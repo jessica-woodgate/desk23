@@ -3,7 +3,7 @@
 
 ### Feedback on 23/03/2021
 
-Gathering feedback on the following prototype: 
+Gathering feedback on the following prototype: NEED TO CHANGE THIS IMAGE
 ![image](https://user-images.githubusercontent.com/45073537/116997035-2ba1cb80-acd4-11eb-809c-cfc14c8e5fe8.png)
 
 ### How the session was conducted:

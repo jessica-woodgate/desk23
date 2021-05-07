@@ -12,5 +12,4 @@ Three First Globe (OPTION C)
 ![image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results/Design%20Choice%203.PNG)
 
 Three Second Globe (OPTION D) 
-
 ![image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results/Design%20Choice%204.PNG)

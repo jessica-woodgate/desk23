@@ -25,14 +25,13 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 
 ### High level overview
 
-![image](https://user-images.githubusercontent.com/45073537/117454106-a9b4db00-af3d-11eb-803f-123646e83642.png)
+![image](https://user-images.githubusercontent.com/45073537/117454218-cd782100-af3d-11eb-8935-9712b1dcd551.png)
 
 [Details of sprint targets week by week](https://github.com/jess-mw/desk23/blob/79b37df560aa49fce65073d4a61749047cae1505/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md)
 
 The development of the project was split into six main sprints, each one lasting two weeks. Each sprint was defined by a [user story](https://github.com/jess-mw/desk23/blob/de9f01ae9e2cbb21b6e4b16f7435eaf4cd2fdb4d/Documentation/3.%20UX%20Design/9.%20User%20Stories.md) and we assigned tasks accordingly. We had shorter meeetings throughout the week to discuss general issues that had come up, and anything that needed team input. At the end of each sprint we conducted a longer meeting to reflect upon the targets, how progress on them had gone, whether we had reached our definition of done, and to set the next sprint's targets. Targets were set by deciding upon a user story for that week, and adding to the backlog of our [Trello board](https://trello.com/desk231/home). Taking the user story and Trello board, we discussed as a team which tasks should be completed in the current sprint. Tasks were added to the Trello board in team meetings, mainly in the evaluative meeting at the end of each sprint, but also during the week when new tasks came up. These were also recorded in the [minutes](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) from our meetings.
 
-![image](https://user-images.githubusercontent.com/45073537/117451069-ee3e7780-af39-11eb-8017-9daf1d4a741f.png)
-
+![image](https://user-images.githubusercontent.com/45073537/117454149-b6d1ca00-af3d-11eb-8c93-80507bf5cced.png)
 
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 *Jess*

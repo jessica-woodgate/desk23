@@ -1,0 +1,18 @@
+### Who is our user?
+*	People in school who need the data
+*	If they were writing an essay, would they just go to our world in data, or something like that?
+*	12-16 year olds, where they can grab facts about it and keeps it interesting, but they aren’t writing an academic paper
+*	General public – people that are interested but don’t know much about the issue
+*	Charities
+*	Media (e.g. Ted talks)
+*	Emphasis on making change, analysis aspect
+*	Academics
+*	Later stages of primary school and early high school 
+
+![image](https://user-images.githubusercontent.com/45073537/116732991-6f01ee80-a9e3-11eb-801d-8ce9bc01b617.png)
+
+### Added value
+*	Visualisation aspect
+*	Evaluation of data – what do these numbers mean?
+*	Interactive format – engagement with the data
+*	Catered the evaluation of the data to our audience 

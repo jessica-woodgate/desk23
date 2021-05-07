@@ -1,5 +1,5 @@
 # Feedback on MVP
-### Feedback on 15/04/2021
+### Feedback on 06/05/2021
 
 ### How the session was conducted:
 This session was conducted in person, but the audio was recorded with the user’s consent for later reference. The user had not participated in the previous sessions. They were briefed with ethics before the session. The project scope was explained to them after the user was left a while to interact with the website without guidance. They were shown the prototype and left to interact with it whilst the interviewer observed, answering any questions the user had. After interacting with it, we spoke about any feedback they had. The user was then explained the project brief and objectives, and we had a further discussion about any thoughts they had after being informed more.

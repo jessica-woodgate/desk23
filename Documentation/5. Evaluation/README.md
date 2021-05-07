@@ -13,9 +13,9 @@ c. [User acceptance testing - evaluation of design with users](https://github.co
 ## b. Unit testing / Functional testing.
 *Emily*
 
-On the basis of the user stories, a test plan was developed around the key features and areas of value-add of the project: 1. clicking on specific countries to find more information, 2. rotating/altering the view of the globe, and 3. changing the date dynamically using the timeline feature. The plan sets out the steps for manually testing each feature as well as the prerequisites that need to be accounted for (environment and browser), and was reviewed in the context of a meeting between the full team.
+On the basis of the user stories, a test plan was developed around the key features and areas of value-add of the project: 1. clicking on specific countries to find more information, 2. rotating/altering the view of the globe, and 3. changing the date dynamically using the timeline feature. The plan sets out the steps for manually testing each feature as well as the prerequisites that need to be accounted for (environment and browser), and was reviewed in the context of a meeting between the full team. 
 
-Building on the test plan and the features identified as product requirements, a set of initial automated tests were defined through a discussion of each teammember's work on the different parts of the system that impact on the implementation of a given feature, considering one feature at a time. This approach was intended to ensure that both the view (user interface) and the model (database and logic) would be tested, while ensuring robust coverage of a particular functionality. It was decided at this stage that the rotation and zoom functions would not be tested given that these are implemented using three.js OrbitControls, preferring to focus on testing code that helps the project and is not too closely related to three.js.
+Building on the test plan and the features identified as product requirements, a set of initial automated tests were defined through a discussion of each teammember's work on the different parts of the system that impact on the implementation of a given feature, considering one feature at a time. This approach was intended to ensure that both the view (user interface) and the model (database and logic) would be tested, while ensuring robust coverage of a particular functionality. Unlike the functional browser-based tests in the test plan, the automated tests required knowledge of the code's implementation details. It was decided at this stage that the rotation and zoom functions would not be tested given that these are implemented using three.js OrbitControls, preferring to focus on testing code that helps the project and is not too closely related to three.js.
 
 The initial suite of planned tests included broadly:
 
@@ -39,12 +39,12 @@ However, the difficulty and undesirability of testing the countries clicked soon
 
 *Clicking on a specific country to find more information*
 
-3. Setting the countryName and literacyRate on Globe component, and check that the pop-up component in the HTML receives the correct values
+3. Setting the countryName and literacyRate on Globe component, and checking that the pop-up component in the HTML receives the correct values
 
 4. Testing if the country object array in the globe component reflects the dummy data returned by data service
 5. Testing a get request from the data service with mock data
 
-The tests were implemented using Karma and Jasmine on the git staging branch, following the continuous integration and deployment principles of evaluating a functionality before it is released to the live branch, and making sure that a given story is delivered against a feature at a time. The tests were first conducted with core cases in mind, and then extended to test edge cases, for example years without any data points in the dataset.
+The tests were implemented using Karma and Jasmine on the git staging branch, following the continuous integration and deployment principles of evaluating a functionality before it is released to the live branch, and making sure that a given story is delivered against a feature at a time. The tests were first conducted with core cases in mind, and then extended to test edge cases, for example years without any data points in the dataset, to try to find defects and provide a greater level of assurance.
 
 ## c. User acceptance testing. Evaluation of your design with users – methods undertaken, findings, implications.
 *Emily*

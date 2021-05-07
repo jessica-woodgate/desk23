@@ -30,6 +30,7 @@ This session was conducted in person, but the audio was recorded with the userâ€
 8. Perhaps look at other data sets to fill in the missing data.
 9. Perhaps if there's a year with no data, you can't select that year on the timeline - you can only select years that have data collected for them. Maybe explain this in the info box next to the timeline.
 10. Don't make it too cluttered by adding too much information.
+11. Perhaps colour code bars according to literacy rates (e.g. >50%, 50-70%, 70-100%).
 
 ### Potential Areas to Improve:
 1. Percentage signs need to be included next to the number for clarification, also explain that it is the percentage of literate people.

@@ -25,7 +25,7 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 
 ### High level overview
 
-![image](https://user-images.githubusercontent.com/45073537/117451247-29d94180-af3a-11eb-9893-23f9da5d8e8f.png)
+![image](https://user-images.githubusercontent.com/45073537/117454106-a9b4db00-af3d-11eb-803f-123646e83642.png)
 
 [Details of sprint targets week by week](https://github.com/jess-mw/desk23/blob/79b37df560aa49fce65073d4a61749047cae1505/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md)
 

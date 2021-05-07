@@ -17,5 +17,24 @@ On the basis of the user stories, a test plan was developed around the key featu
 
 Building on the test plan and the features identified as product requirements, a set of initial automated tests were defined through a discussion of each teammember's work on the different parts of the system that impact on the implementation of a given feature, considering one feature at a time. This approach was intended to ensure that both the view (user interface) and the model (database and logic) would be tested, while ensuring robust coverage of a particular functionality. It was decided at this stage that the rotation and zoom functions would not be tested given that these are implemented using three.js OrbitControls, preferring to focus on testing code that helps the project and is not too closely related to three.js.
 
+The initial suite of planned tests included broadly:
+
+*Navigating through time using the slider*
+- should get [right number] of data points on the globe for a given year
+- should include [specific countries] among the data points for a given year
+- should get the expected data from the data service
+
+*Clicking on a specific country to find more information*
+- should (not) generate a pop up box
+- should match country name to the country clicked
+- should match literacy rate to the country clicked
+- should get the expected data from the data service
+
+However, the difficulty and undesirability of testing the countries clicked soon became evident given that the click detection relies on a three.js raycaster that returns an array of objects that intersect with it. Ultimately, the following core tests were developed to test the code. 
+
+[]
+
+The tests were implemented on the staging branch following continuous integration and deployment principles using Karma and Jasmine.
+
 ## c. User acceptance testing. Evaluation of your design with users – methods undertaken, findings, implications.
 *Emily*

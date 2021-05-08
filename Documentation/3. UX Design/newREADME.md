@@ -2,7 +2,7 @@
 
 ## Contents
 
-[a. Mashing up the Serious and The Playful](a. Mashing Up the Serious and The Playful)
+[a. Mashing up the Serious and The Playful](## a. Mashing Up the Serious and The Playful)
 
 ## a. Mashing Up the Serious and The Playful
 

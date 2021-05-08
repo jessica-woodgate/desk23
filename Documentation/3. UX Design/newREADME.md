@@ -15,7 +15,7 @@ Before focussing on who our end user will be, we decided to understand the probl
 
 At this stage, we have a problem to solve and we also have a selection of playful methods that can be incorporated into solving the serious problem.  In order to choose the most appropriate playful elements of the website, we needed to begin understanding who are our end users will be. 
 
-## Who is Our User?
+## c. Who is Our User?
 
 In the previous sections we outlined the route we took to decide that the disparity of literacy rates of various countries was an issue we are aiming to tackle. In particular, we are looking at how literacy rates are represented and how might we develop a better visual representation for them. This was essential in order to highlight the stark differences between continents such as Europe and Asia. 
 
@@ -25,7 +25,7 @@ We acknowledged, however, that one particular group of people would not be the o
 The group proceeded to hold a discussion on who our stakeholders would be (primary and secondary), resulting in us developing an in-depth stakeholder analysis. 
 
 
-## Stakeholder Analysis 
+### Stakeholder Analysis 
 
 The stakeholder analysis was done in order to maximise the possible contribution of the project and anticipate the various interactions with other parties to be cognizant of the impacts, including ethical considerations. After initial brainstorming, mapping primary and secondary stakeholders and their possible interests and concerns, this chart was produced using Miro (see below) to demonstrate how stakeholders would be managed over the course of the project.
 
@@ -42,6 +42,18 @@ Other secondary stakeholders could include policymakers and international develo
 It was noted that, though the website itself does not collect data from users, we would need to consider where we source our data from to ensure accuracy and consider attribution and any related licensing issues. In this respect, the data owners would need to be kept satisfied, and data properly referenced. Given that they could decide at any moment to restrict access to their data, the data owners were considered to have high power.
 
 
+## d. The Design Methodology 
+
+### What Could the Website Look Like?
+
+The first step our group took was to conceptualise several paper prototypes using various techniques such as story and mood boards. The idea was to quickly put together visuals to give an idea on what we, on an individual basis, think would best combine the seriousness of literacy rate disparities with something playful. Upon doing so, created a brief list of pros and cons for everyone’s designs. To see our early prototypes as well as their analysis please see here: [Paper Prototypes](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/6.%20Paper%20Prototypes%20Review.md).
+
+Our next design choice was to find the most effective way to pull out the best of all ideas and combine them. We decided to use the mash-up technique once more, this time forcing together 3 ideas at a time and creating strange yet interesting solution, which you may view here: [Mashing Up the Ideas](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/7.%20Mashing%20Up%20Ideas.md).
+
+We knew that a majority of our concepts would not gel together well, however, realised that there may be a hidden gem or quality that would be put to use in the later stages of our project. 
+The final mash-up we did was between a timeline of literacy rate changes throughout the years for each country and a map to display said data in a playful and interactive manner. Having narrowed down to just one idea, we began fleshing it out. Please click here to check out the first draft of our website: [First Written Draft of Website](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/11.%20%20First%20draft%20of%20website.md). 
+
+Having the website’s process and user journey down on paper allowed us to begin working on iterations of paper prototypes of the website. We had two prototypes, one allowing the user to traverse along a 2D map of the earth, and the second allowing the user to spin through a 3D Globe representation of the earth. To view the two prototypes, click here: [First Two Website Prototypes](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/8.%20First%20Two%20Website%20Prototypes.md).
 
 
 

@@ -66,12 +66,32 @@ Many respondents pointed out that a static 2D map would be easy to navigate and 
 
 Finally, only 20% of respondents correctly estimated the proportion of the world's population aged 15 years and above that is able to read and write today, and interestingly the majority of respondents reported being “somewhat confident” or “not so confident” about their ability to accurately estimate the proportion of their country's population that is literate, and how these rates compare to the global average, underscoring the necessity of such a tool.
 
-### User Particpatory Design 
+## e. User Particpatory Design 
 
 With the data leaning heavily towards creating a 3D interactive globe to represent the literacy rates data from various different years, we were able to begin developing wireframes for the prototype. 
 In order to build a website that truly adheres to the user’s needs and expectations, we decided to enrol users co-designers. Whilst we could not involve all stakeholders identified within our design process (due to COVID limitations), we were able to obtain a diverse group of varying nationalities as well as ages comprised of the team’s friends and family. Please see our ethics section to understand how we incorporated our ethical framework into the remainder of the design process.
-The group looked to approaching the design through a Heuristic Evaluation lens and decided to use Gerhardt-Powals’ heuristic evaluation principles as the backbone of the development of our designs. See here for an outline of the 9 principles we referred to: https://www.liquisearch.com/heuristic_evaluation/gerhardt-powals%E2%80%99_cognitive_engineering_principles
+The group looked to approaching the design through a Heuristic Evaluation lens and decided to use Gerhardt-Powals’ heuristic evaluation principles as the backbone of the development of our designs. See here for an outline of the 9 principles we referred to: https://www.liquisearch.com/heuristic_evaluation/gerhardt-powals%E2%80%99_cognitive_engineering_principles.
+
 This design method fit perfectly with out Agile SCRUM development process. Having a group of users whom we could consistently share our designs and updates with, who in turn provided us with valuable feedback on potential improvements, allowed us to elegantly run the agile development cycle. The website was in a constant process of being pushed to production and tested by our user group. 
+
+Here is the standard interview methodology that was adopted for each feedback session with our user group: [Interview Methodology](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback).
+
+They were given a chance to interact with the Wireframe, while key observations about their impressions and feelings interacting with the prototype were documented by a member of the team acting as interviewer (please refer to Feedback section). The users went into the session cold without much background information to review our first wireframe of the website, which can be seen here: [First Interactive Prototype Wireframe](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Prototyping/Interactive%20Prototype%201.pdf).
+
+The first interviews were carried out before Easter in the week of 22 March, and the feedback was incorporated into a revised wireframe in the first week of April, including inter alia the need for a tutorial to give some instructions for navigating the page and including arrows; contextualizing the use of scrambled, out-of-order text on the landing page; enhancing the backdrop and introducing fun and creative animation elements such as a starry sky or an alien spaceship passing by. The second wireframe iteration can be seen here: [Second Interactive Prototype Wireframe](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Prototyping/Wireframe%20files).
+
+User group members interacted with the lit up globe option in a second round of feedback sessions which took place over 10-11 April. Given that the users had previously participated in the first feedback session, they already had an understanding of the brief and the problems we are aiming to tackle. Once again, we threw the users in the deep end, took down notes on the users’ actions and recorded their feedback on their experience interacting with the prototype. However, due to the limitations Adobe XD poses, at times we had to intervene and advise them on what button(s) to click to achieve the response they are seeking for.
+
+The team discussed the feedback and potential areas for improvement in a 12 April stand-up. Key areas of feedback were that the book on the landing page may seem a bit out of place floating in space, so the team brainstormed options to better link up the landing page features with the globe in space that follows and considered whether the landing page couldn’t feature a different object other than a book, such as a monitor. Users also pointed out the importance of keeping track of the year as the slider is in use, rather than only showing the start and end dates of the dataset. The addition of the brief tutorial/instructions demo for interacting with the page was generally well received by users, and the suggestion came up to allow the user to test an action after each hint is offered, for example, after “Click the arrows to explore”, the user should be able to click either of the arrows and the globe should spin. User group members also sought more clarity on how countries would be identified, and how they could be quickly found, for example if the location of the country on the globe is unknown.
+
+## f. Building the Website on Angular
+
+Understanding the limitations posed by Adobe XD, we quickly realised that developing rough drafts on Angular would better suit our testing methods. We needed to provide the users with more opportunities of interactivity with the website, allowing them to spin the globe and press buttons the way they would except (without us interfering and guiding them). 
+
+### Sprint 1 and 2: Building the Globe and Interactivity
+
+Given the comprehensive data we obtained from the feedback sessions regarding the two wireframe prototypes, we found it suitable to diverge away from the user group for 2 out of the 3 sprint periods. The aim was to develop a fully functioning Minimum Viable Product (MVP). We took this method in order to gain the most from the feedback sessions. Data input was non-essential at this point, as our goal was to understand the user’s expectations in terms of the overall look and feel of the globe. 
+
 
 
 

@@ -3,6 +3,11 @@
 ## Contents
 
 [a. Mashing up the Serious and The Playful](##a.-Mashing-Up-the-Serious-and-The-Playful)
+[b. Breaking the Problem Down](##b.-Breaking-the-Problem-Down)
+[c. Who is Our User?](##c.-Who=is-Our-User?)
+[d. The Design Methodology](##d.-The-Design-Methodology)
+[e. User Participatory Design](##e.-User-Participatory-Design)
+[f. Building the Website on Angular](##f.-Building-the-Website-on-Angular)
 
 ## a. Mashing Up the Serious and The Playful
 
@@ -70,7 +75,7 @@ Many respondents pointed out that a static 2D map would be easy to navigate and 
 
 Finally, only 20% of respondents correctly estimated the proportion of the world's population aged 15 years and above that is able to read and write today, and interestingly the majority of respondents reported being “somewhat confident” or “not so confident” about their ability to accurately estimate the proportion of their country's population that is literate, and how these rates compare to the global average, underscoring the necessity of such a tool.
 
-## e. User Particpatory Design 
+## e. User Participatory Design 
 
 With the data leaning heavily towards creating a 3D interactive globe to represent the literacy rates data from various different years, we were able to begin developing wireframes for the prototype. 
 In order to build a website that truly adheres to the user’s needs and expectations, we decided to enrol users co-designers. Whilst we could not involve all stakeholders identified within our design process (due to COVID limitations), we were able to obtain a diverse group of varying nationalities as well as ages comprised of the team’s friends and family. Please see our ethics section to understand how we incorporated our ethical framework into the remainder of the design process.

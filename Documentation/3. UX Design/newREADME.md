@@ -138,3 +138,4 @@ Feedback obtained for this iteration of the website, which can be found here: [F
 
 The following changes were incorporated into the final design of the website, which can be found here - [Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
 
+## g. Flowchart

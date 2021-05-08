@@ -1,1 +1,1 @@
-Image of the final website's pages. 
+Image of the final website iteration's pages. 

@@ -1,6 +1,6 @@
 # UX Design
 
-** IMPORTANT TO DO: **
+**IMPORTANT TO DO:**
 
 * 
 

@@ -1,7 +1,8 @@
 # Feedback on MVP
 ### Feedback on 06/05/2021
 
-## INCLUDE IMAGE OF GLOBE HERE
+![image](https://user-images.githubusercontent.com/45073537/117461961-0d430680-af46-11eb-856b-bb7f01de9909.png)
+![image](https://user-images.githubusercontent.com/45073537/117462022-1fbd4000-af46-11eb-8af1-1d8fb2c712cf.png)
 
 ### How the session was conducted:
 This session was conducted in person, but the audio was recorded with the user’s consent for later reference. The user had not participated in the previous sessions. They were briefed with ethics before the session. The project scope was explained to them after the user was left a while to interact with the website without guidance. They were shown the prototype and left to interact with it whilst the interviewer observed, answering any questions the user had. After interacting with it, we spoke about any feedback they had. The user was then explained the project brief and objectives, and we had a further discussion about any thoughts they had after being informed more.

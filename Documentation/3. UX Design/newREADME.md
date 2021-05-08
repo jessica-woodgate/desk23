@@ -2,7 +2,16 @@
 
 **IMPORTANT TO DO:**
 
-* 
+* Fix paper prototype links: https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/6.%20Paper%20Prototypes%20Review.md
+* Fix First two website prototype links: https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/8.%20First%20Two%20Website%20Prototypes.md
+* Add survey monkey images to readme: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/First%20SurveyMonkey%20Results
+* Properly reference Gerhardt lad 
+* Edit Interview methodology: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback
+* Add images to readme for second wireframe: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Prototyping/Wireframe%20files
+* Display Second Survey results in readme: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results
+* Fix globe image in feedback session 4: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204
+* Complete Final Website Design : https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design
+* Complete UX Flow chart
 
 ## Contents
 

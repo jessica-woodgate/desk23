@@ -101,5 +101,13 @@ Each option received a score out of 4 per question. Option D received an average
 Realising how close the scores were, we decided to consult our user group and seek out their suggestions on which globe is preferential. Please see the feedback gathered for the two globes here: [Feedback Session 3](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203).
 
 
+### Sprint 3 and 4: Refining the Globe and Publishing the Final Product
 
+The third sprint was focussed on refining the Three.js globe. Several changes were made, for example, switching from the green orb representation of countries back to the bar chart representation. Due to the limitations of Three.js, it would be difficult to map the entire country as clickable. As a result, we decided to include some sort of target for the user to click. Clearly the green orbs were not seen as fun, and rather described as unappealing. The bar-charts were relatively well received, however, required much improvement in terms of spacing, look and colour. The tutorial boxes were modified to provide clearer instructions to the user in terms of how to use the website. 
+
+The data was incorporated at this stage and resulted in literacy rate data being shown for individual years when a country’s bar-chart was clicked. Bar-chart heights were also made to be proportional to the literacy rate.  
+
+Feedback obtained for this iteration of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
+
+The following changes were incorporated into the final design of the website, which can be found here - [Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
 

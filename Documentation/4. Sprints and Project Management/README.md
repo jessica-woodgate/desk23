@@ -35,7 +35,7 @@ Below is a visual representation of how we used user stories in relation to each
 ![image](https://user-images.githubusercontent.com/45073537/117454149-b6d1ca00-af3d-11eb-8c93-80507bf5cced.png)
 
 Our Gantt chart displays how the tasks were spread out across time.
-![image](https://user-images.githubusercontent.com/45073537/117533479-00292480-afe5-11eb-8ce6-1d396db51167.png)
+![image](https://user-images.githubusercontent.com/45073537/117534528-b4c54500-afe9-11eb-8ee9-f59bbb3f0867.png)
 
 
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.

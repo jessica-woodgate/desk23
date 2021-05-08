@@ -31,7 +31,12 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 
 The development of the project was split into [six main sprints](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md#sprints), each one lasting two weeks. Each sprint was defined by a [user story](https://github.com/jess-mw/desk23/blob/de9f01ae9e2cbb21b6e4b16f7435eaf4cd2fdb4d/Documentation/3.%20UX%20Design/9.%20User%20Stories.md) and we assigned tasks accordingly. We had shorter meeetings [throughout](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) and [at the end of](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md#week-by-week-1) each week to discuss general issues that had come up, and anything that needed team input. At the end of each sprint we conducted a longer meeting to reflect upon the targets, how progress on them had gone, whether we had reached our definition of done, and to set the next sprint's targets. Targets were set by deciding upon a user story for that week, and adding to the backlog of our [Trello board](https://trello.com/b/iPzVt2TT/literacy-rates-around-the-world). Taking the user story and Trello board, we discussed as a team which tasks should be completed in the current sprint. Tasks were added to the Trello board in team meetings, mainly in the evaluative meeting at the end of each sprint, but also during the week when new tasks came up. These were also recorded in the [minutes](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) from our meetings.
 
+Below is a visual representation of how we used user stories in relation to each feature to allocate tasks, and how these were assigned across sprints.
 ![image](https://user-images.githubusercontent.com/45073537/117454149-b6d1ca00-af3d-11eb-8c93-80507bf5cced.png)
+
+Our Gantt chart displays how the tasks were spread out across time.
+![image](https://user-images.githubusercontent.com/45073537/117533479-00292480-afe5-11eb-8ce6-1d396db51167.png)
+
 
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 *Jess*

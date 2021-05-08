@@ -3,10 +3,15 @@
 ## Contents
 
 [a. Mashing up the Serious and The Playful](##a.-Mashing-Up-the-Serious-and-The-Playful)
+
 [b. Breaking the Problem Down](##b.-Breaking-the-Problem-Down)
+
 [c. Who is Our User?](##c.-Who=is-Our-User?)
+
 [d. The Design Methodology](##d.-The-Design-Methodology)
+
 [e. User Participatory Design](##e.-User-Participatory-Design)
+
 [f. Building the Website on Angular](##f.-Building-the-Website-on-Angular)
 
 ## a. Mashing Up the Serious and The Playful

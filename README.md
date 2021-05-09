@@ -36,19 +36,12 @@ To achieve this, we have created a Single Page Application (SPA) designed to sho
 
 
 ### Project Objectives. The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
-*Emily* 
 
-**Project Goals:**
+![image](https://user-images.githubusercontent.com/74050529/117589788-b4c96000-b123-11eb-9a47-5e0b414ef84a.png)
 
-*Create an interactive data visualisation to:*
--	Communicate clearly about global literacy rates
--	Make evident key trends and patterns in literacy rates, including changes over time
--	Make dense information accessible and even enjoyable to interact with
+The overarching goal of the project is to build a visualisation of global literacy rates data in order to improve communication of how levels of literacy differ across the world, and how these rates have changed over time. A central goal is to clarify key trends and patterns in the data, and the project aims at once to bring to light the hopeful story of how global literacy has risen over time, and highlight the gaps that remain by making it easier to identify areas where literacy rates remain relatively low. Another high-level aim is to make the information accessible, and specifically to make it possible for a user to engage with and discover the data in order to add an element of fun and enjoyment. 
 
-**Contribution to solving the problem:**
--	Highlight disparities in literacy rates around the world
--	Raise awareness of the global issue of illiteracy
--	Encourage reflection on the importance and value of literacy from an early age and potentially spark an interest
+By revealing trends in the data, and adding an element of fun, the project seeks to reach more people and retain their attention for longer, make the data easier to digest and understand for those who visit the website, and potentially make the information memorable and more likely to stick in user's minds. In this way, the project seeks to contribute to raising awareness of the issue of illiteracy and access to education more widely, and to bring out contrasts in literacy rates around the world. Targeted to school-aged people, the project seeks to encourage interest in and reflection on the value of literacy and education.
 
 ### Video. Short (1-2min) demo video to explain your system (think Kickstarter) 
 *Hamza* 

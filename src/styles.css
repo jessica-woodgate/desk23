@@ -5,9 +5,10 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-slider {
-    bottom:1.5vh;
-    width: 104vh;
-    position: absolute;
+    /* bottom:50%;  *//* was 1.5vh */
+    padding: 20px 0;
+    width: 100%; /* was 104vh */
+    position: fixed;
     justify-items: center;
     align-content: center;
 } 

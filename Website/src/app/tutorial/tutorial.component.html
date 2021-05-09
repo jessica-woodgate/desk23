@@ -1,0 +1,40 @@
+
+<!-- <div id = "showTut">
+    <button (click)="showTutorial()">Show Tutorial</button>
+    <button (click)="hideTutorial()">Hide Tutorial</button>
+</div>
+ -->
+<div id = "spinLeftOrRight" *ngIf = "spinShown">
+    <h3> Spin the globe in any direction by clicking and dragging </h3>
+    <button id = "btn" (click)="hideSpin()"> Next </button>
+</div>
+
+<div id = "moveSlider" *ngIf = "slideShown" >
+    <h3>Drag the slider left or right to change which year we are currently in</h3>
+    <button id = "btn" (click)="hideSlide()"> OK </button>
+</div>
+
+
+<div id = "clickCountry" *ngIf = "clickShown">
+    <h3>Click on a bar-chart of a country to view its literacy rates and other data</h3>
+    <button id = "btn" (click)="hideClick()"> Next </button>
+
+</div>
+
+<div id = "zoomGlobe" *ngIf = "zoomShown">
+    <h3>Use two fingers to zoom in or out</h3>
+    <button id = "btn" (click)="hideZoom()"> Next </button>
+
+</div>
+
+<img id = "upSpin" *ngIf = "spinShown" src="../../assets/images/tutorial/SpinUp.png">
+
+<img id = "leftSpin" *ngIf = "spinShown" src="../../assets/images/tutorial/SpinLR.png">
+
+<img id = "slide" *ngIf = "slideShown" src="../../assets/images/tutorial/Slide.png">
+
+<img id = "zoom" *ngIf = "zoomShown" src="../../assets/images/tutorial/Zoom.png">
+
+<img id = "click" *ngIf = "clickShown" src="../../assets/images/tutorial/click.png">
+
+

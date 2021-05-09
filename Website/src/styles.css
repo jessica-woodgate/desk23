@@ -1,0 +1,59 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-slider {
+    /* bottom:50%;  *//* was 1.5vh */
+    padding: 20px 0;
+    width: 100%; /* was 104vh */
+    position: fixed;
+    justify-items: center;
+    align-content: center;
+} 
+
+/* https://stackoverflow.com/questions/58057900/how-can-i-display-thumb-label-all-the-time-for-material-slider */
+.mat-slider-thumb-label {
+  transform: rotate(45deg) !important;
+  border-radius: 50% 50% 0 !important;
+}
+
+.mat-slider-thumb {
+  transform: scale(0) !important;
+}
+
+.mat-slider-thumb-label-text {
+  opacity: 1 !important;
+}
+
+/* 
+.mat-slider-horizontal {
+    width: 600px;
+}  */
+/* 
+.mat-slider.mat-slider-horizontal .mat-slider-wrapper {
+    top: 18px;
+  }
+  .mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+    height: 12px;
+    border-radius: 10px
+  }
+  .mat-slider.mat-slider-horizontal .mat-slider-track-background,
+  .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    height: 100%;
+  }
+  .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    background-color: blue;
+  }
+  .mat-accent .mat-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border: solid 2px gray;
+    bottom: -20px;
+    right: -20px;
+  }
+  .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+    background-color: white;
+  }  */

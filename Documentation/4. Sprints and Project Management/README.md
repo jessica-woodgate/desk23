@@ -62,7 +62,30 @@ During each sprint, objectives and deliverables were set in accordance to the us
 
 
 ## b. Discussion of team roles (specialisation is ok!). A summary of individual contributions (note: this is for reference, your team will all receive the same grade!).
-*Hamza*
+
+**Ideation: Everyone**
+* Developed paper prototypes. 
+* Working on mashing up the concepts. 
+* Fleshing out the main concept and understanding its potential.
+
+**Stanni**
+
+**Jessica Woodgate**
+
+**Wenda**
+
+**Emily Bloom**
+
+**Co-Frontend and UI/UX Designer: Hamza Qureshi**
+* Developed Three.js globe: 
+	* Creating the scene, globe component and functionality 
+	* Creating tutorial windows and interactivity 
+	* Creating welcome page 
+* Loaded in data from the API to the frontend 
+* Created the book opening animation for the home page
+* Assisted on first two paper prototype designs
+* Assisted on the first wireframe of the website
+
 
 ## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
 *Jess*

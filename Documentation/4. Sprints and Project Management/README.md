@@ -43,6 +43,7 @@ As such, an Agile methodology seemed perfect for us to achieve this requirements
 **SCRUM**
 
 </div>
+
 |                     Attribute                    |                                                                                                                                       Evaluation                                                                                                                                      | Wanted? |
 |:------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------:|
 |     Pre-defined Roles                            |     Each team member can focus on learning and specialising within a specific area of the MEAN stack. Given the short period provided for development, this appears to be more effective.                                                                                             |   YES   |

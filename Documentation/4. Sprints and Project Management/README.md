@@ -51,6 +51,16 @@ As such, an Agile methodology seemed perfect for us to achieve this requirements
 |     Set deadlines for each sprint                |     Ensures the entire MEAN stack is being developed in parallel to each other. Allows for us to organise consistent feedback and review sessions with users in a timely manner.                                                                                                      |   YES   |
 |     Non-chronological method of completing tasks |     Gives the developer the freedom to work on certain aspects and solve the problems in any order this best see fit.                                                                                                                                                                 |   YES   |
 
+After reviewing both the methodologies, though similar, we decided to focus on the SCRUM methodology. SCRUM provides us with the opportunity to organise our sprints around the user’s availability. The product was set to be released at a set date each time, and as such, we were able to involve the users when necessary. The feedback and user stories generated from each session allowed us to define the next sprint. This was vital, given the short time period within which the website was set to be built. 
+
+During each sprint, objectives and deliverables were set in accordance to the user stories generated. However, a Kanban board was seen fit to help us organise the smaller aspects of the website. It was felt necessary to detail all the smaller tasks on one page, allowing each team member to understand what was being built at the time in the different areas of the MEAN stack. 
+
+### Tools used during our Group Work 
+* Trello: Used for organising the smaller tasks by using a Kanban Board 
+* Teams: Main channel of communication and file storage 
+* Miro: Main application used for communicating our ideas through visual means e.g. Post-it notes
+
+
 ## b. Discussion of team roles (specialisation is ok!). A summary of individual contributions (note: this is for reference, your team will all receive the same grade!).
 *Hamza*
 

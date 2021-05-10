@@ -60,7 +60,7 @@ There were many other codes we briefly looked at, including ACS code of ethics, 
 
 ## Using the framework 
 
-When working through the design process and sprints, we followed the DIODE procedure for ethical analysis (see https://www.zyen.com/media/documents/ethical-assessment.pdf for a detailed explanation). In brief, this procedure works by: 
+When working through the design process and sprints, we followed the [DIODE](https://www.zyen.com/media/documents/ethical-assessment.pdf) procedure for ethical analysis. In brief, this procedure works by: 
 
 1. Define questions – ensure that we have defined the project in which the ethical questions are framed 
 

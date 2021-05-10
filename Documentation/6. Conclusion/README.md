@@ -36,5 +36,7 @@ Whilst we have tried to design with the user in mind, due to safeguarding concer
 
 Designing for scale is something we have tried to address through the choice of MongoDB for our database, and rooting the development in docker. However, there are likely adjustments that would need to be made for increased scalability.
 
+One aspect of our framework we feel we addressed well was to be data driven. We ensured that the majority of our design choices were driven by data gathered in feedback sessions with our users. We also used open source data sets, and made the collection we created ourselves to be open source as well. We could still enhance our practices in this area by ensuring that we have a more diverse user group in our feedback sessions, and gathering a larger pool of data to improve the fairness of our results.
+
 ## e. Discussion of future work (in terms of design, development and evaluation)
 *Emily*

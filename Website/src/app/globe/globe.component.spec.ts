@@ -32,19 +32,14 @@ describe('GlobeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  /*describe('list of countries dummy data', () => {
+  describe('list of countries dummy data', () => {
     beforeEach(() => {
       spyOn(component, 'addCoordinatePoint');
-      component.listOfCountries = [{Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}];
-      component.createGlobe();
-      component.setAllPoints(1979);
-      fixture.detectChanges();
     });
 
     /*Slider*/
     /*Check the right number of data points returned for a given year*/
     it('should call the addCoordinatePoint function', () => {
-      spyOn(component, 'addCoordinatePoint');
       component.listOfCountries = [{Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}];
       component.createGlobe();
       component.setAllPoints(1979);
@@ -53,7 +48,6 @@ describe('GlobeComponent', () => {
     });
 
     it('should call the addCoordinatePoint function 3 times', () => {
-      spyOn(component, 'addCoordinatePoint');
       component.listOfCountries = [
         {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
         {Entity : 'Jordan', Year: 1979, Data: 66, Latitude: 31, Longitude: 37, Area: 35480},
@@ -66,7 +60,6 @@ describe('GlobeComponent', () => {
     });
 
     it('should call the addCoordinatePoint function 2 times', () => {
-      spyOn(component, 'addCoordinatePoint');
       component.listOfCountries = [
         {Entity : 'Argentina', Year: 1900, Data: 51, Latitude: 37, Longitude: 67, Area: 1073000},
         {Entity : 'Bolivia', Year: 1900, Data: 18, Latitude: 16, Longitude: 63, Area: 424000},
@@ -76,6 +69,19 @@ describe('GlobeComponent', () => {
       component.setAllPoints(1900);
       fixture.detectChanges();
       expect(component.addCoordinatePoint).toHaveBeenCalledTimes(2);
+    });
+
+    /*Slider can go to years with no data, for these years, test that coordinate points on the globe not created*/
+     it('should not call the addCoordinatePoint function', () => {
+      component.listOfCountries = [
+        {Entity : 'Argentina', Year: 1900, Data: 51, Latitude: 37, Longitude: 67, Area: 1073000},
+        {Entity : 'Bolivia', Year: 1900, Data: 18, Latitude: 16, Longitude: 63, Area: 424000},
+        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
+      ];
+      component.createGlobe();
+      component.setAllPoints(1948);
+      fixture.detectChanges();
+      expect(component.addCoordinatePoint).not.toHaveBeenCalled();
     });
 
     /*it('should call the addCoordinatePoint function 2 times', () => {
@@ -89,8 +95,8 @@ describe('GlobeComponent', () => {
       component.setAllPoints(1900);
       fixture.detectChanges();
       expect(component.addCoordinatePoint).toHaveBeenCalledTimes(2);
-    });
-  /*});*/
+    });*/
+  });
   
   /*it('should call the addCoordinatePoint function 25 times in 1979', () => {
     spyOn(component, 'addCoordinatePoint');
@@ -132,10 +138,11 @@ describe('GlobeComponent', () => {
     expect(popup_rate).toBeTruthy;
   });
 
- /* it('should receive country data from component', () =>{
-    component.displayType = "flex";
+  /*Check if not set to flex*/
+  it('should not receive country data from component', () =>{
+    component.displayType = "none";
     component.countryName = 'Afghanistan';
-    component.literacyRate = null;
+    component.literacyRate = '20';
     fixture.detectChanges();
     const popup_name = html.query(
       By.css('#displayCountryName')
@@ -143,11 +150,9 @@ describe('GlobeComponent', () => {
     const popup_rate = html.query(
       By.css('#displayLiteracyRate')
     ).nativeElement.textContent;
-    expect(popup_name).toContain('Afghanistan');
-    /*expect(popup_rate).toContain('20');*/
-   /* expect(popup_name).toBeTruthy;
+    expect(popup_name).toBeFalsy;
     expect(popup_rate).toBeFalsy;
-  });*/
+  });
 
   /*Test if we get the expected data from the data service using dummy data*/
   /*Adapted from https://codehandbook.org/how-to-unit-test-angular-component-with-service/*/

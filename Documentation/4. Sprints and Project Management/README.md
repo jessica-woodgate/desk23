@@ -18,9 +18,13 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 
 ## a. Group working methods used (for instance did your team choose a particular style of agile? what communication channels did you use?)
 
+### SCRUM or Kanban?
 
-![image](https://user-images.githubusercontent.com/45073537/117444484-70766e00-af31-11eb-8d68-ae0e3aed4067.png)
---- note from jess: Hamza i've included this picture from the documentation guide (https://www.altexsoft.com/blog/business/technical-documentation-in-software-development-types-best-practices-and-tools/) for reference to the sprints as well, but feel free to replace/get rid of if you don't want it :)
+The core requirement set by ourselves was to create an application that solves the user’s needs. The user’s visions and expectations of our product must lie at the heart of it all. In order to do this, we needed to adopt a flexible and adaptable nature and maintain a consistent channel of dialogue with our users (as explained in the [UX Design Section]( https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)).
+
+As such, an Agile methodology seemed perfect for us to achieve this requirements. With the aim of consistently publishing our app and obtaining feedback on its operations, we debated between the use of Kanban and Scrum as the main method for organising our project. 
+
+**Benefits of Kanban**
 
 ## b. Discussion of team roles (specialisation is ok!). A summary of individual contributions (note: this is for reference, your team will all receive the same grade!).
 *Hamza*

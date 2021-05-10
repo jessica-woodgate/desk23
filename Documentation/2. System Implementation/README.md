@@ -24,12 +24,12 @@ For our database, we decided to use MongoDB with Mongoose to access it through E
 
 In order to properly set up the database the first time the website is run, we created a seeding script that will populate the collections with the required data from files stored in data-import. This ensures the database will only be populated once, and with the correct files.
 
-As our project grew and developed, as according with Agile methodology, so did the structure of our features and thus what was needed from our data model.
+As our project grew and developed, as according with Agile methodology, [so did the structure of our features](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/Data%20Model.md#data-model---first-iteration) and thus what was needed from our data model.
 The final data model is displayed below. It includes two collections that store information about literacy rates and coordinates, and one collection that combines the necessary information from each. The keys that link all tables are the "entities" - these are the country names. We could thus use the relevant country name to look up related data in each collection.
 
-![image](https://user-images.githubusercontent.com/45073537/117008237-6b6faf80-ace2-11eb-8271-73d8342239c8.png)
-
 Please see here for [future developments of our data model](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/Data%20Model.md#extensions).
+
+![image](https://user-images.githubusercontent.com/45073537/117008237-6b6faf80-ace2-11eb-8271-73d8342239c8.png)
 
 ## c. Middle Tier - Express, Node, the RESTful API
 *Wenda*

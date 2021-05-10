@@ -17,7 +17,6 @@ f. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tre
 *Stanni*
 
 ## b. Back End - MongoDB - database implementation, the data model that you developed your back end from (e.g. entity relationship diagrams).
-*Jess*
 
 [Details of the evolution of our data model and building of the database](https://github.com/jess-mw/desk23/blob/491a60804c4803faf8612054fc73f5efd8fa77e2/Documentation/2.%20System%20Implementation/Data%20Model.md)
 
@@ -29,6 +28,8 @@ The final data model is displayed below. It includes two collections that store 
 ![image](https://user-images.githubusercontent.com/45073537/117008237-6b6faf80-ace2-11eb-8271-73d8342239c8.png)
 
 Future developments of our data model would include a collection to store user input. Some user input we have discussed implementing into deployment could be feedback on the literacy rates, e.g. whether they were as the user expected. This would involve a collection storing the relevant entity, userID (this would be randomly generated and not directly related to the user at all, thus preserving anonymity - the only purpose would be to link multiple feedbacks from the same user together), and collected feedback.
+
+In order to properly set up the database the first time the website is run, we created a seeding script that will populate the collections with the required data from files stored in data-import. This ensures the database will only be populated once, and with the correct files. Future developments on this would include automating the script when the database is detected to be empty, so that there is no extra required user interaction.
 
 ## c. Middle Tier - Express, Node, the RESTful API
 *Wenda*

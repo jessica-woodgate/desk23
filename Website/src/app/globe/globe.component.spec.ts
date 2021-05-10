@@ -56,8 +56,8 @@ describe('GlobeComponent', () => {
       spyOn(component, 'addCoordinatePoint');
       component.listOfCountries = [
         {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
-        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
-        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
+        {Entity : 'Jordan', Year: 1979, Data: 66, Latitude: 31, Longitude: 37, Area: 35480},
+        {Entity : 'Paraguay', Year: 1979, Data: 85, Latitude: 23, Longitude: 58, Area: 157000}
       ];
       component.createGlobe();
       component.setAllPoints(1979);
@@ -68,9 +68,22 @@ describe('GlobeComponent', () => {
     it('should call the addCoordinatePoint function 2 times', () => {
       spyOn(component, 'addCoordinatePoint');
       component.listOfCountries = [
-        {Entity : 'Afghanistan', Year: 1900, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
-        {Entity : 'Afghanistan', Year: 1900, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
-        {Entity : 'Afghanistan', Year: 1980, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
+        {Entity : 'Argentina', Year: 1900, Data: 51, Latitude: 37, Longitude: 67, Area: 1073000},
+        {Entity : 'Bolivia', Year: 1900, Data: 18, Latitude: 16, Longitude: 63, Area: 424000},
+        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
+      ];
+      component.createGlobe();
+      component.setAllPoints(1900);
+      fixture.detectChanges();
+      expect(component.addCoordinatePoint).toHaveBeenCalledTimes(2);
+    });
+
+    /*it('should call the addCoordinatePoint function 2 times', () => {
+      spyOn(component, 'addCoordinatePoint');
+      component.listOfCountries = [
+        {Entity : 'Argentina', Year: 1900, Data: null, Latitude: 33, Longitude: 67, Area: 249000},
+        {Entity : 'Bolivia', Year: 1900, Data: null, Latitude: 33, Longitude: 67, Area: 249000},
+        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
       ];
       component.createGlobe();
       component.setAllPoints(1900);
@@ -118,6 +131,23 @@ describe('GlobeComponent', () => {
     expect(popup_name).toBeTruthy;
     expect(popup_rate).toBeTruthy;
   });
+
+ /* it('should receive country data from component', () =>{
+    component.displayType = "flex";
+    component.countryName = 'Afghanistan';
+    component.literacyRate = null;
+    fixture.detectChanges();
+    const popup_name = html.query(
+      By.css('#displayCountryName')
+    ).nativeElement.textContent;
+    const popup_rate = html.query(
+      By.css('#displayLiteracyRate')
+    ).nativeElement.textContent;
+    expect(popup_name).toContain('Afghanistan');
+    /*expect(popup_rate).toContain('20');*/
+   /* expect(popup_name).toBeTruthy;
+    expect(popup_rate).toBeFalsy;
+  });*/
 
   /*Test if we get the expected data from the data service using dummy data*/
   /*Adapted from https://codehandbook.org/how-to-unit-test-angular-component-with-service/*/

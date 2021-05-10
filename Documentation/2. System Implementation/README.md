@@ -20,16 +20,15 @@ f. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tre
 
 [Details of the evolution of our data model and building of the database](https://github.com/jess-mw/desk23/blob/491a60804c4803faf8612054fc73f5efd8fa77e2/Documentation/2.%20System%20Implementation/Data%20Model.md)
 
-For our database, we decided to use MongoDB with Mongoose to access it through Express. We chose MongoDB as it is scalable, thus making it easier to adjust our data models as we progress through the agile development cycle.
-
-As our project grew and developed, as according with agile methodology, so did the structure of our features and thus what was needed from our data model.
+For our database, we decided to use MongoDB with Mongoose to access it through Express. We chose MongoDB because you can use semi- or un-structured data, which makes it more flexible and easier to change as our project develops, fitting in well with the Agile methodology. 
+As our project grew and developed, as according with Agile methodology, so did the structure of our features and thus what was needed from our data model.
 The final data model is displayed below. It includes two collections that store information about literacy rates and coordinates, and one collection that combines the necessary information from each. The keys that link all tables are the "entities" - these are the country names. We could thus use the relevant country name to look up related data in each collection.
 
 ![image](https://user-images.githubusercontent.com/45073537/117008237-6b6faf80-ace2-11eb-8271-73d8342239c8.png)
 
 Future developments of our data model would include a collection to store user input. Some user input we have discussed implementing into deployment could be feedback on the literacy rates, e.g. whether they were as the user expected. This would involve a collection storing the relevant entity, userID (this would be randomly generated and not directly related to the user at all, thus preserving anonymity - the only purpose would be to link multiple feedbacks from the same user together), and collected feedback.
 
-In order to properly set up the database the first time the website is run, we created a seeding script that will populate the collections with the required data from files stored in data-import. This ensures the database will only be populated once, and with the correct files. Future developments on this would include automating the script when the database is detected to be empty, so that there is no extra required user interaction.
+In order to properly set up the database the first time the website is run, we created a seeding script that will populate the collections with the required data from files stored in data-import. This ensures the database will only be populated once, and with the correct files. Future developments on this would include automating the script when the database is detected to be empty, so that there is no extra user interaction required.
 
 ## c. Middle Tier - Express, Node, the RESTful API
 *Wenda*

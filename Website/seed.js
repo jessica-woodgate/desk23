@@ -1,5 +1,13 @@
+var async = require('async');
 //import mongoose module
 const mongoose = require('mongoose');
+//get models
+var LiteracyModel = require('./models/literacyRates');
+var CoordinatesModel = require('./models/coordinates');
+var CountryModel = require('./models/countryData');
+const literacyData = require('./data-import/crossCountryLiteracyRates');
+const coordinatesData = require('./data-import/coordinates');
+const countryData = require('./data-import/countryData');
 
 //set variables
 const {
@@ -26,9 +34,8 @@ var db = mongoose.connection;
 //bind connection to error event
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-
 //populating database with data - only need to call this once
-/*function populate(model, data, cb){
+function populate(model, data, cb){
    async.parallel([
       function(callback){
          model.insertMany(data);
@@ -38,11 +45,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
    //optional callback
    cb);
 };
-*/
 
-//to be commented out
-/* populate(LiteracyModel, literacyData);
+populate(LiteracyModel, literacyData);
 populate(CoordinatesModel, coordinatesData);
-
-populate(CountryModel, countryData);  */
-
+populate(CountryModel, countryData);

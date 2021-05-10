@@ -83,6 +83,10 @@ Below is a visual representation of how we used user stories in relation to each
 Our Gantt chart displays how the tasks were spread out across time.
 ![image](https://user-images.githubusercontent.com/45073537/117534528-b4c54500-afe9-11eb-8ee9-f59bbb3f0867.png)
 
-
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
-*Jess*
+
+Please see [here](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#f-deployment-details-including-docker-include-how-you-have-been-achieving-continuous-integration-and-deployment) for an explanation of how we used continuous integration and deployment with Docker and GitHub. The basic layout of our branch structure can be seen in the diagram below:
+
+![image](https://user-images.githubusercontent.com/45073537/117686796-1d115380-b1af-11eb-8e01-69ecdc64144e.png)
+
+To ensure a streamlined workflow, we had one person - Jess - who was in charge of organising the remote repository and reviewing pull requests. This avoided any confusion or communication issues with incorrect versions being merged and avoided major conflicts or the need to refactor our code. We held [regular stand up meetings](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) to discuss progress on the features that each team member was working on. This meant that we were in constant communication about the project, and everybody was up to date with the current state of the website. By keeping everyone in the loop throughout, and using the continuous integration and deployment methodology, we ensured that the different features of our code were built and tested together and each developer's work was fully integrated with the rest of the project.

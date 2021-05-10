@@ -25,7 +25,9 @@ The core requirement set by ourselves was to create an application that solves t
 As such, an Agile methodology seemed perfect for us to achieve this requirements. With the aim of consistently publishing our app and obtaining feedback on its operations, we debated between the use of Kanban and Scrum as the main method for organising our project. 
 
 <div align="center">
+ 
   **Kanban**
+  
 </div>
 
 |                           Attribute                          |                                                                                                                               Evaluation                                                                                                                              |  Wanted?  |
@@ -37,7 +39,9 @@ As such, an Agile methodology seemed perfect for us to achieve this requirements
 
 
 <div align="center">
+ 
 **SCRUM**
+
 </div>
 |                     Attribute                    |                                                                                                                                       Evaluation                                                                                                                                      | Wanted? |
 |:------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------:|

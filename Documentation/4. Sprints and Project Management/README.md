@@ -26,6 +26,12 @@ As such, an Agile methodology seemed perfect for us to achieve this requirements
 
 **Benefits of Kanban**
 
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
 ## b. Discussion of team roles (specialisation is ok!). A summary of individual contributions (note: this is for reference, your team will all receive the same grade!).
 *Hamza*
 

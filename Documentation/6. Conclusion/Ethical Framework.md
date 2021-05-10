@@ -36,7 +36,7 @@ Principles we chose to include in our framework:
 
 6. Reuse and improve - we tried to design our product with the aim that the code we were writing could be adapted, reused, and improved in future developments of the site. 
 
-7. Do no harm - both in the process of design and development, as well as in the deployment and future use of our work 
+7. Do no harm - both in the process of design and development, as well as in the deployment and future use of our work. 
 
 8. Be collaborative – to fulfil this we made sure to include feedback from others external to the team. This included talking to other students in our cohort, having a focus group that we met with regularly to discuss design decisions, and getting ethical feedback from people outside of the realm of computer science. 
 
@@ -62,15 +62,15 @@ There were many other codes we briefly looked at, including ACS code of ethics, 
 
 When working through the design process and sprints, we followed the [DIODE](https://www.zyen.com/media/documents/ethical-assessment.pdf) procedure for ethical analysis. In brief, this procedure works by: 
 
-1. Define questions – ensure that we have defined the project in which the ethical questions are framed 
+1. Define questions – ensure that we have defined the project in which the ethical questions are framed. 
 
-2. Issues analysis – ensure all relevant stakeholders are considered and relevant risks and rewards are considered from both consequentialist and deontological perspectives 
+2. Issues analysis – ensure all relevant stakeholders are considered and relevant risks and rewards are considered from both consequentialist and deontological perspectives. 
 
-3. Options evaluation – ensures relevant choices are made 
+3. Options evaluation – ensures relevant choices are made. 
 
-4. Decision determination – ensure we could clearly state ethical decisions made and reasoning behind them 
+4. Decision determination – ensure we could clearly state ethical decisions made and reasoning behind them. 
 
-5. Explanations dissemination – ensures that decisions are communicated appropriately 
+5. Explanations dissemination – ensures that decisions are communicated appropriately. 
 
 Using our ethical framework, we used this procedure to analyse decisions and choose which form of action to take accordingly. 
 

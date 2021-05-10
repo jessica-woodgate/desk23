@@ -344,6 +344,7 @@ export class GlobeComponent implements OnInit {
       console.log("intersects is empty!");
       this.displayType = "none";
       this.countryName = null;
+      this.literacyRate = null;
     }
 
     for (let i = 0; i < intersects.length; i++) {

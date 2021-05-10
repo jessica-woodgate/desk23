@@ -51,16 +51,42 @@ describe('GlobeComponent', () => {
       fixture.detectChanges();
       expect(component.addCoordinatePoint).toHaveBeenCalled();
     });
-  /*});*/
 
-  it('should call the addCoordinatePoint function 25 times in 1979', () => {
+    it('should call the addCoordinatePoint function 3 times', () => {
+      spyOn(component, 'addCoordinatePoint');
+      component.listOfCountries = [
+        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
+        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
+        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
+      ];
+      component.createGlobe();
+      component.setAllPoints(1979);
+      fixture.detectChanges();
+      expect(component.addCoordinatePoint).toHaveBeenCalledTimes(3);
+    });
+
+    it('should call the addCoordinatePoint function 2 times', () => {
+      spyOn(component, 'addCoordinatePoint');
+      component.listOfCountries = [
+        {Entity : 'Afghanistan', Year: 1900, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
+        {Entity : 'Afghanistan', Year: 1900, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
+        {Entity : 'Afghanistan', Year: 1980, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
+      ];
+      component.createGlobe();
+      component.setAllPoints(1900);
+      fixture.detectChanges();
+      expect(component.addCoordinatePoint).toHaveBeenCalledTimes(2);
+    });
+  /*});*/
+  
+  /*it('should call the addCoordinatePoint function 25 times in 1979', () => {
     spyOn(component, 'addCoordinatePoint');
     component.ngOnInit();
     component.createGlobe();
     component.setAllPoints(1979);
     fixture.detectChanges();
     expect(component.addCoordinatePoint).toHaveBeenCalledTimes(25);
-  });
+  });*/
 /*  eg. 25 expected from data in 1979, do coordinate points added match? ie. 25 function calls to addCoordinatePoint
   decide on edge cases and core cases to test for each - try years with no data */
 
@@ -81,12 +107,16 @@ describe('GlobeComponent', () => {
     component.countryName = 'Afghanistan';
     component.literacyRate = '20';
     fixture.detectChanges();
-    const popup = html.query(
+    const popup_name = html.query(
       By.css('#displayCountryName')
     ).nativeElement.textContent;
-    expect(popup).toContain('Afghanistan');
-    expect(popup).toContain('20');
-    expect(popup).toBeTruthy;
+    const popup_rate = html.query(
+      By.css('#displayLiteracyRate')
+    ).nativeElement.textContent;
+    expect(popup_name).toContain('Afghanistan');
+    expect(popup_rate).toContain('20');
+    expect(popup_name).toBeTruthy;
+    expect(popup_rate).toBeTruthy;
   });
 
   /*Test if we get the expected data from the data service using dummy data*/

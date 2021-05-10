@@ -1,16 +1,23 @@
 
-<!-- <div id = "showTut">
-    <button (click)="showTutorial()">Show Tutorial</button>
-    <button (click)="hideTutorial()">Hide Tutorial</button>
+
+<div id = "infoBox"  *ngIf = "infoShown">
+    <h1>Behind this box of text lies a globe that is waiting to be explored</h1>
+    <h2>Scattered on the globe are bar charts of various colours</h2>
+    <h2>Each bar chart represents the literacy rate of a country</h2>
+    <h2>Click on a bar chart and a tiny box with information regarding the country's literacy rate will pop up</h2>
+    <h2>The different colours of the bar charts represent how high or low the literacy rate is </h2>
+    <h2>The lower the literacy rate, the redder the bar chart will be </h2>
+    <h2>The higher the literacy rate, the yellower the bar chart will be </h2>
+    <h1>Have fun exploring!</h1>
+
+    <button id = "closeBtn" (click)="hideInfo()"> <h4>Close</h4> </button>
 </div>
- -->
+
+
 <div id = "spinLeftOrRight" *ngIf = "spinShown">
     <h3> Spin the globe in any direction by clicking and dragging </h3>
     <button id = "btn" (click)="hideSpin()"> Next </button>
 </div>
-
-
-
 
 <div id = "clickCountry" *ngIf = "clickShown">
     <h3>Click on a bar-chart of a country to view its literacy rates and other data</h3>

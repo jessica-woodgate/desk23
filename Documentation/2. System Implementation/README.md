@@ -18,7 +18,7 @@ f. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tre
 
 ## b. Back End - MongoDB - database implementation, the data model that you developed your back end from (e.g. entity relationship diagrams).
 
-Please see here for [details of the evolution of our data model and implementing the database](https://github.com/jess-mw/desk23/blob/491a60804c4803faf8612054fc73f5efd8fa77e2/Documentation/2.%20System%20Implementation/Data%20Model.md)
+Please see here for [details of the evolution of our data model and implementing the database](https://github.com/jess-mw/desk23/blob/491a60804c4803faf8612054fc73f5efd8fa77e2/Documentation/2.%20System%20Implementation/Data%20Model.md).
 
 For our database, we decided to use MongoDB with Mongoose to access it through Express. We chose MongoDB because you can use semi- or un-structured data, which makes it more flexible and easier to change as our project develops, fitting in well with the Agile methodology. 
 

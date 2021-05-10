@@ -5,22 +5,22 @@ This document shows the design and evolution of our data model.
 What are the entities in the system?
 *	Whole globe
 *	Each country
+*	Timeline
 *	Welcome page
 
 ## Building the database 
 
 Our initial data was stored in a csv file pulled from an online source. This data was adjusted to have simpler headings allowing for easier manipulation, and a data model was created to describe schema for this database. The file db.js forms a connection to the database. Our CSV files were transformed into js objects; this object is exported to seed.js and inserted into our schemas created using mongoose. In seed.js we then include the data as js objects as variables, and use Model.insertMany(variablewithdata) to populate the database. This is the method that we used for all three collections. Initially, this data population was run in db.js, which is run on every docker-compose up to initialise the database connection, however we realised that this meant the database was being re-populated on every compose. To resolve this issue, we created seed.js which can be run by the user on the first composition of the site to initialise the database, thus later compositions will not result in duplicate data entries.
 
-In addition, we have a series of query helper functions that get relevant/required data in dbController.js, as well as functions that help us to remove the whole collection if necessary. During sprints, we realised that for front end it will be much easier to have one collection containing both literacy rates and coordinates. We looked into doing embedded documents, however as we were inserting the data from json files, this wasn’t simple. Also as they were files we had lifted off of the internet, there were issues with foreign keys linking the collections being spelled differently, or present in one file but not the other. We thus decided to create a new collection that had all the information we needed; this also provided a good opportunity to clean the data and remove any unnecessary noise.
+In addition, we have a series of query helper functions that get relevant/required data in dbController.js, as well as functions that help us to remove the whole collection if necessary. The first two collections we made were one containing data about [literacy rates](https://ourworldindata.org/literacy#:~:text=While%20only%2012%25%20of%20the,1960%20to%2086%25%20in%202015), and one geographical data such as [coordinates for each country](https://github.com/DavidGrice/THREEJS-Tutorial-Globe/blob/master/START/public/DATA/Final_data.json). These were both from open source data sets we found on the internet (see hyperlinks in previous sentences for our sources). During sprints, we realised that for front end it will be much easier to have one collection containing both literacy rates and coordinates. We looked into doing embedded documents, however as we were inserting the data from json files, this wasn’t simple. Also as they were files we had lifted off of the internet, there were issues with foreign keys linking the collections being spelled differently, or present in one file but not the other. We thus decided to create a new collection that had all the information we needed; this also provided a good opportunity to clean the data and remove any unnecessary noise.
 
-## Issues: 
+## Extensions
 
-* Getting the data from the CSV file into the database proved to be challenging and took much longer than expected, due to limitations in conceptual understanding 
-* Unsure whether need to run create model every time we run the code or only once - found out it was uploading every time so deleted database collections and restarted to get rid of duplicates 
-* Finding a good way to seed the database
-* Finding a good way to link tables, especially considering they were from datasets that we did not create 
-* Removing noise from the datasets, as we did not create them ourselves
-* Synchronising the different datasets that were pulled from the internet
+Due to deadline limitations, there are some things that we would like to add to our database but were unable to in this set of sprints. This includes automating the database seeding, so that the user does not have to manually run seed.js when the database is empty, but the program can check if there are any collections present, and populate accordingly. We would also like to create some user input, such as a short opinion quiz, and store the results of this in our database. In addition, a new data set will need to be created linking each country to educational resources and relevant charities. This will be manually collated, and extend our countryData collection.
+
+## Security
+
+The database is protected by private environmental variables that the administrator needs when the website is run. At this point in the project, we are only using open source data sets, and storing no information about our users or that is sensitive in any other way. Thus, we felt that at this stage we did not need any further security. However, if the website developed into some of our proposed extensions (such as user input), we would need to reconsider how best to protect sensitive data.
 
 ## Data Model - First Iteration
 ![image](https://user-images.githubusercontent.com/45073537/116996776-d82f7d80-acd3-11eb-9629-774d2931b08d.png)

@@ -1,5 +1,4 @@
 <canvas #globeCanvas (window:resize)="onWindowResize()"></canvas>
-<!-- (window:resize)="onWindowResize()"-->
 
 <div id = "info" [style.display]= "displayType" [style.top] = "top"  [style.left] = "left">
     <div id = "displayCountryName">
@@ -10,21 +9,18 @@
     </div>
 </div>
 
-
 <app-tutorial></app-tutorial>
  
-
-<!-- <app-slider></app-slider>
- -->
-<!-- min = 1475 -->
 <div id = "sliderBox">
     <mat-slider thumbLabel tickInterval="1" [(ngModel)] = "currentYear" min="1900" max = "2015"  (ngModelChange)="onSlide()"></mat-slider>
 </div> 
 
-<!-- don't need this anymore!
-<div id = "currentYearBox">
-    {{currentYear}} 
-</div>  -->
+<div id = "startYear">
+    <b>1900</b>
+</div>
 
-<!-- (slideend)="onSlide()" (pointerup)="onSlide()" -->
+
+<div id = "endYear">
+    <b>2015</b>
+</div>
 

@@ -9,10 +9,7 @@
     <button id = "btn" (click)="hideSpin()"> Next </button>
 </div>
 
-<div id = "moveSlider" *ngIf = "slideShown" >
-    <h3>Drag the slider left or right to change which year we are currently in</h3>
-    <button id = "btn" (click)="hideSlide()"> OK </button>
-</div>
+
 
 
 <div id = "clickCountry" *ngIf = "clickShown">
@@ -24,7 +21,16 @@
 <div id = "zoomGlobe" *ngIf = "zoomShown">
     <h3>Use two fingers to zoom in or out</h3>
     <button id = "btn" (click)="hideZoom()"> Next </button>
+</div>
 
+<div id = "moveSlider" *ngIf = "slideShown" >
+    <h3>Drag the slider left or right to change which year we are currently in</h3>
+    <button id = "btn" (click)="hideSlide()"> Next </button>
+</div>
+
+<div id = "sliderKeys" *ngIf = "keysShown">
+    <h3>Try using your keys to simulate the bar graphs changing</h3>
+    <button id = "btn" (click)="hideKeys()"> OK </button>
 </div>
 
 <img id = "upSpin" *ngIf = "spinShown" src="../../assets/images/tutorial/SpinUp.png">
@@ -36,5 +42,8 @@
 <img id = "zoom" *ngIf = "zoomShown" src="../../assets/images/tutorial/Zoom.png">
 
 <img id = "click" *ngIf = "clickShown" src="../../assets/images/tutorial/click.png">
+
+<img id = "keys" *ngIf = "keysShown" src="../../assets/images/tutorial/arrowKeys.png">
+
 
 

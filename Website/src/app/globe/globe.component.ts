@@ -220,24 +220,6 @@ export class GlobeComponent implements OnInit {
     let y = Math.cos(globeLatRads) * Math.sin(globeLongRads) * radius;
     let z = Math.sin(globeLatRads) * radius;
 
-    //create spherical shape
-    //let size = countryArea / 9000000;
-    /* if (size < 0.2) {
-      size = 0.2;
-    } */
-    //adding the spherical point
-    /* let poi = new THREE.SphereGeometry(size,32,32);
-    let pointMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
-    let point = new THREE.Mesh(poi, pointMaterial);
-    //set the point on the globe
-    point.position.set( x, z, y );
-    point.userData.Country = country;
-    point.visible = true;
-    //becomes a child of the globe
-    this.globe.add(point);  */
-
-
-    //let's try the above but with cuboids set perpendicular to the globe's surface
     //credit: https://stackoverflow.com/questions/51800598/threejs-make-meshes-perpendicular-to-the-sphere-face-its-sitting-on
     let height = litData / 18;
     let poi2 = new THREE.CylinderGeometry(0.1,0.1,height,64);
@@ -251,6 +233,7 @@ export class GlobeComponent implements OnInit {
     point2.userData.Country = country;
     point2.userData.LiteracyRate = litData;
 
+    //pink
     /* if (litData<20) {
       point2.material.color.set(0xF8B4C2);
     }
@@ -267,23 +250,27 @@ export class GlobeComponent implements OnInit {
       point2.material.color.set(0x970C28);
     } */
 
-   /*  if (litData<20) {
-      point2.material.color.set(0xFEF001);
+
+    //yellow to red
+    if (litData<20) {
+      point2.material.color.set(0xFF2C05);
     }
     if (litData>=20 && litData<40) {
-      point2.material.color.set(0xFFCE03);
+      point2.material.color.set(0xFD6104);
     }
     if (litData>=40 && litData<60) {
       point2.material.color.set(0xFD9A01);
     }
     if (litData>=60 && litData<80) {
-      point2.material.color.set(0xFD6104);
+      point2.material.color.set(0xFFCE03);
     }
     if (litData>=80) {
-      point2.material.color.set(0xFF2C05);
-    } */
+      point2.material.color.set(0xFEF001);
+      
+    } 
 
-    if (litData<20) {
+    //green and blue
+    /* if (litData<20) {
       point2.material.color.set(0xCFF4D2);
     }
     if (litData>=20 && litData<40) {
@@ -298,7 +285,7 @@ export class GlobeComponent implements OnInit {
     if (litData>=80) {
       point2.material.color.set(0x205072);
     }
-
+ */
     this.globe.add(point2);
 }
 
@@ -363,7 +350,7 @@ export class GlobeComponent implements OnInit {
       console.log("left is : " + this.left);
 
       //@ts-ignore
-      intersects[ 0 ].object.material.color.set( 0xff0000 );
+      intersects[ 0 ].object.material.color.set( 0x52307c );
       this.countryName = intersects[0].object.userData.Country;
       this.literacyRate = intersects[0].object.userData.LiteracyRate;
     }

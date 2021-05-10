@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TutorialComponent implements OnInit {
 
-
-  tutorialShown: boolean = true;
-
   spinShown: boolean = true;
 
   zoomShown: boolean = false;
@@ -17,6 +14,8 @@ export class TutorialComponent implements OnInit {
   clickShown: boolean = false;
 
   slideShown: boolean = false;
+
+  keysShown: boolean = false;
 
   constructor() { }
 
@@ -40,13 +39,10 @@ export class TutorialComponent implements OnInit {
 
   hideSlide() {
     this.slideShown = false;
+    this.keysShown = true;
   }
 
-  showTutorial() {
-    this.tutorialShown = true;
-  }
-
-  hideTutorial() {
-    this.tutorialShown = false;
+  hideKeys() {
+    this.keysShown = false;
   }
 }

@@ -50,6 +50,14 @@
     top: 8vh;
   }
 
+  #keys {
+    width : 12%;
+    height: 25%;
+    position: absolute;
+    right: 20vh;
+    bottom: 23vh;
+  }
+
 
   #spinLeftOrRight {
     color : rgb(255, 255, 255);
@@ -113,7 +121,7 @@
     opacity: 80%;
     position: absolute;
     right: 16vh;
-    bottom: 6vh;
+    bottom: 15vh;
     width: 15vw;
     height: 13vh;
     font-size: 9pt;
@@ -144,6 +152,27 @@
     font-style: normal;
   }
 
+  #sliderKeys {
+    color : rgb(255, 255, 255);
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 5%;
+    border-color: 0x00ff00;
+    background-color: black;
+    opacity: 80%;
+    position: absolute;
+    right: 16vh;
+    bottom: 15vh;
+    width: 15vw;
+    height: 10vh;
+    font-size: 9pt;
+    font-style: normal;
+  }
   
   #showTut {
     color: red;

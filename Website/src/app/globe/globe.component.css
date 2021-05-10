@@ -56,14 +56,10 @@ canvas {
     border-radius: 5%;
     margin-bottom: 1%;
   }
-
-
-  /* Slider stuff below (moved from slider component) */
   
 #sliderBox {
   justify-items: center;
   align-content: center;
-  /*display: none; changed from flex*/
   flex-direction: column;
   border-style: solid;
   border-width: 5px;
@@ -80,45 +76,49 @@ canvas {
   font-style: normal;
 }
 
-/* don't need this anymore */
-#currentYearBox {
-  /* justify-items: center;
-  align-content: center; */
-  display: block;
-/*     flex-direction: column;
-*/    border-style: inset;
-  border-width: 5px;
-  border-radius: 5%;
-  border-color: 0x00ff00;
-  background-color: black;
-  opacity: 80%;
-  position: relative;
- /*  left: 90vh; */
- /* left : 5vh;
- */
-  bottom: 15vh; 
-  margin: 0 auto;
-  width: 10%;
-  height: 5vh;
-  font-size: 9pt;
-  font-style: normal;
+  #startYear {
+    overflow: hidden;
+    color : rgb(255, 255, 255);
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 5%;
+    border-color: 0x00ff00;
+    background-color: black;
+    opacity: 80%;
+    position: absolute;
+    left: 40vh;
+    bottom: 4vh;
+    width: 5vw;
+    height: 4vh;
+    font-size: 12pt;
+    font-style: normal;
+  }
 
- /*  justify-items: center;
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 5%;
-  border-color: 0x00ff00;
-  background-color: transparent;
-  opacity: 80%;
-  position: absolute;
-  right: 100vh;
-  bottom: 5vh; 
-  width: 5vw;
-  height: 5vh;
-  font-size: 9pt;
-  font-style: normal;
-  color: white; */
-}
+  #endYear {
+    overflow: hidden;
+    color : rgb(255, 255, 255);
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 5%;
+    border-color: 0x00ff00;
+    background-color: black;
+    opacity: 80%;
+    position: absolute;
+    right: 40vh;
+    bottom: 4vh;
+    width: 5vw;
+    height: 4vh;
+    font-size: 12pt;
+    font-style: normal;
+  }
+

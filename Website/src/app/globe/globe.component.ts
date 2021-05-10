@@ -1,10 +1,8 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener, Host } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener, Host } from '@angular/core';
 import { Country } from '../models/country';
 import { DataService } from '../services/data.service';
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
-//import * as data from '../../data/countries.json';
-//import { Data } from '@angular/router';
 
 @Component({
   selector: 'app-globe',
@@ -12,7 +10,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
   styleUrls: ['./globe.component.css']
 })
 
-export class GlobeComponent implements AfterViewInit {
+export class GlobeComponent implements OnInit {
   //'globeCanvas' refers to the one established in the html file
   //cReference is the variable we are using
   //ViewChild basically sets up where the canvas element is
@@ -37,10 +35,9 @@ export class GlobeComponent implements AfterViewInit {
   windowHeight! : number;
 
   lightGroup!: THREE.Group;
-  //listOfCountries:  any  = (data  as  any).default;
 
   //creating an array of Country objects
-  listOfCountries!: Country[];
+  listOfCountries: Country[] = [];
 
   raycaster!: THREE.Raycaster;
   mouse! : THREE.Vector2;
@@ -54,6 +51,7 @@ export class GlobeComponent implements AfterViewInit {
   }
 
   constructor(private countryService : DataService) {
+
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
 
@@ -71,18 +69,32 @@ export class GlobeComponent implements AfterViewInit {
     this.left = "0px";
   }
 
-  ngOnInit() {
-    //this.listOfCountries = this.countryService.getAll();
+ ngOnInit() {
+   
     this.countryService.getCountryData().subscribe((countries) => {
       this.listOfCountries = countries;
+      this.initDependencies();
     });
-
-    this.listOfCountries  = (this.listOfCountries  as  any).default;
-
+    
+    //this.listOfCountries  = (this.listOfCountries  as  any).default;
     //console.log("Country printed in ngOnInit : " + this.listOfCountries[0].Entity);
-  }
+  } 
 
-  ngAfterViewInit() {
+  /* ngAfterViewInit() {
+
+    this.setScene();
+    this.setCamera();
+    this.setRenderer();
+    this.setControls();
+
+    this.createLightGroup();
+    this.createGlobe();
+
+    this.animate();
+    this.setAllPoints(this.currentYear);
+  } */
+
+  initDependencies() {
     this.setScene();
     this.setCamera();
     this.setRenderer();
@@ -97,9 +109,6 @@ export class GlobeComponent implements AfterViewInit {
 
 
   setScene() {
-
-    //const loader = new THREE.CubeTextureLoader();
-
     const loader = new THREE.TextureLoader();
     //image from: https://line.17qq.com/articles/thrtescx.html
     const texture = loader.load(
@@ -109,42 +118,12 @@ export class GlobeComponent implements AfterViewInit {
         rt.fromEquirectangularTexture(this.renderer, texture);
         this.scene.background = rt.texture;
       }); 
-
-     /*  const texture = loader.load(
-        '../../assets/images/spaceEqui2.png', 
-        () => {
-          const rt = new THREE.WebGLCubeRenderTarget(texture.image.height);
-          rt.fromEquirectangularTexture(this.renderer, texture);
-          this.scene.background = rt.texture;
-        }); */
-
-    /* const skyBox = loader.load([
-      '../../assets/images/space_right.png',
-      '../../assets/images/space_left.png',
-      '../../assets/images/space_top.png',
-      '../../assets/images/space_bot.png',
-      '../../assets/images/space_front.png',
-      '../../assets/images/space_back.png',
-    ]); */
- 
-    /* Images appear to be too small in comparison to the ones previously used - let's try zooming in -yep it works */
-    /* Keep testing - one or more space images is messing everything up  - bottom2.png is messing it up*/
-    /* const skyBox2 = loader.load([
-      '../../assets/images/temp/space_right3.png',
-      '../../assets/images/temp/space_left3.png',
-      '../../assets/images/temp/space_up3.png',
-      '../../assets/images/temp/bottom2.png', 
-      '../../assets/images/temp/space_front2.png',
-      '../../assets/images/temp/space_back3.png'
-    ]); */
-
-      //this.scene.background = skyBox; 
    }
 
   setCamera() {
     this.camera.aspect = this.aspectRatio;
     this.camera.updateProjectionMatrix();
-	  this.camera.position.set( 35, 0, 0 ); //changed from 40 to 30
+	  this.camera.position.set( 35, 0, 0 ); //changed from 40 to 35
 	  this.camera.lookAt( this.scene.position );
   }
 
@@ -214,7 +193,6 @@ export class GlobeComponent implements AfterViewInit {
   }
 
   animate() {
-    //here is the most important difference! learn why
     window.requestAnimationFrame(() => this.animate());
 
     this.lightGroup.quaternion.copy(this.camera.quaternion);
@@ -229,9 +207,6 @@ export class GlobeComponent implements AfterViewInit {
   //working on coordinates
   //reference: https://stackoverflow.com/questions/1185408/converting-from-longitude-latitude-to-cartesian-coordinates
   addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number, litData: number) {
-
-    //clear all previous children if any?
-    //then set up the new points based of the year value
 
     //radius of the globe
     const radius = 10;
@@ -267,20 +242,67 @@ export class GlobeComponent implements AfterViewInit {
     let height = litData / 18;
     let poi2 = new THREE.CylinderGeometry(0.1,0.1,height,64);
     poi2.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI/2));
-    let poi2Material = new THREE.MeshBasicMaterial({color:0xcc3367});
+
+    let poi2Material = new THREE.MeshBasicMaterial();
+
     let point2 = new THREE.Mesh(poi2, poi2Material);
     point2.position.set( x, z, y);
     point2.lookAt(0,0,0);
     point2.userData.Country = country;
     point2.userData.LiteracyRate = litData;
 
+    /* if (litData<20) {
+      point2.material.color.set(0xF8B4C2);
+    }
+    if (litData>=20 && litData<40) {
+      point2.material.color.set(0xF47B93);
+    }
+    if (litData>=40 && litData<60) {
+      point2.material.color.set(0xED254E);
+    }
+    if (litData>=60 && litData<80) {
+      point2.material.color.set(0xBD0F32);
+    }
+    if (litData>=80) {
+      point2.material.color.set(0x970C28);
+    } */
+
+   /*  if (litData<20) {
+      point2.material.color.set(0xFEF001);
+    }
+    if (litData>=20 && litData<40) {
+      point2.material.color.set(0xFFCE03);
+    }
+    if (litData>=40 && litData<60) {
+      point2.material.color.set(0xFD9A01);
+    }
+    if (litData>=60 && litData<80) {
+      point2.material.color.set(0xFD6104);
+    }
+    if (litData>=80) {
+      point2.material.color.set(0xFF2C05);
+    } */
+
+    if (litData<20) {
+      point2.material.color.set(0xCFF4D2);
+    }
+    if (litData>=20 && litData<40) {
+      point2.material.color.set(0x7BE495);
+    }
+    if (litData>=40 && litData<60) {
+      point2.material.color.set(0x56C596);
+    }
+    if (litData>=60 && litData<80) {
+      point2.material.color.set(0x32949C);
+    }
+    if (litData>=80) {
+      point2.material.color.set(0x205072);
+    }
+
     this.globe.add(point2);
 }
 
-/* 
-const dbController = require('./dbController');
-var CountryModel = require('./models/countryData');
- */
+
   setAllPoints(userSetYear: number) {
 
     //remove all children if any and add new ones
@@ -288,19 +310,9 @@ var CountryModel = require('./models/countryData');
       this.globe.remove(this.globe.children[0]);
     }
 
-
-    // try this instead
-  /*   var results = dbController.findByYear(CountryModel, userSetYear);
-    for(let i = 0; i < results.length; i++){
-      this.addCoordinatePoint(results[i].toObject().Year);
-   } */
-
     console.log("Length of list of countries is : "+this.listOfCountries.length);
 
       for (let i = 0; i < this.listOfCountries.length; i++) {
-        //this.addCoordinatePoint(this.listOfCountries[i].Country, this.listOfCountries[i].latitude, this.listOfCountries[i].longitude, this.listOfCountries[i].Area_sq_mi);
-        //console.log(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude);
-
         if (this.listOfCountries[i].Year == userSetYear) {
           this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);
         }
@@ -354,8 +366,6 @@ var CountryModel = require('./models/countryData');
       this.countryName = intersects[0].object.userData.Country;
       this.literacyRate = intersects[0].object.userData.LiteracyRate;
     }
-
-    //this.render();
   }
 
   onSlide() {

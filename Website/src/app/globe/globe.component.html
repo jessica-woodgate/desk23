@@ -1,11 +1,12 @@
 <canvas #globeCanvas (window:resize)="onWindowResize()"></canvas>
 <!-- (window:resize)="onWindowResize()"-->
 
-<div id = "displayLiteracyRates" [style.display]= "displayType" [style.top] = "top"  [style.left] = "left">
-    Literacy Rates
+<div id = "info" [style.display]= "displayType" [style.top] = "top"  [style.left] = "left">
     <div id = "displayCountryName">
-        Country : {{countryName}}
-        Literacy Rate : {{literacyRate}}
+        <b>Country :</b>   {{countryName}}
+    </div>
+    <div id = "displayLiteracyRate">
+       <b>Literacy Rate :</b>  {{literacyRate}} %
     </div>
 </div>
 

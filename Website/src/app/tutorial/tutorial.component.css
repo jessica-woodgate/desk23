@@ -2,6 +2,12 @@
     color : rgb(255, 255, 255);
   } */
 
+  #btn {
+    width: 25%;
+    right: 0;
+    bottom: 0;
+  }
+
   #slide {
     width : 8%;
     height: 15%;
@@ -107,7 +113,7 @@
     opacity: 80%;
     position: absolute;
     right: 16vh;
-    bottom: 3.5vh;
+    bottom: 6vh;
     width: 15vw;
     height: 13vh;
     font-size: 9pt;

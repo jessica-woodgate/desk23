@@ -71,7 +71,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 
 **Stanni**
 
-**Back-end co-developer and SCRUM leader: Jessica Woodgate** 
+**2. Back-end co-developer and SCRUM leader: Jessica Woodgate** 
 * Implemented database & wrote dbController.js functions to access data from the database for the API
 * Co-development of/assisting with API/Docker:
    * Created boiler plate version of the website, API, docker compose files, and data service from which to build our project on
@@ -80,7 +80,13 @@ During each sprint, objectives and deliverables were set in accordance to the us
    * Created GitHub repository and main reviewer of pull requests
    * Wrote meeting minutes & kept track of sprint targets
 
-**Wenda**
+**3. Co-backend Designer: Wenda Zhao**
+* Developed API backup 
+	* Create routing for single collections in database
+	* * Developed express router for the original module
+* Developed dataflow for json data files
+* Developed Separate CRUD functions
+* Assisted on Feedback analysis/evaluation
 
 **Emily Bloom**
 

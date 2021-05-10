@@ -5,6 +5,7 @@
 * Link the Kanban board (or an image) 
 * Link an image of the teams chat 
 * Link an image of miro?
+* Selected highlights of sprints
 
 
 ## Contents

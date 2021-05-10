@@ -32,16 +32,16 @@ describe('GlobeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  describe('list of countries dummy data', () => {
+  /*Slider*/
+  /*Check the right number of data points returned for a given year*/
+  describe('slider dummy data', () => {
     beforeEach(() => {
       spyOn(component, 'addCoordinatePoint');
+      component.createGlobe();
     });
 
-    /*Slider*/
-    /*Check the right number of data points returned for a given year*/
     it('should call the addCoordinatePoint function', () => {
       component.listOfCountries = [{Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}];
-      component.createGlobe();
       component.setAllPoints(1979);
       fixture.detectChanges();
       expect(component.addCoordinatePoint).toHaveBeenCalled();
@@ -53,7 +53,6 @@ describe('GlobeComponent', () => {
         {Entity : 'Jordan', Year: 1979, Data: 66, Latitude: 31, Longitude: 37, Area: 35480},
         {Entity : 'Paraguay', Year: 1979, Data: 85, Latitude: 23, Longitude: 58, Area: 157000}
       ];
-      component.createGlobe();
       component.setAllPoints(1979);
       fixture.detectChanges();
       expect(component.addCoordinatePoint).toHaveBeenCalledTimes(3);
@@ -65,7 +64,6 @@ describe('GlobeComponent', () => {
         {Entity : 'Bolivia', Year: 1900, Data: 18, Latitude: 16, Longitude: 63, Area: 424000},
         {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
       ];
-      component.createGlobe();
       component.setAllPoints(1900);
       fixture.detectChanges();
       expect(component.addCoordinatePoint).toHaveBeenCalledTimes(2);
@@ -78,24 +76,10 @@ describe('GlobeComponent', () => {
         {Entity : 'Bolivia', Year: 1900, Data: 18, Latitude: 16, Longitude: 63, Area: 424000},
         {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
       ];
-      component.createGlobe();
       component.setAllPoints(1948);
       fixture.detectChanges();
       expect(component.addCoordinatePoint).not.toHaveBeenCalled();
     });
-
-    /*it('should call the addCoordinatePoint function 2 times', () => {
-      spyOn(component, 'addCoordinatePoint');
-      component.listOfCountries = [
-        {Entity : 'Argentina', Year: 1900, Data: null, Latitude: 33, Longitude: 67, Area: 249000},
-        {Entity : 'Bolivia', Year: 1900, Data: null, Latitude: 33, Longitude: 67, Area: 249000},
-        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}
-      ];
-      component.createGlobe();
-      component.setAllPoints(1900);
-      fixture.detectChanges();
-      expect(component.addCoordinatePoint).toHaveBeenCalledTimes(2);
-    });*/
   });
   
   /*it('should call the addCoordinatePoint function 25 times in 1979', () => {
@@ -121,37 +105,40 @@ describe('GlobeComponent', () => {
   
   /*Pop up box with country information*/
   /*Test if the displayed popup receives the correct data*/
-  it('should receive country data from component', () =>{
-    component.displayType = "flex";
-    component.countryName = 'Afghanistan';
-    component.literacyRate = '20';
-    fixture.detectChanges();
-    const popup_name = html.query(
-      By.css('#displayCountryName')
-    ).nativeElement.textContent;
-    const popup_rate = html.query(
-      By.css('#displayLiteracyRate')
-    ).nativeElement.textContent;
-    expect(popup_name).toContain('Afghanistan');
-    expect(popup_rate).toContain('20');
-    expect(popup_name).toBeTruthy;
-    expect(popup_rate).toBeTruthy;
-  });
+  describe('pop up box country data', () => {
+    beforeEach(() => {
+      component.countryName = 'Afghanistan';
+      component.literacyRate = '20';
+    });
 
-  /*Check if not set to flex*/
-  it('should not receive country data from component', () =>{
-    component.displayType = "none";
-    component.countryName = 'Afghanistan';
-    component.literacyRate = '20';
-    fixture.detectChanges();
-    const popup_name = html.query(
-      By.css('#displayCountryName')
-    ).nativeElement.textContent;
-    const popup_rate = html.query(
-      By.css('#displayLiteracyRate')
-    ).nativeElement.textContent;
-    expect(popup_name).toBeFalsy;
-    expect(popup_rate).toBeFalsy;
+    it('should receive country data from component', () =>{
+      component.displayType = "flex";
+      fixture.detectChanges();
+      const popup_name = html.query(
+        By.css('#displayCountryName')
+        ).nativeElement.textContent;
+      const popup_rate = html.query(
+        By.css('#displayLiteracyRate')
+        ).nativeElement.textContent;
+      expect(popup_name).toContain('Afghanistan');
+      expect(popup_rate).toContain('20');
+      expect(popup_name).toBeTruthy;
+      expect(popup_rate).toBeTruthy;
+    });
+
+    /*Check if not set to flex*/
+    it('should not receive country data from component', () =>{
+      component.displayType = "none";
+      fixture.detectChanges();
+      const popup_name = html.query(
+        By.css('#displayCountryName')
+        ).nativeElement.textContent;
+      const popup_rate = html.query(
+        By.css('#displayLiteracyRate')
+        ).nativeElement.textContent;
+      expect(popup_name).toBeFalsy;
+      expect(popup_rate).toBeFalsy;
+    });
   });
 
   /*Test if we get the expected data from the data service using dummy data*/

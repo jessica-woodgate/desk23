@@ -89,7 +89,6 @@ During each sprint, objectives and deliverables were set in accordance to the us
 
 
 ## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
-*Jess*
 
 ### High level overview
 
@@ -107,6 +106,9 @@ Below is a visual representation of how we used user stories in relation to each
 Our Gantt chart displays how the tasks were spread out across time. By visually displaying the timeline of deadlines it helped us to ensure that we could more effectively allocate resources across every aspect of our project. The structure of the chart helped us to monitor progress and see how tasks needed to be divided into sprints, enabling clear communication about project milestones.
 
 ![image](https://user-images.githubusercontent.com/45073537/117534528-b4c54500-afe9-11eb-8ee9-f59bbb3f0867.png)
+
+### Highlights & Critical Points
+One of the main critical points in the project was in our second sprint, where we had to make a decision at the end as to whether we were going to move forwards with the globe component developed using three.js or the one developed using d3.js. This was a big fork in the project, and we had to think carefully as a team as to which road was the best to take. Using feedback gathered from our users (see [here](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-1-and-2-building-the-globe-and-interactivity) for a more detailed exploration of how we did this), we decided to go with the three.js component. This meant that our team member, Stanni, who had previously been working on the d3 component was now freed up to assist with documentation and other front end issues that needed an extra hand with.
 
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 

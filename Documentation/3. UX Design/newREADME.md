@@ -2,6 +2,7 @@
 
 **IMPORTANT TO DO:**
 
+* More emphasis on User Stories - Link them with different sprints as well as the changes made 
 * Fix paper prototype links: https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/6.%20Paper%20Prototypes%20Review.md
 * Fix First two website prototype links: https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/8.%20First%20Two%20Website%20Prototypes.md
 * Add survey monkey images to readme: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/First%20SurveyMonkey%20Results

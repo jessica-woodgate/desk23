@@ -47,16 +47,7 @@ Build for sustainability - this is a principle that we take as being extremely i
 There were many other codes we briefly looked at, including ACS code of ethics, Google’s AI principles and the OECD principles for AI. Although some of these are designed for AI, they has also wider implications for other forms of technology. However, we decided that central themes bridging these codes were covered in the principles we had chosen. 
 
 ## The Framework
-1. Build for everyone 
-2. Design with the user 
-3. Be data driven 
-4. Do no harm 
-5. Be collaborative 
-6. Understand the existing ecosystem 
-7. Respect the organisation or individual you work for 
-8. Reuse and improve 
-9. Use open standards/sources/innovation 
-10. Design for scale 
+![image](https://user-images.githubusercontent.com/45073537/117713530-b0598180-b1cd-11eb-8df0-84d5339c4c25.png)
 
 ## Using the framework 
 

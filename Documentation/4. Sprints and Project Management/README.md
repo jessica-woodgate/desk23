@@ -1,5 +1,12 @@
 # Project Management [15 marks]
 
+**To do**
+* Add some images and make this look nicer
+* Link the Kanban board (or an image) 
+* Link an image of the teams chat 
+* Link an image of miro?
+
+
 ## Contents
 a. [Group working methods used](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management#a-group-working-methods-used-for-instance-did-your-team-choose-a-particular-style-of-agile-what-communication-channels-did-you-use)
 
@@ -10,7 +17,7 @@ c. [Documentation of sprints](https://github.com/jess-mw/desk23/tree/main/Docume
 d. [Team use of Git, continuous integration/continuous deployment, streamlining of workflow](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management#d-team-use-of-git-how-your-team-used-continuous-integration--continuous-deployment-streamlining-of-workflow-throughout)
 
 ## a. Group working methods used (for instance did your team choose a particular style of agile? what communication channels did you use?)
-*Hamza*
+
 
 ![image](https://user-images.githubusercontent.com/45073537/117444484-70766e00-af31-11eb-8d68-ae0e3aed4067.png)
 --- note from jess: Hamza i've included this picture from the documentation guide (https://www.altexsoft.com/blog/business/technical-documentation-in-software-development-types-best-practices-and-tools/) for reference to the sprints as well, but feel free to replace/get rid of if you don't want it :)

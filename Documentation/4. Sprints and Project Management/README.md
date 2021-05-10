@@ -81,10 +81,13 @@ During each sprint, objectives and deliverables were set in accordance to the us
 	* Creating the scene, globe component and functionality 
 	* Creating tutorial windows and interactivity 
 	* Creating welcome page 
+* Sourced images and backgrounds for the website
+* Managed the CSS layout of the website 
 * Loaded in data from the API to the frontend 
 * Created the book opening animation for the home page
 * Assisted on first two paper prototype designs
 * Assisted on the first wireframe of the website
+
 
 
 ## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)

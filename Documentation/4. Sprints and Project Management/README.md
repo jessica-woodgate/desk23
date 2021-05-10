@@ -24,7 +24,9 @@ The core requirement set by ourselves was to create an application that solves t
 
 As such, an Agile methodology seemed perfect for us to achieve this requirements. With the aim of consistently publishing our app and obtaining feedback on its operations, we debated between the use of Kanban and Scrum as the main method for organising our project. 
 
-**Kanban**
+<div align="center">
+  **Kanban**
+</div>
 
 |                           Attribute                          |                                                                                                                               Evaluation                                                                                                                              |  Wanted?  |
 |:------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------:|
@@ -34,7 +36,9 @@ As such, an Agile methodology seemed perfect for us to achieve this requirements
 |     Chronological   method of completing tasks               |     Ensure that each and every task is completed. It does, however, limit a developer’s creativity in terms of which tasks get solved first. May lead to inefficiencies if the developer feels they better equipped to solve another problem at the current time.     |     NO    |
 
 
+<div align="center">
 **SCRUM**
+</div>
 |                     Attribute                    |                                                                                                                                       Evaluation                                                                                                                                      | Wanted? |
 |:------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------:|
 |     Pre-defined Roles                            |     Each team member can focus on learning and specialising within a specific area of the MEAN stack. Given the short period provided for development, this appears to be more effective.                                                                                             |   YES   |

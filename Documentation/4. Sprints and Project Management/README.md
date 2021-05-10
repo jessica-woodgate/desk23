@@ -24,7 +24,7 @@ The core requirement set by ourselves was to create an application that solves t
 
 As such, an Agile methodology seemed perfect for us to achieve this requirements. With the aim of consistently publishing our app and obtaining feedback on its operations, we debated between the use of Kanban and Scrum as the main method for organising our project. 
 
-**Benefits of Kanban**
+**Kanban**
 
 |                           Attribute                          |                                                                                                                               Evaluation                                                                                                                              |  Wanted?  |
 |:------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------:|
@@ -32,6 +32,15 @@ As such, an Agile methodology seemed perfect for us to achieve this requirements
 | Alter product to be changed and restructured at any time     | Removes the limitations placed by a manager. Provides the developer with freedom to change the product at any time without consequences.                                                                                                                              |    YES    |
 |     Custom set   delivery and production output deadlines    |     Allow individual team members to organise their side of the stack according to their own respective schedules.                                                                                                                                                    |     NO    |
 |     Chronological   method of completing tasks               |     Ensure that each and every task is completed. It does, however, limit a developer’s creativity in terms of which tasks get solved first. May lead to inefficiencies if the developer feels they better equipped to solve another problem at the current time.     |     NO    |
+
+
+**SCRUM**
+|                     Attribute                    |                                                                                                                                       Evaluation                                                                                                                                      | Wanted? |
+|:------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------:|
+|     Pre-defined Roles                            |     Each team member can focus on learning and specialising within a specific area of the MEAN stack. Given the short period provided for development, this appears to be more effective.                                                                                             |   YES   |
+|     Changes may not occur during the sprints     |     Provides a stronger sense of direction, however, removes the creative freedom provided by the Kanban methodology. Given the scope of the project, this may be essential as consistently changing the direction and/or vision may lead to inconsistencies with the end product.    |    NO   |
+|     Set deadlines for each sprint                |     Ensures the entire MEAN stack is being developed in parallel to each other. Allows for us to organise consistent feedback and review sessions with users in a timely manner.                                                                                                      |   YES   |
+|     Non-chronological method of completing tasks |     Gives the developer the freedom to work on certain aspects and solve the problems in any order this best see fit.                                                                                                                                                                 |   YES   |
 
 ## b. Discussion of team roles (specialisation is ok!). A summary of individual contributions (note: this is for reference, your team will all receive the same grade!).
 *Hamza*

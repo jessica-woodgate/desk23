@@ -26,11 +26,12 @@ As such, an Agile methodology seemed perfect for us to achieve this requirements
 
 **Benefits of Kanban**
 
-|   |   |   |   |   |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+|                           Attribute                          |                                                                                                                               Evaluation                                                                                                                              |  Wanted?  |
+|:------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------:|
+|     No pre-defined roles                                     | Would allow for stronger collaboration but would require each team member to be well versed with most areas of the MEAN stack.                                                                                                                                        |     NO    |
+| Alter product to be changed and restructured at any time     | Removes the limitations placed by a manager. Provides the developer with freedom to change the product at any time without consequences.                                                                                                                              |    YES    |
+|     Custom set   delivery and production output deadlines    |     Allow individual team members to organise their side of the stack according to their own respective schedules.                                                                                                                                                    |     NO    |
+|     Chronological   method of completing tasks               |     Ensure that each and every task is completed. It does, however, limit a developer’s creativity in terms of which tasks get solved first. May lead to inefficiencies if the developer feels they better equipped to solve another problem at the current time.     |     NO    |
 
 ## b. Discussion of team roles (specialisation is ok!). A summary of individual contributions (note: this is for reference, your team will all receive the same grade!).
 *Hamza*

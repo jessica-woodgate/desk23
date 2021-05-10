@@ -71,21 +71,27 @@ During each sprint, objectives and deliverables were set in accordance to the us
 
 **Stanni**
 
-**2. Back-end co-developer and SCRUM leader: Jessica Woodgate** 
+**Back-end co-developer and SCRUM leader: Jessica Woodgate** 
 
 * Implemented database & wrote dbController.js functions to access data from the database for the API
+
 * Co-development of/assisting with API/Docker:
-	* Created boiler plate version of the website, API, docker compose files, and data service from which to build our project on
-	* Created routing for each collection in the database
+
+               * Created boiler plate version of the website, API, docker compose files, and data service from which to build our project on
+
+               * Created routing for each collection in the database
+
 * Project Management:
-	* Created GitHub repository and main reviewer of pull requests
-	* Wrote meeting minutes & kept track of sprint targets
+
+               * Created GitHub repository and main reviewer of pull requests
+
+               * Wrote meeting minutes & kept track of sprint targets
 
 **Wenda**
 
 **Emily Bloom**
 
-**5. Co-Frontend and UI/UX Designer: Hamza Qureshi**
+**Co-Frontend and UI/UX Designer: Hamza Qureshi**
 * Developed Three.js globe: 
 	* Creating the scene, globe component and functionality 
 	* Creating tutorial windows and interactivity 
@@ -116,7 +122,7 @@ Our Gantt chart displays how the tasks were spread out across time. By visually 
 ![image](https://user-images.githubusercontent.com/45073537/117534528-b4c54500-afe9-11eb-8ee9-f59bbb3f0867.png)
 
 ### Highlights & Critical Points
-One of the main critical points in the project was in our second sprint, where we had to make a decision at the end as to whether we were going to move forwards with the globe component developed using three.js or the one developed using d3.js. This was a big fork in the project, and we had to think carefully as a team as to which road was the best to take. Using feedback gathered from our users (see [here](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-1-and-2-building-the-globe-and-interactivity) for a more detailed exploration of how we did this), we decided to go with the three.js component. This meant that our team member, Stanni, who had previously been working on the d3 component was now freed up to assist with documentation and other front end issues that needed an extra hand with.
+One of the main critical points in the project was in our [second sprint](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md#sprint-2---deploy-interactivity-19th-april---2nd-may), where we had to make a decision at the end as to whether we were going to move forwards with the globe component developed using three.js or the one developed using d3.js. This was a big fork in the project, and we had to think carefully as a team as to which road was the best to take. Using feedback gathered from our users (see [here](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-1-and-2-building-the-globe-and-interactivity) for a more detailed exploration of this process), we decided to go with the three.js component. This meant that our team member, Stanni, who had previously been working on the d3 component was now freed up to assist with documentation and other front end issues that needed an extra hand with.
 
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 

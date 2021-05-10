@@ -81,13 +81,10 @@ During each sprint, objectives and deliverables were set in accordance to the us
 	* Creating the scene, globe component and functionality 
 	* Creating tutorial windows and interactivity 
 	* Creating welcome page 
-* Sourced images and backgrounds for the website
-* Managed the CSS layout of the website 
 * Loaded in data from the API to the frontend 
 * Created the book opening animation for the home page
 * Assisted on first two paper prototype designs
 * Assisted on the first wireframe of the website
-
 
 
 ## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
@@ -111,8 +108,10 @@ Our Gantt chart displays how the tasks were spread out across time.
 
 ## d. Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 
-Please see [here](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#f-deployment-details-including-docker-include-how-you-have-been-achieving-continuous-integration-and-deployment) for an explanation of how we used continuous integration and deployment with Docker and GitHub. The basic layout of our branch structure can be seen in the diagram below:
+Please see [here](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md#continuous-integration-and-deployment) for an explanation of how we used continuous integration and deployment with Docker and GitHub. The basic layout of our branch structure can be seen in the diagram below:
 
 ![image](https://user-images.githubusercontent.com/45073537/117686796-1d115380-b1af-11eb-8e01-69ecdc64144e.png)
+
+Essentially, we ensured continuous integration and deployment through a pipeline of branches. At the highest level, our main branch contained our production code - the current release that is ready to be shipped. Beneath this is the staging branch, where our features our tested. On the working level is our dev branch, from which each developer created their own branch from to work on their own particular feature. This ensured that we did not have multiple developers working on the same branch at once, which avoided merge conflicts and lowered the risk of things breaking. When the developer was happy that their feature was complete, and this was discussed with the team, they merged with dev and triggered the CI/CD pipeline. 
 
 To ensure a streamlined workflow, we had one person - Jess - who was in charge of organising the remote repository and reviewing pull requests. This avoided any confusion or communication issues with incorrect versions being merged and avoided major conflicts or the need to refactor our code. We held [regular stand up meetings](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) to discuss progress on the features that each team member was working on. This meant that we were in constant communication about the project, and everybody was up to date with the current state of the website. By keeping everyone in the loop throughout, and using the continuous integration and deployment methodology, we ensured that the different features of our code were built and tested together and each developer's work was fully integrated with the rest of the project.

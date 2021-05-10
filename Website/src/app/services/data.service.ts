@@ -3,12 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Country } from '../models/country';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  private REST_API_SERVER = 'http://localhost:3000/countries/getCountries';
+  REST_API_SERVER = 'http://localhost:3000/countries/getCountries';
+  
 
   constructor(private httpClient: HttpClient) { }
 
@@ -16,14 +19,14 @@ export class DataService {
 
     return this.httpClient.get<Country[]>(this.REST_API_SERVER);
       
-  }
+  } 
 
-  
+}
+
   //sendData(someData) : Observable<Country[]>{​​​​​​​   return this.httpClient.post<Country[]>(this.REST_API_SERVER, someData);  }​​​​​​​
 
 
-
-  public getAll(){
+/*  public getAll(){
     //return this.httpClient.get(this.REST_API_SERVER);
 
     /* return [
@@ -52,5 +55,4 @@ export class DataService {
         Area: 34245
       },
     ]; */
-  }
-}
+  /*} */

@@ -10,9 +10,36 @@ export class TutorialComponent implements OnInit {
 
   tutorialShown: boolean = true;
 
+  spinShown: boolean = true;
+
+  zoomShown: boolean = false;
+
+  clickShown: boolean = false;
+
+  slideShown: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  hideSpin() {
+    this.spinShown = false;
+    this.zoomShown = true;
+  }
+
+  hideZoom() {
+    this.zoomShown = false;
+    this.clickShown = true;
+  }
+
+  hideClick() {
+    this.clickShown = false;
+    this.slideShown = true;
+  }
+
+  hideSlide() {
+    this.slideShown = false;
   }
 
   showTutorial() {

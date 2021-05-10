@@ -12,10 +12,9 @@ canvas {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  #displayLiteracyRates {
+  #info {
     justify-items: center;
     align-content: center;
-    /*display: none; changed from flex*/
     flex-direction: column;
     border-style: inset;
     border-width: 5px;
@@ -24,11 +23,9 @@ canvas {
     background-color: black;
     opacity: 80%;
     position: absolute;
-    /* right: 5vh;
-    bottom: 45vh; */
-    width: 15vw;
-    height: 20vh;
-    font-size: 9pt;
+    width: 17vw;
+    height: 17vh;
+    font-size: 15pt;
     font-style: normal;
   }
 
@@ -38,10 +35,24 @@ canvas {
     align-content: center;
     align-self: center;
     text-align: center;
-    width: 75%;
+    width: 80%;
     height: 15;
     border: inset;
-    border-color: burlywood;
+    border-color: rgb(222, 135, 135);
+    border-radius: 5%;
+    margin-bottom: 1%;
+  }
+
+  #displayLiteracyRate {
+    margin-top: 5%;
+    justify-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    height: 15;
+    border: inset;
+    border-color: rgb(222, 135, 135);
     border-radius: 5%;
     margin-bottom: 1%;
   }

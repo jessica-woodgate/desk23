@@ -50,4 +50,5 @@ function populate(model, data, cb){
 //to be commented out
 /* populate(LiteracyModel, literacyData);
 populate(CoordinatesModel, coordinatesData);
+<<<<<<< HEAD:Website/db.js
 populate(CountryModel, countryData);  */

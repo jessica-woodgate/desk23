@@ -56,6 +56,23 @@ Angular allows developers to create single paged web applications through the us
 
 The issue that many developers face when using Angular, however, is the steep learning curve that comes with it. This was taken into consideration, but after noting the abundance of tutorials and guidance provided by the community, we felt it was best to proceed with Angular. 
 
+### The Components
+
+The website is split off into 3 main components: 
+
+* Welcome Component 
+* Globe Component 
+* Tutorial Component 
+
+This next section will delve into the implementation of each component and its functions. 
+
+#### Welcome Page
+
+The objective of the welcome page was to simply provide the user with a short animation of a book opening, proceeding with some text and information on what they are about to see next. 
+
+In order to attached the video, which was stored locally in the assets folder, the following code was used: 
+
+
 
 
 ## e. Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!

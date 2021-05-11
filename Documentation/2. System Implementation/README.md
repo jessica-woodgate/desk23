@@ -265,11 +265,51 @@ The slider’s data was bound to a variable, `currentYear`, in the TypeScript fi
 
 
 
+##### Interactive Bar Charts
 
+In order to make each bar chart clickable, a HostListener was set up as shown below: 
 
+``` javascript
+@HostListener('click',['$event'])
+  onMouseClick(event : any) {
+```
+The `HostListener` listened for click events. Upon receiving a click event, the `onMouseClick()` function is called, receiving the event as one of its parameters. 
 
+Three.js provided documentation on how to calculate the x and y coordinate of the mouse based on the event information, which has been used as shown below: 
 
+``` javascript
+this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+```
 
+Earlier in this report, there was a mentioning of a raycaster. The raycaster essentially fires a ray from the mouses coordinates and gathers all the objects that are intersected by the ray. It returns an array of intersected objects, as shown below: 
+
+``` javascript
+this.raycaster.setFromCamera(this.mouse, this.camera);
+const intersects = this.raycaster.intersectObjects(this.globe.children);
+```
+The intersected objects in question are the children of the globe, which are all the bar charts. If the length of the intersects array is 0, then nothing should happen, as no bar chart was clicked upon. 
+
+If, however, there is 1 or more element in the array, then the first one is taken into account. Its data, which has been set during the creation of the object through the three.js use of `userData` for any object, is then set to two variables as shown below: 
+
+``` javascript
+this.countryName = intersects[0].object.userData.Country;
+this.literacyRate = intersects[0].object.userData.LiteracyRate;
+```
+`this.CountryName` and `this.literacyRates` are what get printed in a box that pops up upon the user clicking on any bar chart. 
+The TypeScript file sets the display and position of the box. In the case of 0 intersects, the display is set to `“none”`. 
+In the case of an intercept, the following code is used: 
+
+``` javascript
+this.displayType = "flex";
+this.top = (event.clientY - 100) + 'px';
+this.left = (event.clientX + 20) + 'px';
+```
+This positions the box towards the left middle of the mouse click position, allowing it to adapt upon each click. This information is then accessed within the HTML file: 
+
+``` html
+div id = "info" [style.display]= "displayType" [style.top] = "top"  [style.left] = "left">
+```
 
 ## e. Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!
 *Stanni*

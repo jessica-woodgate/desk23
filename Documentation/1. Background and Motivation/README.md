@@ -1,4 +1,4 @@
-# Background and Motivation [10 marks]
+# Background and Motivation
 
 ## Contents
 

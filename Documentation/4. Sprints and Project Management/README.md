@@ -87,7 +87,13 @@ During each sprint, objectives and deliverables were set in accordance to the us
 * Developed Separate CRUD functions
 * Assisted on Feedback analysis/evaluation
 
-**Emily Bloom**
+**4. Co-Product Owner and Quality Assurance: Emily Bloom**
+* Responsible for testing: 
+	* Functional tests 
+	* Unit tests 
+* User acceptance testing
+* Design and evaluation, including prototyping/wireframes
+* Product backlog management
 
 **Co-Frontend and UI/UX Designer: Hamza Qureshi**
 * Developed Three.js globe: 

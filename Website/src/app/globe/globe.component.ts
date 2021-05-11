@@ -56,13 +56,14 @@ export class GlobeComponent implements OnInit {
     this.windowHeight = window.innerHeight;
 
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(50, this.windowWidth/this.windowHeight, 0.1, 1000)
+    this.camera = new THREE.PerspectiveCamera(50, this.windowWidth/this.windowHeight, 0.1, 1000);
 
     this.lightGroup = new THREE.Group();
     this.raycaster = new THREE.Raycaster();
     this.mouse = new THREE.Vector2();
 
     this.countryName = null;
+    this.literacyRate = null;
     this.displayType = "none";
 
     this.top = "0px";
@@ -70,30 +71,13 @@ export class GlobeComponent implements OnInit {
   }
 
  ngOnInit() {
-   
     this.countryService.getCountryData().subscribe((countries) => {
       this.listOfCountries = countries;
       this.initDependencies();
     });
-    
-    //this.listOfCountries  = (this.listOfCountries  as  any).default;
-    //console.log("Country printed in ngOnInit : " + this.listOfCountries[0].Entity);
   } 
 
-  /* ngAfterViewInit() {
-
-    this.setScene();
-    this.setCamera();
-    this.setRenderer();
-    this.setControls();
-
-    this.createLightGroup();
-    this.createGlobe();
-
-    this.animate();
-    this.setAllPoints(this.currentYear);
-  } */
-
+  
   initDependencies() {
     this.setScene();
     this.setCamera();
@@ -157,26 +141,17 @@ export class GlobeComponent implements OnInit {
   }
 
   createGlobe() {
-
     //maps from: http://planetpixelemporium.com/earth.html && https://www.solarsystemscope.com/textures/
     let Emap = new THREE.TextureLoader().load('../../assets/images/2k_earth_daymap.jpg');
-    let Ebump = new THREE.TextureLoader().load('../../assets/images/earthbump4k.jpg');
-    let Espec = new THREE.TextureLoader().load('../../assets/images/earthspec4k.jpg');
-
+  
     const sphere = new THREE.SphereGeometry(10,50,50);
     const material = new THREE.MeshPhongMaterial({
-        map : Emap,
-        bumpMap : Ebump,
-        bumpScale : 0.10,
-        specularMap : Espec,
-        specular : new THREE.Color('grey')
-      });
+        map : Emap});
 
     this.globe = new THREE.Mesh(sphere, material);
     this.scene.add(this.globe);
 
     this.createCountryNames();
-
   }
 
   createCountryNames() {
@@ -233,24 +208,6 @@ export class GlobeComponent implements OnInit {
     point2.userData.Country = country;
     point2.userData.LiteracyRate = litData;
 
-    //pink
-    /* if (litData<20) {
-      point2.material.color.set(0xF8B4C2);
-    }
-    if (litData>=20 && litData<40) {
-      point2.material.color.set(0xF47B93);
-    }
-    if (litData>=40 && litData<60) {
-      point2.material.color.set(0xED254E);
-    }
-    if (litData>=60 && litData<80) {
-      point2.material.color.set(0xBD0F32);
-    }
-    if (litData>=80) {
-      point2.material.color.set(0x970C28);
-    } */
-
-
     //yellow to red
     if (litData<20) {
       point2.material.color.set(0xFF2C05);
@@ -268,24 +225,6 @@ export class GlobeComponent implements OnInit {
       point2.material.color.set(0xFEF001);
       
     } 
-
-    //green and blue
-    /* if (litData<20) {
-      point2.material.color.set(0xCFF4D2);
-    }
-    if (litData>=20 && litData<40) {
-      point2.material.color.set(0x7BE495);
-    }
-    if (litData>=40 && litData<60) {
-      point2.material.color.set(0x56C596);
-    }
-    if (litData>=60 && litData<80) {
-      point2.material.color.set(0x32949C);
-    }
-    if (litData>=80) {
-      point2.material.color.set(0x205072);
-    }
- */
     this.globe.add(point2);
 }
 
@@ -296,14 +235,12 @@ export class GlobeComponent implements OnInit {
     while(this.globe.children.length) {
       this.globe.remove(this.globe.children[0]);
     }
-
-    console.log("Length of list of countries is : "+this.listOfCountries.length);
-
-      for (let i = 0; i < this.listOfCountries.length; i++) {
-        if (this.listOfCountries[i].Year == userSetYear) {
-          this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);
-        }
+    
+    for (let i = 0; i < this.listOfCountries.length; i++) {
+      if (this.listOfCountries[i].Year == userSetYear) {
+        this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);       
       }
+    }
   }
 
   @HostListener('window:resize', ['$event'])
@@ -317,7 +254,6 @@ export class GlobeComponent implements OnInit {
 
   @HostListener('click',['$event'])
   onMouseClick(event : any) {
-    console.log("mouse clicked");
     event.preventDefault();
 
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
@@ -328,26 +264,19 @@ export class GlobeComponent implements OnInit {
     const intersects = this.raycaster.intersectObjects(this.globe.children);
 
     if (intersects.length == 0) {
-      console.log("intersects is empty!");
       this.displayType = "none";
       this.countryName = null;
       this.literacyRate = null;
     }
 
     for (let i = 0; i < intersects.length; i++) {
-      console.log("intersected");
       console.log(intersects[0]);
 
       //show the textbox
       this.displayType = "flex";
-
       //position the textbox
       this.top = (event.clientY - 100) + 'px';
-
       this.left = (event.clientX + 20) + 'px';
-
-      console.log("top is " + this.top);
-      console.log("left is : " + this.left);
 
       //@ts-ignore
       intersects[ 0 ].object.material.color.set( 0x52307c );
@@ -359,5 +288,4 @@ export class GlobeComponent implements OnInit {
   onSlide() {
     this.setAllPoints(this.currentYear);
   }
-
 }

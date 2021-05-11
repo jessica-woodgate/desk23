@@ -40,7 +40,7 @@ Principles we chose to include in our framework:
 
 Principles we chose not to include in our framework: 
 
-Build for sustainability - this is a principle that we take as being extremely important, however at this stage of our product and technical ability, it is not something that we felt we would be able to fully integrate into our design. We also took this as being able to integrate under the principle “build for scale”, as we see a part of building for scale being ensuring that as the product grows, it is sustainable. Future work on our product would include research into making our processes more efficient and green-friendly. 
+1. Build for sustainability - this is a principle that we take as being extremely important, however at this stage of our product and technical ability, it is not something that we felt we would be able to fully integrate into our design. We also took this as being able to integrate under the principle “build for scale”, as we see a part of building for scale being ensuring that as the product grows, it is sustainable. Future work on our product would include research into making our processes more efficient and green-friendly. 
 
 There were many other codes we briefly looked at, including [ACS code of ethics](https://www.acs.org.au/content/dam/acs/acs-documents/Code-of-Ethics.pdf), [Google’s AI principles](https://ai.google/principles) and the [OECD principles for AI](https://www.oecd.org/going-digital/ai/principles/). Although some of these are designed for AI, they has also wider implications for other forms of technology. However, we decided that central themes bridging these codes were covered in the principles we had chosen. 
 

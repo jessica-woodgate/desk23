@@ -1,4 +1,4 @@
-# Conclusion [10 marks]:
+# Conclusion
 
 ## Contents
 a. [Reflect on the working practices of your group](https://github.com/jess-mw/desk23/tree/main/Documentation/6.%20Conclusion#a-reflect-on-the-working-practices-of-your-group-how-well-they-did-or-did-not-work-eg-management-of-issues-communication-agile-etc)

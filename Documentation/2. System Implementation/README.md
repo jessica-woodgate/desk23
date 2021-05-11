@@ -30,7 +30,7 @@ Please see here for [future developments of our data model](https://github.com/j
 ![image](https://user-images.githubusercontent.com/45073537/117008237-6b6faf80-ace2-11eb-8271-73d8342239c8.png)
 
 ## c. Middle Tier - Express, Node, the RESTful API
-*Wenda*
+
 It is decided to use Express to develop node.js based server for backend. The reason using Express is that as one of the most popular web frameworks, supporting Node.js, it is very supportive for routing, middleware, as well as building database using Mongoose, which is important because Mongoose is a promise-based Node.js ODM for MongoDB. Node.js shines at building fast, scalable network applications, as it’s capable of handling a huge number of simultaneous connections with high throughput, which equates to high scalability. The current website does not require too much module though, it allows perfection and adding more features when needed.
 
 The npm (Node Package Manager) module used for building the websites are:

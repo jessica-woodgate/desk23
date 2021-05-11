@@ -107,12 +107,13 @@ describe('GlobeComponent', () => {
   /*Test if the displayed popup receives the correct data*/
   describe('pop up box country data', () => {
     beforeEach(() => {
-      component.countryName = 'Afghanistan';
-      component.literacyRate = '20';
+      
     });
 
     it('should receive country data from component', () =>{
       component.displayType = "flex";
+      component.countryName = 'Afghanistan';
+      component.literacyRate = '20';
       fixture.detectChanges();
       const popup_name = html.query(
         By.css('#displayCountryName')
@@ -120,8 +121,8 @@ describe('GlobeComponent', () => {
       const popup_rate = html.query(
         By.css('#displayLiteracyRate')
         ).nativeElement.textContent;
-      expect(popup_name).toContain('Afghanistan');
-      expect(popup_rate).toContain('20');
+      expect(popup_name).toContain('Country', 'Afghanistan');
+      expect(popup_rate).toContain('Literacy Rate', '20');
       expect(popup_name).toBeTruthy;
       expect(popup_rate).toBeTruthy;
     });
@@ -129,6 +130,8 @@ describe('GlobeComponent', () => {
     /*Check if not set to flex*/
     it('should not receive country data from component', () =>{
       component.displayType = "none";
+      component.countryName = null;
+      component.literacyRate = null;
       fixture.detectChanges();
       const popup_name = html.query(
         By.css('#displayCountryName')
@@ -136,6 +139,8 @@ describe('GlobeComponent', () => {
       const popup_rate = html.query(
         By.css('#displayLiteracyRate')
         ).nativeElement.textContent;
+      expect(popup_name).toContain('Country');
+      expect(popup_rate).toContain('Literacy Rate');
       expect(popup_name).toBeFalsy;
       expect(popup_rate).toBeFalsy;
     });
@@ -143,14 +148,15 @@ describe('GlobeComponent', () => {
 
   /*Test if we get the expected data from the data service using dummy data*/
   /*Adapted from https://codehandbook.org/how-to-unit-test-angular-component-with-service/*/
-  it('should call ngOnInit and get Country[] response', fakeAsync(() =>{
+  it('should get Country[] response', fakeAsync(() =>{
     const service = fixture.debugElement.injector.get(DataService);
-    let spy_ngOnInit = spyOn(service, "getCountryData").and.callFake(() => {
+    spyOn(service, "getCountryData").and.callFake(() => {
       return Rx.of([{Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}]).pipe(delay(100));
     });
     component.ngOnInit();
     tick(100);
     expect(component.listOfCountries[0].Entity).toEqual('Afghanistan');
+    expect(component.listOfCountries[0].Year).toEqual(1979);
   }));
 
 });

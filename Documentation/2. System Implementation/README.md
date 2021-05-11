@@ -70,7 +70,16 @@ This next section will delve into the implementation of each component and its f
 
 The objective of the welcome page was to simply provide the user with a short animation of a book opening, proceeding with some text and information on what they are about to see next. 
 
-In order to attached the video, which was stored locally in the assets folder, the following code was used: 
+In order to attach the video, which was stored locally in the assets folder, the following code was used: 
+```(typescript)
+div id = "bookContainer">
+
+     <video onloadedmetadata="this.muted = true" autoplay muted  (ended)="showEnter()" id = "bookOpen">
+        <source src = "../../assets/images/video/BookAnimation2.mp4" type ="video/mp4"> 
+    </video>
+
+</div>
+```
 
 
 

@@ -87,7 +87,27 @@ The event, (ended), was listened for and upon the video coming to an end, the fo
 ``` javascript
 showEnter() {
     this.enterShown = true;
-  }
+}
+```
+
+Where `this.enterShown` is set to false initially. When the video comes to an end and `this.enterShown` is set to true, a div becomes visible, with an image that is set to be a `routerLink` to the globe’s page. 
+
+``` html
+<div *ngIf = "enterShown" id = "enterGlobe">
+    <nav>
+        <a routerLink="/globe">
+            <img id = "enter" src="../../assets/images/tutorial/enter.png">
+        </a>
+    </nav>
+</div>
+```
+
+The routes have been declared in the `Routes` array in the [app-routing.module.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/app-routing.module.ts) file as: 
+
+``` javascript 
+const routes: Routes = [
+  { path: 'globe', component: GlobeComponent },
+  { path: '', component: WelcomeComponent }
 ```
 
 

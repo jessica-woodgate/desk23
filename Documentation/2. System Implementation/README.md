@@ -311,6 +311,72 @@ This positions the box towards the left middle of the mouse click position, allo
 div id = "info" [style.display]= "displayType" [style.top] = "top"  [style.left] = "left">
 ```
 
+#### The Tutorial 
+
+The tutorial component was built to guide the user on how to use the website. As our website is targeted towards the younger ages, we aimed to make it as user friendly and accessible as possible. Simple instructions such as how to spin the globe and what the bar charts represent are offered to the user. 
+
+When the globe page is first loaded in, you are greeted with a large textbox containing some information to do with the globe. A button at the bottom closes this window, and proceeds to begin the website tutorial. 
+
+``` html
+<button id = "closeBtn" (click)="hideInfo()"> <h4>Close</h4> </button>
+```
+The `(click)` event calls the function `hideInfo()` which does the following: 
+
+``` javascript
+hideInfo() {
+    this.infoShown = false;
+    this.spinShown = true;
+}
+```
+
+Where `infoShown` was previously set to true. As a result, the information box disappears and the first tutorial box appears. This was achieved quite simply through using the structural directive of `*ngIf`. For example: 
+
+``` html
+<div id = "spinLeftOrRight" *ngIf = "spinShown">
+```
+Initially, `spinShown` is set to `false`, which results in this particular div to not be visible to the user. Once the main info box is closed, `spinShown` is set to `true`, resulting in the tutorial being shown. 
+
+This was repeated several times for the remainder of the tutorial divs e.g. zooming or using the slider. 
+
+#### The CSS 
+
+A majority of the CSS was used to build the outline of the boxes and the base structure was adapted from code that can be found [here]( https://github.com/DavidGrice/THREEJS-Tutorial-Globe/blob/master/END/public/CSS/style.css).
+The positioning and size of the boxes were arbitrarily set. 
+
+#### The Service 
+
+In order to fetch in the data from the API set up by the backend, a service was created using the Angular CLI service generator. This was achieved through importing the `HttpClientModule` from the angular library. 
+
+``` javascript
+import {HttpClientModule} from '@angular/common/http';
+```
+
+It is also imported within the service class called [data.service.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/services/data.service.ts). The http client is then injected into the constructor as shown below: 
+
+``` javascript
+constructor(private httpClient: HttpClient) { }
+```
+
+A `GET` request is then processed to the API in question in order to fetch the data. 
+
+``` javascript
+getCountryData() : Observable<Country[]>{
+    return this.httpClient.get<Country[]>(this.REST_API_SERVER);
+} 
+```
+The function returns an Observable of type Country array, where Country is the model class mentioned above. The Observable was imported from the rxjs library to handle the asynchronous nature of our data and the three.js scene. 
+The GET request takes in the URL of the API which holds all the data – this.REST_API_SERVER.
+In order to call the function, a subscription needs to take place in order to subscribe to the observable. 
+In the globe.component.ts file, the following code is executed during the initiation of the website: 
+
+
+
+
+
+
+
+
+
 ## e. Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!
 *Stanni*
 

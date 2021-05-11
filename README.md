@@ -37,7 +37,7 @@ To achieve this, we have created a Single Page Application (SPA) designed to sho
 
 ### Project Objectives. The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
 
-![image](https://user-images.githubusercontent.com/74050529/117589788-b4c96000-b123-11eb-9a47-5e0b414ef84a.png)
+![image](https://user-images.githubusercontent.com/74050529/117741822-36d88800-b1fb-11eb-9ac0-89e5c9c61833.png)
 
 The overarching goal of the project is to build a visualisation of global literacy rates data in order to improve communication of how levels of literacy differ across the world, and how these rates have changed over time. A central goal is to clarify key trends and patterns in the data, and the project aims at once to bring to light the hopeful story of how global literacy has risen over time, and highlight the gaps that remain by making it easier to identify areas where literacy rates remain relatively low. Another high-level aim is to make the information accessible, and specifically to make it possible for a user to engage with and discover the data in order to add an element of fun and enjoyment. 
 

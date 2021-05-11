@@ -364,16 +364,24 @@ getCountryData() : Observable<Country[]>{
     return this.httpClient.get<Country[]>(this.REST_API_SERVER);
 } 
 ```
-The function returns an Observable of type Country array, where Country is the model class mentioned above. The Observable was imported from the rxjs library to handle the asynchronous nature of our data and the three.js scene. 
-The GET request takes in the URL of the API which holds all the data – this.REST_API_SERVER.
+The function returns an `Observable` of type `Country` array, where `Country` is the model class mentioned above. The Observable was imported from the rxjs library to handle the asynchronous nature of our data and the three.js scene. 
+
+The `GET` request takes in the URL of the API which holds all the data – `this.REST_API_SERVER`.
 In order to call the function, a subscription needs to take place in order to subscribe to the observable. 
-In the globe.component.ts file, the following code is executed during the initiation of the website: 
+In the [globe.component.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/globe/globe.component.ts) file, the following code is executed during the initiation of the website: 
 
+``` javascript
+this.countryService.getCountryData().subscribe((countries) => {
+      this.listOfCountries = countries;
+      this.initDependencies();
+    });
+```
+Where `this.countryService` is the variable that is bound to the `data.service.ts` class: 
 
-
-
-
-
+``` javascript
+constructor(private countryService : DataService)
+```
+Where `this.listOfCountries` is the array of Country objects we previously established. 
 
 
 

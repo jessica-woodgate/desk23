@@ -18,8 +18,6 @@ Principles we chose not to include in our framework:
 
 2. Keep IT real. Keep IT professional. Pass IT on – as we are not actual BCS members at this stage, this principle was less applicable to us. However, respect for our team members and other students was held of great importance throughout the process. 
 
-After creating the framework, we spoke to an individual with a formal ethical education background to gain an outsiders perspective. This is extremely useful in the framing of ethical discussions to highlight issues that insiders may be blind to, thus avoiding the effect of “tunnel vision”. 
-
 We then looked at the [UNICEF principles for child-centred innovation](https://ssir.org/articles/entry/the_ethics_of_innovation), which was recommended in the course material. We chose this code because it is relevant to our target audience – older children. Because this is a vulnerable group, it is important to consider ethical frameworks that are relevant to this group and specific issues that might arise. In addition, we liked the emphasis on keeping the wider world in the forefront of the development process. 
 
 Principles we chose to include in our framework: 
@@ -44,7 +42,9 @@ Principles we chose not to include in our framework:
 
 Build for sustainability - this is a principle that we take as being extremely important, however at this stage of our product and technical ability, it is not something that we felt we would be able to fully integrate into our design. We also took this as being able to integrate under the principle “build for scale”, as we see a part of building for scale being ensuring that as the product grows, it is sustainable. Future work on our product would include research into making our processes more efficient and green-friendly. 
 
-There were many other codes we briefly looked at, including ACS code of ethics, Google’s AI principles and the OECD principles for AI. Although some of these are designed for AI, they has also wider implications for other forms of technology. However, we decided that central themes bridging these codes were covered in the principles we had chosen. 
+There were many other codes we briefly looked at, including [ACS code of ethics](https://www.acs.org.au/content/dam/acs/acs-documents/Code-of-Ethics.pdf), [Google’s AI principles](https://ai.google/principles) and the [OECD principles for AI](https://www.oecd.org/going-digital/ai/principles/). Although some of these are designed for AI, they has also wider implications for other forms of technology. However, we decided that central themes bridging these codes were covered in the principles we had chosen. 
+
+After creating the framework, we spoke to an individual with a formal ethical education background to gain an outsiders perspective. This is extremely useful in the framing of ethical discussions to highlight issues that insiders may be blind to, thus avoiding the effect of “tunnel vision”. 
 
 ## The Framework
 ![image](https://user-images.githubusercontent.com/45073537/117713530-b0598180-b1cd-11eb-8df0-84d5339c4c25.png)

@@ -110,6 +110,62 @@ const routes: Routes = [
   { path: '', component: WelcomeComponent }
 ```
 
+#### Globe Component 
+
+The globe was built solely with the Three.js library. Three.js is a well-documented library and the forums provided ample support where needed. As a result, certain parts of this code were written in accordance to the directions of the Three.js documentation.
+
+##### The Scene
+
+``` javascript
+this.scene = new THREE.Scene();
+this.camera = new THREE.PerspectiveCamera(50, this.windowWidth/this.windowHeight, 0.1, 1000);
+```
+
+A scene was initialised and a camera added to the scene. The field of view was set to 50, an arbitrary selection based on what appeared to be the most visually appealing. 
+
+`this.windowWidth` and `this.windowHeight` were initialised to `window.innerWidth` and `window.innerHeight` respectively. 
+
+A raycaster, light and mouse was also initialized within the constructor, however, this will be discussed in more depth further on. 
+The scene’s background was set to an equirectangular image found from an online source. The methodology is consistent with the three.js documentation, so will not be discussed here. 
+
+We proceed to set up the camera’s qualities, setting its aspect ratio to the aspect ratio of the screen by calculating: 
+
+``` javascript
+private get aspectRatio(): number {
+    return this.windowWidth / this.windowHeight;
+  }
+```
+The renderer was initialised as shown below: 
+``` javascript
+this.renderer = new THREE.WebGLRenderer({
+      canvas: this.canvas,
+      antialias: true,
+      alpha: true
+    });
+```
+
+Where `this.canvas` returns the canvas declared in the HTML document and passed through the `@ViewChild` decorator into the TypeScript file. It was important to set the `alpha` to true as we would be using transparent backgrounds with our textures at a later stage.
+
+
+##### The Globe Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## e. Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!

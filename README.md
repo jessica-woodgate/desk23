@@ -24,7 +24,7 @@ Our site is targeted at older children and teenagers, to encourage awareness abo
    * [Video](https://github.com/jess-mw/desk23#video-short-1-2min-demo-video-to-explain-your-system-think-kickstarter)
 * [Documentation](https://github.com/jess-mw/desk23#documentation)
 
-### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/807edeb0dc5f90f33ec7091e3f966d5df0c4be27/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
+### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/543ae3f6dd4bcdbb889815b1bc0cd6e5ba353977/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
 
 ## Introduction
 

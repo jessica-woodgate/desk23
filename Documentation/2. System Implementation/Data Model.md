@@ -19,6 +19,7 @@ In addition, we have a series of query helper functions that get relevant/requir
 Due to deadline limitations, there are some things that we would like to add to our database but were unable to in this set of sprints. This includes automating the database seeding, so that the user does not have to manually run seed.js when the database is empty, but the program can check if there are any collections present, and populate accordingly. 
 
 We would also like to create a collection to store user input. Some user input we have discussed implementing into deployment could be feedback on the literacy rates, e.g. whether they were as the user expected. This would involve a collection storing the relevant entity, userID (this would be randomly generated and not directly related to the user at all, thus preserving anonymity - the only purpose would be to link multiple feedbacks from the same user together), and collected feedback. We would then store the results of this in our database. In addition, a new data set will need to be created linking each country to educational resources and relevant charities. This will be manually collated, and extend our countryData collection. An example of what this data model might look like:
+
 ![image](https://user-images.githubusercontent.com/45073537/117789716-85f4dc00-b240-11eb-952e-db01f301d58d.png)
 
 ## Security

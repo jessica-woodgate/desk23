@@ -43,6 +43,37 @@ Whilst [Murray (2021)](https://www.tandfonline.com/doi/full/10.1080/09669760.202
 ### Conclusion
 Overall, our literature review demonstrated that whilst there has been a general trend towards the lowering of illiteracy, there still remain large disparities. These inequalities are especially prevalent in poorer countries, and the improvement of educational resources leading to better literacy skills can help members of these populations to participate better in politics and the economy. To improve literacy rates globally, better funding is needed to address the scale of the problem and work towards developing more effective programs. Increasing awareness is one way in which funding for such programs can be raised, thus projects such as the one we have proposed can be a valuable contribution in this sense. Due to a global shift in sensitivity to issues people may not have been previously receptive to (because of the pandemic), this is arguably a good time to deploy an educative tool such as our website. This review therefore helped to solidify our understanding of what the current state of literacy rates is, the issues that surround it, and what our website can do to make meaningful added value.
 
+### Context & scoping the problem – Serious Play
+The brief for this assignment was to design and build a web app based around the concept of “serious play”. To address this, we decided to tackle the real-world problem of literacy rates – the scope of which we have explored above – in a playful way. Ensuring that we fully understood the dimensions of our project, and how we were answering the brief, meant that a literature review into the concept of (serious) play was necessary in order to understand what exactly play is and how we can best utilise it. Using findings from this literature review, we could capture elements of fun and play to use in our product to cultivate and maintain user engagement.
+Serious play involves drawing attention to serious issues with the aim of broadening audiences, highlighting  a new perspective, and promoting active learning experience by engaging the user actively in the process (pre-recorded lecture 1c).
+### Methodology
+To conduct our literature review, we first defined two research questions to guide our search and analysis. These were:
+
+1. What is play?
+
+We developed this question to ensure that we had a good understanding of the theory of play and the relationship and distinction with games.
+
+2. What is serious play?
+
+The purpose of this question is to narrow and specify from the first question to the project brief, to understand how serious play is understood in the literature, to guide our design choices.
+
+Our initial source of literature came from recommendations in, and the course content of this module. In addition, relevant papers were identified through conducting searches for key terms on various journals, search engines, and [Google Scholar](https://scholar.google.co.uk/). We tried to mitigate researcher bias by using multiple databases in which to conduct our search and selecting papers by their abstracts (rather than author’s names).
+
+### 1. What is play?
+Throughout recent history, there have been much psychological and sociological research into the theory of play. Play can lie anywhere along a huge spectrum of aspects, and is not always what you might expect it to be; it is not always fun, there are not always rules, and there isn’t always a goal (Bennet and Gray, COMSM1401, 2021). It is something you do, but also something you feel. Because of these abstractions and contradictions inherent in play, there are several definitions explaining the theory of play.
+
+Before looking at what play is, it is useful to examine how people experience play to understand more about all aspects of participation. [Sutton-Smith (1986)](https://eric.ed.gov/?id=ED285690) argued that the experience of play lies in the apprehension of an object, thought or emotion, active participation in events/activities, and an event or series of events being lived through. The quality of experience comes from visual scanning, auditory discriminations, motor responses, concentration, and perceptual patterns of learning. We can thus use these aspects in our project to capture the users’ attention and engage them in a playful way and improve the interactivity of the design.
+
+In one body of research, [Salen & Zimmerman (2004)](https://mitpress.mit.edu/books/rules-play) presented a model for looking at all kinds of games through the lens of play. The authors categorised this into game play, ludic activity, and play as a mindset. In game play, play is a verb and arises through interaction with structures and rules. For example, in football play emanates from the existence of rules such as kicking it in the goal scores a point. In ludic activity, play may also be a verb, but play activities are not only games as there may not necessarily be rules involved. For example, a ludic playfulness might come from playing with a cardboard box. For play as a mindset, play is more often conceptualised as an adjective; the spirit of play is injected into some other non-typically playful action. Thus something ordinarily mundane, such as doing the grocery shopping, can be made playful by aiming your shopping into your trolley from further and further away. This therefore makes the distinction between play and games clear, as play covers a much broader spectrum of experience, whereas game is a specific application, or subset, of play where there is structure and rules.
+
+Adapted from self-determination theory developed by [Ryan and Deci (2000)](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf), the [PENS](https://natronbaxter.com/wp-content/uploads/2010/05/PENS_Sept07.pdf) (Play Experience of Needs Satisfaction) theory of play defines three key needs that are satisfied through play. These are competence, autonomy, and relatedness. Competence covers feelings of pride and self-confidence, self-efficacy towards the activity (one’s perceived ability to undertake an activity), and mastery of challenge (to be able to set and achieve goals). Autonomy engages the power of choice (which gives the user freedom that they may not have in the real world), feeling in control (not being constrained by the game, or aspects of real life), and being able to self-express.
+
+Relatedness encompasses aspects of game that enable connecting with others, and through this feeling part of a community. Our idea largely focuses on the aspect of autonomy, as users will be able to choose which data they are looking at, and how they are navigating the globe. As our target user group is children, this should also address the competence pillar, as through autonomy in navigating the site and engaging with the data, it encourages feelings of self-efficacy. Future extensions of the project could involve fostering the relatedness pillar, perhaps by building features in which users could engage with a community of other users by reading other people’s feedback. 
+
+### 2. What is serious play?
+### Conclusion
+
+
 ## b. State of the art survey. Current industry review.
 *Wenda*
 

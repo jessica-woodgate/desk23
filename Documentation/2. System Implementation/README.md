@@ -43,6 +43,7 @@ Mongodb: MongoDB provides the API for MongoDB object databases in Node.js.
 The following diagram shows how the middle tier works. 
 ![image](https://user-images.githubusercontent.com/74254613/117741221-ce3cdb80-b1f9-11eb-8b6b-42301d3ae3b9.png)
 It can be seen that database and browser (front end) communicates via API. When browser sends an request, API receives and directs it to database and the request is processed there (Note all functions for data processing live in database module). Then database sends a response including data needed, API handles it and sends it to browser. API is very similar as the socket we use every day – You can change front end as you wish, as long as it is plugged to API you will always receive correct response, and same for backend.
+
 Two ways of routing have been considered during development: Express().get and Express.Router().get. Although they work similarly, router is chosen as a better practice because it allows us to manage api endpoints as a middleware in separate file, makes testing routes easier.
 
 ## d. Front End - Angular. Details of implementation.

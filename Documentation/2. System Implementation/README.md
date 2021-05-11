@@ -149,16 +149,119 @@ Where `this.canvas` returns the canvas declared in the HTML document and passed 
 
 ##### The Globe Object
 
+In order to create the globe with the texture of the earth, the following code was used: 
+
+``` javascript
+const sphere = new THREE.SphereGeometry(10,50,50);
+    const material = new THREE.MeshPhongMaterial({
+        map : Emap});
+
+    this.globe = new THREE.Mesh(sphere, material);
+    this.scene.add(this.globe);
+```
+In order to add the country names, we used an additional image with a transparent background and placed it over the earth image, as shown below: 
 
 
+``` javascript
+let Cmap = new THREE.TextureLoader().load('../../assets/images/WorldMap.png');
+    const sphere = new THREE.SphereGeometry(10.2,50,50);
+    const material = new THREE.MeshPhongMaterial({
+        map : Cmap,
+        transparent: true,
+        opacity : 1});
 
+    let countryNames = new THREE.Mesh(sphere, material);
 
+    this.scene.add(countryNames);
+```
 
+This spherical texture was to be slightly larger than the globe (a radius of 10.2 versus a radius of 10) in order to avoid any clipping or artefacts during the rendering of the scene. 
 
+OrbitControls was also integrated into the scene, a functionality that allows the user to control the camera. Through this, we were able to quickly set up the ability for the camera to rotate around the globe by the user clicking and dragging. Zoom was also enabled, with a minimum and maximum distance set to ensure the user does not exceed any necessary boundaries. 
 
+At this stage, we had a globe in the centre of the screen, a camera locked onto the globe object and the ability for the user to spin the globe (or appear to) with zoom capabilities. 
 
+##### The Bar Charts
+The next challenge was to allow for the countries to be clickable. If the entire country (up to its borders) was to be clickable, we needed to spend time understanding how we could calculate the size of the texture and map out each and every coordinate. We came across other sites which allowed an object over the country to be clickable instead. We decided to use this method as it would be simpler and more effective, as the object would later be used as a means of displaying the data. 
 
+``` javascript
+addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number, litData: number) 
+```
 
+The above function was used to create individual points on the globe, representing each country in our database. The function received the country’s name, its latitude and longitude in degrees as well as the literacy rate data. The area of the country was also passed through with the purpose of setting the size of the objects representing the country, however, we decided against using it. 
+
+The longitude and latitude coordinates were converted to radians as shown below. 
+
+``` javascript
+let globeLatRads = latitude * (Math.PI / 180);
+let globeLongRads = -longitude * (Math.PI / 180);
+```
+Then, with credit to an online source referenced in the [globe.component.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/globe/globe.component.ts) file, the coordinates were used to calculate the (x,y,z) coordinates on the sphere object. This would be the position at which the new object would be created to represent each country. 
+
+``` javascript
+let x = Math.cos(globeLatRads) * Math.cos(globeLongRads) * radius;
+let y = Math.cos(globeLatRads) * Math.sin(globeLongRads) * radius;
+let z = Math.sin(globeLatRads) * radius;
+```
+
+Here, `radius` is equivalent to the globe object’s radius, which was set to 10 when initialising the object. 
+To represent each country, after several feedback sessions, we decided to go with bar charts. The bar charts would not only represent the country and be clickable but also they would represent the literacy rate data. 
+
+A cylinder was picked to form the bar chart, and its height was set with: 
+
+``` javascript
+let height = litData / 18;
+```
+Where 18 is an arbitrarily selected number. 
+
+The cylinder, `poi2`, was then created with a radius of 0.1. An issue we faced was rotating the cylinders appropriately. The object was to set the cylinders on the surface of the globe and face outwards. In order to achieve this, we used the following code, with credit to another online source that has been referenced in the code file: 
+
+``` javascript
+poi2.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI/2));
+```
+The cylinder, `poi2`, is then positioned at the (x, y, z) coordinates calculated and made to look at the centre of the globe. 
+``` javascript
+point2.position.set( x, z, y);
+point2.lookAt(0,0,0);
+```
+In order to set all the bar charts above the countries, we needed a list of countries with their respective longitude, latitude and literacy rate data. This was set up by the backend team and provided through an API. Accessing this API will be discussed further below. 
+
+An array of `Country` objects, with the following model, was created: 
+
+``` javascript 
+export class Country {
+    Entity!: any;
+    Year!: any;
+    Data!: any;
+    Latitude!: any;
+    Longitude!: any;
+    Area!: any;
+}
+```
+
+This array, called `listOfCountries`, was then accessed in the following code within this function: 
+
+``` javascript
+setAllPoints(userSetYear: number)
+```
+and 
+
+``` javascript
+for (let i = 0; i < this.listOfCountries.length; i++) {
+      if (this.listOfCountries[i].Year == userSetYear) {
+        this.addCoordinatePoint(this.listOfCountries[i].Entity, this.listOfCountries[i].Latitude, this.listOfCountries[i].Longitude, this.listOfCountries[i].Area, this.listOfCountries[i].Data);       
+      }
+}
+```
+
+The entire `listOfCountries` array was traversed, accessing each country and its data. Each country object had a `Year` attribute which informed us the year from which this data was gathered. If the year attribute was equal to the `userSetYear`, a initialized to 2015 but is later controlled by the user through the use of a slider, then a cylinder object would be generated and placed precisely at the country’s coordinates. 
+
+In order to allow the user to manipulate which year the data should be, a slider was integrated using the following code in the [globe.component.html](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/globe/globe.component.html) file: 
+
+``` html
+<mat-slider thumbLabel tickInterval="1" [(ngModel)] = "currentYear" min="1900" max = "2015"  (ngModelChange)="onSlide()"></mat-slider>
+```
+The slider’s data was bound to a variable, `currentYear`, in the TypeScript file. `currentYear` is initialized to 2015, however, whenever the slider’s data was altered by the user dragging it and changing the year, this event was noted and sent to the TypeScript file, where the function `onslide()` was called. `onSlide()` recalls the setAllPoints function outlined above, setting all the cylindrical bar charts for the correct and updated year after erasing all the previous ones. 
 
 
 

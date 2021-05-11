@@ -8,7 +8,15 @@ b. [Unit testing/functional testing](https://github.com/jess-mw/desk23/tree/main
 c. [User acceptance testing - evaluation of design with users](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#c-user-acceptance-testing-evaluation-of-your-design-with-users--methods-undertaken-findings-implications)
 
 ## a. Details of how you evaluated your designs (techniques used & awareness of their limitations). Description of techniques suitable for your particular design. A timeline of evaluation of your design.
-*Wenda*
+
+The evaluation process was carried out throughout the whole design process. Two forms of evaluation were included; In the first form, the group member set up regular meeting to evaluate their design process. At this stage, the group mainly compared current website design with original ideas and decided features need to be adjusted to fulfil its purpose. By using such method, the group could easily improve their design closer to the original target, but lacking understanding of aimed user groups requirements introduced potential danger of ignoring specific need of user, making the website may meet the design target but difficult to use.
+
+Therefore, the other way of evaluation included user feedback. Apart from sticking to original route, the group also cared if the website is user friendly, which indicates website should be easy to use, minimize complicate instructions and ensure user understand how to interact with website. As a user-centred website design, Multiple participants were included during feedback session, some of whom took part in the whole design process and gave feedback for every stage of the prototype/design, while other users joined the feedback session at different stages. By observing their interaction with website, the team had a better understanding on designing elements and easier to find out aspects required improvement for better usability. However, it was realized that user feedback varies, sometimes even contradictory, which possibly due to their different understanding to the website or different motivation visiting the website. This created a conflict during evaluation, realizing it is impossible to satisfy every potential user. As a result, the group had to weight their feedback and changed website features accordingly, which took place after user feedback session and discussed before next stage’s development.
+
+The rolling evaluation process could be showing as following diagram.
+
+![image](https://user-images.githubusercontent.com/74254613/117748985-ea944480-b208-11eb-8d5a-15cfe0648cfe.png)
+
 
 ## b. Unit testing / Functional testing.
 

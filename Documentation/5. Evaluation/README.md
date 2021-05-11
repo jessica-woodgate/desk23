@@ -55,7 +55,7 @@ The testing followed the following framework in the evaluation of the functional
 
 Key operational constraints include limited time to implement the project, remote working conditions, and limited previous prior experience with MEAN stack development. The time limitations meant that the team took fewer risks in its approach which may have impacted on the product's innovation potential. In addition, the product evaluations did not include the target user group of adolescents and school-aged children, as a vulnerable group, given that no ethics approvals were sought, and as such may have constrained how well the product responds to the needs of this particular demographic.
 
-The metrics for delivery of a feature include robustness (eg. events causing failure, data corruption in the event of failure), ease of use for newcomers to the product (average training time, number of help boxes per feature), and speed (eg. user-event response times, screen load time for the globe).
+The metrics for delivery of a feature include robustness (eg. events causing failure, data corruption in the event of failure), ease of use for newcomers to the product (average training time, number of help boxes per feature, time taken to perform a given task), speed (eg. user-event response times, screen load time for the globe), and user satisfaction (net promoter score, whether the product met expectations).
 
 ![image](https://user-images.githubusercontent.com/74050529/117792697-6f9c4f80-b243-11eb-8938-49be09955be5.png)
 

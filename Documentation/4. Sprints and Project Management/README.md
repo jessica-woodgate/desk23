@@ -95,7 +95,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 * Design and evaluation, including prototyping/wireframes
 * Product backlog management
 
-**Co-Frontend and UI/UX Designer: Hamza Qureshi**
+**5. Co-Frontend and UI/UX Designer: Hamza Qureshi**
 * Developed Three.js globe: 
 	* Creating the scene, globe component and functionality 
 	* Creating tutorial windows and interactivity 

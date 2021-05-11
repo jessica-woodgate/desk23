@@ -80,7 +80,15 @@ div id = "bookContainer">
 
 </div>
 ```
+A div was created to contain the video, which spanned the entirety of the website’s height and width. The video was set to `autoplay` and `muted`. We added the `muted` attribute to allow for the video’s `autoplay` capabilities to function on chrome browsers. This, however, was unsuccessful. As such, the video does not offer autoplay functionality on chrome browsers. 
 
+The event, (ended), was listened for and upon the video coming to an end, the following function call was made in the TypeScript file:
+
+``` javascript
+showEnter() {
+    this.enterShown = true;
+  }
+```
 
 
 

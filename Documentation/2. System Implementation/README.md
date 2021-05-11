@@ -31,6 +31,15 @@ Please see here for [future developments of our data model](https://github.com/j
 
 ## c. Middle Tier - Express, Node, the RESTful API
 *Wenda*
+It is decided to use Express to develop node.js based server for backend. The reason using Express is that as one of the most popular web frameworks, supporting Node.js, it is very supportive for routing, middleware, as well as building database using Mongoose, which is important because Mongoose is a promise-based Node.js ODM for MongoDB. Node.js shines at building fast, scalable network applications, as it’s capable of handling a huge number of simultaneous connections with high throughput, which equates to high scalability. The current website does not require too much module though, it allows perfection and adding more features when needed.
+The npm (Node Package Manager) module used for building the websites are:
+Express: A web development framework for Node.js.
+Connect: An extensible HTTP server framework for Node.js, providing a collection of high performance “plugins” known as middleware; serves as a base foundation for Express.
+Mongodb: MongoDB provides the API for MongoDB object databases in Node.js.
+The following diagram shows how the middle tier works. 
+![image](https://user-images.githubusercontent.com/74254613/117741221-ce3cdb80-b1f9-11eb-8b6b-42301d3ae3b9.png)
+It can be seen that database and browser (front end) communicates via API. When browser sends an request, API receives and directs it to database and the request is processed there (Note all functions for data processing live in database module). Then database sends a response including data needed, API handles it and sends it to browser. API is very similar as the socket we use every day – You can change front end as you wish, as long as it is plugged to API you will always receive correct response, and same for backend.
+Two ways of routing have been considered during development: Express().get and Express.Router().get. Although they work similarly, router is chosen as a better practice because it allows us to manage api endpoints as a middleware in separate file, makes testing routes easier.
 
 ## d. Front End - Angular. Details of implementation.
 *Hamza*

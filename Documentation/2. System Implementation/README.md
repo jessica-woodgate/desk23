@@ -47,7 +47,16 @@ It can be seen that database and browser (front end) communicates via API. When 
 Two ways of routing have been considered during development: Express().get and Express.Router().get. Although they work similarly, router is chosen as a better practice because it allows us to manage api endpoints as a middleware in separate file, makes testing routes easier.
 
 ## d. Front End - Angular. Details of implementation.
-*Hamza*
+
+### Why Angular?
+Angular allows developers to create single paged web applications through the use as well as reuse of components generated through the Angular-CLI. Angular was selected as the platform to build our interactive website for particular reasons: 
+
+* Functions well and is able to handle external JavaScript libraries. As we were interested in developing a 3D globe, having a strong link between a library such as Three.js or D3.js was essential. 
+* Compilation of the HTML and TypeScript to JavaScript occurs prior to the website loading. As such, this would increase the speed with which the user would be able to interact the website. Given that our website would be intensive with 3D visuals and interaction, we sought to cut down load times in other areas. 
+
+The issue that many developers face when using Angular, however, is the steep learning curve that comes with it. This was taken into consideration, but after noting the abundance of tutorials and guidance provided by the community, we felt it was best to proceed with Angular. 
+
+
 
 ## e. Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!
 *Stanni*

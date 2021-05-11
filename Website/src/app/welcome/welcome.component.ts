@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  enterShown: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showEnter() {
+    this.enterShown = true;
   }
 
 }

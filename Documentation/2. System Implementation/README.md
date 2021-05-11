@@ -1,4 +1,4 @@
-# System Implementation [20 marks]:
+# System Implementation
 
 ## Contents
 a. [Stack architecture and system design](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#a-stack-architecture-and-system-design-eg-class-diagrams-sequence-diagrams)

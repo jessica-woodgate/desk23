@@ -38,4 +38,12 @@ Ultimately, the following series of unit tests were run against the code.
 The tests were implemented using Karma and Jasmine on the git staging branch, following the continuous integration and deployment principles of evaluating a functionality before it is released to the live branch, and making sure that a given story is delivered against a feature at a time. The tests were first conducted with core cases in mind, and then extended to test edge cases, for example years on the slider without any data points in the dataset, to try to find defects and provide a greater level of assurance.
 
 ## c. User acceptance testing. Evaluation of your design with users – methods undertaken, findings, implications.
-*Emily*
+
+The user acceptance testing was designed to ensure that the product works according to the requirements set out at the start of the project; to make sure the product is geared towards end-users consistent with the user-centred design development process; to allow detection of any defects or bugs; and to consider whether the product can handle the tasks required of it in a real-world environment. 
+
+As such, a final round of feedback sessions was undertaken near the conclusion of the project, once the features had been implemented, to permit for end-user interaction with the system prior to moving to production. The feedback sessions brought in participants who were new to the project, and did not take part in the design and evaluation phases in order to remove bias where, in contrast, long-standing participants and user group members already have exposure to and awareness of how the product works, and may potentially be emotionally invested in the project depending on their levels of involvement. The sessions featured an interviewer who observed user interaction with the product and took observational notes.
+
+**Findings**
+UAT Session 11 May
+
+**Implications**

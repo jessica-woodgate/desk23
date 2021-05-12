@@ -1,10 +1,5 @@
 # UX Design
 
-**IMPORTANT TO DO:**
-
-* Complete Final Website Design : https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design
-
-
 ## Contents
 
 [a. Mashing up the Serious and The Playful](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md#a-mashing-up-the-serious-and-the-playful)

@@ -111,8 +111,6 @@ The first interviews were carried out before Easter in the week of 22 March, and
 
 The second wireframe iteration can be seen here: [Second Interactive Prototype Wireframe](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Prototyping/Wireframe%20files) as well as below:
 
-![Alt Text](https://media.giphy.com/media/cmx9ea6h6TtoOUmY36/giphy.gif)
-
 <p align="center">
   <img src="https://media.giphy.com/media/cmx9ea6h6TtoOUmY36/giphy.gif">
 </p>
@@ -137,8 +135,6 @@ Given the comprehensive data we obtained from the feedback sessions regarding th
 
 Here is an example of the globe spinning ability incorporated using the Three.js library: 
 
-![image](https://media.giphy.com/media/egptVJxOXYZUE32vzN/giphy.gif)
-
 <p align="center">
   <img src="https://media.giphy.com/media/egptVJxOXYZUE32vzN/giphy.gif">
 </p>
@@ -154,7 +150,6 @@ The following User Stories were the primary focus for this Sprint:
 * As a student visiting the website, I want to be able to spin the globe so that I can discover and easily compare literacy rates around the world.
 
 The website went through several iterations and builds. The following image represents our earliest MVP: 
-![image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/WebsitePrototype.PNG)
 
 <p align="center">
   <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/WebsitePrototype.PNG">
@@ -180,7 +175,6 @@ The third sprint was focussed on refining the Three.js globe. Several changes we
 The data was incorporated at this stage and resulted in literacy rate data being shown for individual years when a country’s bar-chart was clicked. Bar-chart heights were also made to be proportional to the literacy rate.  
 
 Here is the mid Sprint 3 prototype: 
-![image](https://user-images.githubusercontent.com/45073537/117461961-0d430680-af46-11eb-856b-bb7f01de9909.png) ![image](https://user-images.githubusercontent.com/45073537/117462022-1fbd4000-af46-11eb-8af1-1d8fb2c712cf.png)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/45073537/117461961-0d430680-af46-11eb-856b-bb7f01de9909.png">
@@ -210,12 +204,13 @@ Further changes made:
 
 [Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
 
-![image](https://media.giphy.com/media/xfpIrGwK8FNfEXOAi2/giphy.gif)
-
 <p align="center">
   <img src="https://media.giphy.com/media/xfpIrGwK8FNfEXOAi2/giphy.gif">
 </p>
 
+<p align="center">
+  <img src="https://media.giphy.com/media/vuvOvZyrwGsGkJI96o/giphy.gif">
+</p>
 
 ## g. Flowchart
 

@@ -51,12 +51,9 @@ The group proceeded to hold a discussion on who our stakeholders would be (prima
 
 The stakeholder analysis was done in order to maximise the possible contribution of the project and anticipate the various interactions with other parties to be cognizant of the impacts, including ethical considerations. After initial brainstorming, mapping primary and secondary stakeholders and their possible interests and concerns, this chart was produced using Miro (see below) to demonstrate how stakeholders would be managed over the course of the project.
 
-![image](https://user-images.githubusercontent.com/74050529/114542024-55288380-9c4f-11eb-8e80-1c89157375a9.png)
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74050529/114542024-55288380-9c4f-11eb-8e80-1c89157375a9.png">
 </p>
-
 
 Stakeholders with high influence and high interest in the project include the target user (students/adolescents), the team itself (given a vested interest in the website’s success), and the University of Bristol as the locus of the project (including any potential reputational risks), and were deemed to require close engagement. In particular, given the educational nature of the website, the team agreed it would key to make sure that the website would be an inclusive and safe space for students of all abilities and backgrounds to navigate.
 
@@ -116,6 +113,10 @@ The second wireframe iteration can be seen here: [Second Interactive Prototype W
 
 ![Alt Text](https://media.giphy.com/media/cmx9ea6h6TtoOUmY36/giphy.gif)
 
+<p align="center">
+  <img src="https://media.giphy.com/media/cmx9ea6h6TtoOUmY36/giphy.gif">
+</p>
+
 User group members interacted with the lit up globe option in a second round of feedback sessions which took place over 10-11 April. Given that the users had previously participated in the first feedback session, they already had an understanding of the brief and the problems we are aiming to tackle. Once again, we threw the users in the deep end, took down notes on the users’ actions and recorded their feedback on their experience interacting with the prototype. However, due to the limitations Adobe XD poses, at times we had to intervene and advise them on what button(s) to click to achieve the response they are seeking for.
 
 The team discussed the feedback and potential areas for improvement in a 12 April stand-up. Key areas of feedback were:
@@ -138,6 +139,10 @@ Here is an example of the globe spinning ability incorporated using the Three.js
 
 ![image](https://media.giphy.com/media/egptVJxOXYZUE32vzN/giphy.gif)
 
+<p align="center">
+  <img src="https://media.giphy.com/media/egptVJxOXYZUE32vzN/giphy.gif">
+</p>
+
 Due to the limited features, we felt it best to withold any feedback sessions until after the second sprint session. 
 
 ### Sprint 2: Incorporating Interactivity
@@ -150,6 +155,10 @@ The following User Stories were the primary focus for this Sprint:
 
 The website went through several iterations and builds. The following image represents our earliest MVP: 
 ![image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/WebsitePrototype.PNG)
+
+<p align="center">
+  <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/WebsitePrototype.PNG">
+</p>
 
 As mentioned above, there were two Javascript libraries we explored during the early stages of developing the globe; D3.js and Three.js. D3 offered unparalleled data representation opportunities whereas Three provided a more streamlined route to develop 3D elements. In the end, we managed to produce two globes in parallel to each other that were rotatable, zoomable and interactive. In order to decide between the two libraries and the graphical output they both offered, we sent out another online survey to see what a majority of our users would prefer (visually). We compared 4 globe designs, which you may view here: [Second Survey Monkey Results](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results).
 
@@ -173,6 +182,15 @@ The data was incorporated at this stage and resulted in literacy rate data being
 Here is the mid Sprint 3 prototype: 
 ![image](https://user-images.githubusercontent.com/45073537/117461961-0d430680-af46-11eb-856b-bb7f01de9909.png) ![image](https://user-images.githubusercontent.com/45073537/117462022-1fbd4000-af46-11eb-8af1-1d8fb2c712cf.png)
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/45073537/117461961-0d430680-af46-11eb-856b-bb7f01de9909.png">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/45073537/117462022-1fbd4000-af46-11eb-8af1-1d8fb2c712cf.png">
+</p>
+
+
 Feedback obtained for this iteration during the middle of the third Sprint of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
 
 The following changes were incorporated into the final design of the website:
@@ -193,6 +211,11 @@ Further changes made:
 [Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
 
 ![image](https://media.giphy.com/media/xfpIrGwK8FNfEXOAi2/giphy.gif)
+
+<p align="center">
+  <img src="https://media.giphy.com/media/xfpIrGwK8FNfEXOAi2/giphy.gif">
+</p>
+
 
 ## g. Flowchart
 

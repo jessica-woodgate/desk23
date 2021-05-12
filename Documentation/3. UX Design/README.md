@@ -36,7 +36,7 @@ We narrowed down the selection of concepts to the following:
 
 With a narrowed down selection of ideas, we proceeded to analysing each one by asking a series of difficult questions. The ideas were broken down, and different team members provided their input and vision on how the end-product may look. See here for more information on the session: [Analysing the Ideas](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/2.%20Analysing%20the%20Ideas.md).
 
-The four concepts in contention were then ranked by each member, where a rank 1 equated to 4 points, and a rank of 4 equated to 1 point (inversely related). We found our winner; Literacy Rates.  
+The four concepts in contention were then ranked by each member, where a rank 1 equated to 4 points, and a rank of 4 equated to 1 point (inversely related). We found our winner; **Literacy Rates**.  
 
 
 ## b. Breaking the Problem Down

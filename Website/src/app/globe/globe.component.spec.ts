@@ -33,13 +33,13 @@ describe('GlobeComponent', () => {
   });
 
   /*Slider*/
-  /*Check the right number of data points returned for a given year*/
   describe('single same year', () => {
     beforeEach(() => {
       component.listOfCountries = [{Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000}];
       component.createGlobe();
     });
 
+    /*Check the right number of data points returned for a given year*/
     it('should call the addCoordinatePoint function', () => {
       spyOn(component, 'addCoordinatePoint');
       component.setAllPoints(1979);
@@ -74,6 +74,7 @@ describe('GlobeComponent', () => {
       component.createGlobe();
     });
 
+    /*Check the right number of data points returned for a given year*/
     it('should call the addCoordinatePoint function 3 times', () => {
       spyOn(component, 'addCoordinatePoint');
       component.setAllPoints(1979);
@@ -82,7 +83,7 @@ describe('GlobeComponent', () => {
     });
 
      /*Test specific countries are included for a given year*/
-    it('should include Afghanistan for given year', () => {
+    it('should include Jordan for given year', () => {
       component.setAllPoints(1979);
       fixture.detectChanges();
       expect(component.globe.children).toBeTruthy();
@@ -108,6 +109,7 @@ describe('GlobeComponent', () => {
       component.createGlobe();
     });
 
+    /*Check the right number of data points returned for a given year*/
     it('should call the addCoordinatePoint function 2 times', () => {
       spyOn(component, 'addCoordinatePoint');
       component.setAllPoints(1900);
@@ -116,7 +118,7 @@ describe('GlobeComponent', () => {
     });
 
     /*Test specific countries are included for a given year*/
-    it('should include Afghanistan for given year', () => {
+    it('should include Bolivia for given year', () => {
       component.setAllPoints(1900);
       fixture.detectChanges();
       expect(component.globe.children).toBeTruthy();

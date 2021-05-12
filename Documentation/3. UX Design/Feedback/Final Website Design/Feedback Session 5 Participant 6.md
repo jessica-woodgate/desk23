@@ -1,10 +1,30 @@
 # Feedback on final website design
+
+The user had not participated in the previous sessions. They were briefed with ethics before the session. The project scope was explained to them after the user was left a while to interact with the website without guidance. They were shown the prototype and left to interact with it whilst the interviewer observed, answering any questions the user had. After interacting with it, we spoke about any feedback they had. The user was then explained the project brief and objectives, and we had a further discussion about any thoughts they had after being informed more.
+
+### Feedback on 11/05/2021
+This session was conducted online via Zoom. Remote access was granted to the interviewer's computer in order to allow the user to interact with the product.
+
+### User 6:
+**Interviewer’s Observations**
+
+1. User asked what language the text on the book was written in
+2. User had the correct instincts in following the tutorial instructions, clicking and dragging the globe to rotate and using the track pad to zoom
+3. User did not immediately click the link to navigate to the globe, and stayed on landing page
+
+**User's feedback**
+
+1. Using the globe is a "no brainer", uncomplicated and clear
+2. Enjoyed the chance to implement the action after each instruction in the walkthrough tutorial
+3. Text size for the tutorial boxes exceed their frames and instructions spill over slightly
+4. The starry sky backdrop had a delayed load time
+
 ### Feedback on 12/05/2021
 
 ### How the session was conducted:
-This session was conducted in person, but the audio was recorded with the user’s consent for later reference. The user had not participated in the previous sessions. They were briefed with ethics before the session. The project scope was explained to them after the user was left a while to interact with the website without guidance. They were shown the prototype and left to interact with it whilst the interviewer observed, answering any questions the user had. After interacting with it, we spoke about any feedback they had. The user was then explained the project brief and objectives, and we had a further discussion about any thoughts they had after being informed more.
+This session was conducted in person, but the audio was recorded with the user’s consent for later reference. 
 
-### User 6:
+### User 7:
 **Interviewer’s Observations**
 
 1. User did not particularly like the welcome page/book animation.
@@ -46,3 +66,4 @@ This session was conducted in person, but the audio was recorded with the user�
 4. Option to bring back main tutorial after clicking off of it
 5. Could explain what the literacy rate actually means (i.e. basic literacy, more advanced literacy...)
 6. Should put in source of data & add some info summaries
+7. Could increase size/prominence of the click to enter button on landing page

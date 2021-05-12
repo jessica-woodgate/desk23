@@ -40,7 +40,7 @@ describe('multiple same year', () => {
     });
 
 ```
-The teardown is done in the setAllPoints() function of the globe component, which removes any existing coordinate points on the globe. The initial suite of planned tests included broadly:
+The teardown is done in the `setAllPoints()` function of the globe component, which removes any existing coordinate points on the globe. The initial suite of planned tests included broadly:
 
 **Navigating through time using the slider**
 - should get [right number] of data points on the globe for a given year
@@ -55,7 +55,7 @@ The teardown is done in the setAllPoints() function of the globe component, whic
 
 However, similar to the zoom and rotation functionalities, the difficulty, and undesirability for our purposes, of writing automated tests for the countries clicked soon became evident given that the click detection relies on a three.js raycaster that returns an array of objects that intersect with it. Instead, we considered the crux of the testing for these features would best be covered with functional tests at the system level, as reflected in the test plan, and the team focused on tests that would help to probe and strengthen the product.
 
-Another challenge was in deciding how to go about testing that the correct number of data points appeared on the globe for a given year, as part of the slider feature to be able to adjust the date and move through time. The original plan behind the test would be to look in the dataset for the expected result for a given year and assert that this would be reflected in the number of coordinate points on the globe (for example, in 1979, there should be 25 data points in total). However, we wanted to avoid writing "brittle" tests that would be reliant on making real HTTP requests, and also to focus on the specific behaviour we wanted to test - this way we could guarantee that only the behaviour of the component could potentially fail, rather than the service it depends on. The tests instead used mock data, and spied on the addCoordinatePoint() function to check that each country object with a year attribute that matched the date passed to the setAllPoints() function, ie. the date set by the user using the slider, is included as a data point on the globe.
+Another challenge was in deciding how to go about testing that the correct number of data points appeared on the globe for a given year, as part of the slider feature to be able to adjust the date and move through time. The original plan behind the test would be to look in the dataset for the expected result for a given year and assert that this would be reflected in the number of coordinate points on the globe (for example, in 1979, there should be 25 data points in total). However, we wanted to avoid writing "brittle" tests that would be reliant on making real HTTP requests, and also to focus on the specific behaviour we wanted to test - this way we could guarantee that only the behaviour of the component could potentially fail, rather than the service it depends on. The tests instead used mock data, and spied on the `addCoordinatePoint()` function to check that each country object with a year attribute that matched the date passed to the `setAllPoints()` function, ie. the date set by the user using the slider, is included as a data point on the globe.
 
 ```typescript
  it('should call the addCoordinatePoint function 3 times', () => {

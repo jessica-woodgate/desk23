@@ -24,7 +24,23 @@ On the basis of the user stories, a test plan was developed around the key featu
 
 Building on the test plan and the features identified as product requirements, a set of initial automated tests were defined through a discussion of each teammember's work on the different parts of the system that impact on the implementation of a given feature, considering one feature at a time. This approach was intended to ensure that both the view (user interface) and the model (database and logic) would be tested, while ensuring robust coverage of a particular functionality. Unlike the functional browser-based tests in the test plan, the automated tests required knowledge of the code's implementation details, which benefited from discussions between the tester with individual team members and as a whole group. It was decided at this stage that the rotation and zoom functions would not be tested given that these are implemented using three.js OrbitControls, preferring to focus on testing code written by the team's developers and code that is not too closely related to three.js. 
 
-The tests were designed to examine the most important parts of the code base and focused in particular on the Globe Component. The initial suite of planned tests included broadly:
+The tests were designed to examine the most important parts of the code base and focused in particular on the Globe Component. The tests were implemented using Karma and Jasmine on the git staging branch, following the continuous integration and deployment principles of evaluating a functionality before it is released to the live branch, and making sure that a given story is delivered against a feature at a time. The tests were first conducted with core cases in mind, and then extended to test edge cases, for example years on the slider without any data points in the dataset, to try to find defects and provide a greater level of assurance.
+
+Tests were divided into nested 'describe' blocks to perform the test suites. The blocks are organised in an Arrange, Act, Assert pattern to improve readability and clarity of the tests in terms of tracking which features had already been tested, and to minimise duplication to strive to keep the code DRY. The set-up allowed variables to be assigned for use for the block's scope and data to be prepared. The unit tests then altered the state of the component object usually through a function call, and finally assertions gauged the expected result. For example, before each test of the slider feature, the globe Mesh Object needed to be created for data points to be affixed to (example set-up below).
+
+```typescript
+describe('multiple same year', () => {
+    beforeEach(() => {
+      component.listOfCountries = [
+        {Entity : 'Afghanistan', Year: 1979, Data: 20, Latitude: 33, Longitude: 67, Area: 249000},
+        {Entity : 'Jordan', Year: 1979, Data: 66, Latitude: 31, Longitude: 37, Area: 35480},
+        {Entity : 'Paraguay', Year: 1979, Data: 85, Latitude: 23, Longitude: 58, Area: 157000}
+      ];
+      component.createGlobe();
+    });
+
+```
+The teardown is done in the setAllPoints() function of the globe component, which removes any existing coordinate points on the globe. The initial suite of planned tests included broadly:
 
 **Navigating through time using the slider**
 - should get [right number] of data points on the globe for a given year
@@ -39,15 +55,30 @@ The tests were designed to examine the most important parts of the code base and
 
 However, similar to the zoom and rotation functionalities, the difficulty, and undesirability for our purposes, of writing automated tests for the countries clicked soon became evident given that the click detection relies on a three.js raycaster that returns an array of objects that intersect with it. Instead, we considered the crux of the testing for these features would best be covered with functional tests at the system level, as reflected in the test plan, and the team focused on tests that would help to probe and strengthen the product.
 
-Another challenge was in deciding how to go about testing that the correct number of data points appeared on the globe for a given year, as part of the slider feature to be able to adjust the date and move through time in the dataset. The original plan behind the test would be to look in the dataset for the expected result, for example, in 1979, there should be 25 data points on the globe in total. However, we wanted to avoid writing "brittle" tests that would be reliant on making real HTTP requests.
+Another challenge was in deciding how to go about testing that the correct number of data points appeared on the globe for a given year, as part of the slider feature to be able to adjust the date and move through time. The original plan behind the test would be to look in the dataset for the expected result for a given year and assert that this would be reflected in the number of coordinate points on the globe (for example, in 1979, there should be 25 data points in total). However, we wanted to avoid writing "brittle" tests that would be reliant on making real HTTP requests, and also to focus on the specific behaviour we wanted to test - this way we could guarantee that only the behaviour of the component could potentially fail, rather than the service it depends on. The tests instead used mock data, and spied on the addCoordinatePoint() function to check that each country object with a year attribute that matched the date passed to the setAllPoints() function, ie. the date set by the user using the slider, is included as a data point on the globe.
+
+```typescript
+ it('should call the addCoordinatePoint function 3 times', () => {
+      spyOn(component, 'addCoordinatePoint');
+      component.setAllPoints(1979);
+      fixture.detectChanges();
+      expect(component.addCoordinatePoint).toHaveBeenCalledTimes(3);
+    });
+```
+In addition to the number of points, we also test whether specific countries we expect to appear from the mock data have been added to the globe as data points.
+
+```typescript
+  it('should include Afghanistan for given year', () => {
+      component.setAllPoints(1979);
+      fixture.detectChanges();
+      expect(component.globe.children).toBeTruthy();
+      expect(component.globe.children[0].userData.Country).toEqual('Afghanistan');
+    });
+```
 
 Ultimately, the following series of unit tests were run against the code. 
 
 ![image](https://user-images.githubusercontent.com/74050529/117734765-0b9a6c80-b1ec-11eb-9788-3a0d7464f033.png)
-
-The tests were implemented using Karma and Jasmine on the git staging branch, following the continuous integration and deployment principles of evaluating a functionality before it is released to the live branch, and making sure that a given story is delivered against a feature at a time. The tests were first conducted with core cases in mind, and then extended to test edge cases, for example years on the slider without any data points in the dataset, to try to find defects and provide a greater level of assurance.
-
-Tests were divided into nested 'describe' blocks to perform the test suites. The blocks are organised in an Arrange, Act, Assert pattern to improve readability and clarity of the tests in terms of tracking which features had already been tested. The set-up allowed variables to be assigned for use for the block's scope and data to be prepared. The unit tests then altered the state of the component object usually through a function call, and finally assertions gauged the expected result.
 
 ## c. User acceptance testing. Evaluation of your design with users – methods undertaken, findings, implications.
 

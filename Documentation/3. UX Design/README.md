@@ -2,11 +2,10 @@
 
 **IMPORTANT TO DO:**
 
-* More emphasis on User Stories - Link them with different sprints as well as the changes made, look at this: https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md
 * Properly reference Gerhardt lad - REFERENCE EVERYTHING!!!
 * Edit Interview methodology: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback
 * Complete Final Website Design : https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design
-* Make everything more colourful - add more images e.g. survey results, prototypes etc! 
+
 
 ## Contents
 

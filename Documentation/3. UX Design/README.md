@@ -2,7 +2,6 @@
 
 **IMPORTANT TO DO:**
 
-* Properly reference Gerhardt lad - REFERENCE EVERYTHING!!!
 * Edit Interview methodology: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback
 * Complete Final Website Design : https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design
 

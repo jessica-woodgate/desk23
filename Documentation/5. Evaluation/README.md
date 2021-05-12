@@ -86,8 +86,6 @@ The user acceptance testing was designed to ensure that the product works accord
 
 As such, a final round of feedback sessions was undertaken near the conclusion of the project, once the features had been implemented, to permit for end-user interaction with the system prior to moving to production. The feedback sessions brought in participants who were new to the project, and did not take part in the design and evaluation phases in order to remove bias where, in contrast, long-standing participants and user group members already have exposure to and awareness of how the product works, and may potentially be emotionally invested in the project depending on their levels of involvement. The sessions featured an interviewer who observed user interaction with the product, took observational notes, and logged any bugs.
 
-
-
 The testing followed the above framework in the evaluation of the functional requirements of the design. The approach took into account user requirements as a starting point, ie. needs from a user's perspective that the project seeks to meet or value that it brings to a user, which in turn informed more specific system requirements, or specifications for how the product would deliver these services. The requirements were gradually built on and refined over the course of the project throughout the evaluation process. Some new requirements were incorporated, for example, the requirement to include a tutorial to walk through the website functionality, and the requirement to add in audible/sound features were added in response to user group feedback. Other requirements were tweaked, for example, the emphasis of the landing page shifted from being playful as well as thought-provoking, to also requiring an explanatory dimension since feedback reported that it needed to be clearer what was being shown. Thus, the product backlog was consistently being reviewed and prioritised.
 
 Key operational constraints include limited time to implement the project, remote working conditions, and limited prior experience with MEAN stack development. The time limitations meant that the team took fewer risks in its approach which may have impacted on the product's innovation potential. In addition, the product evaluations did not include the target user group of adolescents and school-aged children, as a vulnerable group, given that no ethics approvals were sought, and as such may have constrained how well the product responds to the needs of this particular demographic.
@@ -98,6 +96,7 @@ The metrics for delivery of a feature include robustness (eg. events causing fai
 
 
 **Findings**
-UAT Session 11 May
+
+The link to the feedback can be found here: <a href="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design/Feedback%20Session%205%20Participant%206.md">Final Feedback Session</a>
 
 **Implications**

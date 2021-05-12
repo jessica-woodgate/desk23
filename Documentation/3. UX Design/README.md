@@ -12,7 +12,6 @@
 * Display Second Survey results in readme: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results
 * Fix globe image in feedback session 4: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204
 * Complete Final Website Design : https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design
-* Complete UX Flow chart
 * Make everything more colourful - add more images e.g. survey results, prototypes etc! 
 
 ## Contents

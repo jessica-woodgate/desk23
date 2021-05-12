@@ -19,9 +19,35 @@ export class TutorialComponent implements OnInit {
 
   keysShown: boolean = false;
 
+  showTut: boolean = false;
+
+  hideTut: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  startTutorial() {
+    this.hideTut = true;
+    this.showTut = false;
+    this.infoShown = false;
+    this.zoomShown = false;
+    this.clickShown = false;
+    this.slideShown = false;
+    this.keysShown = false;
+    this.spinShown = true;
+  }
+
+  hideTutorial() {
+    this.spinShown = false;
+    this.infoShown = false;
+    this.zoomShown = false;
+    this.clickShown = false;
+    this.slideShown = false;
+    this.keysShown = false;
+    this.hideTut = false;
+    this.showTut = true;
   }
 
   showInfo() {
@@ -55,5 +81,7 @@ export class TutorialComponent implements OnInit {
 
   hideKeys() {
     this.keysShown = false;
+    this.showTut = true;
+    this.hideTut = false;
   }
 }

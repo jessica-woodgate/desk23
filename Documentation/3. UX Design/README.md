@@ -192,6 +192,8 @@ Further changes made:
 
 [Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
 
+![image](https://media.giphy.com/media/xfpIrGwK8FNfEXOAi2/giphy.gif)
+
 ## g. Flowchart
 
 ![The User's Journey](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/12.%20Flowchart.jpg)

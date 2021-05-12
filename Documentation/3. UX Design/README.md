@@ -5,7 +5,6 @@
 * More emphasis on User Stories - Link them with different sprints as well as the changes made, look at this: https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md
 * Properly reference Gerhardt lad 
 * Edit Interview methodology: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback
-* Add images to readme for second wireframe: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Prototyping/Wireframe%20files
 * Display Second Survey results in readme: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results
 * Fix globe image in feedback session 4: https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204
 * Complete Final Website Design : https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design

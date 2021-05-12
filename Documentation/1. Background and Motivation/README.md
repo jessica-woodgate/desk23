@@ -76,7 +76,20 @@ Relatedness encompasses aspects of game that enable connecting with others, and 
 
 
 ## b. State of the art survey. Current industry review.
-*Wenda*
+Most of the related work to improve literacy rates are carried out by non-profit organisations, foundations, etc. Current industry mainly concentrates on:
+
+1. Raising people’s awareness about people who are not able to read, the reason for it and the benefit of being literate. 
+ 
+2. Recruiting volunteers, raising donations to help people in need of education.
+
+3. Pushing creation of the Public Policy and Advocacy Committee comprised of local program staff and national literacy leaders.
+
+4. Providing multiple methods for people to take part in education, for example, establishing free schools in less developed countries, giving online teaching for school-aged children, as well as providing educators with instructional tools to teach, distributing books and other materials for people (with limited reading ability) to self-learn.
+
+Several different methods are used by the organizations to attract public awareness, including but not limit to placement of ads, articles, and videos in national media, setting websites to demonstrate literacy rates data, and advocate with stakeholders. Data visualization has been used for this purpose recently but most of the related work mainly concentrates on collect data and demonstrate using simple graphs, which makes it efficiency in researching but not suitable for stimulating public concerns especially when it comes to adolescents, who are usually more interested in interactive and playful activity rather than dull datasets, which is our project aims to solve.
+
+It can also be noticed that different from years before more and more volunteers choose to participate online remotely, helping run free online courses for adults and kids, raise people’s awareness and step up efforts to push authorities contribute more on education. This trend is even more obvious due to global Covid pandemic, when travelling and group gathering became difficult people turn to seek alternative approaches to contribute. For our project, designing a website to interact with literacy rates data will stimulate users’ enthusiasm for volunteering in the field, and could help organizations drawing public concern easier as well.
+
 
 ## c. Clear definition of the problem. How does your project relate to the above? We will be marking the ability of your team to identify a worthwhile and important problem and clearly articulate the scope and challenge of the problem.
 

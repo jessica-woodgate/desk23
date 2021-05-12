@@ -202,7 +202,7 @@ Further changes made:
 * Background was changed to one that is more appealing and not as bright / distracting
 * Start and end years were added to the slider
 
-[Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
+### Final Website Design
 
 <p align="center">
   <img src="https://media.giphy.com/media/xfpIrGwK8FNfEXOAi2/giphy.gif">
@@ -210,6 +210,10 @@ Further changes made:
 
 <p align="center">
   <img src="https://media.giphy.com/media/vuvOvZyrwGsGkJI96o/giphy.gif">
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/iCKljfa3gYy8Gv9Kfv/giphy.gif">
 </p>
 
 ## g. Flowchart

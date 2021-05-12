@@ -131,9 +131,21 @@ The team discussed the feedback and potential areas for improvement in a 12 Apri
 
 Understanding the limitations posed by Adobe XD, we quickly realised that developing rough drafts on Angular would better suit our testing methods. We needed to provide the users with more opportunities of interactivity with the website, allowing them to spin the globe and press buttons the way they would except (without us interfering and guiding them). 
 
-### Sprint 1 and 2: Building the Globe and Interactivity
+### Sprint 1: Building the Globe 
 
-Given the comprehensive data we obtained from the feedback sessions regarding the two wireframe prototypes, we found it suitable to diverge from the user group for 2 out of the 3 sprint periods. The aim was to develop a fully functioning Minimum Viable Product (MVP). We took this method in order to gain the most from the feedback sessions. Data input was non-essential at this point, as our goal was to understand the user’s expectations in terms of the overall look and feel of the globe. 
+Given the comprehensive data we obtained from the feedback sessions regarding the two wireframe prototypes, we found it suitable to diverge from the user group for the first sprint period.The aim was to build a simple globe and experiment with the features offered by Three.js and D3.js. The primary User Stories focussed on were: 
+
+* As a user visiting the website, I want to view a globe so that I can see a visualisation more interesting than text.
+
+Here is an example of the globe spinning ability incorporated using the Three.js library: 
+
+![image](https://media.giphy.com/media/egptVJxOXYZUE32vzN/giphy.gif)
+
+
+
+### Sprint 2: Incorporating Interactivity
+
+The aim was to develop a fully functioning Minimum Viable Product (MVP). We took this method in order to gain the most from the feedback sessions. Data input was non-essential at this point, as our goal was to understand the user’s expectations in terms of the overall look and feel of the globe. 
 
 There were two Javascript libraries we explored during the early stages of developing the globe; D3.js and Three.js. D3 offered unparalleled data representation opportunities whereas Three provided a more streamlined route to develop 3D elements. In the end, we managed to produce two globes that were rotatable, zoomable and interactive. In order to decide between the two libraries and the graphical output they both offered, we sent out another online survey to see what a majority of our users would prefer (visually). We compared 4 globe designs, which you may view here: [Second Survey Monkey Results](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results).
 

@@ -135,40 +135,42 @@ describe('GlobeComponent', () => {
   });
 
   /*Pop up box with country information*/
+  describe('popup box display', () => {
+    let popup_name: any;
+    let popup_rate: any;
+    
+    beforeEach(() => {
+      popup_name = html.query(
+        By.css('#displayCountryName')
+        ).nativeElement.textContent;
+      popup_rate = html.query(
+        By.css('#displayLiteracyRate')
+        ).nativeElement.textContent;
+    });
+
   /*Test if the displayed popup receives the correct data*/
-  it('should receive country data from component', () =>{
-    component.displayType = "flex";
-    component.countryName = 'Afghanistan';
-    component.literacyRate = '20';
-    fixture.detectChanges();
-    const popup_name = html.query(
-      By.css('#displayCountryName')
-      ).nativeElement.textContent;
-    const popup_rate = html.query(
-      By.css('#displayLiteracyRate')
-      ).nativeElement.textContent;
-    expect(popup_name).toContain('Country', 'Afghanistan');
-    expect(popup_rate).toContain('Literacy Rate', '20');
-    expect(popup_name).toBeTruthy;
-    expect(popup_rate).toBeTruthy;
-  });
+    it('should receive country data from component', () =>{
+      component.displayType = "flex";
+      component.countryName = 'Afghanistan';
+      component.literacyRate = '20';
+      fixture.detectChanges();
+      expect(popup_name).toContain('Country', 'Afghanistan');
+      expect(popup_rate).toContain('Literacy Rate', '20');
+      expect(popup_name).toBeTruthy;
+      expect(popup_rate).toBeTruthy;
+    });
 
   /*Check if not set to flex*/
-  it('should not receive country data from component', () =>{
-    component.displayType = "none";
-    component.countryName = null;
-    component.literacyRate = null;
-    fixture.detectChanges();
-    const popup_name = html.query(
-      By.css('#displayCountryName')
-      ).nativeElement.textContent;
-    const popup_rate = html.query(
-      By.css('#displayLiteracyRate')
-      ).nativeElement.textContent;
-    expect(popup_name).toContain('Country');
-    expect(popup_rate).toContain('Literacy Rate');
-    expect(popup_name).toBeFalsy;
-    expect(popup_rate).toBeFalsy;
+    it('should not receive country data from component', () =>{
+      component.displayType = "none";
+      component.countryName = null;
+      component.literacyRate = null;
+      fixture.detectChanges();
+      expect(popup_name).toContain('Country');
+      expect(popup_rate).toContain('Literacy Rate');
+      expect(popup_name).toBeFalsy;
+      expect(popup_rate).toBeFalsy;
+    });
   });
 
   /*Test if we get the expected data from the data service using dummy data*/

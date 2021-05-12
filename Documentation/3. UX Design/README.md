@@ -175,7 +175,7 @@ The data was incorporated at this stage and resulted in literacy rate data being
 
 Feedback obtained for this iteration during the middle of the third Sprint of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
 
-The following changes were incorporated into the final design of the website, which can be found here - [Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
+The following changes were incorporated into the final design of the website:
 
 | User Story                                                                                                                                                    | Implementation                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -189,6 +189,8 @@ Further changes made:
 * Tutorial now appears one by one so not to overwhelm the user 
 * Background was changed to one that is more appealing and not as bright / distracting
 * Start and end years were added to the slider
+
+[Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
 
 ## g. Flowchart
 

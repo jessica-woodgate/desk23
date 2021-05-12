@@ -53,6 +53,11 @@ The stakeholder analysis was done in order to maximise the possible contribution
 
 ![image](https://user-images.githubusercontent.com/74050529/114542024-55288380-9c4f-11eb-8e80-1c89157375a9.png)
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/74050529/114542024-55288380-9c4f-11eb-8e80-1c89157375a9.png">
+</p>
+
+
 Stakeholders with high influence and high interest in the project include the target user (students/adolescents), the team itself (given a vested interest in the website’s success), and the University of Bristol as the locus of the project (including any potential reputational risks), and were deemed to require close engagement. In particular, given the educational nature of the website, the team agreed it would key to make sure that the website would be an inclusive and safe space for students of all abilities and backgrounds to navigate.
 
 Next, the team considered others in the immediate circle of the student, including family and friends, and, critically, teachers who would need to be kept informed – in particular given their responsibility to safeguard their students and their role in potentially directing students to the website as an educational tool. Research participants, including users interacting with the surveys and making up the focus group, were also considered to fall in this category. The team considered it would be critical to seek out a diverse group of participants to ensure balanced responses; to make sure the survey would be designed not to be overly invasive; and, fundamentally, to protect the data collected. 

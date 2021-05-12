@@ -172,6 +172,9 @@ The third sprint was focussed on refining the Three.js globe. Several changes we
 
 The data was incorporated at this stage and resulted in literacy rate data being shown for individual years when a country’s bar-chart was clicked. Bar-chart heights were also made to be proportional to the literacy rate.  
 
+Here is the mid Sprint 3 prototype: 
+![image](https://user-images.githubusercontent.com/45073537/117461961-0d430680-af46-11eb-856b-bb7f01de9909.png) ![image](https://user-images.githubusercontent.com/45073537/117462022-1fbd4000-af46-11eb-8af1-1d8fb2c712cf.png)
+
 Feedback obtained for this iteration during the middle of the third Sprint of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
 
 The following changes were incorporated into the final design of the website:

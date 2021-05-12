@@ -70,7 +70,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 
 **Stanni**
 
-**2. Back-end co-developer and SCRUM leader: Jessica Woodgate** 
+### 2. Back-end co-developer and SCRUM leader: Jessica Woodgate
 * Implemented database & wrote dbController.js functions to access data from the database for the API
 * Co-development of/assisting with API/Docker:
    * Created boiler plate version of the website, API, docker compose files, and data service from which to build our project on
@@ -79,7 +79,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
    * Created GitHub repository and main reviewer of pull requests
    * Wrote meeting minutes & kept track of sprint targets
 
-**3. Co-backend Designer: Wenda Zhao**
+### 3. Co-backend Designer: Wenda Zhao
 * Developed API backup 
 	* Create routing for single collections in database
 	* * Developed express router for the original module
@@ -87,7 +87,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 * Developed Separate CRUD functions
 * Assisted on Feedback analysis/evaluation
 
-**4. Co-Product Owner and Quality Assurance: Emily Bloom**
+### 4. Co-Product Owner and Quality Assurance: Emily Bloom
 * Responsible for testing: 
 	* Functional tests 
 	* Unit tests 
@@ -95,7 +95,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 * Design and evaluation, including prototyping/wireframes
 * Product backlog management
 
-**5. Co-Frontend and UI/UX Designer: Hamza Qureshi**
+### 5. Co-Frontend and UI/UX Designer: Hamza Qureshi
 * Developed Three.js globe: 
 	* Creating the scene, globe component and functionality 
 	* Creating tutorial windows and interactivity 

@@ -141,19 +141,26 @@ Here is an example of the globe spinning ability incorporated using the Three.js
 
 ![image](https://media.giphy.com/media/egptVJxOXYZUE32vzN/giphy.gif)
 
-
+Due to the limited features, we felt it best to withold any feedback sessions until after the second sprint session. 
 
 ### Sprint 2: Incorporating Interactivity
 
-The aim was to develop a fully functioning Minimum Viable Product (MVP). We took this method in order to gain the most from the feedback sessions. Data input was non-essential at this point, as our goal was to understand the user’s expectations in terms of the overall look and feel of the globe. 
+At this stage, the aim was to develop a fully functioning Minimum Viable Product (MVP). We took this method in order to gain the most from the feedback sessions. Data input was non-essential at this point, as our goal was to understand the user’s expectations in terms of the overall look and feel of the globe. 
 
-There were two Javascript libraries we explored during the early stages of developing the globe; D3.js and Three.js. D3 offered unparalleled data representation opportunities whereas Three provided a more streamlined route to develop 3D elements. In the end, we managed to produce two globes that were rotatable, zoomable and interactive. In order to decide between the two libraries and the graphical output they both offered, we sent out another online survey to see what a majority of our users would prefer (visually). We compared 4 globe designs, which you may view here: [Second Survey Monkey Results](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results).
+The website went through several iterations and builds. The following image represents our earliest MVP: 
+![image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/WebsitePrototype.PNG). 
+
+As mentioned above, there were two Javascript libraries we explored during the early stages of developing the globe; D3.js and Three.js. D3 offered unparalleled data representation opportunities whereas Three provided a more streamlined route to develop 3D elements. In the end, we managed to produce two globes in parallel to each other that were rotatable, zoomable and interactive. In order to decide between the two libraries and the graphical output they both offered, we sent out another online survey to see what a majority of our users would prefer (visually). We compared 4 globe designs, which you may view here: [Second Survey Monkey Results](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results).
 
 Users were requested to place themselves in the shoes of their younger selves while filling out the survey. The results fell in favour of Option D – the second Three.js globe as can be seen in the result images of the above link. 
 
 Users were asked to rank the 4 globes in terms of their level of interactivity, how ‘fun’ they were, how visually attractive they were, and their ability to show the disparity of literacy rates between countries. There was a close battle between Option B (D3) and Option D (Three) for most of the survey questions. 
+
 Each option received a score out of 4 per question. Option D received an average score of 3.33 for being the easiest globe to gather an understanding of the data, with Option B receiving 2.11. Option D once again took the spotlight with a score of 3.33 for being the most ‘fun’ to use, however, Option B was close behind with a score of 2.56. 
+
 Realising how close the scores were, we decided to consult our user group and seek out their suggestions on which globe is preferential. Please see the feedback gathered for the two globes here: [Feedback Session 3](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203).
+
+The general consensus was in favour of the Three.js globe as it provided a clearer indication as to where to click as well as offering the country names on the globe. The globe was also locked on its axis and as such, could not be flipped upside down. 
 
 
 ### Sprint 3 and 4: Refining the Globe and Publishing the Final Product

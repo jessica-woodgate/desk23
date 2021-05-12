@@ -147,8 +147,12 @@ Due to the limited features, we felt it best to withold any feedback sessions un
 
 At this stage, the aim was to develop a fully functioning Minimum Viable Product (MVP). We took this method in order to gain the most from the feedback sessions. Data input was non-essential at this point, as our goal was to understand the user’s expectations in terms of the overall look and feel of the globe. 
 
+The following User Stories were the primary focus for this Sprint: 
+* As a student visiting the website, I want to be able to interact with the elements in a playful way to engage in a more interesting way with the data/learning aspects.
+* As a student visiting the website, I want to be able to spin the globe so that I can discover and easily compare literacy rates around the world.
+
 The website went through several iterations and builds. The following image represents our earliest MVP: 
-![image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/WebsitePrototype.PNG). 
+![image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/WebsitePrototype.PNG)
 
 As mentioned above, there were two Javascript libraries we explored during the early stages of developing the globe; D3.js and Three.js. D3 offered unparalleled data representation opportunities whereas Three provided a more streamlined route to develop 3D elements. In the end, we managed to produce two globes in parallel to each other that were rotatable, zoomable and interactive. In order to decide between the two libraries and the graphical output they both offered, we sent out another online survey to see what a majority of our users would prefer (visually). We compared 4 globe designs, which you may view here: [Second Survey Monkey Results](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Second%20SurveyMonkey%20Results).
 
@@ -163,15 +167,23 @@ Realising how close the scores were, we decided to consult our user group and se
 The general consensus was in favour of the Three.js globe as it provided a clearer indication as to where to click as well as offering the country names on the globe. The globe was also locked on its axis and as such, could not be flipped upside down. 
 
 
-### Sprint 3 and 4: Refining the Globe and Publishing the Final Product
+### Sprint 3: Refining the Globe and Publishing the Final Product
 
-The third sprint was focussed on refining the Three.js globe. Several changes were made, for example, switching from the green orb representation of countries back to the bar chart representation. Due to the limitations of Three.js, it would be difficult to map the entire country as clickable. As a result, we decided to include some sort of target for the user to click. Clearly the green orbs were not seen as fun, and rather described as unappealing. The bar-charts were relatively well received, however, required much improvement in terms of spacing, look and colour. The tutorial boxes were modified to provide clearer instructions to the user in terms of how to use the website. 
+The third sprint was focussed on refining the Three.js globe. Several changes were made, for example, switching from the green orb representation of countries back to the bar chart representation as this design choice was favoured in our second online survey. Due to the limitations of Three.js, it would be difficult to map the entire country as clickable. As a result, we decided to include some sort of target for the user to click. Clearly the green orbs were not seen as fun, and rather described as unappealing. The bar-charts which were relatively well received, however, required much improvement in terms of spacing, look and colour. The tutorial boxes were modified to provide clearer instructions to the user in terms of how to use the website. 
 
 The data was incorporated at this stage and resulted in literacy rate data being shown for individual years when a country’s bar-chart was clicked. Bar-chart heights were also made to be proportional to the literacy rate.  
 
-Feedback obtained for this iteration of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
+Feedback obtained for this iteration during the middle of the third Sprint of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
 
 The following changes were incorporated into the final design of the website, which can be found here - [Final Website Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design): 
+
+| User Story                                                                                                                                                    | Implementation                                                                                                                                                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| As a student visiting the website, I want to be able to change the date dynamically so that I can understand how literacy rates have changed over time.       | Slider component was integrated into the website. Data was now being received and passed through to the TypeScript file. Bar charts now pop up and disappear as well as change in height and colour depending on the year selected by the User. |
+| As a teacher, I want to be able to interact with global literacy rates data so I can identify trends together with my students.                               | Bar charts are now clickable and present clearer information of the Country's name as well as its Literacy Rate data in percentages.                                                                                                            |
+| As a student visiting the home page, I want the first information I see to be presented in a fun and easy to read manner so that I am drawn into the website. | Home page and animation have been integrated.                                                                                                                                                                                                   |
+| As a student visiting the home page, I want to be able to navigate from the book into the main website that contains the globe element.                       | A large ENTER button is offered to the user upon the video ending so that they may seamlessly transition to the globe page.                                                                                                                     |
+
 
 ## g. Flowchart
 

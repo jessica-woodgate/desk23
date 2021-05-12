@@ -143,4 +143,4 @@ The following changes were incorporated into the final design of the website, wh
 
 ## g. Flowchart
 
-[The User's Journey](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/12.%20Flowchart.jpg)
+![The User's Journey](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/12.%20Flowchart.jpg)

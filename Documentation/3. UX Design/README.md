@@ -184,6 +184,11 @@ The following changes were incorporated into the final design of the website, wh
 | As a student visiting the home page, I want the first information I see to be presented in a fun and easy to read manner so that I am drawn into the website. | Home page and animation have been integrated.                                                                                                                                                                                                   |
 | As a student visiting the home page, I want to be able to navigate from the book into the main website that contains the globe element.                       | A large ENTER button is offered to the user upon the video ending so that they may seamlessly transition to the globe page.                                                                                                                     |
 
+Further changes made: 
+* Large info box to provide details on how the site works appears at the very beginning of the globe page 
+* Tutorial now appears one by one so not to overwhelm the user 
+* Background was changed to one that is more appealing and not as bright / distracting
+* Start and end years were added to the slider
 
 ## g. Flowchart
 

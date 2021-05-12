@@ -1,7 +1,7 @@
 # Interview methodology
 ## Objectives
 
-The intention with this feedback meeting was to gather user evaluation about our prototype to inform the design process and analyse what we needed to change or focus on, as well as bring up issues that we may not have been able to see ourselves. Before conducting the feedback sessions, we scoped a ballpark for the problem space that we were looking at, then used interviews to interrogate this further.
+The intention with all the feedback meetings was to gather user evaluation about our prototype to inform the design process and analyse what we needed to change or focus on, as well as bring up issues that we may not have been able to see ourselves. Before conducting the feedback sessions, we scoped a ballpark for the problem space that we were looking at, then used interviews to interrogate this further.
 
 ## Ethics
 
@@ -15,6 +15,8 @@ The feedback sessions were kept short to avoid question fatigue, and we focused 
 
 Initially, the users that had not previously seen the website were presented with the prototypes/products without instruction, and their behaviour was observed by the interviewer without interruption (only responding if the participant asked questions). The purpose of this was to observe behaviour as uninfluenced by any researcher bias as possible. For earlier prototypes, slightly more guidance was required as to how to navigate as interactivity was not properly developed yet, but this was minimised.
 After using the system and playing around with various movements, the interviewer explained to them the project brief and outline, and gathered any feedback the users may have had in relation to this. The users were then asked to complete a short questionnaire gathering some qualitative data before being debriefed.
+
+For the subsequent feedback sessions, we employed a similar strategy of dropping the users in the deep end. The goal was to discover all the bugs that may not have been anticipated during the design period. Making notes on actions such as where the user clicks, how many times and where does their mouse venture the most. After this, general feedback was gathered on their experience. After which, we obtained feedback on the actual design e.g. what did the user think of our use of colours? Use of text? 
 
 ## Impact of Covid
 

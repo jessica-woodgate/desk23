@@ -403,6 +403,6 @@ To acheive continuous intergration and deployment, our code was progressively me
 
 ![image](https://user-images.githubusercontent.com/45073537/117702220-22c36500-b1c0-11eb-9611-52b6ea27fe68.png)
 
-In staging, the critical components in our code base were tested. We used Karma to run those tests by running ng test in the project directory on every push to the repository to ensure continuous integration and to make certain that only fully functioning and tested code makes it to production.
+In staging, the critical components in our code base were tested. We used Karma to run those tests by running ng test in the project directory on every push to the repository to ensure continuous integration and to make certain that the different parts of the system work well together on an ongoing basis. The staging branch was also used to ensure that only functioning and tested code makes it to production.
 
 We held [regular stand up meetings](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) to achieve the CI/CD workflow and ensure that everyone was on the same page, and any issues could be addressed swiftly and effectively.

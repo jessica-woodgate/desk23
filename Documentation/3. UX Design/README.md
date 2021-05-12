@@ -54,7 +54,7 @@ The stakeholder analysis was done in order to maximise the possible contribution
 ![image](https://user-images.githubusercontent.com/74050529/114542024-55288380-9c4f-11eb-8e80-1c89157375a9.png)
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/74050529/114542024-55288380-9c4f-11eb-8e80-1c89157375a9.png">
+  <img src="https://user-images.githubusercontent.com/74050529/114542024-55288380-9c4f-11eb-8e80-1c89157375a9.png">
 </p>
 
 

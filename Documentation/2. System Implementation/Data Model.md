@@ -1,4 +1,8 @@
-[Return to System Implementation](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation)
+<div align = center>
+
+[<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation)
+   </div>
+   
 
 # Data Model
 
@@ -58,3 +62,9 @@ This model reflects the data we needed in the middle of our sprints, when we wer
 ![image](https://user-images.githubusercontent.com/45073537/117008237-6b6faf80-ace2-11eb-8271-73d8342239c8.png)
 
 In the third iteration of our data model, we created a new collection. This collection combined elements from both the literacy data collection and the coordinates collection. Having aspects from these two collections in one single collection allowed the front end to access the data much quicker, as well as presenting a good opportunity to clean the data sets, removing any noise and ensuring that the data was properly aligned (e.g. there were no countries for which we had literacy data but no coordinates).
+
+<div align = center>
+
+[<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation)
+   </div>
+   

@@ -11,9 +11,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 })
 
 export class GlobeComponent implements OnInit {
-  //'globeCanvas' refers to the one established in the html file
-  //cReference is the variable we are using
-  //ViewChild basically sets up where the canvas element is
   @ViewChild('globeCanvas') cReference!: ElementRef;
 
   countryName! : string | null;
@@ -36,7 +33,6 @@ export class GlobeComponent implements OnInit {
 
   lightGroup!: THREE.Group;
 
-  //creating an array of Country objects
   listOfCountries: Country[] = [];
 
   raycaster!: THREE.Raycaster;
@@ -107,7 +103,7 @@ export class GlobeComponent implements OnInit {
   setCamera() {
     this.camera.aspect = this.aspectRatio;
     this.camera.updateProjectionMatrix();
-	  this.camera.position.set( 35, 0, 0 ); //changed from 40 to 35
+	  this.camera.position.set( 35, 0, 0 ); 
 	  this.camera.lookAt( this.scene.position );
   }
 
@@ -133,7 +129,6 @@ export class GlobeComponent implements OnInit {
   }
 
   createLightGroup() {
-   // this.mainLight = new THREE.PointLight( 0xffffff, 2, 50 );
     this.mainLight = new THREE.AmbientLight( 0xffffff);
 	  this.mainLight.position.set( 0, 0, 50 );
     this.lightGroup.add(this.mainLight);
@@ -141,7 +136,7 @@ export class GlobeComponent implements OnInit {
   }
 
   createGlobe() {
-    //maps from: http://planetpixelemporium.com/earth.html && https://www.solarsystemscope.com/textures/
+    //maps from: https://www.solarsystemscope.com/textures/
     let Emap = new THREE.TextureLoader().load('../../assets/images/2k_earth_daymap.jpg');
   
     const sphere = new THREE.SphereGeometry(10,50,50);
@@ -179,7 +174,6 @@ export class GlobeComponent implements OnInit {
     this.renderer.render(this.scene, this.camera);
   }
 
-  //working on coordinates
   //reference: https://stackoverflow.com/questions/1185408/converting-from-longitude-latitude-to-cartesian-coordinates
   addCoordinatePoint (country:string, latitude: number, longitude: number, countryArea:number, litData: number) {
 

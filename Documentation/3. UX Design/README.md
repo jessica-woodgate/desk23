@@ -170,7 +170,7 @@ Users were asked to rank the 4 globes in terms of their level of interactivity, 
 
 Each option received a score out of 4 per question. Option D received an average score of 3.33 for being the easiest globe to gather an understanding of the data, with Option B receiving 2.11. Option D once again took the spotlight with a score of 3.33 for being the most ‘fun’ to use, however, Option B was close behind with a score of 2.56. 
 
-Realising how close the scores were, we decided to consult our user group and seek out their suggestions on which globe is preferential. Please see the feedback gathered for the two globes here: [Feedback Session 3](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203).
+Realising how close the scores were, we decided to consult our user group and seek out their suggestions on which globe is preferential. Please see the feedback gathered for the two globes here: [Feedback Session 3](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%203/README.md).
 
 The general consensus was in favour of the Three.js globe as it provided a clearer indication as to where to click as well as offering the country names on the globe. The globe was also locked on its axis and as such, could not be flipped upside down. 
 

@@ -1,3 +1,9 @@
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#e-user-participatory-design)
+  
+  </div>
+
 # Interview methodology
 ## Objectives
 
@@ -22,3 +28,8 @@ For the subsequent feedback sessions, we employed a similar strategy of dropping
 
 Due to the global pandemic, these interview sessions were split into two main formats: in-person, or virtual. Whilst the in-person sessions (conducted with members of our bubbles) were administratively easier to conduct, and behaviour was easier to observe, there may have been some impact of bias. For example, we were only able to conduct in-person sessions with members of our bubbles, and this thus increases the likelihood of bias or pre-conceptions about the project. Sessions conducted via zoom had additional issues to do with connection failure, or problems with sound quality that may have impacted the data collected. 
 
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#e-user-participatory-design)
+  
+  </div>

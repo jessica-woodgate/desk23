@@ -99,6 +99,12 @@ The metrics for delivery of a feature include robustness (eg. events causing fai
 
 The link to the feedback can be found here: <a href="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design/Feedback%20Session%205%20Participant%206.md">Final Feedback Session</a>
 
-Based on the data available, 
+Based on the data available, a cosmetic bug that was flagged is that the instructions in the tutorial boxes exceed their frames, ie. the text does not fit to the box. In addition, it was flagged that the bars (data points) on the globe do not change back to their original colour after clicking on them, which is important since the bars are colour-coded according to the national literacy level.
+
+In terms of ease of use, the interviewers observed that users were able to follow the tutorial instructions and implement the guidance naturally, however one user did not click through to the final tutorial box. In particular, rotating and zooming in on the globe component seemed to be straightforward for the users, with one user describing globe interaction as a “no brainer.” One user pointed out that the names of only a subset of countries appear on the globe and that additional labels could be added. This could make the globe clearer and easier to use (and also have implications in terms of highlighting some countries over others). In addition, a user suggested that the meaning of the colours of the data points could be further clarified, and that the initial tutorial box (which describes the colour-coding) should be a). simplified and b). made recoverable even after closing it. 
+
+Users were observed to click less quickly in the transition between the landing page animation and the globe. Users also required more guidance to use the timeline, including the arrows to navigate with the slider (observational notes read: “User needed some guidance with using the arrows to navigate through the timeline”).
+In terms of screen load times, one user experienced a delayed load time for the skybox backdrop to appear fully behind the globe. Another user noted that navigation was smooth, suggesting response to events worked well in these cases.
+
 
 **Implications**

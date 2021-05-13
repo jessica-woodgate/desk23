@@ -434,3 +434,9 @@ To acheive continuous intergration and deployment, our code was progressively me
 In staging, the critical components in our code base were tested. We used Karma to run those tests by running ng test in the project directory on every push to the repository to ensure continuous integration and to make certain that the different parts of the system work well together on an ongoing basis. The staging branch was also used to ensure that only functioning and tested code makes it to production.
 
 We held [regular stand up meetings](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) to achieve the CI/CD workflow and ensure that everyone was on the same page, and any issues could be addressed swiftly and effectively. This ensured we were in constant communication and every member understood where the project was at and had good opportunities to present their work and ask questions.
+
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/1.%20Background%20and%20Motivation) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)
+
+   </div>

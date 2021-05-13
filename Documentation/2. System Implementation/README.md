@@ -18,7 +18,22 @@ f. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tre
 
 ## b. Back End - MongoDB - database implementation, the data model that you developed your back end from (e.g. entity relationship diagrams).
 
-For our database, we decided to use MongoDB with Mongoose to access it through Express. We chose MongoDB because you can use semi- or un-structured data, which makes it more flexible and easier to change as our project develops, fitting in well with the Agile methodology. Please see here for [details of the evolution of our data model and implementing the database](https://github.com/jess-mw/desk23/blob/c44a0b586f30cb3c27e57e82e6106b8444c02638/Documentation/2.%20System%20Implementation/Data%20Model.md).
+For our database, we decided to use MongoDB with Mongoose to access it through Express. We chose MongoDB because you can use semi- or unstructured data, as well as easily being able to update schemas, which makes it more flexible and easier to change as our project develops, fitting in well with the Agile methodology. You can also handle large volumes of data at high speed. At this stage of our project this aspect is not fully utilised, but our vision of the expansion of the project will require this as we gain and use more data. 
+
+#### Storing unstructured, semi-structured or structured data
+
+Where relational databases store data in structured tables with predefined schemas, NoSQL databases such as MongoDB allow data to be stored in ways that are easier to understand. When the data is used in applications, you do not have to use SQL to retrieve the data, and the data does not have to be transformed thus making it easier to access and redesign the database. This also means that you can use various different data formats such as JSON files (as we have used in this project), and big data - which could be used in future iterations of this project.
+
+#### Easy to update schemas
+
+The benefit of using NoSQL to model data is that it is arguably much more intuitive. You can also directly change the structure of the data; documents do not have a set data structure, so a new type of document can easily be stored as well as what currently exists. You can also add new values and columns without having to majorly refactor the current structure.
+
+#### Handling large volumes of data at high speed
+
+The format of NoSQL databases means you can implement scale-out architecture, where the storage of data and processing power is spread out over a large collection of computers. Rather than the scale-up architecture of SQL databases, which requires larger computers with more CPUs and memory to improve performance, scale-out architecture increases capacity by adding more computers to the cluster. This is much cheaper and more efficient. Thus, as our project develops and requires higher volumes of data, it will be much more efficient than if we chose SQL architecture. This also abides by our ethical principles of designing for scale.
+
+
+Please see here for [details of the evolution of our data model and implementing the database](https://github.com/jess-mw/desk23/blob/c44a0b586f30cb3c27e57e82e6106b8444c02638/Documentation/2.%20System%20Implementation/Data%20Model.md).
 
 In order to properly set up the database the first time the website is run, we created a seeding script that will populate the collections with the required data from files stored in data-import. This ensures the database will only be populated once, and with the correct files.
 

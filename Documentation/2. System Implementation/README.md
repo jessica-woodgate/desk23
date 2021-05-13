@@ -130,7 +130,7 @@ Where `this.enterShown` is set to false initially. When the video comes to an en
 </div>
 ```
 
-The routes have been declared in the `Routes` array in the [app-routing.module.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/app-routing.module.ts) file as: 
+The routes have been declared in the `Routes` array in the [app-routing.module.ts](https://github.com/jess-mw/desk23/blob/main/Website/src/app/app-routing.module.ts) file as: 
 
 ``` javascript 
 const routes: Routes = [

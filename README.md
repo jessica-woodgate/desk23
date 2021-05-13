@@ -18,9 +18,9 @@ We envision an interactive globe that users can nagivate and move around with ea
 
 Our site is targeted at older children and teenagers, to encourage awareness about the issue. By including playful elements, we aim to get our users engaging with the issue. This will hopefully foster interest in literacy rates, and help our users understand why it is an important topic.
 
-### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/543ae3f6dd4bcdbb889815b1bc0cd6e5ba353977/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
-
 ## Introduction
+
+### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/543ae3f6dd4bcdbb889815b1bc0cd6e5ba353977/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
 
 ### Abstract. Motivation for the project, framing of the problem and a high-level overview of the system. 
 

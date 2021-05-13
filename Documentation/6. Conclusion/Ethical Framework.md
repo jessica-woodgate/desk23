@@ -1,4 +1,8 @@
-[Return to Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md#d-discussion-of-social-and-ethical-implications-of-your-work)
+<div align = center>
+
+[Return to UX Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#first-survey-findings) | [Return to Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md#d-discussion-of-social-and-ethical-implications-of-your-work)
+
+</div>
 
 # Ethical Framework
 
@@ -68,3 +72,9 @@ When working through the design process and sprints, we followed the [DIODE](htt
 Using our ethical framework, we used this procedure to analyse decisions and choose which form of action to take accordingly. 
 
 To ensure our ethics were properly communicated, we documented our obligations and any risks and safeguards we took to protect our users. In addition, we gave users we interacted with a contact address they could reach out to if they felt us to be in breach of these obligations, and used an ethics form before each session. 
+
+<div align = center>
+  
+[Return to UX Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#first-survey-findings) | [Return to Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md#d-discussion-of-social-and-ethical-implications-of-your-work)
+
+</div>

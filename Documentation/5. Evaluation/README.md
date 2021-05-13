@@ -7,7 +7,7 @@ b. [Unit testing/functional testing](https://github.com/jess-mw/desk23/tree/main
 
 c. [User acceptance testing - evaluation of design with users](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#c-user-acceptance-testing-evaluation-of-your-design-with-users--methods-undertaken-findings-implications)
 
-## a. Details of how you evaluated your designs (techniques used & awareness of their limitations). Description of techniques suitable for your particular design. A timeline of evaluation of your design.
+## a. Details of how we evaluated our designs.
 
 The evaluation process was carried out throughout the whole design process. Two forms of evaluation were included; In the first form, the group member set up regular meeting to evaluate their design process. At this stage, the group mainly compared current website design with original ideas and decided features need to be adjusted to fulfil its purpose. By using such method, the group could easily improve their design closer to the original target, but lacking understanding of aimed user groups requirements introduced potential danger of ignoring specific need of user, making the website may meet the design target but difficult to use.
 
@@ -80,7 +80,7 @@ Ultimately, the following series of unit tests were run against the code.
 
 ![image](https://user-images.githubusercontent.com/74050529/117734765-0b9a6c80-b1ec-11eb-9788-3a0d7464f033.png)
 
-## c. User acceptance testing. Evaluation of your design with users – methods undertaken, findings, implications.
+## c. User acceptance testing - evaluation of design with users.
 
 The user acceptance testing was designed to ensure that the product works according to the requirements set out at the start of the project; to make sure the product is geared towards end-users consistent with the user-centred design development process; and to consider whether the product can handle the tasks required of it in a real-world environment. This phase of testing also allows for the detection of any defects or bugs, as well as to highlight any potential alternative or exceptional flows in engaging with the product, where users may not interact with the website as expected. 
 

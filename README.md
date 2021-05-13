@@ -51,11 +51,12 @@ By revealing interesting trends in the data, and adding an element of interactiv
 </div>
 
 ## Our Team
-#### Wenda - Responsible for back end
-#### Jess - Responsible for database
-#### Stanni - Responsible for front end
-#### Emily - Responsible for quality assurance
-#### Hamza - Responsible for UI/UX
+|   | Stanni Lewis     | Front-end                     |
+|---|------------------|-------------------------------|
+|   | Emily Bloom      | Quality Assurance and Testing |
+|   | Jessica Woodgate | Database and Back-end         |
+|   | Wenda Zhao       | Back-end                      |
+|   | Hamza Qureshi    | Front-end and UX/UI Designer  |
 
 ## Documentation
 ### 1. [Background and Motivation](https://github.com/jess-mw/desk23/tree/main/Documentation/1.%20Background%20and%20Motivation)

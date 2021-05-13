@@ -32,8 +32,7 @@ The benefit of using NoSQL to model data is that it is arguably much more intuit
 
 The format of NoSQL databases means you can implement scale-out architecture, where the storage of data and processing power is spread out over a large collection of computers. Rather than the scale-up architecture of SQL databases, which requires larger computers with more CPUs and memory to improve performance, scale-out architecture increases capacity by adding more computers to the cluster. This is much cheaper and more efficient. Thus, as our project develops and requires higher volumes of data, it will be much more efficient than if we chose SQL architecture. This also abides by our ethical principles of designing for scale.
 
-
-Please see here for [details of the evolution of our data model and implementing the database](https://github.com/jess-mw/desk23/blob/c44a0b586f30cb3c27e57e82e6106b8444c02638/Documentation/2.%20System%20Implementation/Data%20Model.md).
+#### Please see here for [details of the evolution of our data model and implementing the database](https://github.com/jess-mw/desk23/blob/c44a0b586f30cb3c27e57e82e6106b8444c02638/Documentation/2.%20System%20Implementation/Data%20Model.md).
 
 In order to properly set up the database the first time the website is run, we created a seeding script that will populate the collections with the required data from files stored in data-import. This ensures the database will only be populated once, and with the correct files.
 

@@ -1,12 +1,5 @@
 # Project Management
 
-**To do**
-* Add some images and make this look nicer
-* Link the Kanban board (or an image) 
-* Link an image of the teams chat 
-* Link an image of miro?
-
-
 ## Contents
 a. [Group working methods used](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management#a-group-working-methods-used-for-instance-did-your-team-choose-a-particular-style-of-agile-what-communication-channels-did-you-use)
 

@@ -1,3 +1,5 @@
+[Return to Conclusion](https://github.com/jess-mw/desk23/tree/main/Documentation/6.%20Conclusion#d-discussion-of-social-and-ethical-implications-of-your-work)
+
 # Ethical Framework
 
 When designing and building an artefact, it is important to apply an ethical framework to guide the development of technology and keep the wider context in which you are working in mind. This means going beyond being compliant, to designing with ethical purpose and embedding it in the project throughout development (and beyond).  Before settling on an idea for this project, as a team we had a discussion of ethics in order to decide upon a framework which we would use to guide our design process. We felt that the brief of this project – creating a playful product that tackled a serious problem – in combination with the importance of technology in everyday life meant that paying attention to ethics was particularly important.  

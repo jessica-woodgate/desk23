@@ -105,7 +105,7 @@ The group looked to approaching the design through a Heuristic Evaluation lens a
 
 This design method fit perfectly with our Agile SCRUM development process as well as the 3 Sprints. Having a group of users whom we could consistently share our designs and updates with, who in turn provided us with valuable feedback on potential improvements, allowed us to elegantly run the agile development cycle. The website was in a constant process of being pushed to production and tested by our user group. 
 
-Here is the standard interview methodology that was adopted for each feedback session with our user group: [Interview Methodology](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback).
+Here is the standard interview methodology that was adopted for each feedback session with our user group: [Interview Methodology](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/README.md).
 
 They were given a chance to interact with the Wireframe, while key observations about their impressions and feelings interacting with the prototype were documented by a member of the team acting as interviewer (please refer to [Feedback](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback) section). The users went into the session cold without much background information to review our first wireframe of the website, which can be seen here: [First Interactive Prototype Wireframe](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Prototyping/Interactive%20Prototype%201.pdf).
 

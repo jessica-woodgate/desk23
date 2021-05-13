@@ -20,7 +20,7 @@ Our site is targeted at older children and teenagers, to encourage awareness abo
 
 ## Introduction
 
-### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/f7766ecd83fca66367ad9578d089dcbb46b804dc/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
+### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
 
 ### Abstract
 #### Motivation for the project, framing of the problem and a high-level overview of the system. 

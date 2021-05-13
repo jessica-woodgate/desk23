@@ -1,3 +1,5 @@
+[Return to home page](https://github.com/jess-mw/desk23)
+
 # Instructions to run the site
 
 1. From within the "Website" folder, run *docker-compose up --build*.

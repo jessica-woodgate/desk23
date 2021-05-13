@@ -25,24 +25,3 @@ mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 //bind connection to error event
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
-
-//populating database with data - only need to call this once
-/*function populate(model, data, cb){
-   async.parallel([
-      function(callback){
-         model.insertMany(data);
-         console.log('populated')
-      }
-   ],
-   //optional callback
-   cb);
-};
-*/
-
-//to be commented out
-/* populate(LiteracyModel, literacyData);
-populate(CoordinatesModel, coordinatesData);
-
-populate(CountryModel, countryData);  */
-

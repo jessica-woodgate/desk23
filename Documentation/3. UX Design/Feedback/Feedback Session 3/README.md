@@ -1,3 +1,9 @@
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-2-incorporating-interactivity)
+  
+  </div>
+
 <h1> First Prototype of Website (non paper prototype) - Globe 1 produced using three.js</h1>
 
 <h2> Feedback Gathered on: 28/04/2021</h2>
@@ -162,3 +168,10 @@ The feedback session took place remotely using Zoom, at the same time as the int
 <ol><li>Make the country names more pronounced when the user hovers over a country </li>
   <li>Discuss/revisit alignment of the globe on the page</li>
   </ol>
+
+
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-2-incorporating-interactivity)
+  
+  </div>

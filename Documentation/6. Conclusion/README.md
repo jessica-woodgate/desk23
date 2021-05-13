@@ -71,3 +71,8 @@ Beyond changing the significant shift in the overall scope of the project to a m
 Outside of development changes, we had a plan to experiment and create surveys on the type of map views being offered, beyond the Orthographic view (d3's £D style globe) or three.js globe render. We would have built different map presentations or added a menu for you to choose the style in which data would be displayed. Examples include a Werner Projection, Bottomley projection or a US Centric Gingery projection. This adds to the “play”/gamified element of our app, empowering our design and allowing us to better survey our various user groups to tease out their tastes and what they might want to see from a customization perspective.
 
 Another additional development feature with significant potential is that of pointing to relevant charities, non-governmental organisations and key persons within the literacy and education movements dependent on location, embedding links into specific countries tooltips, which would aid educational element of the serious play concept.  In conclusion, this project is ripe for expansion, and additional features, to build the type of data visualisations we need.
+
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation) | [Home](https://github.com/jess-mw/desk23) 
+   </div>

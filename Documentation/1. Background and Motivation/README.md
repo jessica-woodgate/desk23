@@ -1,4 +1,9 @@
-[Return to home](https://github.com/jess-mw/desk23)
+
+<div align = center>
+   
+   [Return to home](https://github.com/jess-mw/desk23)
+
+   </div>
 
 # Background and Motivation
 

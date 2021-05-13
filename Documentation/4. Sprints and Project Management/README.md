@@ -70,7 +70,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 
 ### 1. Stanni Lewis: 
 
-### 2. Jessica Woodgate: Back-end co-developer and SCRUM leader
+### 2. Jessica Woodgate: Back-end co-developer and Scrum leader
 * Implemented database & wrote dbController.js functions to access data from the database for the API
 * Co-development of/assisting with API/Docker:
    * Created boiler plate version of the website, API, docker compose files, and data service from which to build our project on

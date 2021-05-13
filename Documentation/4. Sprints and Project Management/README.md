@@ -16,8 +16,7 @@ c. [Documentation of sprints](https://github.com/jess-mw/desk23/tree/main/Docume
 
 d. [Team use of Git, continuous integration/continuous deployment, streamlining of workflow](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management#d-team-use-of-git-how-your-team-used-continuous-integration--continuous-deployment-streamlining-of-workflow-throughout)
 
-## a. Group working methods used (for instance did your team choose a particular style of agile? what communication channels did you use?)
-
+## a. Group working methods used.
 ### SCRUM or Kanban?
 
 The core requirement set by ourselves was to create an application that solves the user’s needs. The user’s visions and expectations of our product must lie at the heart of it all. In order to do this, we needed to adopt a flexible and adaptable nature and maintain a consistent channel of dialogue with our users (as explained in the [UX Design Section]( https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)).
@@ -61,7 +60,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 * Miro: Main application used for communicating our ideas through visual means e.g. Post-it notes
 
 
-## b. Discussion of team roles (specialisation is ok!). A summary of individual contributions (note: this is for reference, your team will all receive the same grade!).
+## b. Discussion of team roles & a summary of individual contributions.
 
 ### Ideation: Everyone
 * Developed paper prototypes. 
@@ -106,7 +105,7 @@ During each sprint, objectives and deliverables were set in accordance to the us
 * Assisted on the first wireframe of the website
 
 
-## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
+## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project.
 
 ### High level overview
 

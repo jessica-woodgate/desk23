@@ -13,10 +13,10 @@ e. [Additional elements and components](https://github.com/jess-mw/desk23/tree/m
 
 f. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#f-deployment-details-including-docker-include-how-you-have-been-achieving-continuous-integration-and-deployment)
 
-## a. Stack architecture and system design (e.g. class diagrams, sequence diagrams).
+## a. Stack architecture and system design.
 *Stanni*
 
-## b. Back End - MongoDB - database implementation, the data model that you developed your back end from (e.g. entity relationship diagrams).
+## b. Back End - MongoDB.
 
 ### Choice of database
 

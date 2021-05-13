@@ -61,7 +61,7 @@ By revealing interesting trends in the data, and adding an element of interactiv
 
 ### 2. [System Implementation](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/2.%20System%20Implementation/README.md)
 
-* Stack architecture and system design (e.g. class diagrams, sequence diagrams).
+* Stack architecture and system design.
 * Back End - MongoDB - database implementation, the data model that we developed our back end from.
 * Middle Tier - Express, Node, the RESTful API
 * Front End - Angular. Details of implementation.
@@ -70,10 +70,10 @@ By revealing interesting trends in the data, and adding an element of interactiv
 
 ### 3. [UX Design](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/3.%20UX%20Design/README.md)
 
-* Design Process and Early prototyping and ideation (including mood boards and paper prototyping)
+* Design Process and Early prototyping and ideation.
 * Identification of interacting users and broader stakeholders.
-* UX approach – design heuristics/approach, design methods (design fiction / heuristics)
-* Understanding of user group (questionnaires / user stories / interviews)
+* UX approach – design heuristics/approach, design methods.
+* Understanding of user group (questionnaires / user stories / interviews).
 * Wireframes and interaction flow diagrams for final key subsystems.
 
 ### 4. [Sprints and Project Management](https://github.com/jess-mw/desk23/blob/457fed60bf3ecf2fb28569c4450adb25f3330824/Documentation/4.%20Sprints%20and%20Project%20Management/README.md)

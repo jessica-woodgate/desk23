@@ -1,3 +1,9 @@
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-3-refining-the-globe-and-publishing-the-final-product)
+  
+  </div>
+
 # Feedback on MVP
 ### Feedback on 06/05/2021
 
@@ -39,3 +45,10 @@ This session was conducted in person, but the audio was recorded with the userâ€
 3. Info box with literacy data is too big & obscures the globe.
 4. Display of data in this box could be streamlined and made clearer - don't need to say "literacy rates" twice, but do need to explain what the number is.
 5. Should explain more about the data in terms of where it comes from as well.
+
+
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-3-refining-the-globe-and-publishing-the-final-product)
+  
+  </div>

@@ -7,7 +7,7 @@
 
 1. Go into the Website directory: `cd Website`.
 2. Create a file called `.env` and store the following information: 
-  * Hi 
+    * Hi 
 4. From within the "Website" folder, run *docker-compose up --build*.
 5. Ensure your line endings for the following files are correct with respect to your system (LF for linux and CRLF for windows): *wait-for.sh*, *index.html*, *Dockerfile* and *docker.compose.yml*.
 6. Please install angular materials if you have not already through: *ng add @angular/material* or *ng add @angular/cdk*.

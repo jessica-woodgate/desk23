@@ -1,5 +1,3 @@
-[Return to home](https://github.com/jess-mw/desk23)
-
 # Project Management
 
 **To do**
@@ -110,6 +108,21 @@ Each section was further broken down into: To do, In process and Completed. Duri
 | Quality Assurance and Testing  | <ul> <li>Develop Functional Tests</li>  <li>Develop robust Unit Tests </li> <li>Conduct the User Acceptance Testing</li>  </ul>                                                                                                                                                                                                                                                                        | Emily                 |
 
 
+### RASCI 
+Given that all members of the group were unexperienced with most tools for this project, we realised that need for us to be adaptable. After researching for the best tools to organise the roles, we landed on RASCI. 
+
+RASCI stands for:
+* R = Responsible - The person to do the job
+* A = Accountable - The person to ensure the job is done on time and suitably 
+* S = Support - A member of the group who can be called upon in times of need (e.g. if the work is too overbearing/difficult)
+* C = Consult - A member of the group who is available to provide advice and direction 
+* I = Informed - A member of the group who is in the know at all times
+
+Here is the RASCI table we formed to help organise the project: 
+
+![image](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/rasci.PNG)
+
+
 ## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project.
 
 ### High level overview
@@ -120,7 +133,7 @@ Each section was further broken down into: To do, In process and Completed. Duri
 
 * Details of [meeting notes](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes)
 
-The development of the project was split into [six main sprints](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md#sprints), each one lasting two weeks. Each sprint was defined by a [user story](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/9.%20User%20Stories.md) and we assigned tasks accordingly. We had shorter meeetings [throughout](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) and a longer one [at the end of](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md#week-by-week-1) each week to discuss general issues that had come up, and anything that needed team input. At the end of each sprint we conducted a longer meeting to reflect upon the targets, how progress on them had gone, whether we had reached our definition of done, and to set the next sprint's targets. Targets were set by deciding upon a user story for that week, and adding to the backlog of our [Trello board](https://trello.com/b/iPzVt2TT/literacy-rates-around-the-world). Taking the user story and Trello board, we discussed as a team which tasks should be completed in the current sprint. Tasks were added to the Trello board in team meetings, mainly in the evaluative meeting at the end of each sprint, but also during the week when new tasks came up. These were also recorded in the [minutes](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) from our meetings.
+The development of the project was split into [six main sprints](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md#sprints), each one lasting two weeks. Each sprint was defined by a [user story](https://github.com/jess-mw/desk23/blob/de9f01ae9e2cbb21b6e4b16f7435eaf4cd2fdb4d/Documentation/3.%20UX%20Design/9.%20User%20Stories.md) and we assigned tasks accordingly. We had shorter meeetings [throughout](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) and a longer one [at the end of](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/3.%20Sprints.md#week-by-week-1) each week to discuss general issues that had come up, and anything that needed team input. At the end of each sprint we conducted a longer meeting to reflect upon the targets, how progress on them had gone, whether we had reached our definition of done, and to set the next sprint's targets. Targets were set by deciding upon a user story for that week, and adding to the backlog of our [Trello board](https://trello.com/b/iPzVt2TT/literacy-rates-around-the-world). Taking the user story and Trello board, we discussed as a team which tasks should be completed in the current sprint. Tasks were added to the Trello board in team meetings, mainly in the evaluative meeting at the end of each sprint, but also during the week when new tasks came up. These were also recorded in the [minutes](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management/Minutes) from our meetings.
 
 Below is a visual representation of how we used user stories in relation to each feature to allocate tasks, and how these were assigned across sprints.
 ![image](https://user-images.githubusercontent.com/45073537/117454149-b6d1ca00-af3d-11eb-8c93-80507bf5cced.png)

@@ -79,8 +79,13 @@ Each section was further broken down into: To do, In process and Completed. Duri
 </div>
 
 
-* Miro: Main application used for communicating our ideas through visual means e.g. Post-it notes
+* Miro: Main application used for communicating our ideas through visual means e.g. Post-it notes. It allowed us to creatively generate diagrams such as the Stakeholder analysis. During the earlier stages of sorting out roles as well as ideation, the use of post it notes gave us the advantage of visualising the product. 
 
+<div align="center">
+ 
+  ![image](https://media.giphy.com/media/fHxNw60TXZjl9rju5N/giphy.gif)
+  
+</div>
 
 ## b. Discussion of team roles & a summary of individual contributions.
 

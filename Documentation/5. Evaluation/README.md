@@ -1,4 +1,9 @@
-[Return to home](https://github.com/jess-mw/desk23)
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/6.%20Conclusion)
+
+   </div>
+
 
 # Evaluation
 
@@ -114,4 +119,8 @@ For user satisfaction, one user fed back that they liked the tutorial walkthroug
 
 Overall, the critical and highest priority functional requirements were satisfied in the production version of the web application. The product succeeds in creating a dialogue with the user, and a high level of interaction was achieved. The data visualisation could be further tweaked to take a more explanatory approach, perhaps in combination with statistical insights on the data, in order to not only display the data visually to make patterns easier to discover, but also to summarise these trends and point out the main drivers behind them. 
 
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/6.%20Conclusion)
 
+   </div>

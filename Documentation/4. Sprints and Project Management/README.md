@@ -69,7 +69,16 @@ During each sprint, objectives and deliverables were set in accordance to the us
 
 Each section was further broken down into: To do, In process and Completed. During each sprint, a new set of objectives were set up within the (empty) to do list for each section. All members of the group were able to view the progress made by each member within all the departments. Members were also able to personalise the tasks with their names, allowing us to seamlessly jump from section to section e.g. The front end designer may still be able to work on a design task and the rest of the group would acknowledge that. 
 
-* Teams: Main channel of communication and file storage 
+* Teams: This was the main channel of communication and file storage for our team. As github does not support all file types e.g. MS Word Documents, PowerPoint etc, we thought it was best to keep everything arranged on the Teams drive. All members could work on one file at the same time, communicating their ideas more effectively. 
+
+
+<div align="center">
+ 
+  ![image](https://media.giphy.com/media/u7YSIVaxeJrQeZa4ZR/giphy.gif)
+  
+</div>
+
+
 * Miro: Main application used for communicating our ideas through visual means e.g. Post-it notes
 
 

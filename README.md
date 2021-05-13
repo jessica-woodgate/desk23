@@ -44,9 +44,11 @@ By revealing interesting trends in the data, and adding an element of interactiv
 
 ### Video
 
-<p align="center">
+<div align="center">
+  
   [![Image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Prototyping/YTThumbnail.PNG)](https://youtu.be/DQVtGObztLg)
-</p>
+
+<div>
 
 ## Our Team
 #### Wenda - Responsible for back end

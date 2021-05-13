@@ -61,6 +61,8 @@ During each sprint, objectives and deliverables were set in accordance to the us
 	* Back End 
 	* Testing
 
+![image](https://media.giphy.com/media/GrrIi0ESgfJwSfsy8i/giphy.gif)
+
 Each section was further broken down into: To do, In process and Completed. During each sprint, a new set of objectives were set up within the (empty) to do list for each section. All members of the group were able to view the progress made by each member within all the departments. Members were also able to personalise the tasks with their names, allowing us to seamlessly jump from section to section e.g. The front end designer may still be able to work on a design task and the rest of the group would acknowledge that. 
 
 * Teams: Main channel of communication and file storage 

@@ -10,7 +10,7 @@ What are the entities in the system?
 
 ## Building the database 
 
-Our initial data was stored in a csv file pulled from an online source. This data was adjusted to have simpler headings allowing for easier manipulation, and a data model was created to describe the schema for this database. The file db.js forms a connection to the database. 
+Our initial data was stored in a csv file pulled from an online source. This data was adjusted to have simpler headings allowing for easier manipulation, and a data model was created to describe the schema for this database. The file [db.js](Website/db.js) forms a connection to the database. 
 
 ![image](https://user-images.githubusercontent.com/45073537/118118450-de64de80-b3e4-11eb-864f-5f10dda7bbf1.png)
 

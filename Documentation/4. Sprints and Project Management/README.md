@@ -89,53 +89,20 @@ Each section was further broken down into: To do, In process and Completed. Duri
 
 ## b. Discussion of team roles & a summary of individual contributions.
 
-### Ideation: Everyone
+### All Team Members:
 * Developed paper prototypes. 
 * Working on mashing up the concepts. 
 * Fleshing out the main concept and understanding its potential.
+* Considering alternatives to our current solution 
 
-### 1. Stanni Lewis: 
+### Individual Roles:
 
-### 2. Jessica Woodgate: Back-end co-developer and Scrum leader
-* Implemented database & wrote dbController.js functions to access data from the database for the API
-* Co-development of/assisting with API/Docker:
-   * Created boiler plate version of the website, API, docker compose files, and data service from which to build our project on
-   * Created routing for each collection in the database
-* Project Management:
-   * Created GitHub repository and main reviewer of pull requests
-   * Wrote meeting minutes & kept track of sprint targets
 
-### 3. Wenda Zhao: Co-back-end Designer
-* Developed API backup 
-	* Create routing for single collections in database
-	* * Developed express router for the original module
-* Developed dataflow for json data files
-* Developed Separate CRUD functions
-* Assisted on Feedback analysis/evaluation
-
-### 4. Emily Bloom: Co-Product Owner and Quality Assurance
-* Responsible for testing: 
-	* Functional tests 
-	* Unit tests 
-* User acceptance testing
-* Design and evaluation, including prototyping/wireframes
-* Product backlog management
-
-### 5. Hamza Qureshi: Co-Frontend and UI/UX Designer
-* Developed Three.js globe: 
-	* Creating the scene, globe component and functionality 
-	* Creating tutorial windows and interactivity 
-	* Creating welcome page 
-* Loaded in data from the API to the frontend 
-* Created the book opening animation for the home page
-* Assisted on first two paper prototype designs
-* Assisted on the first wireframe of the website
-
-| Role                           | Description                                                                                                                                                                                                                                                                                                                                                            | Responsible Member(s) |
+| Role                           | Tasks                                                                                                                                                                                                                                                                                                                                                            | Responsible Member(s) |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| Website Logic (TypeScript)     | * The focus here was to create a 3D globe, hence it required a significant amount of training in either Three.js or D3.js  * Being able to plot the data for each country at the correct location * Developing interactivity, allowing the user to click on countries and displaying the correct data in a suitable position.  * Load in the data from the API server  | Hamza and Stanni      |
-| Website UX / UI (HTML and CSS) | * Developing the Tutorial Boxes and setting out their positions during the wireframe stages  * Tinkering with the CSS to land the correct combinations in terms of font size, font style, colour of elements as well as positioning and wrapping.                                                                                                                      | Hamza and Stanni      |
-| Server                         | <ul> <li>Setting up the Express Router for the module, linking it to the backend</li>  <li> Setting up the API to host the data </li> <li> Creating GET and POST functions to communicate between the front-end and back-end (database) </li> <li> Organising the Dockerfile and docker-compose file</li>  <li> Creating routing for each collection within the database  </li> </ul>                                     | Wenda and Jessica     |
+| Website Logic (TypeScript)     | <ul> <li>The focus here was to create a 3D globe, hence it required a significant amount of training in either Three.js or D3.js</li>  <li>Being able to plot the data for each country at the correct location</li> <li> Developing interactivity, allowing the user to click on countries and displaying the correct data in a suitable position</li>  <li> Load in the data from the API server</li> </ul>  | Hamza and Stanni      |
+| Website UX / UI (HTML and CSS) | <ul> <li>Developing the Tutorial Boxes and setting out their positions during the wireframe stages</li>  <li>Tinkering with the CSS to land the correct combinations in terms of font size, font style, colour of elements as well as positioning and wrapping</li> </ul>                                                                                                                      | Hamza and Stanni      |
+| Server                         | <ul> <li>Setting up the Express Router for the module, linking it to the backend</li> <li> Develop CRUD Functions</li> <li> Setting up the API to host the data </li> <li> Creating GET and POST functions to communicate between the front-end and back-end (database) </li> <li> Organising the Dockerfile and docker-compose file</li>  <li> Creating routing for each collection within the database  </li> </ul>                                     | Wenda and Jessica     |
 | Database             | <ul> <li>Create a javascript file to access data from the database and post it to the API </li> <li> Implement the database by loading in the CSV files</li> <li>Convert CSV file to JSON data for easier access</li>   </ul>                                                                                                                                                                          | Jessica               |
 | Design / Prototyping           | <ul> <li> Handle ideation sessions</li>  <li> Generate several paper prototypes</li>  <li> Develop wireframe prototypes to assist front-end</li>  <li> Create surveys and obtain data on relevant questions</li>  <li> Organise and handle feedback sessions</li>  <li> Maintain communication and relationships with the User Groups</li> <li> Handle and maintain Product Backlog</li> </ul>                                           | Emily and Hamza       |
 | Quality Assurance and Testing  | <ul> <li>Develop Functional Tests</li>  <li>Develop robust Unit Tests </li> <li>Conduct the User Acceptance Testing</li>  </ul>                                                                                                                                                                                                                                                                        | Emily                 |

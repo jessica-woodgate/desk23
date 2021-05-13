@@ -192,7 +192,7 @@ Here is the mid Sprint 3 prototype:
 </p>
 
 
-Feedback obtained for this iteration during the middle of the third Sprint of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
+Feedback obtained for this iteration during the middle of the third Sprint of the website, which can be found here: [Feedback Session 4](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Feedback%20Session%204/README.md) indicated that the tutorial elements were too tightly packed and possibly overwhelming when the user first lands on the globe page. The user would prefer to be given a hint on what the bar-charts represent as well as cleaning up the display of the literacy rates when clicked upon. 
 
 The following changes were incorporated into the final design of the website:
 

@@ -7,6 +7,7 @@
 
 1. Go into the Website directory: `cd Website`.
 2. Create a file called `.env` and store the following information: 
+
 MONGO_USERNAME=admin
 
 MONGO_PASSWORD=database_password

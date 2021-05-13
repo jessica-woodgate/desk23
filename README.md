@@ -54,9 +54,9 @@ By revealing interesting trends in the data, and adding an element of interactiv
 |   | Stanni Lewis     | Front-end                     |
 |---|------------------|-------------------------------|
 | <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/emily.jpg"  alt="1" width = 100px height = 100px >   | Emily Bloom      | Quality Assurance and Testing |
-|   | Jessica Woodgate | Database and Back-end         |
-|   | Wenda Zhao       | Back-end                      |
-|   | Hamza Qureshi    | Front-end and UX/UI Designer  |
+| <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/jess_photo.jpg"  alt="1" width = 100px height = 100px >   | Jessica Woodgate | Database and Back-end         |
+| <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/wenda.jpeg"  alt="1" width = 100px height = 100px >   | Wenda Zhao       | Back-end                      |
+|  <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/Hamza.jpg"  alt="1" width = 100px height = 100px > | Hamza Qureshi    | Front-end and UX/UI Designer  |
 
 ## Documentation
 ### 1. [Background and Motivation](https://github.com/jess-mw/desk23/tree/main/Documentation/1.%20Background%20and%20Motivation)

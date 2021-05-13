@@ -49,20 +49,23 @@ Please see [here](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%2
 
 ## c. Middle Tier - Express, Node, the RESTful API
 
-It is decided to use Express to develop node.js based server for backend. The reason using Express is that as one of the most popular web frameworks, supporting Node.js, it is very supportive for routing, middleware, as well as building database using Mongoose, which is important because Mongoose is a promise-based Node.js ODM for MongoDB. Node.js shines at building fast, scalable network applications, as it’s capable of handling a huge number of simultaneous connections with high throughput, which equates to high scalability. The current website does not require too much module though, it allows perfection and adding more features when needed.
+We decided to use Express to develop node.js based server for the backend. The reason for using Express is that as one of the most popular web frameworks, supporting Node.js, it is very supportive for routing, middleware, as well as building database using Mongoose. This is important because Mongoose is a promise-based Node.js ODM for MongoDB. Node.js shines at building fast, scalable network applications, as it’s capable of handling a huge number of simultaneous connections with high throughput, which equates to high scalability. The current website does not require too much modules; the API thus allows for concurrent improvement and adding more features when needed.
 
-The npm (Node Package Manager) module used for building the websites are:
+The npm (Node Package Manager) modules used for building the websites are:
 
 Express: A web development framework for Node.js.
 
 Connect: An extensible HTTP server framework for Node.js, providing a collection of high performance “plugins” known as middleware; serves as a base foundation for Express.
+
 Mongodb: MongoDB provides the API for MongoDB object databases in Node.js.
 
-The following diagram shows how the middle tier works. 
-![image](https://user-images.githubusercontent.com/74254613/117741221-ce3cdb80-b1f9-11eb-8b6b-42301d3ae3b9.png)
-It can be seen that database and browser (front end) communicates via API. When browser sends an request, API receives and directs it to database and the request is processed there (Note all functions for data processing live in database module). Then database sends a response including data needed, API handles it and sends it to browser. API is very similar as the socket we use every day – You can change front end as you wish, as long as it is plugged to API you will always receive correct response, and same for backend.
+The following diagram shows how the middle tier works:
 
-Two ways of routing have been considered during development: Express().get and Express.Router().get. Although they work similarly, router is chosen as a better practice because it allows us to manage api endpoints as a middleware in separate file, makes testing routes easier.
+![image](https://user-images.githubusercontent.com/74254613/117741221-ce3cdb80-b1f9-11eb-8b6b-42301d3ae3b9.png)
+
+It can be seen that database and browser (front end) communicate via the API. When browser sends an request, API receives and directs it to database. The request is processed there (note: all functions for data processing live in database module). Then database sends a response including data needed, the API handles it and sends it to browser. The API is very similar to the sockets we use every day – you can change front end as you wish; as long as it is plugged into API you will always receive correct response, and the same for backend.
+
+Two ways of routing were considered during development: Express().get and Express.Router().get. Although they work similarly, router was chosen as a better practice because it allows us to manage api end points as middleware in separate files, makes testing routes easier.
 
 ## d. Front End - Angular. Details of implementation.
 
@@ -403,10 +406,10 @@ Where `this.listOfCountries` is the array of Country objects we previously estab
 
 
 
-## e. Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!
+## e. Additional elements and components.
 *Stanni*
 
-## f. Deployment details (including Docker), include how you have been achieving continuous integration and deployment.
+## f. Deployment details (including Docker), how we have been achieving continuous integration and deployment.
 ### Docker
 In order to allow for our application to be easily developed and shipped across platforms, we decided to use [Docker](https://www.docker.com/why-docker). This allowed us to package and run our application in a loosly isolated environment called a [container](https://www.docker.com/resources/what-container). The containers are lightweight and contain everything needed to run the application - you don't need to rely on what's currently installed in the host. This means it is easy to share containers while you work, streamlining the development lifecycle by allowing developers to work in standardized environments; facilitating the continuous integration and continuous deployment (CI/CD) workflow.
 

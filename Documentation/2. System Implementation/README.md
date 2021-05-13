@@ -67,7 +67,7 @@ It can be seen that database and browser (front end) communicate via the API. Wh
 
 Two ways of routing were considered during development: Express().get and Express.Router().get. Although they work similarly, router was chosen as a better practice because it allows us to manage api end points as middleware in separate files, makes testing routes easier.
 
-## d. Front End - Angular. Details of implementation.
+## d. Front End - Angular. Details of implementation
 
 ### Why Angular?
 Angular allows developers to create single paged web applications through the use as well as reuse of components generated through the Angular-CLI. Angular was selected as the platform to build our interactive website for particular reasons: 

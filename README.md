@@ -43,7 +43,7 @@ The overarching goal of the project is to build a visualisation of global litera
 By revealing interesting trends in the data, and adding an element of interactive fun, the project seeks to reach more people and retain their attention for longer, make the data easier to digest and understand for those who visit the website, and potentially make the information memorable and more likely to stick in user's minds. In this way, the project seeks to contribute to raising awareness of the issue of illiteracy and access to education more widely, and to bring out contrasts in literacy rates around the world. Targeted to school-aged people, the project seeks to encourage interest in and reflection on the value of literacy and education.
 
 ### Video
-*Hamza* 
+[![Image](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Prototyping/YTThumbnail.PNG)](https://youtu.be/DQVtGObztLg)
 
 ## Our Team
 #### Wenda - Responsible for back end

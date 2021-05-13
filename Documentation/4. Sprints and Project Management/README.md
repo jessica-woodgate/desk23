@@ -120,8 +120,11 @@ RASCI stands for:
 
 Here is the RASCI table we formed to help organise the project: 
 
+<div align="center">
+ 
 ![image](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/rasci.PNG)
-
+  
+</div>
 
 ## c. Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project.
 

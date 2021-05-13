@@ -1,4 +1,9 @@
-[Return to home](https://github.com/jess-mw/desk23)
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management)
+
+   </div>
+
 
 # UX Design
 
@@ -221,3 +226,9 @@ Further changes made:
 ## g. Flowchart
 
 ![The User's Journey](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/12.%20Flowchart.jpg)
+
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management)
+
+   </div>

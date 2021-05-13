@@ -224,7 +224,7 @@ The longitude and latitude coordinates were converted to radians as shown below.
 let globeLatRads = latitude * (Math.PI / 180);
 let globeLongRads = -longitude * (Math.PI / 180);
 ```
-Then, with credit to an online source referenced in the [globe.component.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/globe/globe.component.ts) file, the coordinates were used to calculate the (x,y,z) coordinates on the sphere object. This would be the position at which the new object would be created to represent each country. 
+Then, with credit to an online source referenced in the [globe.component.ts](https://github.com/jess-mw/desk23/blob/main/Website/src/app/globe/globe.component.ts) file, the coordinates were used to calculate the (x,y,z) coordinates on the sphere object. This would be the position at which the new object would be created to represent each country. 
 
 ``` javascript
 let x = Math.cos(globeLatRads) * Math.cos(globeLongRads) * radius;

@@ -284,7 +284,7 @@ for (let i = 0; i < this.listOfCountries.length; i++) {
 
 The entire `listOfCountries` array was traversed, accessing each country and its data. Each country object had a `Year` attribute which informed us the year from which this data was gathered. If the year attribute was equal to the `userSetYear`, a initialized to 2015 but is later controlled by the user through the use of a slider, then a cylinder object would be generated and placed precisely at the country’s coordinates. 
 
-In order to allow the user to manipulate which year the data should be, a slider was integrated using the following code in the [globe.component.html](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/globe/globe.component.html) file: 
+In order to allow the user to manipulate which year the data should be, a slider was integrated using the following code in the [globe.component.html](https://github.com/jess-mw/desk23/blob/main/Website/src/app/globe/globe.component.html) file: 
 
 ``` html
 <mat-slider thumbLabel tickInterval="1" [(ngModel)] = "currentYear" min="1900" max = "2015"  (ngModelChange)="onSlide()"></mat-slider>
@@ -379,7 +379,7 @@ In order to fetch in the data from the API set up by the backend, a service was 
 import {HttpClientModule} from '@angular/common/http';
 ```
 
-It is also imported within the service class called [data.service.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/services/data.service.ts). The http client is then injected into the constructor as shown below: 
+It is also imported within the service class called [data.service.ts](https://github.com/jess-mw/desk23/blob/main/Website/src/app/services/data.service.ts). The http client is then injected into the constructor as shown below: 
 
 ``` javascript
 constructor(private httpClient: HttpClient) { }
@@ -396,7 +396,7 @@ The function returns an `Observable` of type `Country` array, where `Country` is
 
 The `GET` request takes in the URL of the API which holds all the data – `this.REST_API_SERVER`.
 In order to call the function, a subscription needs to take place in order to subscribe to the observable. 
-In the [globe.component.ts](https://github.com/jess-mw/desk23/blob/staging/Website/src/app/globe/globe.component.ts) file, the following code is executed during the initiation of the website: 
+In the [globe.component.ts](https://github.com/jess-mw/desk23/blob/main/Website/src/app/globe/globe.component.ts) file, the following code is executed during the initiation of the website: 
 
 ``` javascript
 this.countryService.getCountryData().subscribe((countries) => {

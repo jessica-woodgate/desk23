@@ -64,11 +64,11 @@ To conduct our literature review, we first defined two research questions to gui
 
 1. What is play?
 
-*We developed this question to ensure that we had a good understanding of the theory of play and the relationship and distinction with games.*
+      *We developed this question to ensure that we had a good understanding of the theory of play and the relationship and distinction with games.*
 
 2. What is serious play?
 
-*The purpose of this question is to narrow and specify from the first question to the project brief, to understand how serious play is understood in the literature, to guide our design choices.*
+      *The purpose of this question is to narrow and specify from the first question to the project brief, to understand how serious play is understood in the literature, to guide our design choices.*
 
 Our initial source of literature came from recommendations in, and the course content of, this module. In addition, relevant papers were identified through conducting searches for key terms on the university library website, various journals, search engines, and [Google Scholar](https://scholar.google.co.uk/). We tried to mitigate researcher bias by using multiple databases in which to conduct our search and selecting papers by their abstracts (rather than author’s names).
 

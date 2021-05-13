@@ -45,42 +45,6 @@ exports.listCountries = function(req, res) {
    });
 };
 
-/*
-// Retrieve all LiteracyRate data from the database by Entity.
-exports.findAll = (req, res) => {
-    const Entity = req.query.Entity;
-    var condition = Entity ? { Entity: { $regex: new RegExp(Entity), $options: "i" } } : {};
-
-    crossCountryLiteracyRates.find(condition)
-        .then(data => {
-            res.send(data);
-        })
-        .catch(err => {
-            res.status(500).send({
-                message:
-                    err.message || "Unable to retrieving Entity."
-            });
-        });
-};
-
-// Find specific LiteracyRate Data with id field
-exports.findOne = (req, res) => {
-    const id = req.params.id;
-
-    crossCountryLiteracyRates.findById(id)
-        .then(data => {
-            if (!data)
-                res.status(404).send({ message: "Literacy Rates not found with id " + id });
-            else res.send(data);
-        })
-        .catch(err => {
-            res
-                .status(500)
-                .send({ message: "Error retrieving Literacy Rates with id" + id });
-        });
-};
-*/
-
 /*****
    controller functions for all models
 ****/
@@ -159,7 +123,6 @@ exports.findByEntityYear = function(model, entity, year){
 exports.LiteracyRatesFromCoordinates = function(entity){
    CoordinatesModelLink.find(
       //find entity that matches the regex of the variable passed in
-      //i for ignoring case
       {Entity: new RegExp(entity, 'i')},
       function(err, results1){
       if(err){

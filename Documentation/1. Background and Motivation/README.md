@@ -1,7 +1,7 @@
 
 <div align = center>
    
-   [Return to home](https://github.com/jess-mw/desk23)
+  [<-- Previous Section](https://github.com/jess-mw/desk23) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation)
 
    </div>
 

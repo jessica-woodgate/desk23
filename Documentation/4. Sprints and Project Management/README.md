@@ -55,7 +55,9 @@ After reviewing both the methodologies, though similar, we decided to focus on t
 During each sprint, objectives and deliverables were set in accordance to the user stories generated. However, a Kanban board was seen fit to help us organise the smaller aspects of the website. It was felt necessary to detail all the smaller tasks on one page, allowing each team member to understand what was being built at the time in the different areas of the MEAN stack. 
 
 ### Tools used during our Group Work 
-* Trello: Used for organising the smaller tasks by using a Kanban Board 
+* Trello
+Trello, though it caters more for developers following the Kanban process, was used by us for organising the smaller tasks by through the use of a Kanban Board. 
+
 * Teams: Main channel of communication and file storage 
 * Miro: Main application used for communicating our ideas through visual means e.g. Post-it notes
 

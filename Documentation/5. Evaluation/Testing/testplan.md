@@ -1,4 +1,8 @@
-[Return to Evaluation](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#b-unit-testing--functional-testing)
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#b-unit-testing--functional-testing)
+  </div>
+
 
 ## Test Plan – Globe interaction
 
@@ -47,4 +51,8 @@ C.	Test user can change the date dynamically using the timeline feature
 8. Ensure that the slider can equally well be dragged in the opposite direction (forwards) with the same functionality
 9. Ensure the feature works in all supported browsers
 
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#b-unit-testing--functional-testing)
+  </div>
 

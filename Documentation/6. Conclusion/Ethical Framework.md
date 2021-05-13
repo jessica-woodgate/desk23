@@ -1,6 +1,6 @@
 <div align = center>
 
-[Return to UX Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#first-survey-findings) | [Return to Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md#d-discussion-of-social-and-ethical-implications-of-your-work)
+[Return to UX Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#e-user-participatory-design) | [Return to Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md#d-discussion-of-social-and-ethical-implications-of-your-work)
 
 </div>
 
@@ -75,6 +75,6 @@ To ensure our ethics were properly communicated, we documented our obligations a
 
 <div align = center>
   
-[Return to UX Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#first-survey-findings) | [Return to Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md#d-discussion-of-social-and-ethical-implications-of-your-work)
+[Return to UX Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#e-user-participatory-design) | [Return to Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md#d-discussion-of-social-and-ethical-implications-of-your-work)
 
 </div>

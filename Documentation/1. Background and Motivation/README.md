@@ -22,11 +22,11 @@ To conduct our literature review, we first defined two research questions to gui
 
 1. What is the current global state of literacy rates?
 
-*We developed this question to ensure that we had a good understanding of what the problem, and up to date information about the issue we are trying to address.*
+    *We developed this question to ensure that we had a good understanding of what the problem, and up to date information about the issue we are trying to address.*
 
 2. How can literacy rates be improved?
 
-*The purpose of this question is to guide the aims and objectives of our project, so that we can create an artefact that is suitable for its purpose.*
+    *The purpose of this question is to guide the aims and objectives of our project, so that we can create an artefact that is suitable for its purpose.*
 
 Relevant papers were identified by conducting searches for key terms on the university library website,  various journals, search engines, and [Google Scholar](https://scholar.google.co.uk/). We tried to mitigate researcher bias by using multiple databases in which to conduct our search and selecting papers by their abstracts (rather than author’s names).
 

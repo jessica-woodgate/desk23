@@ -89,47 +89,14 @@ Each section was further broken down into: To do, In process and Completed. Duri
 
 ## b. Discussion of team roles & a summary of individual contributions.
 
-### Ideation: Everyone
+### All Team Members:
 * Developed paper prototypes. 
 * Working on mashing up the concepts. 
 * Fleshing out the main concept and understanding its potential.
+* Considering alternatives to our current solution 
 
-### 1. Stanni Lewis: 
+### Individual Roles:
 
-### 2. Jessica Woodgate: Back-end co-developer and Scrum leader
-* Implemented database & wrote dbController.js functions to access data from the database for the API
-* Co-development of/assisting with API/Docker:
-   * Created boiler plate version of the website, API, docker compose files, and data service from which to build our project on
-   * Created routing for each collection in the database
-* Project Management:
-   * Created GitHub repository and main reviewer of pull requests
-   * Wrote meeting minutes & kept track of sprint targets
-
-### 3. Wenda Zhao: Co-back-end Designer
-* Developed API backup 
-	* Create routing for single collections in database
-	* * Developed express router for the original module
-* Developed dataflow for json data files
-* Developed Separate CRUD functions
-* Assisted on Feedback analysis/evaluation
-
-### 4. Emily Bloom: Co-Product Owner and Quality Assurance
-* Responsible for testing: 
-	* Functional tests 
-	* Unit tests 
-* User acceptance testing
-* Design and evaluation, including prototyping/wireframes
-* Product backlog management
-
-### 5. Hamza Qureshi: Co-Frontend and UI/UX Designer
-* Developed Three.js globe: 
-	* Creating the scene, globe component and functionality 
-	* Creating tutorial windows and interactivity 
-	* Creating welcome page 
-* Loaded in data from the API to the frontend 
-* Created the book opening animation for the home page
-* Assisted on first two paper prototype designs
-* Assisted on the first wireframe of the website
 
 | Role                           | Tasks                                                                                                                                                                                                                                                                                                                                                            | Responsible Member(s) |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|

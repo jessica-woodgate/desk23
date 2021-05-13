@@ -1,4 +1,7 @@
-[Return to home page](https://github.com/jess-mw/desk23)
+<div align = center>
+  
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/README.md#introduction)
+  </div>
 
 # Instructions to run the site
 

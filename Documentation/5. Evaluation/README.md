@@ -90,7 +90,7 @@ The testing followed the above framework in the evaluation of the functional req
 
 Key operational constraints include limited time to implement the project, remote working conditions, and limited prior experience with MEAN stack development. The time limitations meant that the team took fewer risks in its approach which may have impacted on the product's innovation potential. In addition, the product evaluations did not include the target user group of adolescents and school-aged children, as a vulnerable group, given that no ethics approvals were sought, and as such may have constrained how well the product responds to the needs of this particular demographic.
 
-The metrics for delivery of a feature include robustness (eg. events causing failure, data corruption in the event of failure), ease of use for newcomers to the product (average training time, number of help boxes per feature, time taken to perform a given task), speed (eg. user-event response times, screen load time for the globe), and user satisfaction (net promoter score, whether the product met expectations). Tested operating systems included Windows and Mac OS. Browser tests were conducted in Microsoft Edge, Chrome.
+The metrics for delivery of a feature include robustness (eg. events causing failure, data corruption in the event of failure), ease of use for newcomers to the product (average training time, number of help boxes per feature, time taken to perform a given task), speed (eg. user-event response times, screen load time for the globe), and user satisfaction (net promoter score, whether the product met expectations). Tested operating systems included Windows and Mac OS. Browser tests were conducted in Microsoft Edge and Chrome. Given time constraints and difficulty getting access to new users, it would be important as a next step to expand the sample size and involve more users to validate the product. Part of this effort to involve more users could centre around a survey. Quantitative data in particular to evaluate user satistication would have been useful to collect in line with the metrics above. Other metrics require an observer to assist and would not rely on user self-reporting, including average training time, time taken to perform a given task, and picking up on unexpected behaviour which might not be as immediately evident to a first-time user. 
 
 ![image](https://user-images.githubusercontent.com/74050529/117792697-6f9c4f80-b243-11eb-8938-49be09955be5.png)
 
@@ -98,5 +98,7 @@ The metrics for delivery of a feature include robustness (eg. events causing fai
 **Findings**
 
 The link to the feedback can be found here: <a href="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design/Feedback%20Session%205%20Participant%206.md">Final Feedback Session</a>
+
+Based on the data available, 
 
 **Implications**

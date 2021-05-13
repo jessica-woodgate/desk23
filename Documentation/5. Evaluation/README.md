@@ -97,7 +97,7 @@ The metrics for delivery of a feature include robustness (eg. events causing fai
 ![image](https://user-images.githubusercontent.com/74050529/117792697-6f9c4f80-b243-11eb-8938-49be09955be5.png)
 
 
-**Findings**
+**Findings and Implications**
 
 The link to the feedback can be found here: <a href="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Feedback/Final%20Website%20Design/Feedback%20Session%205%20Participant%206.md">Final Feedback Session</a>
 
@@ -108,6 +108,8 @@ In terms of ease of use, the interviewers observed that users were able to follo
 Users were observed to click less quickly in the transition between the landing page animation and the globe. Users also required more guidance to use the timeline, including the arrows to navigate with the slider (observational notes read: “User needed some guidance with using the arrows to navigate through the timeline”).
 In terms of screen load times, one user experienced a delayed load time for the skybox backdrop to appear fully behind the globe. Another user noted that navigation was smooth, suggesting response to events worked well in these cases. 
 
-For user satisfaction, one user fed back that they liked the tutorial walkthrough, in particular the chance to try out the interaction with the globe after each instruction. The users expressed lower levels of satisfaction with the book feature on the landing page (the observational notes record: “User did not particularly like the welcome page/book animation”, “Initial graphics could be improved – especially the text in the book animation”), suggesting that the font could be revisited. The out-of-order letters in particular did not resonate with users (notes from the feedback included: “Could have the initial text backwards or skip out letters”, “User asked what language the text on the book was written in”) and may not have been very clear in terms of the messaging.
+For user satisfaction, one user fed back that they liked the tutorial walkthrough, in particular the chance to try out the interaction with the globe after each instruction. The users expressed lower levels of satisfaction with the book feature on the landing page (the observational notes record: “User did not particularly like the welcome page/book animation”, “Initial graphics could be improved – especially the text in the book animation”), suggesting that the font could be revisited. The out-of-order letters in particular did not resonate with users (notes from the feedback included: “Could have the initial text backwards or skip out letters”, “User asked what language the text on the book was written in”) and may not have been very clear in terms of the messaging. One user indicated that more explanatory information could be included to point out interesting changes in data (examples included a summary of changes in world literacy rates, a breakdown of changes in a country's literacy rates in the pop-up box appeared when clicked on, and the reasons for any increases). Finally, a user noted that it would be better for the data points to load dynamically as the user drags the slider to see changing literacy rates, rather than a one-time update when the user lets go.
 
-**Implications**
+Overall, the critical and highest priority functional requirements were satisfied in the production version of the web application. The product succeeds in creating a dialogue with the user, and a high level of interaction was achieved. The data visualisation could be further tweaked to take a more explanatory approach, perhaps in combination with statistical insights on the data, in order to not only display the data visually to make patterns easier to discover, but also to summarise these trends and point out the main drivers behind them. 
+
+

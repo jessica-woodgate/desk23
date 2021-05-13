@@ -1,4 +1,9 @@
-[Return to home](https://github.com/jess-mw/desk23)
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/1.%20Background%20and%20Motivation) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)
+
+   </div>
+
 
 # System Implementation
 

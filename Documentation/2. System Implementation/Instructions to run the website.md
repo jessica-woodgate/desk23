@@ -9,11 +9,8 @@
 2. Create a file called `.env` and store the following information: 
 ```
 MONGO_USERNAME=admin
-
 MONGO_PASSWORD=database_password
-
 MONGO_PORT=27017
-
 MONGO_DB=meantest
 ```
 

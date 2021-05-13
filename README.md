@@ -22,7 +22,8 @@ Our site is targeted at older children and teenagers, to encourage awareness abo
 
 ### [Instructions to run the website](https://github.com/jess-mw/desk23/blob/543ae3f6dd4bcdbb889815b1bc0cd6e5ba353977/Documentation/2.%20System%20Implementation/Instructions%20to%20run%20the%20website.md)
 
-### Abstract. Motivation for the project, framing of the problem and a high-level overview of the system. 
+### Abstract
+#### Motivation for the project, framing of the problem and a high-level overview of the system. 
 
 Literacy’s importance cannot be understated. From an individual perspective, low literacy rates can be correlated with worsened job outcomes and lower-earning potentials, and from a national outlook, lower levels of literacy can mar a nation’s economic competitiveness, as well as being linked to drastically lower economic performance metrics such as Gross National Product and Human Development Index. 
 
@@ -32,7 +33,8 @@ To achieve this, we have created a Single Page Application (SPA) designed to sho
 
 We managed the project using Agile methodology, building the bulk of the application across 3 sprints each lasting two weeks. Our team followed a Scrum structure, where there are no hierachies or sub-teams, and we all worked together as a cohesive unit to achieve our objectives.
 
-### Project Objectives. The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
+### Project Objectives
+#### The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
 
 ![image](https://user-images.githubusercontent.com/74050529/117741822-36d88800-b1fb-11eb-9ac0-89e5c9c61833.png)
 
@@ -40,7 +42,7 @@ The overarching goal of the project is to build a visualisation of global litera
 
 By revealing interesting trends in the data, and adding an element of interactive fun, the project seeks to reach more people and retain their attention for longer, make the data easier to digest and understand for those who visit the website, and potentially make the information memorable and more likely to stick in user's minds. In this way, the project seeks to contribute to raising awareness of the issue of illiteracy and access to education more widely, and to bring out contrasts in literacy rates around the world. Targeted to school-aged people, the project seeks to encourage interest in and reflection on the value of literacy and education.
 
-### Video. Short (1-2min) demo video to explain your system (think Kickstarter) 
+### Video
 *Hamza* 
 
 ## Our Team

@@ -1,4 +1,7 @@
-[Return to home](https://github.com/jess-mw/desk23)
+<div align = center>
+   
+  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation) | [Home](https://github.com/jess-mw/desk23) 
+   </div>
 
 # Conclusion
 

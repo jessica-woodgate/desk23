@@ -125,19 +125,22 @@ Through this literature review into play and serious play, we have thus found th
 
 
 ## b. State of the art survey. Current industry review.
-Most of the related work to improve literacy rates are carried out by non-profit organisations, foundations, etc. Current industry mainly concentrates on:
-
-1. Raising people’s awareness about people who are not able to read, the reason for it and the benefit of being literate. 
- 
-2. Recruiting volunteers, raising donations to help people in need of education.
-
-3. Pushing creation of the Public Policy and Advocacy Committee comprised of local program staff and national literacy leaders.
-
-4. Providing multiple methods for people to take part in education, for example, establishing free schools in less developed countries, giving online teaching for school-aged children, as well as providing educators with instructional tools to teach, distributing books and other materials for people (with limited reading ability) to self-learn.
-
-Several different methods are used by the organizations to attract public awareness, including but not limit to placement of ads, articles, and videos in national media, setting websites to demonstrate literacy rates data, and advocate with stakeholders. Data visualization has been used for this purpose recently but most of the related work mainly concentrates on collect data and demonstrate using simple graphs, which makes it efficiency in researching but not suitable for stimulating public concerns especially when it comes to adolescents, who are usually more interested in interactive and playful activity rather than dull datasets, which is our project aims to solve.
-
-It can also be noticed that different from years before more and more volunteers choose to participate online remotely, helping run free online courses for adults and kids, raise people’s awareness and step up efforts to push authorities contribute more on education. This trend is even more obvious due to global Covid pandemic, when travelling and group gathering became difficult people turn to seek alternative approaches to contribute. For our project, designing a website to interact with literacy rates data will stimulate users’ enthusiasm for volunteering in the field, and could help organizations drawing public concern easier as well.
+As Literacy rates influenced greatly on personal development there are various charities, organizations working on raising concerns of public using different ways. Some gives examples of literacy statistics in certain areas, such as [literacytrust.org.uk](https://literacytrust.org.uk/information/what-is-literacy/), while websites like [worldpopulationreview](https://worldpopulationreview.com/country-rankings/literacy-rate-by-country) and [UNICEF](https://data.unicef.org/resources/dataset/education-literacy-data/) prefer showing literacy data in different forms of diagrams. Our website mainly concentrates on using data visualization, making it interactive, and playful, which is more effective for our younger potential users.
+A simplified PEST analysis is also carried for the industry review.
+### Political Factors
+The data used for building the website originated from open online resources [1]. Most of the data are collected by non-profit organizations and foundations and are free to use or distribute, while there are some other data produced by related governments. It can be estimated that authorities would keep the data open accessed, however, the group noticed that the dataset is incomplete and thus may require more data from different resources, including related governments, which process should be paid extra attention for copyright protection. 
+### Economic Factors
+For now our website runs on localhost, which has no requirement of cost to running server, but it has to be considered as the website is set and ready. Most foundations run their own website by building their own host server or paying the commercial hosting provider [2] (e.g. literacytrust.org.uk), while small-size organizations prefer cooperating with institutions or universities, joining non-profit program related to literacy rates, such as ourworldindata.org.
+Moreover, there are other websites pay the cost of hosting server by putting ads, which is also a practical choice for our website. 
+### Social Factors
+Our website mainly aims at stimulating their enthusiasm on literacy problem across the globe. Although there are more and more people have realized the problem, the majority of public have little idea on this topic mainly because lacking of news, media and other forms of information about what is happening at rural areas. As a matter of fact, even in developed countries citizens with lower income have significant lower literacy rates compared with other social classes [3], due to the limitation of their influence on social media this problem has been ignored for a long time. What’s more, considering the impact of Covid pandemic it is estimated that the public attention will be redirected towards heath and economy, making it more difficult to raise people’s awareness of literacy rates.
+### Technology Factors
+The major concern in this aspect is maintenance of website; For now only a few features have been implemented and it is expected to add more, as well as keep data updated. However, requirements for new features are yet to be discussed, for example, the applications to be used, as well as new libraries. Making the website cross-platformed might even require rebuild it using different languages and frameworks, which put forward a higher requirement on system compacity [4]. 
+### Bibliography
+1.	Literacy. Our World in Data. [Online]. Available at: <https://ourworldindata.org/literacy> [Accessed: 10/03/21]
+2.	How to Host a Website: the Complete Beginner’s Guide <https://www.websitebuilderexpert.com/hosting-websites/>
+3.	Nagle, J. (1993). Social Class and School Literacy. The Radical Teacher, (44), 21-23. 
+4.	Where Do Cross-Platform App Frameworks Stand in 2021? <https://www.netsolutions.com/insights/cross-platform-app-frameworks-in-2019/>
 
 
 ## c. Clear definition of the problem. How does your project relate to the above? We will be marking the ability of your team to identify a worthwhile and important problem and clearly articulate the scope and challenge of the problem.

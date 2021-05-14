@@ -29,6 +29,7 @@ The use of the MEAN stack allowed for a smooth and integrated development enviro
 *	NodeJS, the backend JavaScript runtime environment that unifies and whole stack. 
 
 These 4 elements interaction can be broken down into a diagram detailing the way each part interacts with the other: 
+![image](https://github.com/jess-mw/desk23/blob/main/Documentation/Angular%20SPA%20Diagram.png)
 
 As to the architecture of our SPA, we have a UML diagram showing up the classes that makes up our website and how their connected together and share data across separate classes. It’s a visual way to better the flow of information and a quick synopsis of functions within each class and what they hold or return:  
 

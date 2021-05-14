@@ -1,6 +1,6 @@
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#b-unit-testing--functional-testing)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md#b-unit-testing--functional-testing)
   </div>
 
 
@@ -53,6 +53,6 @@ C.	Test user can change the date dynamically using the timeline feature
 
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#b-unit-testing--functional-testing)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md#b-unit-testing--functional-testing)
   </div>
 

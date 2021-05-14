@@ -13,7 +13,7 @@ a. [Background literature. Academic research review.](https://github.com/jess-mw
 
 b. [State of the art survey. Academic research review.](https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md#b-state-of-the-art-survey-current-industry-review)
 
-c. [Clear definition of the problem.]https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md#c-clear-definition-of-the-problem)
+c. [Clear definition of the problem.](https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md#c-clear-definition-of-the-problem)
 
 ## a. Background literature. Academic research review.
 

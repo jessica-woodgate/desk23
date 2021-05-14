@@ -28,11 +28,23 @@ The use of the MEAN stack allowed for a smooth and integrated development enviro
 
 These 4 elements interaction can be broken down into a diagram detailing the way each part interacts with the other: 
 
+
+
+<div align = center>
+  
 ![image](https://github.com/jess-mw/desk23/blob/main/Documentation/Angular%20SPA%20Diagram.png)
+
+  </div>
 
 As to the architecture of our SPA, we have a UML diagram showing up the classes that makes up our website and how their connected together and share data across separate classes. It’s a visual way to better the flow of information and a quick synopsis of functions within each class and what they hold or return:  
 
+
+<div align = center>
+  
 ![image](https://github.com/jess-mw/desk23/blob/main/Documentation/Website_diagram2.png)
+
+  </div>
+
 
 ## b. Back End - MongoDB
 
@@ -63,7 +75,13 @@ The final data model is displayed below. It includes two collections that store 
 
 Please see [here](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/Data%20Model.md#extensions) for future developments of our data model.
 
+<div align = center>
+  
+
 ![image](https://user-images.githubusercontent.com/45073537/117008237-6b6faf80-ace2-11eb-8271-73d8342239c8.png)
+
+  </div>
+
 
 ## c. Middle Tier - Express, Node, the RESTful API
 
@@ -79,7 +97,11 @@ Mongodb: MongoDB provides the API for MongoDB object databases in Node.js.
 
 The following diagram shows how the middle tier works:
 
+<div align = center>
+  
 ![image](https://user-images.githubusercontent.com/74254613/117741221-ce3cdb80-b1f9-11eb-8b6b-42301d3ae3b9.png)
+
+  </div>
 
 It can be seen that database and browser (front end) communicate via the API. When browser sends an request, API receives and directs it to database. The request is processed there (note: all functions for data processing live in database module). Then database sends a response including data needed, the API handles it and sends it to browser. The API is very similar to the sockets we use every day – you can change front end as you wish; as long as it is plugged into API you will always receive correct response, and the same for backend.
 
@@ -430,13 +452,23 @@ In order to allow for our application to be easily developed and shipped across 
 To run the project in Docker, we have a [docker-compose script](https://github.com/jess-mw/desk23/blob/main/Website/docker-compose.yml) to ensure that the system can be easily rebuilt. This script runs our [Dockerfile](https://github.com/jess-mw/desk23/blob/main/Website/Dockerfile), which sets up a container using the [Node image](https://hub.docker.com/_/node/), runs the package manager installation command, and builds the program. The script also sets up our database in a container using the [Mongo image](https://hub.docker.com/_/mongo/), thus we have two separate containers (Node and MongoDB) that communicate over a single port protocol. To ensure that the database is running before Node tries to connect, we have included a [wait script](https://github.com/jess-mw/desk23/blob/main/Website/wait-for.sh) sourced from [here](https://raw.githubusercontent.com/eficode/wait-for/master/wait-for). The system can thus be rebuilt by running the command *docker-compose up --build*.
 
 ### Continuous Integration and Deployment
+
+<div align = center>
+  
 ![image](https://user-images.githubusercontent.com/45073537/117691378-bd697700-b1b3-11eb-9beb-b974e725a817.png)
+
+  </div>
+
 
 The benefit of using continuous integration and deployment is that it ensures components being worked on by different developers will be built in tandem, rather than being integrated at a late stage of the project, which risks things breaking. It is much better to frequently combine the outputs of all developers into a single operational system and make minor adjustments as the project develops, in an agile way. Our team used GitHub to facilitate this methodology.
 
 To acheive continuous intergration and deployment, our code was progressively merged through a pipeline of branches on GitHub. At top level is our main branch, which holds our production-ready code and most current release version of the website. The contents of our Express API, Angular dist, and Mongo scripts on this branch were fully tested and ready to be shipped. Below this is our staging branch, where code is held for testing before being deployed. We used this branch to ensure there were no issues with the feature being deployed from dev before it is pushed to production. Under staging is our dev branch, which holds the code that is being worked on by our developers. The environment for this stage lay within the Docker containers set up as explained above. This is to ensure that the system was developed and tested in a reproducible way that could be used across platforms. From here, developers created their own feature branches to work on individual features, regularly merging them with dev and then deleting that branch when the feature was complete to avoid a mess of branches and keep the branch structure streamlined and comprehensible. When the current version was finished by our developers, it was merged from dev into staging, to be tested before released on our main branch.
 
+<div align = center>
+  
 ![image](https://user-images.githubusercontent.com/45073537/117702220-22c36500-b1c0-11eb-9611-52b6ea27fe68.png)
+
+  </div>
 
 In staging, the critical components in our code base were tested. We used Karma to run those tests by running ng test in the project directory on every push to the repository to ensure continuous integration and to make certain that the different parts of the system work well together on an ongoing basis. The staging branch was also used to ensure that only functioning and tested code makes it to production.
 

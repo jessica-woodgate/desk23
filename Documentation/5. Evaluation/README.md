@@ -8,11 +8,11 @@
 # Evaluation
 
 ## Contents
-a. [Details of how we evaluated our designs](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#a-details-of-how-you-evaluated-your-designs-techniques-used--awareness-of-their-limitations-description-of-techniques-suitable-for-your-particular-design-a-timeline-of-evaluation-of-your-design)
+a. [Details of how we evaluated our designs](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md#a-details-of-how-we-evaluated-our-designs)
 
-b. [Unit testing/functional testing](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#b-unit-testing--functional-testing)
+b. [Unit testing/functional testing](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md#b-unit-testing--functional-testing)
 
-c. [User acceptance testing - evaluation of design with users](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation#c-user-acceptance-testing-evaluation-of-your-design-with-users--methods-undertaken-findings-implications)
+c. [User acceptance testing - evaluation of design with users](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md#c-user-acceptance-testing---evaluation-of-design-with-users)
 
 ## a. Details of how we evaluated our designs.
 

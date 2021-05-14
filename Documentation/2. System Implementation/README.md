@@ -16,9 +16,7 @@ c. [Middle Tier - Express, Node, the RESTful API](https://github.com/jess-mw/des
 
 d. [Front End - Angular](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#d-front-end---angular-details-of-implementation)
 
-e. [Additional elements and components](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#e-additional-elements-and-components)
-
-f. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#f-deployment-details-including-docker-how-we-have-been-achieving-continuous-integration-and-deployment)
+e. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#f-deployment-details-including-docker-how-we-have-been-achieving-continuous-integration-and-deployment)
 
 ## a. Stack architecture and system design
 The use of the MEAN stack allowed for a smooth and integrated development environment for the project unified by the fact that each element of the stack use the same programming language: JavaScript. MEAN can be broken down to four component parts: 
@@ -425,12 +423,7 @@ constructor(private countryService : DataService)
 Where `this.listOfCountries` is the array of Country objects we previously established. 
 
 
-
-## e. Additional elements and components.
-
-There isnt much in the way of additional elements or componenets that has not been covered by previous sections. Our app elements like authentication due to our SPA not requiring that type of functionality.
-
-## f. Deployment details (including Docker), how we have been achieving continuous integration and deployment.
+## e. Deployment details (including Docker), how we have been achieving continuous integration and deployment.
 ### Docker
 In order to allow for our application to be easily developed and shipped across platforms, we decided to use [Docker](https://www.docker.com/why-docker). This allowed us to package and run our application in a loosly isolated environment called a [container](https://www.docker.com/resources/what-container). The containers are lightweight and contain everything needed to run the application - you don't need to rely on what's currently installed in the host. This means it is easy to share containers while you work, streamlining the development lifecycle by allowing developers to work in standardized environments; facilitating the continuous integration and continuous deployment (CI/CD) workflow.
 

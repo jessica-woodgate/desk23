@@ -51,7 +51,7 @@ By revealing interesting trends in the data, and adding an element of interactiv
 </div>
 
 ## Our Team
-|   | Stanni Lewis     | Front-end                     |
+| <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/stanni.png"  alt="1" width = 100px height = 100px >   | Stanni Lewis     | Front-end                     |
 |---|------------------|-------------------------------|
 | <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/emily.jpg"  alt="1" width = 100px height = 100px >   | Emily Bloom      | Quality Assurance and Testing |
 | <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/jess_photo.jpg"  alt="1" width = 100px height = 100px >   | Jessica Woodgate | Database and Back-end         |

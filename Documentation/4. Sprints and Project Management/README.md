@@ -153,7 +153,12 @@ Another critical point, also in the [second sprint](https://github.com/jess-mw/d
 
 Please see [here](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md#continuous-integration-and-deployment) for an explanation of how we used continuous integration and deployment with Docker and GitHub. The basic layout of our branch structure can be seen in the diagram below:
 
+
+<div align = center>
+  
 ![image](https://user-images.githubusercontent.com/45073537/117702174-13441c00-b1c0-11eb-9792-13d38d017394.png)
+
+  </div>
 
 Essentially, we ensured continuous integration and deployment through a pipeline of branches. At the highest level, our main branch contained our production code - the current release that is ready to be shipped. Beneath this is the staging branch, where our features were tested. On the level below is our dev branch, from which each developer created their own branch from to work on their own particular feature. This ensured that we did not have multiple developers working on the same branch at once, which avoided merge conflicts and lowered the risk of things breaking. When the developer was happy that their feature was complete, and this was discussed with the team, they merged with dev and triggered the CI/CD pipeline. We laid out our methodology for the team use of Git in [this document](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/4.%20Workflow%20and%20use%20of%20Git.md) so that team members could refer to throughout the project for clarification.
 

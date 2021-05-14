@@ -1,7 +1,7 @@
 
 <div align = center>
   
-  <a href="http://chartsbin.com/view/26025">![image](https://user-images.githubusercontent.com/45073537/111315589-6f743f00-865a-11eb-86fa-42c03ca56bef.png)</a>
+  <a href="http://chartsbin.com/view/26025" target="external">![image](https://user-images.githubusercontent.com/45073537/111315589-6f743f00-865a-11eb-86fa-42c03ca56bef.png)</a>
   
   </div>
 

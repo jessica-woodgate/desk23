@@ -1,6 +1,6 @@
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-2-incorporating-interactivity)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#sprint-2-incorporating-interactivity)
   
   </div>
 
@@ -172,6 +172,6 @@ The feedback session took place remotely using Zoom, at the same time as the int
 
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-2-incorporating-interactivity)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#sprint-2-incorporating-interactivity)
   
   </div>

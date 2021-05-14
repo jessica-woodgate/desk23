@@ -1,6 +1,6 @@
 <div align = center>
    
-  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/1.%20Background%20and%20Motivation) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)
+  [<-- Previous Section](https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md) | [Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md)
 
    </div>
 
@@ -476,6 +476,6 @@ We held [regular stand up meetings](https://github.com/jess-mw/desk23/tree/main/
 
 <div align = center>
    
-  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/1.%20Background%20and%20Motivation) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)
+  [<-- Previous Section](https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md) | [Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md)
 
    </div>

@@ -1,6 +1,6 @@
 <div align = center>
    
-  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation) | [Home](https://github.com/jess-mw/desk23) 
+  [<-- Previous Section](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md) | [Home](https://github.com/jess-mw/desk23/blob/main/README.md) 
    </div>
 
 # Conclusion

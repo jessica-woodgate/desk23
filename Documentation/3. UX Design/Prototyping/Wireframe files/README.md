@@ -1,6 +1,6 @@
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#e-user-participatory-design)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#e-user-participatory-design)
   
   </div>
 

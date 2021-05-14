@@ -281,5 +281,5 @@ export class GlobeComponent implements OnInit {
 }
 
 //Credit to the following tutorial: https://www.youtube.com/watch?v=WyK-ix6mgAQ for helping out in the early stages of development. 
-//The tutorial guided the Front-end engineers with how to link data points as well as window resizing issues. 
+
 

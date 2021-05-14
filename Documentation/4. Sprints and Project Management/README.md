@@ -18,7 +18,7 @@ d. [Team use of Git, continuous integration/continuous deployment, streamlining 
 ## a. Group working methods used.
 ### SCRUM or Kanban?
 
-The core requirement set by ourselves was to create an application that solves the user’s needs. The user’s visions and expectations of our product must lie at the heart of it all. In order to do this, we needed to adopt a flexible and adaptable nature and maintain a consistent channel of dialogue with our users (as explained in the [UX Design Section]( https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)).
+The core requirement set by ourselves was to create an application that solves the user’s needs. The user’s visions and expectations of our product must lie at the heart of it all. In order to do this, we needed to adopt a flexible and adaptable nature and maintain a consistent channel of dialogue with our users (as explained in the [UX Design Section]( https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md)).
 
 As such, an Agile methodology seemed perfect for us to achieve this requirements. With the aim of consistently publishing our app and obtaining feedback on its operations, we debated between the use of Kanban and Scrum as the main method for organising our project. 
 

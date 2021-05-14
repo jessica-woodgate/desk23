@@ -1,5 +1,9 @@
 
-![image](https://user-images.githubusercontent.com/45073537/111315589-6f743f00-865a-11eb-86fa-42c03ca56bef.png)
+<div align = center>
+  
+  ![image](https://user-images.githubusercontent.com/45073537/111315589-6f743f00-865a-11eb-86fa-42c03ca56bef.png)
+
+  </div>
 
 # Left Unread
 
@@ -36,7 +40,13 @@ We managed the project using Agile methodology, building the bulk of the applica
 ### Project Objectives
 #### The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success. 
 
+
+
+<div align = center>
+  
 ![image](https://user-images.githubusercontent.com/74050529/117741822-36d88800-b1fb-11eb-9ac0-89e5c9c61833.png)
+
+  </div>
 
 The overarching goal of the project is to build a visualisation of global literacy rates data in order to improve communication of how levels of literacy differ across the world, and how these rates have changed over time. A central goal is to clarify key trends and patterns in the data, and the project aims at once to bring to light the hopeful story of how global literacy has risen over time, and highlight the gaps that remain by making it easier to identify areas where literacy rates remain relatively low. Another high-level aim is to make the information accessible; specifically to make it possible for a user to engage with and discover the data in order to add an element of fun and enjoyment. 
 

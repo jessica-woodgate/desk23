@@ -16,7 +16,7 @@ c. [Middle Tier - Express, Node, the RESTful API](https://github.com/jess-mw/des
 
 d. [Front End - Angular](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#d-front-end---angular-details-of-implementation)
 
-e. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#f-deployment-details-including-docker-how-we-have-been-achieving-continuous-integration-and-deployment)
+e. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md#e-deployment-details-including-docker-how-we-have-been-achieving-continuous-integration-and-deployment)
 
 ## a. Stack architecture and system design
 The use of the MEAN stack allowed for a smooth and integrated development environment for the project unified by the fact that each element of the stack use the same programming language: JavaScript. MEAN can be broken down to four component parts: 

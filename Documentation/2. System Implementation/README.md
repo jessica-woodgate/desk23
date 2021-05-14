@@ -428,7 +428,7 @@ Where `this.listOfCountries` is the array of Country objects we previously estab
 
 ## e. Additional elements and components.
 
-There isnt much in the way of additional elements or componenets that has not been covered by previous sections. Our app elements like authenticvation due to our SPA not requiring that type of functionality.
+There isnt much in the way of additional elements or componenets that has not been covered by previous sections. Our app elements like authentication due to our SPA not requiring that type of functionality.
 
 ## f. Deployment details (including Docker), how we have been achieving continuous integration and deployment.
 ### Docker

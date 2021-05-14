@@ -22,7 +22,11 @@ Therefore, the other way of evaluation included user feedback. Apart from sticki
 
 The rolling evaluation process can be visualised in the following diagram:
 
+<div align = center>
+   
 ![image](https://user-images.githubusercontent.com/74254613/117748985-ea944480-b208-11eb-8d5a-15cfe0648cfe.png)
+
+</div>
 
 
 ## b. Unit testing / Functional testing.
@@ -85,7 +89,12 @@ In addition to the number of points, we also test whether specific countries we 
 
 Ultimately, the following series of unit tests were run against the code. 
 
+<div align = center>
+   
 ![image](https://user-images.githubusercontent.com/74050529/117734765-0b9a6c80-b1ec-11eb-9788-3a0d7464f033.png)
+
+</div>
+
 
 ## c. User acceptance testing - evaluation of design with users.
 
@@ -101,7 +110,11 @@ Key operational constraints include limited time to implement the project, remot
 
 The metrics for delivery of a feature include robustness (e.g. events causing failure, data corruption in the event of failure), ease of use for newcomers to the product (eg. average training time, number of help boxes per feature, time taken to perform a given task), speed (eg. user-event response times, screen load time for the globe), and user satisfaction (eg. net promoter score, whether the product met expectations). Tested operating systems included Windows and Mac OS. Browser tests were conducted in Microsoft Edge, Firefox and Chrome. Given time constraints and difficulty getting access to new users, it would be important as a next step to expand the sample size and involve more users to validate the product. Part of this effort to involve more users could centre around a survey. Quantitative data in particular to evaluate user satistication would have been useful to collect in line with the metrics above. Other metrics require an observer to assist and would not rely on user self-reporting, including average training time, time taken to perform a given task, and picking up on unexpected behaviour which might not be as immediately evident to a first-time user. 
 
+<div align = center>
+   
 ![image](https://user-images.githubusercontent.com/74050529/118181573-d2523e80-b42f-11eb-85d2-591655ad1cbc.png)
+
+</div>
 
 
 **Findings and Implications**

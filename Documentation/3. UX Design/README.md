@@ -9,19 +9,19 @@
 
 ## Contents
 
-a. [Mashing up the Serious and The Playful](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md#a-mashing-up-the-serious-and-the-playful)
+a. [Mashing up the Serious and The Playful](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#a-mashing-up-the-serious-and-the-playful)
 
-b. [Breaking the Problem Down](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md#a-mashing-up-the-serious-and-the-playful)
+b. [Breaking the Problem Down](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#b-breaking-the-problem-down)
 
-c. [Who is Our User?](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md#c-who-is-our-user)
+c. [Who is Our User?](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#c-who-is-our-user)
 
-d. [The Design Methodology](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md#d-the-design-methodology)
+d. [The Design Methodology](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#d-the-design-methodology)
 
-e. [User Participatory Design](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md#e-user-participatory-design)
+e. [User Participatory Design](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#e-user-participatory-design)
 
-f. [Building the Website on Angular](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md#f-building-the-website-on-angular)
+f. [Building the Website on Angular](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#f-building-the-website-on-angular)
 
-g. [Flow Chart](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/newREADME.md)
+g. [Flow Chart](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#g-flowchart)
 
 ## a. Mashing Up the Serious and The Playful
 

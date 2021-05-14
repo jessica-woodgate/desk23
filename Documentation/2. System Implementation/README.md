@@ -173,7 +173,7 @@ const routes: Routes = [
 
 #### Globe Component 
 
-The globe was built solely with the Three.js library. Three.js is a well-documented library and the forums provided ample support where needed. As a result, certain parts of this code were written in accordance to the directions of the Three.js documentation. The globe component was also built with the help of the following tutorial: https://www.youtube.com/watch?v=WyK-ix6mgAQ&t=1358s. The tutorial helped inform our design during the early stages of prototyping, as we figured our way around Three.js. The code was then adapated to suit our project, its scope as well as the Angular Implementation. See below for a detailed explanation on how we built the globe.  
+The globe was built solely with the Three.js library. Three.js is a well-documented library and the forums provided ample support where needed. As a result, certain parts of this code were written in accordance to the directions of the Three.js documentation. The globe component was also built with the help of a [tutorial]( https://www.youtube.com/watch?v=WyK-ix6mgAQ&t=1358s). The tutorial helped inform our design during the early stages of prototyping, as we figured our way around Three.js. The code was then adapated to suit our project, its scope as well as the Angular Implementation. See below for a detailed explanation on how we built the globe.  
 
 ##### The Scene
 

@@ -28,6 +28,8 @@ The use of the MEAN stack allowed for a smooth and integrated development enviro
 *	Angular, is the core frontend framework employing TypeScript, a superset of JavaScript that adds static types and more advanced error checking. 
 *	NodeJS, the backend JavaScript runtime environment that unifies and whole stack. 
 
+These 4 elements interaction can be broken down into a diagram detailing the way each part interacts with the other: 
+
 
 ## b. Back End - MongoDB
 

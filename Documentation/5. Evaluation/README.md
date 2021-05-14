@@ -1,6 +1,6 @@
 <div align = center>
    
-  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/6.%20Conclusion)
+  [<-- Previous Section](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/README.md) | [Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md)
 
    </div>
 
@@ -134,6 +134,6 @@ Overall, the critical and highest priority functional requirements were satisfie
 
 <div align = center>
    
-  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/6.%20Conclusion)
+  [<-- Previous Section](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/README.md) | [Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md)
 
    </div>

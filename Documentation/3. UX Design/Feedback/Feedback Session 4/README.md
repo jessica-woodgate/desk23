@@ -1,6 +1,6 @@
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-3-refining-the-globe-and-publishing-the-final-product)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#sprint-3-refining-the-globe-and-publishing-the-final-product)
   
   </div>
 
@@ -49,6 +49,6 @@ This session was conducted in person, but the audio was recorded with the userâ€
 
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#sprint-3-refining-the-globe-and-publishing-the-final-product)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#sprint-3-refining-the-globe-and-publishing-the-final-product)
   
   </div>

@@ -1,7 +1,7 @@
 
 <div align = center>
    
-[Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md)
+[Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md)
 
    </div>
 
@@ -175,7 +175,7 @@ The project will seek to fill this gap by providing an alternative data visualis
 
 <div align = center>
    
-[Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md)
+[Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md)
 
    </div>
 

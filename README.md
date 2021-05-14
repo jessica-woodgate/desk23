@@ -59,13 +59,13 @@ By revealing interesting trends in the data, and adding an element of interactiv
 |  <img src="https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/Appendix/TeamPhotos/Hamza.jpg"  alt="1" width = 100px height = 100px > | Hamza Qureshi    | Front-end and UX/UI Designer  |
 
 ## Documentation
-### 1. [Background and Motivation](https://github.com/jess-mw/desk23/tree/main/Documentation/1.%20Background%20and%20Motivation)
+### 1. [Background and Motivation](https://github.com/jess-mw/desk23/blob/main/Documentation/1.%20Background%20and%20Motivation/README.md)
 
 * Background literature. Academic research review.
 * State of the art survey. Current industry review.
 * Clear definition of the problem.
 
-### 2. [System Implementation](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation)
+### 2. [System Implementation](https://github.com/jess-mw/desk23/blob/main/Documentation/2.%20System%20Implementation/README.md)
 
 * Stack architecture and system design.
 * Back End - MongoDB - database implementation, the data model that we developed our back end from.
@@ -74,7 +74,7 @@ By revealing interesting trends in the data, and adding an element of interactiv
 * Additional elements and components.
 * Deployment details (including Docker), include how we achieved continuous integration and deployment.
 
-### 3. [UX Design](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design)
+### 3. [UX Design](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md)
 
 * Design Process and Early prototyping and ideation.
 * Identification of interacting users and broader stakeholders.
@@ -82,20 +82,20 @@ By revealing interesting trends in the data, and adding an element of interactiv
 * Understanding of user group (questionnaires / user stories / interviews).
 * Wireframes and interaction flow diagrams for final key subsystems.
 
-### 4. [Sprints and Project Management](https://github.com/jess-mw/desk23/tree/main/Documentation/4.%20Sprints%20and%20Project%20Management)
+### 4. [Sprints and Project Management](https://github.com/jess-mw/desk23/blob/main/Documentation/4.%20Sprints%20and%20Project%20Management/README.md)
 
 * Group working methods used.
 * Discussion of team roles. A summary of individual contributions.
 * Documentation of our sprints, including both high level overview, timeline, and selected highlights that were critical points in the project. Summary of meeting logs (including for instance apologies for absence etc).
 * Team use of Git, how our team used continuous integration / continuous deployment. Streamlining of workflow throughout.
 
-### 5. [Evaluation](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation)
+### 5. [Evaluation](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md)
 
 * Details of how we evaluated our designs (techniques used & awareness of their limitations). Description of techniques suitable for our particular design. A timeline of evaluation of our design.
 * Unit testing / Functional testing.
 * User acceptance testing. Evaluation of our design with users – methods undertaken, findings, implications.
 
-### 6. [Conclusion](https://github.com/jess-mw/desk23/tree/main/Documentation/6.%20Conclusion)
+### 6. [Conclusion](https://github.com/jess-mw/desk23/blob/main/Documentation/6.%20Conclusion/README.md)
 
 * Reflection on the working practices of our group, how well they did or did not work, e.g, management of issues, communication, Agile (etc).
 * Reflective discussion of the success of the project.

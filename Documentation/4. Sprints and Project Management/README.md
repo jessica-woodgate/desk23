@@ -1,6 +1,6 @@
 <div align = center>
    
-  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation)
+  [<-- Previous Section](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md) | [Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md)
 
    </div>
 
@@ -166,7 +166,6 @@ To ensure a streamlined workflow, we had one person who was in charge of organis
 
 <div align = center>
    
-  [<-- Previous Section](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design) | [Home](https://github.com/jess-mw/desk23) | [Next Section -->](https://github.com/jess-mw/desk23/tree/main/Documentation/5.%20Evaluation)
+  [<-- Previous Section](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md) | [Home](https://github.com/jess-mw/desk23/blob/main/README.md) | [Next Section -->](https://github.com/jess-mw/desk23/blob/main/Documentation/5.%20Evaluation/README.md)
 
    </div>
-

@@ -1,6 +1,6 @@
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#first-survey-findings)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#first-survey-findings)
   </div>
 
 
@@ -20,6 +20,5 @@
 
 <div align = center>
   
-  [<-- Back](https://github.com/jess-mw/desk23/tree/main/Documentation/3.%20UX%20Design#first-survey-findings)
+  [<-- Back](https://github.com/jess-mw/desk23/blob/main/Documentation/3.%20UX%20Design/README.md#first-survey-findings)
   </div>
-

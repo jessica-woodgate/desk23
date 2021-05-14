@@ -21,7 +21,13 @@ e. [Additional elements and components](https://github.com/jess-mw/desk23/tree/m
 f. [Deployment details (including Docker)](https://github.com/jess-mw/desk23/tree/main/Documentation/2.%20System%20Implementation#f-deployment-details-including-docker-how-we-have-been-achieving-continuous-integration-and-deployment)
 
 ## a. Stack architecture and system design
-*Stanni*
+The use of the MEAN stack allowed for a smooth and integrated development environment for the project unified by the fact that each element of the stack use the same programming language: JavaScript. MEAN can be broken down to four component parts: 
+
+*	MongoDB, a NoSQL database service used to host our data in a JavaScript Object Notation (JSON) format for use and manipulation.
+*	ExpressJS is a lightweight framework for running servers on NodeJS and building scalable web apps.
+*	Angular, is the core frontend framework employing TypeScript, a superset of JavaScript that adds static types and more advanced error checking. 
+*	NodeJS, the backend JavaScript runtime environment that unifies and whole stack. 
+
 
 ## b. Back End - MongoDB
 

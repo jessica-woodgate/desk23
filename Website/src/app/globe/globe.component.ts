@@ -131,8 +131,8 @@ export class GlobeComponent implements OnInit {
   createLightGroup() {
     this.mainLight = new THREE.AmbientLight( 0xffffff);
 	  this.mainLight.position.set( 0, 0, 50 );
-    this.lightGroup.add(this.mainLight);
-    this.scene.add(this.lightGroup);
+    //this.lightGroup.add(this.mainLight);
+    this.scene.add(this.mainLight);
   }
 
   createGlobe() {

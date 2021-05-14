@@ -31,8 +31,6 @@ export class GlobeComponent implements OnInit {
   windowWidth! : number;
   windowHeight! : number;
 
-  lightGroup!: THREE.Group;
-
   listOfCountries: Country[] = [];
 
   raycaster!: THREE.Raycaster;
@@ -54,7 +52,6 @@ export class GlobeComponent implements OnInit {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(50, this.windowWidth/this.windowHeight, 0.1, 1000);
 
-    this.lightGroup = new THREE.Group();
     this.raycaster = new THREE.Raycaster();
     this.mouse = new THREE.Vector2();
 
@@ -131,7 +128,6 @@ export class GlobeComponent implements OnInit {
   createLightGroup() {
     this.mainLight = new THREE.AmbientLight( 0xffffff);
 	  this.mainLight.position.set( 0, 0, 50 );
-    //this.lightGroup.add(this.mainLight);
     this.scene.add(this.mainLight);
   }
 
@@ -165,7 +161,7 @@ export class GlobeComponent implements OnInit {
   animate() {
     window.requestAnimationFrame(() => this.animate());
 
-    this.lightGroup.quaternion.copy(this.camera.quaternion);
+    this.mainLight.quaternion.copy(this.camera.quaternion);
     this.render();
     this.controls.update();
   }
